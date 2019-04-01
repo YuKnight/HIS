@@ -1,0 +1,16 @@
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\ts_jc_wardbed.FrmAddBed.resources
+obj\Debug\ts_jc_wardbed.FrmBedEdit.resources
+obj\Debug\ts_jc_wardbed.FrmSelectCard.resources
+obj\Debug\ts_jc_wardbed.FrmWardBed.resources
+obj\Debug\ts_jc_wardbed.csproj.GenerateResource.Cache
+obj\Debug\ts_jc_wardbed.dll
+obj\Debug\ts_jc_wardbed.pdb
+bin\Debug\ts_jc_wardbed.dll
+bin\Debug\ts_jc_wardbed.pdb
+bin\Debug\TrasenClasses.dll
+bin\Debug\TrasenFrame.dll
+bin\Debug\ts_HospData_Share.dll
+bin\Debug\ts_HospData_Share.pdb
+..\..\..\Debug\ts_jc_wardbed.dll
+..\..\..\Debug\ts_jc_wardbed.pdb

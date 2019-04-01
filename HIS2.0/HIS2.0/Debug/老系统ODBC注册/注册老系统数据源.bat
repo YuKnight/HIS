@@ -1,0 +1,1 @@
+regedit /s oldhis_official.reg

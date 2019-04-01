@@ -1,0 +1,10 @@
+E:\HIS2.0\Debug\ts_yf_mzpy.dll
+E:\HIS2.0\Debug\ts_yf_mzpy.pdb
+E:\HIS2.0\His代码\门诊配药\obj\Debug\ResolveAssemblyReference.cache
+E:\HIS2.0\His代码\门诊配药\obj\Debug\ts_yf_mzpy.Frmpyck.resources
+E:\HIS2.0\His代码\门诊配药\obj\Debug\ts_yf_mzpy.Frmcfdy.resources
+E:\HIS2.0\His代码\门诊配药\obj\Debug\ts_yf_mzpy.Frmcksz.resources
+E:\HIS2.0\His代码\门诊配药\obj\Debug\ts_yf_mzpy.Frmmzpy.resources
+E:\HIS2.0\His代码\门诊配药\obj\Debug\门诊配药.csproj.GenerateResource.Cache
+E:\HIS2.0\His代码\门诊配药\obj\Debug\ts_yf_mzpy.dll
+E:\HIS2.0\His代码\门诊配药\obj\Debug\ts_yf_mzpy.pdb

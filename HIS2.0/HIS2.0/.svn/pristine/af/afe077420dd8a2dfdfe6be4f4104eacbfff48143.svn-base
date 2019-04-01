@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trasen", "Trasen.csproj", "{114C185A-7BE7-4E3F-8BE7-3C505C97FFD9}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample", "..\Sample\Sample.csproj", "{F7AF8545-E548-4512-BE0B-E618DB4A71DD}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{114C185A-7BE7-4E3F-8BE7-3C505C97FFD9}.Debug.ActiveCfg = Debug|.NET
+		{114C185A-7BE7-4E3F-8BE7-3C505C97FFD9}.Debug.Build.0 = Debug|.NET
+		{114C185A-7BE7-4E3F-8BE7-3C505C97FFD9}.Release.ActiveCfg = Release|.NET
+		{114C185A-7BE7-4E3F-8BE7-3C505C97FFD9}.Release.Build.0 = Release|.NET
+		{F7AF8545-E548-4512-BE0B-E618DB4A71DD}.Debug.ActiveCfg = Debug|.NET
+		{F7AF8545-E548-4512-BE0B-E618DB4A71DD}.Debug.Build.0 = Debug|.NET
+		{F7AF8545-E548-4512-BE0B-E618DB4A71DD}.Release.ActiveCfg = Release|.NET
+		{F7AF8545-E548-4512-BE0B-E618DB4A71DD}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,118 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E5EE3705-38EC-481C-9EDF-5FA64BB81048}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ts_jc_gfbl</RootNamespace>
+    <AssemblyName>ts_jc_gfbl</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TrasenClasses, Version=5.1.5280.20564, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\1、武汉中心医院\Print_Test\WindowsApplication1\WindowsApplication1\bin\Debug\TrasenClasses.dll</HintPath>
+    </Reference>
+    <Reference Include="TrasenFrame, Version=5.1.5415.21441, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\1、武汉中心医院\Print_Test\WindowsApplication1\WindowsApplication1\bin\Debug\TrasenFrame.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmGflb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGflb.Designer.cs">
+      <DependentUpon>FrmGflb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGflbMx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGflbMx.Designer.cs">
+      <DependentUpon>FrmGflbMx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSflb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSflb.Designer.cs">
+      <DependentUpon>FrmSflb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSflbMx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSflbMx.Designer.cs">
+      <DependentUpon>FrmSflbMx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstanceForm.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmGflb.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmGflb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGflbMx.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmGflbMx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSflb.resx">
+      <DependentUpon>FrmSflb.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSflbMx.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmSflbMx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

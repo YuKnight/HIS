@@ -1,0 +1,92 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D044A0C5-9E04-4E65-8DA4-840372548F27}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ts_yk_zwtz</RootNamespace>
+    <AssemblyName>ts_yk_zwtz</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="trasen.controls, Version=1.0.0.67, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\义齿加工程序DEMO\程序\Debug\trasen.controls.dll</HintPath>
+    </Reference>
+    <Reference Include="TrasenClasses, Version=5.1.5280.20564, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\Debug\TrasenClasses.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="TrasenFrame, Version=5.1.5316.31294, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\Debug\TrasenFrame.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Frmyzje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmyzje.Designer.cs">
+      <DependentUpon>Frmyzje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmzwtz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmzwtz.Designer.cs">
+      <DependentUpon>Frmzwtz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstanceForm.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="yk_cwtz_temp.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Frmyzje.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frmyzje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmzwtz.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frmzwtz.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\药品类库\药品类库.csproj">
+      <Project>{576B026E-57A5-4E47-A1E0-0E63EB929469}</Project>
+      <Name>药品类库</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

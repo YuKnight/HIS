@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CF2D24CB-C847-4D6E-92C6-DFE41754EB41}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ts_mz_class</RootNamespace>
+    <AssemblyName>ts_mz_class</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\Debug\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.7.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="PrintClass, Version=1.0.5244.24363, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Trasen.Controls, Version=1.0.0.68, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="TrasenClasses, Version=5.1.5284.28595, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="TrasenFrame, Version=5.1.5284.28903, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Ts_Hlyy_Interface, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ts_HospData_Share, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ts_mzys_class, Version=10.12.18.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ts_ReadCard, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ts_Read_hospitalCard, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLL引用\ts_Read_hospitalCard.dll</HintPath>
+    </Reference>
+    <Reference Include="Ts_Visit_Class, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ts_YpClass, Version=1.0.4468.19576, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Debug\ts_YpClass.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BeforeSaveRegInfoEventArgs.cs" />
+    <Compile Include="BeforeSaveRegInfoHandle.cs" />
+    <Compile Include="classes\hjcf.cs" />
+    <Compile Include="classes\hjcfmx.cs" />
+    <Compile Include="classes\yjsq.cs" />
+    <Compile Include="Crypto.cs" />
+    <Compile Include="EmptyFP.cs" />
+    <Compile Include="Enum.cs" />
+    <Compile Include="Frmjsq.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmjsq.Designer.cs">
+      <DependentUpon>Frmjsq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Klx.cs" />
+    <Compile Include="mz_htdw_hk.cs" />
+    <Compile Include="MZ_TF_Record.cs" />
+    <Compile Include="Mz_YYgh.cs" />
+    <Compile Include="OrderMessageService.cs" />
+    <Compile Include="PhysicalExamineCharge\AfterCreatBaseInfoAndFeeInfoHandle.cs" />
+    <Compile Include="PhysicalExamineCharge\FrmDBConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PhysicalExamineCharge\FrmDBConfig.Designer.cs">
+      <DependentUpon>FrmDBConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PhysicalExamineCharge\FrmPhysicalExaminePatientList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PhysicalExamineCharge\FrmPhysicalExaminePatientList.Designer.cs">
+      <DependentUpon>FrmPhysicalExaminePatientList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PhysicalExamineCharge\BasePhysicalExaminChargeProcess.cs" />
+    <Compile Include="PhysicalExamineCharge\Implement\BeiJingZhongKePES.cs" />
+    <Compile Include="PhysicalExamineCharge\PhysicalExaminePatient.cs" />
+    <Compile Include="PhysicalExamineCharge\QueryCondiction.cs" />
+    <Compile Include="ts_dbz_yb.cs" />
+    <Compile Include="Ybjs.cs" />
+    <Compile Include="YY_BRXX_BC_MOL.cs" />
+    <Compile Include="项目设置.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="项目设置.Designer.cs">
+      <DependentUpon>项目设置.cs</DependentUpon>
+    </Compile>
+    <Compile Include="医生收银框.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="医生收银框.Designer.cs">
+      <DependentUpon>医生收银框.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmZySel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmZySel.Designer.cs">
+      <DependentUpon>FrmZySel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MZ_BRXX_KXX.cs" />
+    <Compile Include="mz_kdj.cs" />
+    <Compile Include="jc_mb.cs" />
+    <Compile Include="MZ_KDJXX.cs" />
+    <Compile Include="ts_mz_hlyy.cs" />
+    <Compile Include="预约记录.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="预约记录.Designer.cs">
+      <DependentUpon>预约记录.cs</DependentUpon>
+    </Compile>
+    <Compile Include="医嘱项目选项卡.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="医嘱项目选项卡.Designer.cs">
+      <DependentUpon>医嘱项目选项卡.cs</DependentUpon>
+    </Compile>
+    <Compile Include="密码验证.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="密码验证.Designer.cs">
+      <DependentUpon>密码验证.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSelectLanguage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSelectLanguage.Designer.cs">
+      <DependentUpon>FrmSelectLanguage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fun.cs" />
+    <Compile Include="FunAddComboBox.cs" />
+    <Compile Include="YY_BRXX.cs" />
+    <Compile Include="PubClass.cs" />
+    <Compile Include="mz_ghxx.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="mz_cf.cs" />
+    <Compile Include="mz_sf.cs" />
+    <Compile Include="mz_hj.cs" />
+    <Compile Include="退费.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="退费.Designer.cs">
+      <DependentUpon>退费.cs</DependentUpon>
+    </Compile>
+    <Compile Include="挂号记录.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="挂号记录.Designer.cs">
+      <DependentUpon>挂号记录.cs</DependentUpon>
+    </Compile>
+    <Compile Include="药品项目选项卡.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="药品项目选项卡.Designer.cs">
+      <DependentUpon>药品项目选项卡.cs</DependentUpon>
+    </Compile>
+    <Compile Include="收费.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="收费.Designer.cs">
+      <DependentUpon>收费.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Frmjsq.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frmjsq.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSelectLanguage.resx">
+      <DependentUpon>FrmSelectLanguage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmZySel.resx">
+      <DependentUpon>FrmZySel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhysicalExamineCharge\FrmDBConfig.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmDBConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhysicalExamineCharge\FrmPhysicalExaminePatientList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmPhysicalExaminePatientList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="医生收银框.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>医生收银框.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="项目设置.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>项目设置.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="预约记录.resx">
+      <DependentUpon>预约记录.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="医嘱项目选项卡.resx">
+      <DependentUpon>医嘱项目选项卡.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="密码验证.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>密码验证.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="退费.resx">
+      <DependentUpon>退费.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="挂号记录.resx">
+      <DependentUpon>挂号记录.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="药品项目选项卡.resx">
+      <DependentUpon>药品项目选项卡.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="收费.resx">
+      <DependentUpon>收费.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

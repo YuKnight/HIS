@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="AddDoctortoDdepartment">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strxml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddDoctortoDdepartmentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddDoctortoDdepartmentResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteDoctortoDdepartment">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strxml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteDoctortoDdepartmentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeleteDoctortoDdepartmentResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddRegisterInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strxml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddRegisterInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddRegisterInfoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OutRegisterInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strxml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OutRegisterInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OutRegisterInfoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetdrugInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strxml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetdrugInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetdrugInfoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeletedrugInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strxml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeletedrugInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeletedrugInfoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TollboothInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strxml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TollboothInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TollboothInfoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Returnpremium">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strxml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReturnpremiumResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReturnpremiumResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddItem">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strxml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddItemResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddItemResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="AddDoctortoDdepartmentSoapIn">
+    <wsdl:part name="parameters" element="tns:AddDoctortoDdepartment" />
+  </wsdl:message>
+  <wsdl:message name="AddDoctortoDdepartmentSoapOut">
+    <wsdl:part name="parameters" element="tns:AddDoctortoDdepartmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteDoctortoDdepartmentSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteDoctortoDdepartment" />
+  </wsdl:message>
+  <wsdl:message name="DeleteDoctortoDdepartmentSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteDoctortoDdepartmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddRegisterInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:AddRegisterInfo" />
+  </wsdl:message>
+  <wsdl:message name="AddRegisterInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:AddRegisterInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="OutRegisterInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:OutRegisterInfo" />
+  </wsdl:message>
+  <wsdl:message name="OutRegisterInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:OutRegisterInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetdrugInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetdrugInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetdrugInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetdrugInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeletedrugInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:DeletedrugInfo" />
+  </wsdl:message>
+  <wsdl:message name="DeletedrugInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:DeletedrugInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="TollboothInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:TollboothInfo" />
+  </wsdl:message>
+  <wsdl:message name="TollboothInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:TollboothInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReturnpremiumSoapIn">
+    <wsdl:part name="parameters" element="tns:Returnpremium" />
+  </wsdl:message>
+  <wsdl:message name="ReturnpremiumSoapOut">
+    <wsdl:part name="parameters" element="tns:ReturnpremiumResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddItemSoapIn">
+    <wsdl:part name="parameters" element="tns:AddItem" />
+  </wsdl:message>
+  <wsdl:message name="AddItemSoapOut">
+    <wsdl:part name="parameters" element="tns:AddItemResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WHCentralhospitalSoap">
+    <wsdl:operation name="AddDoctortoDdepartment">
+      <wsdl:input message="tns:AddDoctortoDdepartmentSoapIn" />
+      <wsdl:output message="tns:AddDoctortoDdepartmentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteDoctortoDdepartment">
+      <wsdl:input message="tns:DeleteDoctortoDdepartmentSoapIn" />
+      <wsdl:output message="tns:DeleteDoctortoDdepartmentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddRegisterInfo">
+      <wsdl:input message="tns:AddRegisterInfoSoapIn" />
+      <wsdl:output message="tns:AddRegisterInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="OutRegisterInfo">
+      <wsdl:input message="tns:OutRegisterInfoSoapIn" />
+      <wsdl:output message="tns:OutRegisterInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetdrugInfo">
+      <wsdl:input message="tns:GetdrugInfoSoapIn" />
+      <wsdl:output message="tns:GetdrugInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletedrugInfo">
+      <wsdl:input message="tns:DeletedrugInfoSoapIn" />
+      <wsdl:output message="tns:DeletedrugInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TollboothInfo">
+      <wsdl:input message="tns:TollboothInfoSoapIn" />
+      <wsdl:output message="tns:TollboothInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Returnpremium">
+      <wsdl:input message="tns:ReturnpremiumSoapIn" />
+      <wsdl:output message="tns:ReturnpremiumSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddItem">
+      <wsdl:input message="tns:AddItemSoapIn" />
+      <wsdl:output message="tns:AddItemSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WHCentralhospitalSoap" type="tns:WHCentralhospitalSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AddDoctortoDdepartment">
+      <soap:operation soapAction="http://tempuri.org/AddDoctortoDdepartment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteDoctortoDdepartment">
+      <soap:operation soapAction="http://tempuri.org/DeleteDoctortoDdepartment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddRegisterInfo">
+      <soap:operation soapAction="http://tempuri.org/AddRegisterInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OutRegisterInfo">
+      <soap:operation soapAction="http://tempuri.org/OutRegisterInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetdrugInfo">
+      <soap:operation soapAction="http://tempuri.org/GetdrugInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletedrugInfo">
+      <soap:operation soapAction="http://tempuri.org/DeletedrugInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TollboothInfo">
+      <soap:operation soapAction="http://tempuri.org/TollboothInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Returnpremium">
+      <soap:operation soapAction="http://tempuri.org/Returnpremium" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddItem">
+      <soap:operation soapAction="http://tempuri.org/AddItem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WHCentralhospitalSoap12" type="tns:WHCentralhospitalSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AddDoctortoDdepartment">
+      <soap12:operation soapAction="http://tempuri.org/AddDoctortoDdepartment" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteDoctortoDdepartment">
+      <soap12:operation soapAction="http://tempuri.org/DeleteDoctortoDdepartment" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddRegisterInfo">
+      <soap12:operation soapAction="http://tempuri.org/AddRegisterInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OutRegisterInfo">
+      <soap12:operation soapAction="http://tempuri.org/OutRegisterInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetdrugInfo">
+      <soap12:operation soapAction="http://tempuri.org/GetdrugInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletedrugInfo">
+      <soap12:operation soapAction="http://tempuri.org/DeletedrugInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TollboothInfo">
+      <soap12:operation soapAction="http://tempuri.org/TollboothInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Returnpremium">
+      <soap12:operation soapAction="http://tempuri.org/Returnpremium" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddItem">
+      <soap12:operation soapAction="http://tempuri.org/AddItem" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WHCentralhospital">
+    <wsdl:port name="WHCentralhospitalSoap" binding="tns:WHCentralhospitalSoap">
+      <soap:address location="http://192.168.0.141:81/HQSWcfService/WHCentralhospital.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WHCentralhospitalSoap12" binding="tns:WHCentralhospitalSoap12">
+      <soap12:address location="http://192.168.0.141:81/HQSWcfService/WHCentralhospital.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

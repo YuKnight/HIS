@@ -1,0 +1,12 @@
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Ts_ss_shbl.Fbasesearch.resources
+obj\Debug\Ts_ss_shbl.FrmShbl.resources
+obj\Debug\Ts_ssmz_shbl.csproj.GenerateResource.Cache
+bin\Debug\Ts_ss_shbl.dll
+bin\Debug\Ts_ss_shbl.pdb
+bin\Debug\TrasenClasses.dll
+bin\Debug\TrasenFrame.dll
+bin\Debug\Ts_ss_class.dll
+bin\Debug\Ts_ss_class.pdb
+obj\Debug\Ts_ss_shbl.dll
+obj\Debug\Ts_ss_shbl.pdb

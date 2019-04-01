@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="TheReportDateSet" targetNamespace="http://tempuri.org/TheReportDateSet.xsd" elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/TheReportDateSet.xsd" xmlns:mstns="http://tempuri.org/TheReportDateSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="TheReportDateSet" msdata:IsDataSet="true">
+        <xs:complexType>
+            <xs:choice maxOccurs="unbounded">
+                <xs:element name="tabzxd">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="bedno" type="xs:long" minOccurs="0" />
+                            <xs:element name="name" type="xs:string" minOccurs="0" />
+                            <xs:element name="deptname" type="xs:string" minOccurs="0" />
+                            <xs:element name="nl" type="xs:int" minOccurs="0" />
+                            <xs:element name="begindate" type="xs:dateTime" minOccurs="0" />
+                            <xs:element name="s_spm" type="xs:string" minOccurs="0" />
+                            <xs:element name="num" type="xs:double" minOccurs="0" />
+                            <xs:element name="usage" type="xs:string" minOccurs="0" />
+                            <xs:element name="frequency" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="tabfeelist">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Item_Name" type="xs:string" minOccurs="0" />
+                            <xs:element name="ItemValues" type="xs:double" minOccurs="0" />
+                            <xs:element name="Name" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="tabGrd">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="床号" type="xs:string" minOccurs="0" />
+                            <xs:element name="住院号" type="xs:string" minOccurs="0" />
+                            <xs:element name="姓名" type="xs:string" minOccurs="0" />
+                            <xs:element name="性别" type="xs:string" minOccurs="0" />
+                            <xs:element name="年龄" type="xs:string" minOccurs="0" />
+                            <xs:element name="入院日期" type="xs:string" minOccurs="0" />
+                            <xs:element name="所属科室" type="xs:string" minOccurs="0" />
+                            <xs:element name="结算类型" type="xs:string" minOccurs="0" />
+                            <xs:element name="总费用" type="xs:string" minOccurs="0" />
+                            <xs:element name="预交款" type="xs:string" minOccurs="0" />
+                            <xs:element name="未到帐支票" type="xs:string" minOccurs="0" />
+                            <xs:element name="余额" type="xs:string" minOccurs="0" />
+                            <xs:element name="INPATIENT_ID" type="xs:string" minOccurs="0" />
+                            <xs:element name="BABY_NO" type="xs:string" minOccurs="0" />
+                            <xs:element name="DEPT_ID" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="tabscjl">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="日期" type="xs:string" minOccurs="0" />
+                            <xs:element name="时间" type="xs:string" minOccurs="0" />
+                            <xs:element name="体温" type="xs:string" minOccurs="0" />
+                            <xs:element name="脉搏" type="xs:string" minOccurs="0" />
+                            <xs:element name="呼吸" type="xs:string" minOccurs="0" />
+                            <xs:element name="血压" type="xs:string" minOccurs="0" />
+                            <xs:element name="SPO2" type="xs:string" minOccurs="0" />
+                            <xs:element name="护士" type="xs:string" minOccurs="0" />
+                            <xs:element name="备注" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="tabYbhljl">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="id" type="xs:int" minOccurs="0" />
+                            <xs:element name="inpatient_id" type="xs:decimal" minOccurs="0" />
+                            <xs:element name="baby_id" type="xs:decimal" minOccurs="0" />
+                            <xs:element name="dept_id" type="xs:decimal" minOccurs="0" />
+                            <xs:element name="book_date" type="xs:dateTime" minOccurs="0" />
+                            <xs:element name="book_text" type="xs:string" minOccurs="0" />
+                            <xs:element name="book_user" type="xs:string" minOccurs="0" />
+                            <xs:element name="check_user" type="xs:string" minOccurs="0" />
+                            <xs:element name="deptname" type="xs:string" minOccurs="0" />
+                            <xs:element name="wardname" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="tabWzhljl">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="id" type="xs:int" minOccurs="0" />
+                            <xs:element name="inpatient_id" type="xs:decimal" minOccurs="0" />
+                            <xs:element name="baby_id" type="xs:decimal" minOccurs="0" />
+                            <xs:element name="dept_id" type="xs:decimal" minOccurs="0" />
+                            <xs:element name="book_text" type="xs:string" minOccurs="0" />
+                            <xs:element name="book_user" type="xs:string" minOccurs="0" />
+                            <xs:element name="check_user" type="xs:string" minOccurs="0" />
+                            <xs:element name="book_date" type="xs:date" minOccurs="0" />
+                            <xs:element name="book_time" type="xs:time" minOccurs="0" />
+                            <xs:element name="tw" type="xs:string" minOccurs="0" />
+                            <xs:element name="mb" type="xs:string" minOccurs="0" />
+                            <xs:element name="hx" type="xs:string" minOccurs="0" />
+                            <xs:element name="xy" type="xs:string" minOccurs="0" />
+                            <xs:element name="in_item" type="xs:string" minOccurs="0" />
+                            <xs:element name="in_quantity" type="xs:string" minOccurs="0" />
+                            <xs:element name="stool" type="xs:string" minOccurs="0" />
+                            <xs:element name="pee" type="xs:string" minOccurs="0" />
+                            <xs:element name="deptname" type="xs:string" minOccurs="0" />
+                            <xs:element name="wardname" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="tabWardjbjl">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="WARD_ID" type="xs:string" minOccurs="0" />
+                            <xs:element name="JB_DATE" type="xs:date" minOccurs="0" />
+                            <xs:element name="BOOK_USER" type="xs:string" minOccurs="0" />
+                            <xs:element name="JOBTIME" type="xs:string" minOccurs="0" />
+                            <xs:element name="FORMERLY" type="xs:int" minOccurs="0" />
+                            <xs:element name="GOOUT" type="xs:int" minOccurs="0" />
+                            <xs:element name="TRANSOUT" type="xs:int" minOccurs="0" />
+                            <xs:element name="DEATH" type="xs:int" minOccurs="0" />
+                            <xs:element name="COMEIN" type="xs:int" minOccurs="0" />
+                            <xs:element name="TRANSIN" type="xs:int" minOccurs="0" />
+                            <xs:element name="NOW" type="xs:int" minOccurs="0" />
+                            <xs:element name="OPERATION" type="xs:int" minOccurs="0" />
+                            <xs:element name="CHILDBIRTH" type="xs:int" minOccurs="0" />
+                            <xs:element name="TERMINALLYILL" type="xs:int" minOccurs="0" />
+                            <xs:element name="HEAVYILL" type="xs:int" minOccurs="0" />
+                            <xs:element name="GOAWAY" type="xs:int" minOccurs="0" />
+                            <xs:element name="SPECIALTEND" type="xs:int" minOccurs="0" />
+                            <xs:element name="FIRSTTEND" type="xs:int" minOccurs="0" />
+                            <xs:element name="JB_TEXT" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="tabWardjbjl_brdt">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="ITEM" type="xs:string" minOccurs="0" />
+                            <xs:element name="BED_NO" type="xs:string" minOccurs="0" />
+                            <xs:element name="NAME" type="xs:string" minOccurs="0" />
+                            <xs:element name="DIAGNOSES" type="xs:string" minOccurs="0" />
+                            <xs:element name="TIME" type="xs:string" minOccurs="0" />
+                            <xs:element name="jobtime" type="xs:int" minOccurs="0" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="tabRypg">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="NAME" type="xs:string" minOccurs="0" />
+                            <xs:element name="IN_DEPT_NAME" type="xs:string" minOccurs="0" />
+                            <xs:element name="BED_NO" type="xs:string" minOccurs="0" />
+                            <xs:element name="INPATIENT_NO" type="xs:string" minOccurs="0" />
+                            <xs:element name="SEX_NAME" type="xs:string" minOccurs="0" />
+                            <xs:element name="AGE" type="xs:string" minOccurs="0" />
+                            <xs:element name="JSFS_NAME" type="xs:string" minOccurs="0" />
+                            <xs:element name="IN_DATE" type="xs:string" minOccurs="0" />
+                            <xs:element name="IN_DIAGNOSIS" type="xs:string" minOccurs="0" />
+                            <xs:element name="HOME_STREET" type="xs:string" minOccurs="0" />
+                            <xs:element name="RELATION_NAME" type="xs:string" minOccurs="0" />
+                            <xs:element name="RELATION" type="xs:string" minOccurs="0" />
+                            <xs:element name="RELATION_TEL" type="xs:string" minOccurs="0" />
+                            <xs:element name="ID" type="xs:string" minOccurs="0" />
+                            <xs:element name="INPATIENT_ID" type="xs:string" minOccurs="0" />
+                            <xs:element name="BABY_ID" type="xs:string" minOccurs="0" />
+                            <xs:element name="OCCUPATI" type="xs:string" minOccurs="0" />
+                            <xs:element name="NATIONCO" type="xs:string" minOccurs="0" />
+                            <xs:element name="DISRICT" type="xs:string" minOccurs="0" />
+                            <xs:element name="WHCD" type="xs:int" minOccurs="0" />
+                            <xs:element name="HYZT" type="xs:string" minOccurs="0" />
+                            <xs:element name="TZYSSJ" type="xs:string" minOccurs="0" />
+                            <xs:element name="RYFS" type="xs:string" minOccurs="0" />
+                            <xs:element name="RYFS_QT" type="xs:string" minOccurs="0" />
+                            <xs:element name="PS" type="xs:string" minOccurs="0" />
+                            <xs:element name="PS_QT" type="xs:string" minOccurs="0" />
+                            <xs:element name="ZYRYZD" type="xs:string" minOccurs="0" />
+                            <xs:element name="FBJQ" type="xs:string" minOccurs="0" />
+                            <xs:element name="JWBS" type="xs:string" minOccurs="0" />
+                            <xs:element name="JWBS_QT" type="xs:string" minOccurs="0" />
+                            <xs:element name="GMS" type="xs:string" minOccurs="0" />
+                            <xs:element name="GMS_YW" type="xs:string" minOccurs="0" />
+                            <xs:element name="GMS_SW" type="xs:string" minOccurs="0" />
+                            <xs:element name="GMS_QT" type="xs:string" minOccurs="0" />
+                            <xs:element name="YS" type="xs:string" minOccurs="0" />
+                            <xs:element name="YS_QT" type="xs:string" minOccurs="0" />
+                            <xs:element name="SM" type="xs:string" minOccurs="0" />
+                            <xs:element name="SM_YW" type="xs:string" minOccurs="0" />
+                            <xs:element name="DB" type="xs:string" minOccurs="0" />
+                            <xs:element name="DB_ZK" type="xs:string" minOccurs="0" />
+                            <xs:element name="XB" type="xs:string" minOccurs="0" />
+                            <xs:element name="ZLNL" type="xs:string" minOccurs="0" />
+                            <xs:element name="ZTHD" type="xs:string" minOccurs="0" />
+                            <xs:element name="ZTHD_ZA" type="xs:string" minOccurs="0" />
+                            <xs:element name="ZTHD_TH" type="xs:string" minOccurs="0" />
+                            <xs:element name="DGQK" type="xs:string" minOccurs="0" />
+                            <xs:element name="DGQK_QT" type="xs:string" minOccurs="0" />
+                            <xs:element name="SMTZ_TW" type="xs:string" minOccurs="0" />
+                            <xs:element name="SMTZ_MB" type="xs:string" minOccurs="0" />
+                            <xs:element name="SMTZ_HX" type="xs:string" minOccurs="0" />
+                            <xs:element name="SMTZ_XY" type="xs:string" minOccurs="0" />
+                            <xs:element name="YSZT" type="xs:string" minOccurs="0" />
+                            <xs:element name="ST" type="xs:string" minOccurs="0" />
+                            <xs:element name="ST_QT" type="xs:string" minOccurs="0" />
+                            <xs:element name="SZ" type="xs:string" minOccurs="0" />
+                            <xs:element name="SZ_QT" type="xs:string" minOccurs="0" />
+                            <xs:element name="MX" type="xs:string" minOccurs="0" />
+                            <xs:element name="MX_QT" type="xs:string" minOccurs="0" />
+                            <xs:element name="PFWZX" type="xs:string" minOccurs="0" />
+                            <xs:element name="PFWZX_QT" type="xs:string" minOccurs="0" />
+                            <xs:element name="ZY" type="xs:string" minOccurs="0" />
+                            <xs:element name="ZY_QT" type="xs:string" minOccurs="0" />
+                            <xs:element name="YY" type="xs:string" minOccurs="0" />
+                            <xs:element name="YY_QT" type="xs:string" minOccurs="0" />
+                            <xs:element name="ZE" type="xs:string" minOccurs="0" />
+                            <xs:element name="ZE_QT" type="xs:string" minOccurs="0" />
+                            <xs:element name="YE" type="xs:string" minOccurs="0" />
+                            <xs:element name="YE_QT" type="xs:string" minOccurs="0" />
+                            <xs:element name="QX" type="xs:string" minOccurs="0" />
+                            <xs:element name="QX_QT" type="xs:string" minOccurs="0" />
+                            <xs:element name="ZYZT" type="xs:string" minOccurs="0" />
+                            <xs:element name="JSZT" type="xs:string" minOccurs="0" />
+                            <xs:element name="BZ" type="xs:string" minOccurs="0" />
+                            <xs:element name="PGHS" type="xs:string" minOccurs="0" />
+                            <xs:element name="PGSJ" type="xs:string" minOccurs="0" />
+                            <xs:element name="BOOK" type="xs:string" minOccurs="0" />
+                            <xs:element name="BOOK_DATE" type="xs:string" minOccurs="0" />
+                            <xs:element name="UPDATE" type="xs:string" minOccurs="0" />
+                            <xs:element name="UPDATE_DATE" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="tabpbb">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="组号" type="xs:string" minOccurs="0" />
+                            <xs:element name="姓名" type="xs:string" minOccurs="0" />
+                            <xs:element name="NAME1" type="xs:string" minOccurs="0" />
+                            <xs:element name="NAME2" type="xs:string" minOccurs="0" />
+                            <xs:element name="NAME3" type="xs:string" minOccurs="0" />
+                            <xs:element name="NAME4" type="xs:string" minOccurs="0" />
+                            <xs:element name="NAME5" type="xs:string" minOccurs="0" />
+                            <xs:element name="NAME6" type="xs:string" minOccurs="0" />
+                            <xs:element name="NAME7" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="tabPbgzl">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="组次" type="xs:string" minOccurs="0" />
+                            <xs:element name="姓名" type="xs:string" minOccurs="0" />
+                            <xs:element name="白班" type="xs:integer" minOccurs="0" />
+                            <xs:element name="中班" type="xs:integer" minOccurs="0" />
+                            <xs:element name="助中班" type="xs:integer" minOccurs="0" />
+                            <xs:element name="晚班" type="xs:integer" minOccurs="0" />
+                            <xs:element name="助晚班" type="xs:integer" minOccurs="0" />
+                            <xs:element name="夜班" type="xs:integer" minOccurs="0" />
+                            <xs:element name="医嘱班" type="xs:integer" minOccurs="0" />
+                            <xs:element name="公休假" type="xs:integer" minOccurs="0" />
+                            <xs:element name="产假" type="xs:integer" minOccurs="0" />
+                            <xs:element name="计生假" type="xs:integer" minOccurs="0" />
+                            <xs:element name="婚假" type="xs:integer" minOccurs="0" />
+                            <xs:element name="丧假" type="xs:integer" minOccurs="0" />
+                            <xs:element name="休" type="xs:integer" minOccurs="0" />
+                            <xs:element name="病休" type="xs:integer" minOccurs="0" />
+                            <xs:element name="探亲" type="xs:integer" minOccurs="0" />
+                            <xs:element name="事假" type="xs:integer" minOccurs="0" />
+                            <xs:element name="上午休" type="xs:integer" minOccurs="0" />
+                            <xs:element name="下午休" type="xs:integer" minOccurs="0" />
+                            <xs:element name="补休" type="xs:integer" minOccurs="0" />
+                            <xs:element name="导乐" type="xs:integer" minOccurs="0" />
+                            <xs:element name="甲组" type="xs:integer" minOccurs="0" />
+                            <xs:element name="乙组" type="xs:integer" minOccurs="0" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="tabJydprt">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="name" type="xs:string" minOccurs="0" />
+                            <xs:element name="sex_name" type="xs:string" minOccurs="0" />
+                            <xs:element name="age" type="xs:string" minOccurs="0" />
+                            <xs:element name="dept_name" type="xs:string" minOccurs="0" />
+                            <xs:element name="ward_name" type="xs:string" minOccurs="0" />
+                            <xs:element name="bed_no" type="xs:string" minOccurs="0" />
+                            <xs:element name="inpatient_no" type="xs:string" minOccurs="0" />
+                            <xs:element name="in_diagnosis" type="xs:string" minOccurs="0" />
+                            <xs:element name="date" type="xs:string" minOccurs="0" />
+                            <xs:element name="group_id" type="xs:string" minOccurs="0" />
+                            <xs:element name="order_context" type="xs:string" minOccurs="0" />
+                            <xs:element name="exec_dept" type="xs:string" minOccurs="0" />
+                            <xs:element name="doc_name" type="xs:string" minOccurs="0" />
+                            <xs:element name="ys_code" type="xs:string" minOccurs="0" />
+                            <xs:element name="order_date" type="xs:string" minOccurs="0" />
+                            <xs:element name="order_extension" type="xs:string" minOccurs="0" />
+                            <xs:element name="num" type="xs:string" minOccurs="0" />
+                            <xs:element name="fjsm" type="xs:string" minOccurs="0" />
+                            <xs:element name="order_id" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="MedYPMXD">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="床号" type="xs:string" minOccurs="0" />
+                            <xs:element name="住院号" type="xs:string" minOccurs="0" />
+                            <xs:element name="姓名" type="xs:string" minOccurs="0" />
+                            <xs:element name="日期" type="xs:string" minOccurs="0" />
+                            <xs:element name="编号" type="xs:string" minOccurs="0" />
+                            <xs:element name="名称" type="xs:string" minOccurs="0" />
+                            <xs:element name="规格" type="xs:string" minOccurs="0" />
+                            <xs:element name="数量" type="xs:double" minOccurs="0" />
+                            <xs:element name="单位" type="xs:string" minOccurs="0" />
+                            <xs:element name="单价" type="xs:double" minOccurs="0" />
+                            <xs:element name="金额" type="xs:double" minOccurs="0" />
+                            <xs:element name="麻毒否" type="xs:string" minOccurs="0" />
+                            <xs:element name="贵重否" type="xs:string" minOccurs="0" />
+                            <xs:element name="id" type="xs:string" minOccurs="0" />
+                            <xs:element name="baby_id" type="xs:string" minOccurs="0" />
+                            <xs:element name="选" type="xs:boolean" minOccurs="0" />
+                            <xs:element name="inpatient_id" type="xs:string" minOccurs="0" />
+                            <xs:element name="po_id" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="MedYPTLD">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="编号" type="xs:string" minOccurs="0" />
+                            <xs:element name="名称" type="xs:string" minOccurs="0" />
+                            <xs:element name="规格" type="xs:string" minOccurs="0" />
+                            <xs:element name="数量" type="xs:double" minOccurs="0" />
+                            <xs:element name="单位" type="xs:string" minOccurs="0" />
+                            <xs:element name="单价" type="xs:double" minOccurs="0" />
+                            <xs:element name="金额" type="xs:double" minOccurs="0" />
+                            <xs:element name="麻毒否" type="xs:string" minOccurs="0" />
+                            <xs:element name="贵重否" type="xs:string" minOccurs="0" />
+                            <xs:element name="发药科室" type="xs:string" minOccurs="0" />
+                            <xs:element name="领药科室" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="ZXD_SYK">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="id" type="xs:string" minOccurs="0" />
+                            <xs:element name="group_id" type="xs:string" minOccurs="0" />
+                            <xs:element name="姓名" type="xs:string" minOccurs="0" />
+                            <xs:element name="日期" type="xs:string" minOccurs="0" />
+                            <xs:element name="药名" type="xs:string" minOccurs="0" />
+                            <xs:element name="剂量" type="xs:string" minOccurs="0" />
+                            <xs:element name="组线" type="xs:string" minOccurs="0" />
+                            <xs:element name="用法" type="xs:string" minOccurs="0" />
+                            <xs:element name="频率" type="xs:string" minOccurs="0" />
+                            <xs:element name="备注" type="xs:string" minOccurs="0" />
+                            <xs:element name="bdate" type="xs:string" minOccurs="0" />
+                            <xs:element name="edate" type="xs:string" minOccurs="0" />
+                            <xs:element name="baby_id" type="xs:string" minOccurs="0" />
+                            <xs:element name="床号" type="xs:string" minOccurs="0" />
+                            <xs:element name="首次" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="BRFeeMXD">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="床号" type="xs:string" minOccurs="0" />
+                            <xs:element name="住院号" type="xs:string" minOccurs="0" />
+                            <xs:element name="姓名" type="xs:string" minOccurs="0" />
+                            <xs:element name="病人科室" type="xs:string" minOccurs="0" />
+                            <xs:element name="类别代码" type="xs:string" minOccurs="0" />
+                            <xs:element name="类别名称" type="xs:string" minOccurs="0" />
+                            <xs:element name="项目编号" type="xs:string" minOccurs="0" />
+                            <xs:element name="项目名称" type="xs:string" minOccurs="0" />
+                            <xs:element name="规格" type="xs:string" minOccurs="0" />
+                            <xs:element name="单位" type="xs:string" minOccurs="0" />
+                            <xs:element name="单价" type="xs:double" minOccurs="0" />
+                            <xs:element name="数量" type="xs:double" minOccurs="0" />
+                            <xs:element name="金额" type="xs:double" minOccurs="0" />
+                            <xs:element name="执行科室" type="xs:string" minOccurs="0" />
+                            <xs:element name="记账日期" type="xs:string" minOccurs="0" />
+                            <xs:element name="记账人" type="xs:string" minOccurs="0" />
+                            <xs:element name="记账类型" type="xs:string" minOccurs="0" />
+                            <xs:element name="baby_id" type="xs:string" minOccurs="0" />
+                            <xs:element name="id" type="xs:string" minOccurs="0" />
+                            <xs:element name="未结算预交款" type="xs:string" minOccurs="0" />
+                            <xs:element name="未结算总费用" type="xs:string" minOccurs="0" />
+                            <xs:element name="余额" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="BRFeeCKD">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="床号" type="xs:string" minOccurs="0" />
+                            <xs:element name="住院号" type="xs:string" minOccurs="0" />
+                            <xs:element name="姓名" type="xs:string" minOccurs="0" />
+                            <xs:element name="病室" type="xs:string" minOccurs="0" />
+                            <xs:element name="入院日期" type="xs:string" minOccurs="0" />
+                            <xs:element name="补交费用" type="xs:string" minOccurs="0" />
+                            <xs:element name="已预交" type="xs:string" minOccurs="0" />
+                            <xs:element name="总费用" type="xs:string" minOccurs="0" />
+                            <xs:element name="余额" type="xs:string" minOccurs="0" />
+                            <xs:element name="单位名称" type="xs:string" minOccurs="0" />
+                            <xs:element name="开户银行" type="xs:string" minOccurs="0" />
+                            <xs:element name="账号" type="xs:string" minOccurs="0" />
+                            <xs:element name="操作人" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="BRFeeHZD">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="科室名称" type="xs:string" minOccurs="0" />
+                            <xs:element name="床位费" type="xs:double" minOccurs="0" />
+                            <xs:element name="药品费" type="xs:double" minOccurs="0" />
+                            <xs:element name="检验费" type="xs:double" minOccurs="0" />
+                            <xs:element name="治疗费" type="xs:double" minOccurs="0" />
+                            <xs:element name="放射费" type="xs:double" minOccurs="0" />
+                            <xs:element name="输血费" type="xs:double" minOccurs="0" />
+                            <xs:element name="检查费" type="xs:double" minOccurs="0" />
+                            <xs:element name="放疗费" type="xs:double" minOccurs="0" />
+                            <xs:element name="手术费" type="xs:double" minOccurs="0" />
+                            <xs:element name="其他费" type="xs:double" minOccurs="0" />
+                            <xs:element name="挂号费" type="xs:double" minOccurs="0" />
+                            <xs:element name="诊查费" type="xs:double" minOccurs="0" />
+                            <xs:element name="护理费" type="xs:double" minOccurs="0" />
+                            <xs:element name="特殊材料费" type="xs:double" minOccurs="0" />
+                            <xs:element name="合计" type="xs:double" minOccurs="0" />
+                            <xs:element name="ID" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="EQUAPPLS">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="EQUID" type="xs:string" minOccurs="0" />
+                            <xs:element name="EQUNAME" type="xs:string" minOccurs="0" />
+                            <xs:element name="EQUDESC" type="xs:string" minOccurs="0" />
+                            <xs:element name="EQUUNIT" type="xs:string" minOccurs="0" />
+                            <xs:element name="EQUNUM" type="xs:decimal" minOccurs="0" />
+                            <xs:element name="EQUREMARK" type="xs:string" minOccurs="0" />
+                            <xs:element name="EQUPRICE" type="xs:decimal" minOccurs="0" />
+                            <xs:element name="EQUVALUES" type="xs:decimal" minOccurs="0" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="EQUAPPLY">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="SNO" type="xs:string" minOccurs="0" />
+                            <xs:element name="WARDID" type="xs:string" minOccurs="0" />
+                            <xs:element name="SROOM_ID" type="xs:integer" minOccurs="0" />
+                            <xs:element name="APP_OP" type="xs:string" minOccurs="0" />
+                            <xs:element name="APPLDATE" type="xs:date" minOccurs="0" />
+                            <xs:element name="CANCEL_DATE" type="xs:date" minOccurs="0" />
+                            <xs:element name="CANCEL_MAN" type="xs:string" minOccurs="0" />
+                            <xs:element name="EXE_DATE" type="xs:date" minOccurs="0" />
+                            <xs:element name="EXE_MAN" type="xs:string" minOccurs="0" />
+                            <xs:element name="APP_OPNAME" type="xs:string" minOccurs="0" />
+                            <xs:element name="SROOM_NAME" type="xs:string" minOccurs="0" />
+                            <xs:element name="CHECK_DATE" type="xs:date" minOccurs="0" />
+                            <xs:element name="CHECK_MAN" type="xs:string" minOccurs="0" />
+                            <xs:element name="STATUS" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="tabJbrMedprt">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="cur_dept_name" type="xs:string" minOccurs="0" />
+                            <xs:element name="bed_no" type="xs:string" minOccurs="0" />
+                            <xs:element name="name" type="xs:string" minOccurs="0" />
+                            <xs:element name="order_context" type="xs:string" minOccurs="0" />
+                            <xs:element name="s_gg" type="xs:string" minOccurs="0" />
+                            <xs:element name="num" type="xs:string" minOccurs="0" />
+                            <xs:element name="unit" type="xs:string" minOccurs="0" />
+                            <xs:element name="group_id" type="xs:string" minOccurs="0" />
+                            <xs:element name="order_id" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="tabWardGzrz">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="科别" type="xs:string" minOccurs="0" />
+                            <xs:element name="原有" type="xs:string" minOccurs="0" />
+                            <xs:element name="出院合计" type="xs:string" minOccurs="0" />
+                            <xs:element name="治愈" type="xs:string" minOccurs="0" />
+                            <xs:element name="好转" type="xs:string" minOccurs="0" />
+                            <xs:element name="未愈" type="xs:string" minOccurs="0" />
+                            <xs:element name="死亡" type="xs:string" minOccurs="0" />
+                            <xs:element name="转出" type="xs:string" minOccurs="0" />
+                            <xs:element name="入院" type="xs:string" minOccurs="0" />
+                            <xs:element name="转入" type="xs:string" minOccurs="0" />
+                            <xs:element name="现有" type="xs:string" minOccurs="0" />
+                            <xs:element name="手术" type="xs:string" minOccurs="0" />
+                            <xs:element name="分娩" type="xs:string" minOccurs="0" />
+                            <xs:element name="病危" type="xs:string" minOccurs="0" />
+                            <xs:element name="病重" type="xs:string" minOccurs="0" />
+                            <xs:element name="特护" type="xs:string" minOccurs="0" />
+                            <xs:element name="一级护理" type="xs:string" minOccurs="0" />
+                            <xs:element name="陪护" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="tabWardGzrzMx">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="项目" type="xs:string" minOccurs="0" />
+                            <xs:element name="住院号" type="xs:string" minOccurs="0" />
+                            <xs:element name="床号" type="xs:string" minOccurs="0" />
+                            <xs:element name="姓名" type="xs:string" minOccurs="0" />
+                            <xs:element name="诊断" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="EQUAPPLS1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="EQUID" type="xs:string" minOccurs="0" />
+                            <xs:element name="EQUNAME" type="xs:string" minOccurs="0" />
+                            <xs:element name="EQUDESC" type="xs:string" minOccurs="0" />
+                            <xs:element name="EQUUNIT" type="xs:string" minOccurs="0" />
+                            <xs:element name="EQUNUM" type="xs:decimal" minOccurs="0" />
+                            <xs:element name="EQUREMARK" type="xs:string" minOccurs="0" />
+                            <xs:element name="EQUPRICE" type="xs:decimal" minOccurs="0" />
+                            <xs:element name="EQUVALUES" type="xs:decimal" minOccurs="0" />
+                            <xs:element name="ROWNO" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="tabBqkssr">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="ward_id" type="xs:string" minOccurs="0" />
+                            <xs:element name="病区" type="xs:string" minOccurs="0" />
+                            <xs:element name="dept_id" type="xs:string" minOccurs="0" />
+                            <xs:element name="科室" type="xs:string" minOccurs="0" />
+                            <xs:element name="住院号" type="xs:string" minOccurs="0" />
+                            <xs:element name="姓名" type="xs:string" minOccurs="0" />
+                            <xs:element name="inpatient_id" type="xs:string" minOccurs="0" />
+                            <xs:element name="合计" type="xs:decimal" minOccurs="0" />
+                            <xs:element name="床位费" type="xs:decimal" minOccurs="0" />
+                            <xs:element name="药品费" type="xs:decimal" minOccurs="0" />
+                            <xs:element name="检验费" type="xs:decimal" minOccurs="0" />
+                            <xs:element name="治疗费" type="xs:decimal" minOccurs="0" />
+                            <xs:element name="放射费" type="xs:decimal" minOccurs="0" />
+                            <xs:element name="输血费" type="xs:decimal" minOccurs="0" />
+                            <xs:element name="检查费" type="xs:decimal" minOccurs="0" />
+                            <xs:element name="放疗费" type="xs:decimal" minOccurs="0" />
+                            <xs:element name="手术费" type="xs:decimal" minOccurs="0" />
+                            <xs:element name="其它费" type="xs:decimal" minOccurs="0" />
+                            <xs:element name="挂号费" type="xs:decimal" minOccurs="0" />
+                            <xs:element name="诊查费" type="xs:decimal" minOccurs="0" />
+                            <xs:element name="护理费" type="xs:decimal" minOccurs="0" />
+                            <xs:element name="特殊材料费" type="xs:decimal" minOccurs="0" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

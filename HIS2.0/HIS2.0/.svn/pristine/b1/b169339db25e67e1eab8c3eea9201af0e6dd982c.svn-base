@@ -1,0 +1,65 @@
+﻿<message msgType="response" msgId="String" timestampCreated="2014-5-7 16:10:12" version="String">
+  <response>
+    <code>0</code>
+    <description>成功</description>
+  </response>
+  <body bodyId="1">
+    <inhospPatient>
+      <birthday>1981-1-5 00:00:00.00000</birthday>
+      <kind>自费</kind>
+      <native></native>
+      <paper>
+        <paperNo>420113197901071517</paperNo>
+        <paperType>1</paperType>
+      </paper>
+      <patientId>200109100702</patientId>
+      <patientName>鲁卫刚</patientName>
+      <sex>男 </sex>
+    </inhospPatient>
+    <examReqInfoType>
+      <crtDateTime>2014-5-7 16:11:27.00000</crtDateTime>
+      <examReqId>209200000019</examReqId>
+      <id>200109100702</id>
+      <item>
+        <itemId>1254</itemId>
+        <itemName>阿托品片</itemName>
+        <type>P</type>
+        <quantity>1</quantity>
+        <gg>(0.3mg)</gg>
+        <dw>片</dw>
+        <ypjl>0.300mg</ypjl>
+        <bzjl>0.300mg</bzjl>
+        <pc></pc>
+        <gyfs>po</gyfs>
+        <jxfl>片剂</jxfl>
+        <index>02220000002161-1</index>
+        <requested>011405071557310000000000000000000001</requested>
+        <doctorid>000222</doctorid>
+        <doctorname>何春枝</doctorname>
+        <deptid>000009</deptid>
+        <deptname>内科普通门诊</deptname>
+        <zd>1</zd>
+      </item>
+      <item>
+        <itemId>3497</itemId>
+        <itemName>戊酸雌二醇片</itemName>
+        <type>P</type>
+        <quantity>1</quantity>
+        <gg>(1mg)/片*21</gg>
+        <dw>盒</dw>
+        <ypjl>1.000mg</ypjl>
+        <bzjl>1.000mg</bzjl>
+        <pc></pc>
+        <gyfs>po</gyfs>
+        <jxfl>片剂</jxfl>
+        <index>02220000002163-3</index>
+        <requested>011405071610130000000000000000000001</requested>
+        <doctorid>000222</doctorid>
+        <doctorname>何春枝</doctorname>
+        <deptid>000009</deptid>
+        <deptname>内科普通门诊</deptname>
+        <zd>1</zd>
+      </item>
+    </examReqInfoType>
+  </body>
+</message>

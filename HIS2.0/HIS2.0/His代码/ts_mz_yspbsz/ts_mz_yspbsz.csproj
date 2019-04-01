@@ -1,0 +1,181 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{52A4C02D-7F6F-4074-9A78-C10A0E555163}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ts_mz_yspbsz</RootNamespace>
+    <AssemblyName>ts_mz_yspbsz</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Output\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\DLL引用\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Excel, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Documents and Settings\Administrator\桌面\new_lgyb\Trasen\bin\Debug\Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="MagicLibrary, Version=1.7.0.0, Culture=neutral, PublicKeyToken=3a6eb82f876a49bc" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TrasenClasses, Version=11.2.15.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Documents and Settings\Administrator\桌面\new_lgyb\Trasen\bin\Debug\TrasenClasses.dll</HintPath>
+    </Reference>
+    <Reference Include="TrasenFrame, Version=1.0.1.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Documents and Settings\Administrator\桌面\new_lgyb\Trasen\bin\Debug\TrasenFrame.dll</HintPath>
+    </Reference>
+    <Reference Include="ts_HospData_Share, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Trasen\bin\Debug\ts_HospData_Share.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Frm_yspb_flsz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_yspb_flsz.Designer.cs">
+      <DependentUpon>Frm_yspb_flsz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_yspb_ksflmx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_yspb_ksflmx.Designer.cs">
+      <DependentUpon>Frm_yspb_ksflmx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstanceForm.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Frm_yspb_flsz.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_yspb_flsz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_yspb_ksflmx.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_yspb_ksflmx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001_01.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001_02.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001_03.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001_04.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001_05.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001_06.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001_09.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001_13.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001_14.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001_15.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001_29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001_30.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001_36.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001_37.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001_38.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001_39.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001_41.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001_42.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001_47.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001_48.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001_49.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001_50.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001_53.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001_60.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001_61.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001_601.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

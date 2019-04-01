@@ -1,0 +1,8 @@
+E:\HIS2.0\Debug\ts_yf_bsby.dll
+E:\HIS2.0\Debug\ts_yf_bsby.pdb
+E:\HIS2.0\His代码\药房报损报溢\obj\Debug\ResolveAssemblyReference.cache
+E:\HIS2.0\His代码\药房报损报溢\obj\Debug\ts_yf_bsby.Frmtitle.resources
+E:\HIS2.0\His代码\药房报损报溢\obj\Debug\ts_yf_bsby.Frmypbsby.resources
+E:\HIS2.0\His代码\药房报损报溢\obj\Debug\药房报损报溢.csproj.GenerateResource.Cache
+E:\HIS2.0\His代码\药房报损报溢\obj\Debug\ts_yf_bsby.dll
+E:\HIS2.0\His代码\药房报损报溢\obj\Debug\ts_yf_bsby.pdb

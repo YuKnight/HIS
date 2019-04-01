@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <configSections>
+    </configSections>
+    <connectionStrings>
+        <add name="ts_mz_kgl.Properties.Settings.trasen_mzConnectionString"
+            connectionString="Data Source=WXZ\WXZ2005;Initial Catalog=trasen_mz;User ID=sa;Password=1234"
+            providerName="System.Data.SqlClient" />
+    </connectionStrings>
+</configuration>

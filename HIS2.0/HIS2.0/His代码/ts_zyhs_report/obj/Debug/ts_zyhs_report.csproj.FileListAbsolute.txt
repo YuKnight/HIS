@@ -1,0 +1,7 @@
+E:\HIS2.0\Debug\ts_zyhs_report.dll
+E:\HIS2.0\Debug\ts_zyhs_report.pdb
+E:\HIS2.0\His代码\ts_zyhs_report\obj\Debug\ts_zyhs_report.csprojResolveAssemblyReference.cache
+E:\HIS2.0\His代码\ts_zyhs_report\obj\Debug\ts_zyhs_report.csproj.CoreCompileInputs.cache
+E:\HIS2.0\His代码\ts_zyhs_report\obj\Debug\ts_zyhs_report.csproj.CopyComplete
+E:\HIS2.0\His代码\ts_zyhs_report\obj\Debug\ts_zyhs_report.dll
+E:\HIS2.0\His代码\ts_zyhs_report\obj\Debug\ts_zyhs_report.pdb

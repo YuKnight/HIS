@@ -1,0 +1,209 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7ACCD8F0-F5A0-4A19-BF99-47362AF4077B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ts_yp_kjbb</RootNamespace>
+    <AssemblyName>ts_yp_kjbb</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MagicLibrary, Version=1.7.0.0, Culture=neutral, PublicKeyToken=3a6eb82f876a49bc" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Trasen.Controls, Version=1.0.0.64, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="TrasenClasses, Version=5.1.5280.20564, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="TrasenFrame, Version=5.1.5282.30695, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ts_YpClass, Version=1.0.5302.15626, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Condiction\IParameterEx.cs" />
+    <Compile Include="Condiction\ISelectionItemValidate.cs" />
+    <Compile Include="Condiction\UCCondictionA.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Condiction\UCCondictionA.Designer.cs">
+      <DependentUpon>UCCondictionA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Condiction\UCCondictionB.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Condiction\UCCondictionB.Designer.cs">
+      <DependentUpon>UCCondictionB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Condiction\UCCondictionC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Condiction\UCCondictionC.Designer.cs">
+      <DependentUpon>UCCondictionC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Condiction\UCCondictionKS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Condiction\UCCondictionKS.Designer.cs">
+      <DependentUpon>UCCondictionKS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Condiction\UCCondictionYP.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Condiction\UCCondictionYP.Designer.cs">
+      <DependentUpon>UCCondictionYP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReportDesigner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportDesigner.Designer.cs">
+      <DependentUpon>FrmReportDesigner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReportFrame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportFrame.Designer.cs">
+      <DependentUpon>FrmReportFrame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstanceForm.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Condiction\UCCondictionA.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCCondictionA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Condiction\UCCondictionB.resx">
+      <DependentUpon>UCCondictionB.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Condiction\UCCondictionC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCCondictionC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Condiction\UCCondictionKS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCCondictionKS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Condiction\UCCondictionYP.resx">
+      <DependentUpon>UCCondictionYP.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportDesigner.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmReportDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportFrame.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmReportFrame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCReport.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Reports.cs" />
+    <Compile Include="UCReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCReport.Designer.cs">
+      <DependentUpon>UCReport.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxgrdesLib">
+      <Guid>{0CDAC26E-8F92-47EE-9E2E-844DBF78703A}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AxgrproLib">
+      <Guid>{715CBE0F-4F50-46EF-B009-CACED3A5C868}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="grdesLib">
+      <Guid>{0CDAC26E-8F92-47EE-9E2E-844DBF78703A}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="grproLib">
+      <Guid>{715CBE0F-4F50-46EF-B009-CACED3A5C868}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

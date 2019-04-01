@@ -1,0 +1,10 @@
+E:\HIS2.0\Debug\ts_yk_cgrk.dll
+E:\HIS2.0\Debug\ts_yk_cgrk.pdb
+E:\HIS2.0\His代码\药品采购入库\obj\Debug\ResolveAssemblyReference.cache
+E:\HIS2.0\His代码\药品采购入库\obj\Debug\ts_yk_cgrk.Frmtitle.resources
+E:\HIS2.0\His代码\药品采购入库\obj\Debug\ts_yk_cgrk.Frmtitle_h.resources
+E:\HIS2.0\His代码\药品采购入库\obj\Debug\ts_yk_cgrk.Frmyprk.resources
+E:\HIS2.0\His代码\药品采购入库\obj\Debug\ts_yk_cgrk.Frmyprk_h.resources
+E:\HIS2.0\His代码\药品采购入库\obj\Debug\药品采购入库.csproj.GenerateResource.Cache
+E:\HIS2.0\His代码\药品采购入库\obj\Debug\ts_yk_cgrk.dll
+E:\HIS2.0\His代码\药品采购入库\obj\Debug\ts_yk_cgrk.pdb

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BarcodeSet>
+  <Type_Txm>Code 128</Type_Txm>
+  <Top_Txm>5</Top_Txm>
+  <Left_Txm>10</Left_Txm>
+  <Width_Txm>1</Width_Txm>
+  <Height_Txm>30</Height_Txm>
+  <Width_Print>190</Width_Print>
+  <Height_Print>114</Height_Print>
+  <BackColor_Txm>White</BackColor_Txm>
+  <ForeColor_Txm>Black</ForeColor_Txm>
+  <Print_MachName></Print_MachName>
+</BarcodeSet>

@@ -1,0 +1,8 @@
+E:\HIS2.0\Debug\ts_yf_ptrk.dll
+E:\HIS2.0\Debug\ts_yf_ptrk.pdb
+E:\HIS2.0\His代码\药房普通入库\obj\Debug\ResolveAssemblyReference.cache
+E:\HIS2.0\His代码\药房普通入库\obj\Debug\ts_yf_ptrk.Frmtitle.resources
+E:\HIS2.0\His代码\药房普通入库\obj\Debug\ts_yf_ptrk.Frmypptrk.resources
+E:\HIS2.0\His代码\药房普通入库\obj\Debug\药房普通入库.csproj.GenerateResource.Cache
+E:\HIS2.0\His代码\药房普通入库\obj\Debug\ts_yf_ptrk.dll
+E:\HIS2.0\His代码\药房普通入库\obj\Debug\ts_yf_ptrk.pdb

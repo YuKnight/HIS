@@ -1,0 +1,4 @@
+E:\HIS2.0\His代码\门诊退药\obj\Debug\ResolveAssemblyReference.cache
+E:\HIS2.0\His代码\门诊退药\obj\Debug\ts_yf_mzty.obj.Debug.ts_yf_mzty.Frmmzty.resources
+E:\HIS2.0\His代码\门诊退药\obj\Debug\ts_yf_mzty.obj.Debug.ts_yf_mzty.FrmSel.resources
+E:\HIS2.0\His代码\门诊退药\obj\Debug\ts_yf_mzty.obj.Debug.ts_yf_mzty.Frmtyyy.resources

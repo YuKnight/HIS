@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xph" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="xm" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="result" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pjdate" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetInfoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetInfoHttpGetIn">
+    <wsdl:part name="xph" type="s:string" />
+    <wsdl:part name="xm" type="s:string" />
+    <wsdl:part name="result" type="s:string" />
+    <wsdl:part name="pjdate" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetInfoHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetInfoHttpPostIn">
+    <wsdl:part name="xph" type="s:string" />
+    <wsdl:part name="xm" type="s:string" />
+    <wsdl:part name="result" type="s:string" />
+    <wsdl:part name="pjdate" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetInfoHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="WebPjqSoap">
+    <wsdl:operation name="GetInfo">
+      <wsdl:input message="tns:GetInfoSoapIn" />
+      <wsdl:output message="tns:GetInfoSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="WebPjqHttpGet">
+    <wsdl:operation name="GetInfo">
+      <wsdl:input message="tns:GetInfoHttpGetIn" />
+      <wsdl:output message="tns:GetInfoHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="WebPjqHttpPost">
+    <wsdl:operation name="GetInfo">
+      <wsdl:input message="tns:GetInfoHttpPostIn" />
+      <wsdl:output message="tns:GetInfoHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebPjqSoap" type="tns:WebPjqSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetInfo">
+      <soap:operation soapAction="http://tempuri.org/GetInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebPjqSoap12" type="tns:WebPjqSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetInfo">
+      <soap12:operation soapAction="http://tempuri.org/GetInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebPjqHttpGet" type="tns:WebPjqHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="GetInfo">
+      <http:operation location="/GetInfo" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebPjqHttpPost" type="tns:WebPjqHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="GetInfo">
+      <http:operation location="/GetInfo" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebPjq">
+    <wsdl:port name="WebPjqSoap" binding="tns:WebPjqSoap">
+      <soap:address location="http://192.168.0.37:8088/webmzyystatic/WebPjq.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebPjqSoap12" binding="tns:WebPjqSoap12">
+      <soap12:address location="http://192.168.0.37:8088/webmzyystatic/WebPjq.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebPjqHttpGet" binding="tns:WebPjqHttpGet">
+      <http:address location="http://192.168.0.37:8088/webmzyystatic/WebPjq.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebPjqHttpPost" binding="tns:WebPjqHttpPost">
+      <http:address location="http://192.168.0.37:8088/webmzyystatic/WebPjq.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

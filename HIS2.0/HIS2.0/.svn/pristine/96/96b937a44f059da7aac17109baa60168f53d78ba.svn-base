@@ -1,0 +1,38 @@
+[SYSTEM_SETUP]
+LogDealLevel=LOG_DEBUG
+
+
+[HTTP_SERVER]
+#2004-12-28，eapagent.dll升级，支持多应用。
+#如果要求eapagent.dll向不同的Web应用发请求，需要首先配置ServerList，应用名称之间用"|"分隔。
+#default是一个特殊的应用名称，如果要求代理向默认的Web应用发请求，可以在SendRequest()方法中不传入任何参数
+#——即新版代理程序继续支持多的调用方式。但如果向其它的Web应用发请求，需要调用新的接口：
+#EapAgent_SendRequestWithAppName(const char* webAppName)
+#在无锡医保中，这个顺序不可以颠倒，default是中心服务器，his是前置机服务器配置
+ServerList=default|his
+
+default.Host=10.139.3.208
+default.Method=0
+default.Port=7001
+default.WebAppName=eapdomain
+
+his.Host=10.75.2.91
+his.Method=0
+his.Port=7014
+his.WebAppName=eapdomain
+
+#该值与eapagent无关，为无锡所使用。
+his.OnlinePort=10015
+#单位毫秒
+his.OnlineTime=100
+
+#本地数据文件同步配置参数，其中
+#DataFile    的扩展名可以不是.mdb
+#Password    如果要设置是需要加密处理的
+#Interval    轮循间隔时间的单位是‘秒’，建议设置的时间>=60，否则会对服务端带来压力
+[LocalDB]
+DataFile=localdb.mdb
+Password=
+Interval=3
+
+[END]

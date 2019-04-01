@@ -1,0 +1,9 @@
+SCC = This is a Source Code Control file
+
+[MainFrame.sln]
+SCC_Aux_Path = "D:\TrasenVSS"
+SCC_Project_Name = "$/长沙市中医院/系统框架/代码/TraSenFrame", PKJBAAAA
+
+[TrasenFrame.csproj]
+SCC_Aux_Path = "D:\TrasenVSS"
+SCC_Project_Name = "$/长沙市中医院/系统框架/代码/TraSenFrame", PKJBAAAA

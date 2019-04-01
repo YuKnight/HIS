@@ -1,0 +1,13 @@
+SCC = This is a Source Code Control file
+
+[Xc_zyys_public.csproj]
+SCC_Aux_Path = "\\192.168.3.71\sryvss\"
+SCC_Project_Name = "$/省人医/代码/住院医生站/100000公共模块/Xc_zyys_dbquery", GQXBAAAA
+
+[Ts_zyys_public.csproj]
+SCC_Aux_Path = "D:\TrasenVSS"
+SCC_Project_Name = "$/长沙市中医院/住院医生站/公共模块/Ts_zyys_dbquery", HYJAAAAA
+
+[Ts_zyys_public.sln]
+SCC_Aux_Path = "D:\TrasenVSS"
+SCC_Project_Name = "$/长沙市中医院/住院医生站/公共模块/Ts_zyys_dbquery", HYJAAAAA

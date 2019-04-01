@@ -1,0 +1,554 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4626829C-A865-4BFD-85A7-8E952203813C}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>TrasenFrame</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>TrasenFrame</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\..\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\output\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\CrystalDecisions.ReportSource\10.2.3600.0__692fbea5521e1304\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="MagicLibrary, Version=1.7.0.0, Culture=neutral, PublicKeyToken=3a6eb82f876a49bc">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\output\MagicLibrary.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Management">
+      <Name>System.Management</Name>
+    </Reference>
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="Trasen.Editor, Version=1.0.4619.19675, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\output\Trasen.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ts_HospData_Share, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\output\ts_HospData_Share.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UtilityLibrary, Version=1.1.2.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\output\UtilityLibrary.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\AppEnvironment.cs" />
+    <Compile Include="Classes\CheckListBoxItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\Constant.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\Department.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\Doctor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\Employee.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\Enum.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\FtpClient.cs" />
+    <Compile Include="Classes\IDllInformation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\IInnerCommunicate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\ISet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\IStdObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\MessageInfo.cs" />
+    <Compile Include="Classes\Nurse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\PaperSizeGetter.cs" />
+    <Compile Include="Classes\PrinterManager.cs" />
+    <Compile Include="Classes\ReportPaper.cs" />
+    <Compile Include="Classes\SendMessage\FrmInform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Classes\SendMessage\FrmMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Classes\SendMessage\SendMessageClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\SendMessage\upForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Classes\SetPrintPaper.cs">
+    </Compile>
+    <Compile Include="Classes\Struct.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\SystemCfg.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\SystemInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\SystemLog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\TsSet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\User.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\WorkStaticFun.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\子系统消息处理\FrmTip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Classes\子系统消息处理\FrmTip.Designer.cs">
+      <DependentUpon>FrmTip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\子系统消息处理\IMessageReader.cs" />
+    <Compile Include="Classes\子系统消息处理\Implement\LISMessageReader.cs" />
+    <Compile Include="Classes\子系统消息处理\MessageStruct.cs" />
+    <Compile Include="Classes\子系统消息处理\SubSystemMessageProcessor.cs" />
+    <Compile Include="Forms\DlgInputBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DlgPasswd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmAddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmCheckCurrentUserPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmCheckCurrentUserPassword.Designer.cs">
+      <DependentUpon>FrmCheckCurrentUserPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmDownloadOption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmDownloadOption.Designer.cs">
+      <DependentUpon>FrmDownloadOption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmFileUpLoad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frmflash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmGroupAccess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\报表打印机输出\FrmSelectTarget.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\报表打印机输出\FrmSelectTarget.Designer.cs">
+      <DependentUpon>FrmSelectTarget.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\报表打印机输出\FrmLocalReportPaperConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\报表打印机输出\FrmLocalReportPaperConfig.Designer.cs">
+      <DependentUpon>FrmLocalReportPaperConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmLockScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmLockScreen.Designer.cs">
+      <DependentUpon>FrmLockScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmLockTimeSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmLockTimeSet.Designer.cs">
+      <DependentUpon>FrmLockTimeSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmMessageReleasor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmMessageReleasor.Designer.cs">
+      <DependentUpon>FrmMessageReleasor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmModelSave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmMdiMain.cs">
+    </Compile>
+    <Compile Include="Forms\FrmMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmMessageSender.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmMessageSender.Designer.cs">
+      <DependentUpon>FrmMessageSender.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmParaSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmPrinterSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmPrinterSetting.Designer.cs">
+      <DependentUpon>FrmPrinterSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmProgressBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmProgressBar.Designer.cs">
+      <DependentUpon>FrmProgressBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmSelectCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmSelectCard.Designer.cs">
+      <DependentUpon>FrmSelectCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmSelectConnect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmSelectConnect.Designer.cs">
+      <DependentUpon>FrmSelectConnect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmSelectDept.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmSelectSys.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmShowcard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmTxtMsg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmTxtMsg.Designer.cs">
+      <DependentUpon>FrmTxtMsg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Temp.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Temp.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\UcReportView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UcReportView.Designer.cs">
+      <DependentUpon>UcReportView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmReportView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmReportView.Designer.cs">
+      <DependentUpon>FrmReportView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Classes\SendMessage\FrmInform.resx">
+      <DependentUpon>FrmInform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Classes\SendMessage\FrmMessage.resx">
+      <DependentUpon>FrmMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Classes\SendMessage\upForm.resx">
+      <DependentUpon>upForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Background\ts001.JPG">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Background\ts002.JPG">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Background\ts003.JPG">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Background\ts004.JPG">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Background\ts005.JPG">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Background\ts006.JPG">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Background\ts007.JPG">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DlgInputBox.resx">
+      <DependentUpon>DlgInputBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DlgPasswd.resx">
+      <DependentUpon>DlgPasswd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmAddUser.resx">
+      <DependentUpon>FrmAddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmFileUpLoad.resx">
+      <DependentUpon>FrmFileUpLoad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frmflash.resx">
+      <DependentUpon>Frmflash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmGroupAccess.resx">
+      <DependentUpon>FrmGroupAccess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmModelSave.resx">
+      <DependentUpon>FrmModelSave.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmMessage.resx">
+      <DependentUpon>FrmMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmMessageBox.resx">
+      <DependentUpon>FrmMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmMessageSender.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmMessageSender.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmParaSetting.resx">
+      <DependentUpon>FrmParaSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmSelectCard.resx">
+      <DependentUpon>FrmSelectCard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmSelectConnect.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmSelectConnect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmSelectDept.resx">
+      <DependentUpon>FrmSelectDept.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmSelectSys.resx">
+      <DependentUpon>FrmSelectSys.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmShowcard.resx">
+      <DependentUpon>FrmShowcard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmTxtMsg.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmTxtMsg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Classes\子系统消息处理\FrmTip.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmTip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmCheckCurrentUserPassword.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmCheckCurrentUserPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmLockScreen.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmLockScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmLockTimeSet.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmLockTimeSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmMessageReleasor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmMessageReleasor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmPrinterSetting.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmPrinterSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmProgressBar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmProgressBar.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AppGray_dr.ico" />
+    <None Include="Resources\App_dr.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\Background\ehis.JPG">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Background\ts008.JPG" />
+    <EmbeddedResource Include="Forms\FrmDownloadOption.resx">
+      <DependentUpon>FrmDownloadOption.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmReportView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmReportView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UcReportView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UcReportView.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\App.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AppGray.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\Background\ts009.JPG" />
+    <EmbeddedResource Include="Forms\报表打印机输出\FrmLocalReportPaperConfig.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmLocalReportPaperConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Temp.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Temp.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\报表打印机输出\FrmSelectTarget.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmSelectTarget.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TraSenClsLib\TrasenClasses.csproj">
+      <Project>{F3708EC3-1FB2-4123-A6BB-F36ADBC8A153}</Project>
+      <Name>TrasenClasses</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AppGray_OnKiy.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\App_OnKiy.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\Background\OnKiy.JPG" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

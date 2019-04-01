@@ -1,0 +1,9 @@
+E:\HIS2.0\Debug\ts_yk_fkqr.dll
+E:\HIS2.0\Debug\ts_yk_fkqr.pdb
+E:\HIS2.0\His代码\药库付款票据确认\obj\Debug\ResolveAssemblyReference.cache
+E:\HIS2.0\His代码\药库付款票据确认\obj\Debug\ts_yk_fkqr.Frmyedj.resources
+E:\HIS2.0\His代码\药库付款票据确认\obj\Debug\ts_yk_fkqr.Frmyfkpz.resources
+E:\HIS2.0\His代码\药库付款票据确认\obj\Debug\ts_yk_fkqr.Frmyedj_mx.resources
+E:\HIS2.0\His代码\药库付款票据确认\obj\Debug\药库付款票据确认.csproj.GenerateResource.Cache
+E:\HIS2.0\His代码\药库付款票据确认\obj\Debug\ts_yk_fkqr.dll
+E:\HIS2.0\His代码\药库付款票据确认\obj\Debug\ts_yk_fkqr.pdb

@@ -1,0 +1,14 @@
+E:\HIS2.0\Debug\Trasen.exe
+E:\HIS2.0\Debug\Trasen.pdb
+E:\HIS2.0\Trasen\obj\Debug\ResolveAssemblyReference.cache
+E:\HIS2.0\Trasen\obj\Debug\Trasen.Properties.Resources.resources
+E:\HIS2.0\Trasen\obj\Debug\Trasen.csproj.GenerateResource.Cache
+E:\HIS2.0\Trasen\obj\Debug\Trasen.exe
+E:\HIS2.0\Trasen\obj\Debug\Trasen.pdb
+E:\HIS2.0\Trasen\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\HIS2.0\Trasen\obj\x86\Debug\Trasen.Properties.Resources.resources
+E:\HIS2.0\Trasen\obj\x86\Debug\Trasen.csproj.GenerateResource.Cache
+E:\HIS2.0\Trasen\bin\x86\Debug\Trasen.exe
+E:\HIS2.0\Trasen\bin\x86\Debug\Trasen.pdb
+E:\HIS2.0\Trasen\obj\x86\Debug\Trasen.exe
+E:\HIS2.0\Trasen\obj\x86\Debug\Trasen.pdb

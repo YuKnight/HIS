@@ -1,0 +1,301 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E38D0F3D-E0F7-4ECB-B17C-0EE4546FE97C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ts_yf_tjbb</RootNamespace>
+    <AssemblyName>ts_yf_tjbb</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Excel, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll引用\Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="myDataGrid, Version=1.0.1374.16240, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll引用\myDataGrid.DLL</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TrasenClasses, Version=2011.6.7.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll引用\TrasenClasses.dll</HintPath>
+    </Reference>
+    <Reference Include="TrasenFrame, Version=5.1.4814.16836, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll引用\TrasenFrame.dll</HintPath>
+    </Reference>
+    <Reference Include="ts_jc_log, Version=12.3.4805.31373, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll引用\ts_jc_log.dll</HintPath>
+    </Reference>
+    <Reference Include="ts_mz_class, Version=10.12.18.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll引用\ts_mz_class.dll</HintPath>
+    </Reference>
+    <Reference Include="ts_Yk_ReportView, Version=1.0.4542.23184, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll引用\ts_Yk_ReportView.dll</HintPath>
+    </Reference>
+    <Reference Include="ts_YpClass, Version=1.0.4882.26453, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll引用\ts_YpClass.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Frmcffy_jy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmcftj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmData.designer.cs">
+      <DependentUpon>frmData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmdjqktj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmgzyptj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmjhpm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmjxcqkb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmJyxsHZtj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmJyxsHZtj.Designer.cs">
+      <DependentUpon>FrmJyxsHZtj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmJzFycftj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmkcgdcbj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLYYP_KS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLYYP_KS.Designer.cs">
+      <DependentUpon>FrmLYYP_KS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmmzSfFycftj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmpyrgzl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmtldhz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmxqbj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmylfltj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmypxhtj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmysyytj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmzxyptj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmzzyptj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InstanceForm.cs" />
+    <Compile Include="Xspm_kss.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Xspm_kss.Designer.cs">
+      <DependentUpon>Xspm_kss.cs</DependentUpon>
+    </Compile>
+    <Compile Include="单据汇总统计\Frmbsbyhztj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="单据汇总统计\Frmckhztj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="单据汇总统计\Frmpdhztj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="单据汇总统计\Frmrkhztj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="单据汇总统计\Frmtjmx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App.ico" />
+    <Content Include="药房报表.csproj" />
+    <Content Include="药房报表.csproj.user" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="单据汇总统计\vssver2.scc" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Frmcffy_jy.resx">
+      <DependentUpon>Frmcffy_jy.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmcftj.resx">
+      <DependentUpon>Frmcftj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmData.resx">
+      <DependentUpon>frmData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmdjqktj.resx">
+      <DependentUpon>Frmdjqktj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmgzyptj.resx">
+      <DependentUpon>Frmgzyptj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmjhpm.resx">
+      <DependentUpon>Frmjhpm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmjxcqkb.resx">
+      <DependentUpon>Frmjxcqkb.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmJyxsHZtj.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmJyxsHZtj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmJzFycftj.resx">
+      <DependentUpon>FrmJzFycftj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmkcgdcbj.resx">
+      <DependentUpon>Frmkcgdcbj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLYYP_KS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmLYYP_KS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmmzSfFycftj.resx">
+      <DependentUpon>FrmmzSfFycftj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmpyrgzl.resx">
+      <DependentUpon>Frmpyrgzl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmtldhz.resx">
+      <DependentUpon>Frmtldhz.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmxqbj.resx">
+      <DependentUpon>Frmxqbj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmylfltj.resx">
+      <DependentUpon>Frmylfltj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmypxhtj.resx">
+      <DependentUpon>Frmypxhtj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmysyytj.resx">
+      <DependentUpon>Frmysyytj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmzxyptj.resx">
+      <DependentUpon>Frmzxyptj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmzzyptj.resx">
+      <DependentUpon>Frmzzyptj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Xspm_kss.resx">
+      <DependentUpon>Xspm_kss.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="单据汇总统计\Frmbsbyhztj.resx">
+      <DependentUpon>Frmbsbyhztj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="单据汇总统计\Frmckhztj.resx">
+      <DependentUpon>Frmckhztj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="单据汇总统计\Frmpdhztj.resx">
+      <DependentUpon>Frmpdhztj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="单据汇总统计\Frmrkhztj.resx">
+      <DependentUpon>Frmrkhztj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="单据汇总统计\Frmtjmx.resx">
+      <DependentUpon>Frmtjmx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\DataSources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

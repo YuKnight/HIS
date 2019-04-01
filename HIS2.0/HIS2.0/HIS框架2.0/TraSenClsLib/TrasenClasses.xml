@@ -1,0 +1,3959 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TrasenClasses</name>
+    </assembly>
+    <members>
+        <member name="T:TrasenClasses.DatabaseAccess.EntityException">
+            <summary>
+            EntityException 实体控制层异常。在实体层发生的异常都会以EntityException异常抛出。
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.EntityException.#ctor(System.String)">
+            <summary>
+            	生成一个PlException异常实例
+            </summary>
+            <param name="message">异常信息</param>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.EntityException.#ctor(System.String,TrasenClasses.GeneralClasses.ErrorTypes)">
+            <summary>
+            	生成一个PlException异常实例
+            </summary>
+            <param name="message">异常信息</param>
+            <param name="errorType">异常代码</param>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.EntityException.#ctor(System.Exception)">
+            <summary>
+            	生成一个PlException异常实例
+            </summary>
+            <param name="e">异常实例</param>
+        </member>
+        <member name="P:TrasenClasses.DatabaseAccess.EntityException.ErrorType">
+            <summary>
+            	返回当前PlExcetpion实例的错误代码(枚举类型)
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.DatabaseAccess.EntityException.ErrorSource">
+            <summary>
+            	返回引起抛出PlExcetpion的Exception。当从PlException无法得到足够的错误信息，
+            	可从这里获得引发异常的原始Exception。
+            </summary>
+        </member>
+        <member name="T:TrasenClasses.DatabaseAccess.IbmDb2">
+            <summary>
+            IbmDb2 的摘要说明。
+            </summary>
+        </member>
+        <member name="T:TrasenClasses.DatabaseAccess.OleDB">
+            <summary>
+            OleDB 的摘要说明。
+            </summary>
+        </member>
+        <member name="T:TrasenClasses.DatabaseAccess.RelationalDatabase">
+            <summary>
+            关系型数据库的摘要说明。
+            </summary>
+        </member>
+        <member name="F:TrasenClasses.DatabaseAccess.RelationalDatabase._vendor">
+            <summary>
+            数据库平台
+            </summary>
+        </member>
+        <member name="F:TrasenClasses.DatabaseAccess.RelationalDatabase.connection">
+            <summary>
+            数据库连接
+            </summary>
+        </member>
+        <member name="F:TrasenClasses.DatabaseAccess.RelationalDatabase.transaction">
+            <summary>
+            数据库事务
+            </summary>
+        </member>
+        <member name="F:TrasenClasses.DatabaseAccess.RelationalDatabase.isInTransaction">
+            <summary>
+            是否在事务中	
+            </summary>
+        </member>
+        <member name="F:TrasenClasses.DatabaseAccess.RelationalDatabase.cnnString">
+            <summary>
+            连接字符串
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.#ctor">
+            <summary>
+            关系型数据库访问对象
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.#ctor(System.String)">
+            <summary>
+            根据数据库名称构造关系型数据库访问对象
+            </summary>
+            <param name="name"></param>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.GetDatabase">
+            <summary>
+            根据设置返回一个派生类的数据库访问实例
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.GetCommand">
+            <summary>
+            获取IDbCommand对象
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.Open">
+            <summary>
+            打开数据库
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.Close">
+            <summary>
+            关闭数据库
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.Dispose">
+            <summary>
+            释放连接资源
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.BeginTransaction">
+            <summary>
+            启动一个事务
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.CommitTransaction">
+            <summary>
+            提交一个事务
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.RollbackTransaction">
+            <summary>
+            回滚一个事务
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.GetSqlValue(System.Object)">
+            <summary>
+            根据属性值得到正确的Sql值
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.GetStringAnd">
+            <summary>
+            获得AND字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.GetStringAscend">
+            <summary>
+            获得ASC字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.GetStringBetween">
+            <summary>
+            获得BETWEEN字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.GetStringDelete">
+            <summary>
+            获得DELETE字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.GetStringDescend">
+            <summary>
+            获得DESC字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.GetStringEuqalTo">
+            <summary>
+            获得=字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.GetStringForUpdate">
+            <summary>
+            获得FOR UPDATE字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.GetStringFrom">
+            <summary>
+            获得FROM字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.GetStringHaving">
+            <summary>
+            获得HAVING字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.GetStringIn">
+            <summary>
+            获得IN字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.GetStringInsertInto">
+            <summary>
+            获得INSERT INTO字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.GetStringIs">
+            <summary>
+            获得IS字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.GetStringLike">
+            <summary>
+            获得LIKE字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.GetStringNot">
+            <summary>
+            获得NOT字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.GetStringOr">
+            <summary>
+            获得OR字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.GetStringOrderBy">
+            <summary>
+            获得ORDER BY字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.GetStringSelect">
+            <summary>
+            获得SELECT字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.GetStringSet">
+            <summary>
+            获得SET字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.GetStringUpdate">
+            <summary>
+            获得UPDATE字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.GetStringValues">
+            <summary>
+            获得VALUES字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.GetStringWhere">
+            <summary>
+            获得WHERE字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.GetLeftJoin">
+            <summary>
+            获得LEFT JOIN字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.GetIdentityString">
+            <summary>
+            获取自增长ID的SQL语句
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.GetServerTimeString">
+            <summary>
+            获取服务器时间的SQL语句
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.GetCopy">
+            <summary>
+            返回一个RelationalDatabase 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.ErrorHandler(System.Exception,System.String@)">
+            <summary>
+            错误处理
+            </summary>
+            <param name="e">异常对象</param>
+            <param name="message">消息</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.Initialize(System.String)">
+            <summary>
+            数据库初始化
+            </summary>
+            <param name="connectionString"></param>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.CreateCommandBuilder(System.Data.IDataAdapter)">
+            <summary>
+            返回一个CommandBuilder
+            </summary>
+            <param name="_adapter">数据适配器</param>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.GetStringParameter(System.String)">
+            <summary>
+            获取参数的字符串形式
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.SqlValueType(System.Data.DbType)">
+            <summary>
+            返回数据类型
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.GetName(System.String)">
+            <summary>
+            返回加上引号的名称
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.InsertRecord(System.Data.IDbCommand,System.Object@)">
+            <summary>
+            执行插入一条记录 适用于有 自动生成标识的列
+            </summary>
+            <param name="cmd">IDbCommand对象</param>
+            <param name="identity">自动增长列在插入记录是产生的序号</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.InsertRecord(System.String,System.Object@)">
+            <summary>
+            执行插入一条记录 适用于有 自动生成标识的列
+            </summary>
+            <param name="commandtext">SQL语句字符串</param>
+            <param name="identity">自动增长列在插入记录是产生的序号</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.InsertRecord(System.String,System.Object@,System.Int32)">
+            <summary>
+            执行插入一条记录 适用于有 自动生成标识的列
+            </summary>
+            <param name="commandtext">SQL语句字符串</param>
+            <param name="identity">自动增长列在插入记录是产生的序号</param>
+            <param name="timeOut">超时限制</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.GetParameter(System.String,System.Object)">
+            <summary>
+            返回一个参数对象
+            </summary>
+            <param name="parameterName">参数名称</param>
+            <param name="values">参数值</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.GetParameter(System.String,System.Object,System.Int32)">
+            <summary>
+            返回一个参数对象
+            </summary>
+            <param name="parameterName">参数名称</param>
+            <param name="dataType">参数类型</param>
+            <param name="size">参数大小</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.GetParameter(System.String,System.Object,System.Int32,System.Object)">
+            <summary>
+            返回一个参数对象
+            </summary>
+            <param name="parameterName">参数名称</param>
+            <param name="dataType">参数类型</param>
+            <param name="size">参数大小</param>
+            <param name="values">参数值</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.GetParameter(System.String,System.Object,System.Data.ParameterDirection)">
+            <summary>
+            返回一个参数对象
+            </summary>
+            <param name="parameterName">参数名称</param>
+            <param name="values">参数值</param>
+            <param name="direction">参数传入传出方向</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.GetParameter(System.String,System.Object,System.Data.ParameterDirection,System.Int32)">
+            <summary>
+            返回一个参数对象
+            </summary>
+            <param name="parameterName">参数名称</param>
+            <param name="values">参数值</param>
+            <param name="direction">参数传入传出方向</param>
+            <param name="size">参数大小</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.GetAdapter(System.Data.IDbCommand)">
+            <summary>
+             返回一个IDataAdpter 
+            </summary>
+            <param name="cmd">IDbCommand对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.GetAdapter(System.String)">
+            <summary>
+             返回一个IDataAdpter 
+            </summary>
+            <param name="commandtext">SQL语句字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.GetAdapter(System.String,System.Int32)">
+            <summary>
+             返回一个IDataAdpter 
+            </summary>
+            <param name="commandtext">SQL语句字符串</param>
+            <param name="timeOut">超时限制</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.GetDataTable(System.Data.IDbCommand)">
+            <summary>
+            返回一个DataTable
+            </summary>
+            <param name="cmd">IDbCommand对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.GetDataTable(System.String)">
+            <summary>
+            返回一个DataTable
+            </summary>
+            <param name="commandtext">SQL语句字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.GetDataTable(System.String,System.Int32)">
+            <summary>
+            返回一个DataTable
+            </summary>
+            <param name="commandtext">SQL语句字符串</param>
+            <param name="timeOut">超时限制</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.GetDataTable(System.String,TrasenClasses.GeneralClasses.ParameterEx[])">
+            <summary>
+            返回一个DataTable
+            </summary>
+            <param name="procedureName">存储过程名</param>
+            <param name="parameters">参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.GetDataTable(System.String,TrasenClasses.GeneralClasses.ParameterEx[],System.Int32)">
+            <summary>
+            返回一个DataTable
+            </summary>
+            <param name="procedureName">存储过程名</param>
+            <param name="parameters">参数</param>
+            <param name="timeOut">超时时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.GetDataRow(System.Data.IDbCommand)">
+            <summary>
+            返回一个DataRow
+            </summary>
+            <param name="cmd">IDbCommand对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.GetDataRow(System.String)">
+            <summary>
+            返回一个DataRow
+            </summary>
+            <param name="commandtext">SQL语句字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.GetDataRow(System.String,System.Int32)">
+            <summary>
+            返回一个DataRow
+            </summary>
+            <param name="commandtext">SQL语句字符串</param>
+            <param name="timeOut">超时限制</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.GetDataReader(System.Data.IDbCommand)">
+            <summary>
+            返回一个DataReader
+            </summary>
+            <param name="cmd">IDbCommand对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.GetDataReader(System.String)">
+            <summary>
+            返回一个DataReader
+            </summary>
+            <param name="commandtext">SQL语句字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.GetDataReader(System.String,System.Int32)">
+            <summary>
+            返回一个DataReader
+            </summary>
+            <param name="commandtext">SQL语句字符串</param>
+            <param name="timeOut">超时限制</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.DoCommand(System.Data.IDbCommand)">
+            <summary>
+            执行一个语句，返回执行情况
+            </summary>
+            <param name="cmd">IDbCommand对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.DoCommand(System.String,TrasenClasses.GeneralClasses.ParameterEx[],System.Int32)">
+            <summary>
+            执行一个语句，返回执行情况
+            </summary>
+            <param name="procedureName">存储过程名称</param>
+            <param name="parameters">参数</param>
+            <param name="timeOut">超时时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.DoCommand(System.String)">
+            <summary>
+            执行一个语句，返回执行情况
+            </summary>
+            <param name="commandtext">SQL语句字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.DoCommand(System.String,System.Int32)">
+            <summary>
+            执行一个语句，返回执行情况
+            </summary>
+            <param name="commandtext">SQL语句字符串</param>
+            <param name="timeOut">超时限制</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.GetDataResult(System.Data.IDbCommand)">
+            <summary>
+            执行一个命令返回一个数据结果
+            </summary>
+            <param name="cmd">IDbCommand对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.GetDataResult(System.String,TrasenClasses.GeneralClasses.ParameterEx[],System.Int32)">
+            <summary>
+            执行一个命令返回一个数据结果
+            </summary>
+            <param name="procedureName">存储过程名</param>
+            <param name="parameters">参数</param>
+            <param name="timeOut">超时时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.GetDataResult(System.String)">
+            <summary>
+            执行一个命令返回一个数据结果
+            </summary>
+            <param name="commandtext">SQL语句字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.GetDataResult(System.String,System.Int32)">
+            <summary>
+            执行一个命令返回一个数据结果
+            </summary>
+            <param name="commandtext">SQL语句字符串</param>
+            <param name="timeOut">超时限制</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.SetParameters(System.Data.IDbCommand,TrasenClasses.GeneralClasses.ParameterEx[])">
+            <summary>
+            存储过程设置参数
+            </summary>
+            <param name="cmd">IDbCommand</param>
+            <param name="parameters">ParameterEx[]</param>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.RelationalDatabase.ReturnParameters(System.Data.IDbCommand,TrasenClasses.GeneralClasses.ParameterEx[])">
+            <summary>
+            存储过程回传参数
+            </summary>
+            <param name="cmd">IDbCommand</param>
+            <param name="parameters">ParameterEx[]</param>
+        </member>
+        <member name="P:TrasenClasses.DatabaseAccess.RelationalDatabase.ConnectionString">
+            <summary>
+            返回数据库连接字符串
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.DatabaseAccess.RelationalDatabase.Name">
+            <summary>
+            返回或设置数据库名
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.DatabaseAccess.RelationalDatabase.IsInTransaction">
+            <summary>
+            返回是否处于事务中
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.DatabaseAccess.RelationalDatabase.Vendor">
+            <summary>
+            返回或设置数据库平台名
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.DatabaseAccess.RelationalDatabase.QuotationMarksStart">
+            <summary>
+            返回或设置左边引号
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.DatabaseAccess.RelationalDatabase.QuotationMarksEnd">
+            <summary>
+            返回或设置右边引号
+            </summary>
+        </member>
+        <member name="F:TrasenClasses.DatabaseAccess.OleDB.VENDOR_NAME">
+            <summary>
+            数据库平台名称
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.OleDB.#ctor">
+            <summary>
+            构造一OleDB
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.OleDB.GetCopy">
+            <summary>
+            获取该对象副本
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.OleDB.CreateCommandBuilder(System.Data.IDataAdapter)">
+            <summary>
+            返回一个CommandBuilder
+            </summary>
+            <param name="_adapter">数据适配器</param>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.OleDB.DoCommand(System.Data.IDbCommand)">
+            <summary>
+            执行一个语句，返回执行情况
+            </summary>
+            <param name="cmd">IDbCommand对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.OleDB.DoCommand(System.String,TrasenClasses.GeneralClasses.ParameterEx[],System.Int32)">
+            <summary>
+            执行一个语句，返回执行情况
+            </summary>
+            <param name="procedureName">存储过程名</param>
+            <param name="parameters">参数</param>
+            <param name="timeOut">超时时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.OleDB.DoCommand(System.String)">
+            <summary>
+            执行一个语句，返回执行情况
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.OleDB.DoCommand(System.String,System.Int32)">
+            <summary>
+            执行一个语句，返回执行情况
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <param name="timeOut">超时限制</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.OleDB.GetParameter(System.String,System.Object)">
+            <summary>
+            返回一个参数对象
+            </summary>
+            <param name="parameterName">参数名称</param>
+            <param name="values">参数值</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.OleDB.GetParameter(System.String,System.Object,System.Int32)">
+            <summary>
+            返回一个参数对象
+            </summary>
+            <param name="parameterName">参数名称</param>
+            <param name="dataType">参数类型</param>
+            <param name="size">参数大小</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.OleDB.GetParameter(System.String,System.Object,System.Int32,System.Object)">
+            <summary>
+            返回一个参数对象
+            </summary>
+            <param name="parameterName">参数名称</param>
+            <param name="dataType">参数类型</param>
+            <param name="size">参数大小</param>
+            <param name="values">参数值</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.OleDB.GetParameter(System.String,System.Object,System.Data.ParameterDirection)">
+            <summary>
+            返回一个参数对象
+            </summary>
+            <param name="parameterName">参数名称</param>
+            <param name="values">参数值</param>
+            <param name="direction">参数传入传出方向</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.OleDB.GetParameter(System.String,System.Object,System.Data.ParameterDirection,System.Int32)">
+            <summary>
+            返回一个参数对象
+            </summary>
+            <param name="parameterName">参数名称</param>
+            <param name="values">参数值</param>
+            <param name="direction">参数传入传出方向</param>
+            <param name="size">参数大小</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.OleDB.GetDataResult(System.Data.IDbCommand)">
+            <summary>
+            执行一个命令返回一个数据结果
+            </summary>
+            <param name="cmd">IDbCommand对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.OleDB.GetDataResult(System.String,TrasenClasses.GeneralClasses.ParameterEx[],System.Int32)">
+            <summary>
+            执行一个命令返回一个数据结果
+            </summary>
+            <param name="procedureName">存储过程名</param>
+            <param name="parameters">参数</param>
+            <param name="timeOut">超时时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.OleDB.GetDataResult(System.String)">
+            <summary>
+            执行一个命令返回一个数据结果
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.OleDB.GetDataResult(System.String,System.Int32)">
+            <summary>
+            执行一个命令返回一个数据结果
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <param name="timeOut">超时限制</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.OleDB.InsertRecord(System.Data.IDbCommand,System.Object@)">
+            <summary>
+            执行插入一条记录 适用于有 自动生成标识的列
+            </summary>
+            <param name="cmd">IDbCommand对象</param>
+            <param name="identity">自动增长列在插入记录是产生的序号</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.OleDB.InsertRecord(System.String,System.Object@)">
+            <summary>
+            执行插入一条记录 适用于有 自动生成标识的列
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <param name="identity">自动增长列在插入记录是产生的序号</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.OleDB.InsertRecord(System.String,System.Object@,System.Int32)">
+            <summary>
+            执行插入一条记录 适用于有 自动生成标识的列
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <param name="identity">自动增长列在插入记录是产生的序号</param>
+            <param name="timeOut">超时限制</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.OleDB.GetDataTable(System.Data.IDbCommand)">
+            <summary>
+            返回一个DataTable
+            </summary>
+            <param name="cmd">IDbCommand对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.OleDB.GetDataTable(System.String)">
+            <summary>
+            返回一个DataTable
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.OleDB.GetDataTable(System.String,System.Int32)">
+            <summary>
+            返回一个DataTable
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <param name="timeOut">超时限制</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.OleDB.GetDataTable(System.String,TrasenClasses.GeneralClasses.ParameterEx[])">
+            <summary>
+            返回一个DataTable
+            </summary>
+            <param name="procedureName">存储过程名称</param>
+            <param name="parameters">参数名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.OleDB.GetDataTable(System.String,TrasenClasses.GeneralClasses.ParameterEx[],System.Int32)">
+            <summary>
+            返回一个DataTable
+            </summary>
+            <param name="procedureName">存储过程名称</param>
+            <param name="parameters">参数名称</param>
+            <param name="timeOut">超时时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.OleDB.GetAdapter(System.Data.IDbCommand)">
+            <summary>
+             返回一个IDataAdpter 
+            </summary>
+            <param name="cmd">IDbCommand对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.OleDB.GetAdapter(System.String)">
+            <summary>
+             返回一个IDataAdpter 
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <returns></returns>	
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.OleDB.GetAdapter(System.String,System.Int32)">
+            <summary>
+             返回一个IDataAdpter 
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <param name="timeOut">超时限制</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.OleDB.GetDataRow(System.Data.IDbCommand)">
+            <summary>
+            返回一个DataRow
+            </summary>
+            <param name="cmd">IDbCommand对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.OleDB.GetDataRow(System.String)">
+            <summary>
+            返回一个DataRow
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.OleDB.GetDataRow(System.String,System.Int32)">
+            <summary>
+            返回一个DataRow
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <param name="timeOut">超时限制</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.OleDB.GetDataReader(System.Data.IDbCommand)">
+            <summary>
+            返回一个DataReader
+            </summary>
+            <param name="cmd">IDbCommand对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.OleDB.GetDataReader(System.String)">
+            <summary>
+            返回一个DataReader
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.OleDB.GetDataReader(System.String,System.Int32)">
+            <summary>
+            返回一个DataReader
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <param name="timeOut">超时限制</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.OleDB.GetIdentityString">
+            <summary>
+            获取服务器时间的SQL语句(默认为IBM DB2数据库语句）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.OleDB.GetServerTimeString">
+            <summary>
+            获取服务器时间的SQL语句(默认为IBM DB2数据库语句）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.OleDB.Initialize(System.String)">
+            <summary>
+            初始化数据库（刚被初始化的数据库的连接是打开的）
+            </summary>
+            <param name="connectionString">连接字符串</param>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.OleDB.GetStringParameter(System.String)">
+            <summary>
+            返回参数的字符串形式
+            </summary>
+            <param name="name">名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.OleDB.SqlValueType(System.Data.DbType)">
+            <summary>
+            返回数据类型
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.OleDB.GetName(System.String)">
+            <summary>
+            返回加上引号的名称
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.OleDB.ErrorHandler(System.Exception,System.String@)">
+            <summary>
+            错误处理
+            </summary>
+            <param name="e">异常</param>
+            <param name="message">消息</param>
+            <returns></returns>
+        </member>
+        <member name="F:TrasenClasses.DatabaseAccess.IbmDb2.VENDOR_NAME">
+            <summary>
+            数据库平台名称
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.IbmDb2.#ctor">
+            <summary>
+            构造一IbmDb2
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.IbmDb2.GetCopy">
+            <summary>
+            获取该对象副本
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.IbmDb2.GetIdentityString">
+            <summary>
+            获取服务器时间的SQL语句
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.IbmDb2.GetServerTimeString">
+            <summary>
+            获取服务器时间的SQL语句
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:TrasenClasses.DatabaseAccess.MsAccess">
+            <summary>
+            MsAccess 的摘要说明。
+            </summary>
+        </member>
+        <member name="F:TrasenClasses.DatabaseAccess.MsAccess.VENDOR_NAME">
+            <summary>
+            数据库平台名称
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.MsAccess.#ctor">
+            <summary>
+            构造一IbmDb2
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.MsAccess.GetCopy">
+            <summary>
+            获取该对象副本
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.MsAccess.GetIdentityString">
+            <summary>
+            获取服务器时间的SQL语句
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.MsAccess.GetServerTimeString">
+            <summary>
+            获取服务器时间的SQL语句
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:TrasenClasses.DatabaseAccess.MsSqlServer">
+            <summary>
+            MsSqlServer 的摘要说明。
+            </summary>
+        </member>
+        <member name="F:TrasenClasses.DatabaseAccess.MsSqlServer.VENDOR_NAME">
+            <summary>
+            数据库平台名称
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.MsSqlServer.#ctor">
+            <summary>
+            构造一MsSqlServer
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.MsSqlServer.CreateCommandBuilder(System.Data.IDataAdapter)">
+            <summary>
+            返回一个CommandBuilder
+            </summary>
+            <param name="_adapter">数据适配器</param>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.MsSqlServer.GetParameter(System.String,System.Object)">
+            <summary>
+            返回一个参数对象
+            </summary>
+            <param name="parameterName">参数名称</param>
+            <param name="values">参数值</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.MsSqlServer.GetParameter(System.String,System.Object,System.Int32)">
+            <summary>
+            返回一个参数对象
+            </summary>
+            <param name="parameterName">参数名称</param>
+            <param name="dataType">参数类型</param>
+            <param name="size">参数大小</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.MsSqlServer.GetParameter(System.String,System.Object,System.Int32,System.Object)">
+            <summary>
+            返回一个参数对象
+            </summary>
+            <param name="parameterName">参数名称</param>
+            <param name="dataType">参数类型</param>
+            <param name="size">参数大小</param>
+            <param name="values">参数值</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.MsSqlServer.GetParameter(System.String,System.Object,System.Data.ParameterDirection)">
+            <summary>
+            返回一个参数对象
+            </summary>
+            <param name="parameterName">参数名称</param>
+            <param name="values">参数值</param>
+            <param name="direction">参数传入传出方向</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.MsSqlServer.GetParameter(System.String,System.Object,System.Data.ParameterDirection,System.Int32)">
+            <summary>
+            返回一个参数对象
+            </summary>
+            <param name="parameterName">参数名称</param>
+            <param name="values">参数值</param>
+            <param name="direction">参数传入传出方向</param>
+            <param name="size">参数大小</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.MsSqlServer.DoCommand(System.Data.IDbCommand)">
+            <summary>
+            执行一个语句，返回执行情况
+            </summary>
+            <param name="cmd">IDbCommand对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.MsSqlServer.DoCommand(System.String,TrasenClasses.GeneralClasses.ParameterEx[],System.Int32)">
+            <summary>
+            执行一个语句，返回执行情况
+            </summary>
+            <param name="procedureName">存储过程名</param>
+            <param name="parameters">参数</param>
+            <param name="timeOut">超时时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.MsSqlServer.DoCommand(System.String)">
+            <summary>
+            执行一个语句，返回执行情况
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.MsSqlServer.DoCommand(System.String,System.Int32)">
+            <summary>
+            执行一个语句，返回执行情况
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <param name="timeOut">超时限制</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.MsSqlServer.GetDataResult(System.Data.IDbCommand)">
+            <summary>
+            执行一个命令返回一个数据结果
+            </summary>
+            <param name="cmd">IDbCommand对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.MsSqlServer.GetDataResult(System.String,TrasenClasses.GeneralClasses.ParameterEx[],System.Int32)">
+            <summary>
+            执行一个命令返回一个数据结果
+            </summary>
+            <param name="procedureName">存储过程名</param>
+            <param name="parameters">参数</param>
+            <param name="timeOut">超时时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.MsSqlServer.GetDataResult(System.String)">
+            <summary>
+            执行一个命令返回一个数据结果
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.MsSqlServer.GetDataResult(System.String,System.Int32)">
+            <summary>
+            执行一个命令返回一个数据结果
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <param name="timeOut">超时限制</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.MsSqlServer.InsertRecord(System.Data.IDbCommand,System.Object@)">
+            <summary>
+            执行插入一条记录 适用于有 自动生成标识的列
+            </summary>
+            <param name="cmd">IDbCommand对象</param>
+            <param name="identity">自动增长列在插入记录是产生的序号</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.MsSqlServer.InsertRecord(System.String,System.Object@)">
+            <summary>
+            执行插入一条记录 适用于有 自动生成标识的列
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <param name="identity">自动增长列在插入记录是产生的序号</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.MsSqlServer.InsertRecord(System.String,System.Object@,System.Int32)">
+            <summary>
+            执行插入一条记录 适用于有 自动生成标识的列
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <param name="identity">自动增长列在插入记录是产生的序号</param>
+            <param name="timeOut">超时限制</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.MsSqlServer.GetDataTable(System.Data.IDbCommand)">
+            <summary>
+            返回一个DataTable
+            </summary>
+            <param name="cmd">IDbCommand对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.MsSqlServer.GetDataTable(System.String)">
+            <summary>
+            返回一个DataTable
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.MsSqlServer.GetDataTable(System.String,System.Int32)">
+            <summary>
+            返回一个DataTable
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <param name="timeOut">超时限制</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.MsSqlServer.GetDataTable(System.String,TrasenClasses.GeneralClasses.ParameterEx[])">
+            <summary>
+            返回一个DataTable
+            </summary>
+            <param name="procedureName">存储过程名称</param>
+            <param name="parameters">参数名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.MsSqlServer.GetDataTable(System.String,TrasenClasses.GeneralClasses.ParameterEx[],System.Int32)">
+            <summary>
+            返回一个DataTable
+            </summary>
+            <param name="procedureName">存储过程名称</param>
+            <param name="parameters">参数名称</param>
+            <param name="timeOut">超时时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.MsSqlServer.GetAdapter(System.Data.IDbCommand)">
+            <summary>
+             返回一个IDataAdpter 
+            </summary>
+            <param name="cmd">IDbCommand对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.MsSqlServer.GetAdapter(System.String)">
+            <summary>
+             返回一个IDataAdpter 
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <returns></returns>	
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.MsSqlServer.GetAdapter(System.String,System.Int32)">
+            <summary>
+             返回一个IDataAdpter 
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <param name="timeOut">超时限制</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.MsSqlServer.GetDataRow(System.Data.IDbCommand)">
+            <summary>
+            返回一个DataRow
+            </summary>
+            <param name="cmd">IDbCommand对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.MsSqlServer.GetDataRow(System.String)">
+            <summary>
+            返回一个DataRow
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.MsSqlServer.GetDataRow(System.String,System.Int32)">
+            <summary>
+            返回一个DataRow
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <param name="timeOut">超时限制</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.MsSqlServer.GetDataReader(System.Data.IDbCommand)">
+            <summary>
+            返回一个DataReader
+            </summary>
+            <param name="cmd">IDbCommand对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.MsSqlServer.GetDataReader(System.String)">
+            <summary>
+            返回一个DataReader
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.MsSqlServer.GetDataReader(System.String,System.Int32)">
+            <summary>
+            返回一个DataReader
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <param name="timeOut">超时限制</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.MsSqlServer.GetIdentityString">
+            <summary>
+            获取服务器时间的SQL语句
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.MsSqlServer.GetServerTimeString">
+            <summary>
+            获取服务器时间的SQL语句
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.MsSqlServer.Initialize(System.String)">
+            <summary>
+            初始化数据库（刚被初始化的数据库的连接是打开的）
+            </summary>
+            <param name="connectionString">连接字符串</param>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.MsSqlServer.GetStringParameter(System.String)">
+            <summary>
+            返回参数的字符串形式
+            </summary>
+            <param name="name">名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.MsSqlServer.SqlValueType(System.Data.DbType)">
+            <summary>
+            返回数据类型
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.MsSqlServer.GetName(System.String)">
+            <summary>
+            返回加上引号的名称
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.MsSqlServer.GetCopy">
+            <summary>
+            获取该对象副本
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.MsSqlServer.ErrorHandler(System.Exception,System.String@)">
+            <summary>
+            错误处理
+            </summary>
+            <param name="e">异常</param>
+            <param name="message">消息</param>
+            <returns></returns>
+        </member>
+        <member name="T:TrasenClasses.DatabaseAccess.Oracle">
+            <summary>
+            Oracle 的摘要说明。
+            </summary>
+        </member>
+        <member name="F:TrasenClasses.DatabaseAccess.Oracle.VENDOR_NAME">
+            <summary>
+            数据库平台名称
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.Oracle.#ctor">
+            <summary>
+            构造一OleDB
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.Oracle.GetCopy">
+            <summary>
+            获取该对象副本
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.Oracle.CreateCommandBuilder(System.Data.IDataAdapter)">
+            <summary>
+            返回一个CommandBuilder
+            </summary>
+            <param name="_adapter">数据适配器</param>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.Oracle.DoCommand(System.Data.IDbCommand)">
+            <summary>
+            执行一个语句，返回执行情况
+            </summary>
+            <param name="cmd">IDbCommand对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.Oracle.DoCommand(System.String,TrasenClasses.GeneralClasses.ParameterEx[],System.Int32)">
+            <summary>
+             执行一个语句，返回执行情况
+            </summary>
+            <param name="procedureName">存储过程名</param>
+            <param name="parameters">参数</param>
+            <param name="timeOut">超时时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.Oracle.DoCommand(System.String)">
+            <summary>
+            执行一个语句，返回执行情况
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.Oracle.DoCommand(System.String,System.Int32)">
+            <summary>
+            执行一个语句，返回执行情况
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <param name="timeOut">超时限制</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.Oracle.GetParameter(System.String,System.Object)">
+            <summary>
+            返回一个参数对象
+            </summary>
+            <param name="parameterName">参数名称</param>
+            <param name="values">参数值</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.Oracle.GetParameter(System.String,System.Object,System.Int32)">
+            <summary>
+            返回一个参数对象
+            </summary>
+            <param name="parameterName">参数名称</param>
+            <param name="dataType">参数类型</param>
+            <param name="size">参数大小</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.Oracle.GetParameter(System.String,System.Object,System.Int32,System.Object)">
+            <summary>
+            返回一个参数对象
+            </summary>
+            <param name="parameterName">参数名称</param>
+            <param name="dataType">参数类型</param>
+            <param name="size">参数大小</param>
+            <param name="values">参数值</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.Oracle.GetParameter(System.String,System.Object,System.Data.ParameterDirection)">
+            <summary>
+            返回一个参数对象
+            </summary>
+            <param name="parameterName">参数名称</param>
+            <param name="values">参数值</param>
+            <param name="direction">参数传入传出方向</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.Oracle.GetParameter(System.String,System.Object,System.Data.ParameterDirection,System.Int32)">
+            <summary>
+            返回一个参数对象
+            </summary>
+            <param name="parameterName">参数名称</param>
+            <param name="values">参数值</param>
+            <param name="direction">参数传入传出方向</param>
+            <param name="size">参数大小</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.Oracle.GetDataResult(System.Data.IDbCommand)">
+            <summary>
+            执行一个命令返回一个数据结果
+            </summary>
+            <param name="cmd">IDbCommand对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.Oracle.GetDataResult(System.String,TrasenClasses.GeneralClasses.ParameterEx[],System.Int32)">
+            <summary>
+            执行一个命令返回一个数据结果
+            </summary>
+            <param name="procedureName">存储过程名</param>
+            <param name="parameters">参数</param>
+            <param name="timeOut">超时时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.Oracle.GetDataResult(System.String)">
+            <summary>
+            执行一个命令返回一个数据结果
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.Oracle.GetDataResult(System.String,System.Int32)">
+            <summary>
+            执行一个命令返回一个数据结果
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <param name="timeOut">超时限制</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.Oracle.InsertRecord(System.Data.IDbCommand,System.Object@)">
+            <summary>
+            执行插入一条记录 适用于有 自动生成标识的列
+            </summary>
+            <param name="cmd">IDbCommand对象</param>
+            <param name="identity">自动增长列在插入记录是产生的序号</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.Oracle.InsertRecord(System.String,System.Object@)">
+            <summary>
+            执行插入一条记录 适用于有 自动生成标识的列
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <param name="identity">自动增长列在插入记录是产生的序号</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.Oracle.InsertRecord(System.String,System.Object@,System.Int32)">
+            <summary>
+            执行插入一条记录 适用于有 自动生成标识的列
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <param name="identity">自动增长列在插入记录是产生的序号</param>
+            <param name="timeOut">超时限制</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.Oracle.GetDataTable(System.Data.IDbCommand)">
+            <summary>
+            返回一个DataTable
+            </summary>
+            <param name="cmd">IDbCommand对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.Oracle.GetDataTable(System.String)">
+            <summary>
+            返回一个DataTable
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.Oracle.GetDataTable(System.String,System.Int32)">
+            <summary>
+            返回一个DataTable
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <param name="timeOut">超时限制</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.Oracle.GetDataTable(System.String,TrasenClasses.GeneralClasses.ParameterEx[])">
+            <summary>
+            返回一个DataTable
+            </summary>
+            <param name="procedureName">存储过程名称</param>
+            <param name="parameters">参数名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.Oracle.GetDataTable(System.String,TrasenClasses.GeneralClasses.ParameterEx[],System.Int32)">
+            <summary>
+            返回一个DataTable
+            </summary>
+            <param name="procedureName">存储过程名称</param>
+            <param name="parameters">参数名称</param>
+            <param name="timeOut">超时时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.Oracle.GetAdapter(System.Data.IDbCommand)">
+            <summary>
+             返回一个IDataAdpter 
+            </summary>
+            <param name="cmd">IDbCommand对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.Oracle.GetAdapter(System.String)">
+            <summary>
+             返回一个IDataAdpter 
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <returns></returns>	
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.Oracle.GetAdapter(System.String,System.Int32)">
+            <summary>
+             返回一个IDataAdpter 
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <param name="timeOut">超时限制</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.Oracle.GetDataRow(System.Data.IDbCommand)">
+            <summary>
+            返回一个DataRow
+            </summary>
+            <param name="cmd">IDbCommand对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.Oracle.GetDataRow(System.String)">
+            <summary>
+            返回一个DataRow
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.Oracle.GetDataRow(System.String,System.Int32)">
+            <summary>
+            返回一个DataRow
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <param name="timeOut">超时限制</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.Oracle.GetDataReader(System.Data.IDbCommand)">
+            <summary>
+            返回一个DataReader
+            </summary>
+            <param name="cmd">IDbCommand对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.Oracle.GetDataReader(System.String)">
+            <summary>
+            返回一个DataReader
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.Oracle.GetDataReader(System.String,System.Int32)">
+            <summary>
+            返回一个DataReader
+            </summary>
+            <param name="commandText">SQL语句字符串</param>
+            <param name="timeOut">超时限制</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.Oracle.GetIdentityString">
+            <summary>
+            获取服务器时间的SQL语句(默认为IBM DB2数据库语句）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.Oracle.GetServerTimeString">
+            <summary>
+            获取服务器时间的SQL语句(默认为IBM DB2数据库语句）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.Oracle.Initialize(System.String)">
+            <summary>
+            初始化数据库（刚被初始化的数据库的连接是打开的）
+            </summary>
+            <param name="connectionString">连接字符串</param>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.Oracle.GetStringParameter(System.String)">
+            <summary>
+            返回参数的字符串形式
+            </summary>
+            <param name="name">名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.Oracle.SqlValueType(System.Data.DbType)">
+            <summary>
+            返回数据类型
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.Oracle.GetName(System.String)">
+            <summary>
+            返回加上引号的名称
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.DatabaseAccess.Oracle.ErrorHandler(System.Exception,System.String@)">
+            <summary>
+            错误处理
+            </summary>
+            <param name="e">异常</param>
+            <param name="message">消息</param>
+            <returns></returns>
+        </member>
+        <member name="T:TrasenClasses.GeneralClasses.Age">
+            <summary>
+            定义年龄结构
+            </summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralClasses.Age.AgeNum">
+            <summary>
+            年龄数字
+            </summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralClasses.Age.Unit">
+            <summary>
+            年龄单位
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralClasses.Age.#ctor">
+            <summary>
+            获取年龄实例
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralClasses.Age.#ctor(System.Int32,TrasenClasses.GeneralClasses.AgeUnit)">
+            <summary>
+            根据年龄与单位获取年龄实例
+            </summary>
+            <param name="age"></param>
+            <param name="ageuint"></param>
+        </member>
+        <member name="M:TrasenClasses.GeneralClasses.Age.GetAgeString(System.DateTime,System.DateTime,System.Int32)">
+            <summary>
+            根据生日得到年龄字符串（岁月天格式）
+            </summary>
+            <param name="birth">出生日期</param>
+            <param name="nowDate">当前日期</param>
+            <param name="type">0表示最多只显示两个时间单位,1表示最多只显示三个时间单位</param>
+            <returns>年龄字符串</returns>
+        </member>
+        <member name="T:TrasenClasses.GeneralClasses.SECURITY_ATTRIBUTES">
+            <summary>
+            SECURITY_ATTRIBUTES 的说明
+            </summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralClasses.SECURITY_ATTRIBUTES.nLength">
+            <summary>nLength</summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralClasses.SECURITY_ATTRIBUTES.lpSecurityDescriptor">
+            <summary>lpSecurityDescriptor</summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralClasses.SECURITY_ATTRIBUTES.bInheritHandle">
+            <summary>bInheritHandle</summary>
+        </member>
+        <member name="T:TrasenClasses.GeneralClasses.ApiFunction">
+            <summary>
+            ApiFunction 的摘要说明。
+            </summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralClasses.ApiFunction.ERROR_ALREADY_EXISTS">
+            <summary>
+            错误句柄
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralClasses.ApiFunction.FindWindow(System.String,System.String)">
+            <summary>
+            根据类名或者窗口名称获得句柄
+            </summary>
+            <param name="lpClassName">类名</param>
+            <param name="lpWindowName">窗口名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.GeneralClasses.ApiFunction.CloseWindow(System.IntPtr)">
+            <summary>
+            根据句柄关闭窗口
+            </summary>
+            <param name="hwnd">句柄</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.GeneralClasses.ApiFunction.GetLastError">
+            <summary>
+            获得错误信息标识
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.GeneralClasses.ApiFunction.CreateMutex(TrasenClasses.GeneralClasses.SECURITY_ATTRIBUTES,System.Boolean,System.String)">
+            <summary>
+            创建一个句柄
+            </summary>
+            <param name="lpMutexAttributes"></param>
+            <param name="bInitialOwner"></param>
+            <param name="lpName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.GeneralClasses.ApiFunction.ReleaseMutex(System.IntPtr)">
+            <summary>
+            释放指定的句柄
+            </summary>
+            <param name="hMutex">句柄</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.GeneralClasses.ApiFunction.SendMessage(System.IntPtr,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            发送消息
+            </summary>
+            <param name="hwnd"></param>
+            <param name="wMsg"></param>
+            <param name="wParam"></param>
+            <param name="lParam"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.GeneralClasses.ApiFunction.UpdateWindow(System.IntPtr)">
+            <summary>
+            更新消息
+            </summary>
+            <param name="hWnd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.GeneralClasses.ApiFunction.GetIniString(System.String,System.String,System.String)">
+            <summary>
+            读取INI文件
+            </summary>
+            <param name="lpApplicationName">节名</param>
+            <param name="lpKeyName">关键字</param>
+            <param name="lpFileName">INI文件路径</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.GeneralClasses.ApiFunction.WriteIniString(System.String,System.String,System.String,System.String)">
+            <summary>
+            写Ini文件
+            </summary>
+            <param name="lpApplicationName">节名</param>
+            <param name="lpKeyName">关键字</param>
+            <param name="lpString">值</param>
+            <param name="lpFileName">INI文件路径</param>
+        </member>
+        <member name="M:TrasenClasses.GeneralClasses.ApiFunction.SelfSrcoll(System.IntPtr)">
+            <summary>
+            自动滚屏
+            </summary>
+            <param name="handle">句柄</param>
+        </member>
+        <member name="T:TrasenClasses.GeneralClasses.Convertor">
+            <summary>
+            Convert 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralClasses.Convertor.IsNull(System.Object,System.String)">
+            <summary>
+            将Null值转换为指定值
+            </summary>
+            <param name="obj">待判断的值</param>
+            <param name="nValue">指定值</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.GeneralClasses.Convertor.IsNumeric(System.String)">
+             <summary>
+            判断输入字符串是否为数字
+             </summary>
+             <param name="nValue">字符串</param>
+             <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.GeneralClasses.Convertor.IsInteger(System.String)">
+             <summary>
+            判断输入字符串是否为整数
+             </summary>
+             <param name="nValue">字符串</param>
+             <returns></returns>
+        </member>
+        <member name="T:TrasenClasses.GeneralClasses.Crypto">
+            <summary>
+            Crypto 的摘要说明。
+            采用Sington模式，系统中只能有一个副本
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralClasses.Crypto.Instance">
+            <summary>
+            获取Crypto实例
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.GeneralClasses.Crypto.Cryp(System.String)">
+            <summary>
+            对明文进行加密，返回加密后的密文 
+            </summary>
+            <param name="source">密码明文</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.GeneralClasses.Crypto.UnCryp(System.String)">
+            <summary>
+            对密文进行解密，返回明文
+            </summary>
+            <param name="cryptograph">密码密文</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.GeneralClasses.Crypto.GetLegalKey">
+            <summary>
+            获得初始Key
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.GeneralClasses.Crypto.GetLegalIV">
+            <summary>
+            获得初始向量IV
+            </summary>
+            <returns>初试向量IV</returns>
+        </member>
+        <member name="M:TrasenClasses.GeneralClasses.Crypto.Encrypto(System.String)">
+            <summary>
+            加密方法
+            </summary>
+            <param name="Source">待加密的串</param>
+            <returns>经过加密的串</returns>
+        </member>
+        <member name="M:TrasenClasses.GeneralClasses.Crypto.Decrypto(System.String)">
+            <summary>
+            解密方法
+            </summary>
+            <param name="Source">待解密的串</param>
+            <returns>经过解密的串</returns>
+        </member>
+        <member name="T:TrasenClasses.GeneralClasses.DateManager">
+            <summary>
+            ServerDate 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralClasses.DateManager.#ctor">
+            <summary>
+            自定义时间类
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralClasses.DateManager.ServerDateTimeByDBType(TrasenClasses.DatabaseAccess.RelationalDatabase)">
+            <summary>
+            取得服务器时间
+            </summary>
+            <param name="database">数据访问对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.GeneralClasses.DateManager.AgeToDate(TrasenClasses.GeneralClasses.Age,TrasenClasses.DatabaseAccess.RelationalDatabase)">
+            <summary>
+            把年龄转换成日期
+            </summary>
+            <param name="age"></param>
+            <param name="database">数据访问对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.GeneralClasses.DateManager.DateToAge(System.DateTime,TrasenClasses.DatabaseAccess.RelationalDatabase)">
+            <summary>
+            把日期转换成年龄
+            </summary>
+            <param name="birthday"></param>
+            <param name="database">数据访问对象</param>
+            <returns></returns>
+        </member>
+        <member name="T:TrasenClasses.GeneralClasses.AgeUnit">
+            <summary>
+            年龄单位
+            </summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralClasses.AgeUnit.岁">
+            <summary>岁</summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralClasses.AgeUnit.月">
+            <summary>月</summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralClasses.AgeUnit.天">
+            <summary>天</summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralClasses.AgeUnit.小时">
+            <summary>小时</summary>
+        </member>
+        <member name="T:TrasenClasses.GeneralClasses.CardinalityTypes">
+            <summary>
+            CardinalityTypes 的摘要说明。
+            </summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralClasses.CardinalityTypes.None">
+            <summary>None</summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralClasses.CardinalityTypes.OneToOne">
+            <summary>OneToOne</summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralClasses.CardinalityTypes.OneToMany">
+            <summary>OneToMany</summary>
+        </member>
+        <member name="T:TrasenClasses.GeneralClasses.ActionTypes">
+            <summary>
+            	ActionTypes 的摘要说明。
+            </summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralClasses.ActionTypes.InsertCommand">
+            <summary>InsertCommand</summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralClasses.ActionTypes.SelectCommand">
+            <summary>SelectCommand</summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralClasses.ActionTypes.UpdateCommand">
+            <summary>UpdateCommand</summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralClasses.ActionTypes.DeleteCommand">
+            <summary>DeleteCommand</summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralClasses.ActionTypes.PesistentCriteria">
+            <summary>处理标准</summary>
+        </member>
+        <member name="T:TrasenClasses.GeneralClasses.ColumnKeyTypes">
+            <summary>
+            	ColumnKeyTypes 数据表Column的键类型
+            </summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralClasses.ColumnKeyTypes.NoneKey">
+            <summary>不是键</summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralClasses.ColumnKeyTypes.PrimaryKey">
+            <summary>主键</summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralClasses.ColumnKeyTypes.ForeignKey">
+            <summary>外键</summary>
+        </member>
+        <member name="T:TrasenClasses.GeneralClasses.ErrorTypes">
+            <summary>
+            	实体层错误类型
+            </summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralClasses.ErrorTypes.FormatException">
+            <summary>格式错误</summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralClasses.ErrorTypes.NotFound">
+            <summary>未发现</summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralClasses.ErrorTypes.XmlError">
+            <summary>Xml文件错误</summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralClasses.ErrorTypes.Unknown">
+            <summary>未知错误 </summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralClasses.ErrorTypes.DatabaseUnknownError">
+            <summary>数据库未处理错误</summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralClasses.ErrorTypes.NotUnique">
+            <summary>数据不唯一，原因可能是标识该条记录的主键、索引重复</summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralClasses.ErrorTypes.DataTooLong">
+            <summary>数据过长</summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralClasses.ErrorTypes.NotAllowStringEmpty">
+            <summary>字符串不能为零长度</summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralClasses.ErrorTypes.NotAllowDataNull">
+            <summary>数据不能为空</summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralClasses.ErrorTypes.DataTypeNotMatch">
+            <summary>数据类型不匹配</summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralClasses.ErrorTypes.AutoValueOn">
+            <summary>自动产生值，不能指定</summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralClasses.ErrorTypes.UpdateFail">
+            <summary>更新失败，原因可能是数据已被删除，或则数据被其他人修改</summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralClasses.ErrorTypes.RestrictError">
+            <summary>由于约束机制，导致的错误</summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralClasses.ErrorTypes.PesistentError">
+            <summary>实体层一般错误 </summary>
+        </member>
+        <member name="T:TrasenClasses.GeneralClasses.SelectionTypes">
+            <summary>
+            查询类别
+            </summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralClasses.SelectionTypes.EqualTo">
+            <summary> 等于</summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralClasses.SelectionTypes.GreaterThan">
+            <summary>大于 </summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralClasses.SelectionTypes.GreaterThanAndEqualTo">
+            <summary>大于或等于</summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralClasses.SelectionTypes.NotEqualTo">
+            <summary>不等于</summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralClasses.SelectionTypes.LessThan">
+            <summary>小于</summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralClasses.SelectionTypes.LessThanAndEqualTo">
+            <summary>小于或等于</summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralClasses.SelectionTypes.Match">
+            <summary>LIKE %..%</summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralClasses.SelectionTypes.MatchPrefix">
+            <summary> LIKE %...</summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralClasses.SelectionTypes.In">
+            <summary>IN	</summary>
+        </member>
+        <member name="T:TrasenClasses.GeneralClasses.CriteriaTypes">
+            <summary>
+            CriteriaTypes说明
+            </summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralClasses.CriteriaTypes.Retrive">
+            <summary>RetrieveCritera</summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralClasses.CriteriaTypes.Delete">
+            <summary>DeleteCriteria</summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralClasses.CriteriaTypes.Update">
+            <summary>UpdateCriteria</summary>
+        </member>
+        <member name="T:TrasenClasses.GeneralClasses.SqlValueTypes">
+            <summary>
+            SQL值类别
+            </summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralClasses.SqlValueTypes.PrototypeString">
+            <summary>字符串型</summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralClasses.SqlValueTypes.SimpleQuotesString">
+            <summary>'xxxx'型的字符串</summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralClasses.SqlValueTypes.String">
+            <summary>String</summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralClasses.SqlValueTypes.BoolToString">
+            <summary>BoolToString</summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralClasses.SqlValueTypes.BoolToInterger">
+            <summary>BoolToInterger</summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralClasses.SqlValueTypes.NotSupport">
+            <summary> NotSupport</summary>
+        </member>
+        <member name="T:TrasenClasses.GeneralClasses.Item">
+            <summary>
+            Item 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralClasses.Item.#ctor">
+            <summary>
+            构造一空Item对象
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralClasses.Item.ToString">
+            <summary>
+            返回Item对象的Text
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:TrasenClasses.GeneralClasses.Item.Text">
+            <summary>
+            设置或者返回Item对象的Text
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralClasses.Item.Value">
+            <summary>
+            设置或者返回Item对象的Value
+            </summary>
+        </member>
+        <member name="T:TrasenClasses.GeneralClasses.Money">
+            <summary>
+            本类实现阿拉伯数字到大写中文的转换
+            该类没有对非法数字进行判别
+            请调用NumToChn方法
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralClasses.Money.#ctor">
+            <summary>
+            金额类
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralClasses.Money.NumToChn(System.String)">
+            <summary>
+            将阿拉伯小写金额转换成大写金额
+            </summary>
+            <param name="x"></param>
+            <returns></returns>
+        </member>
+        <member name="T:TrasenClasses.GeneralClasses.PubStaticFun">
+            <summary>
+            公共静态方法
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralClasses.PubStaticFun.ModifyDataGridStyle(System.Windows.Forms.DataGrid,System.Int32)">
+            <summary>
+            去掉网格中的TEXTBOX
+            </summary>
+            <param name="grid">需要去掉TEXTBOX的网格</param>
+            <param name="tableStyleIndex">网格样式索引号</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.GeneralClasses.PubStaticFun.SetCardGridTopAndLeft(System.Windows.Forms.Control,System.Windows.Forms.DataGrid,System.Windows.Forms.Control,System.Int32,System.Int32)">
+            <summary>
+            当触发控件为文本框或者组合框时设定选项网格的上边距与左边距
+            </summary>
+            <param name="occurTextBox">触发文本框</param>
+            <param name="cardGrid">选项网格</param>
+            <param name="parentCtrl">父级控件</param>
+            <param name="oppositeTop">在父控件中的相对纵坐标</param>
+            <param name="oppositeLeft">在父控件中的相对横坐标</param>
+        </member>
+        <member name="M:TrasenClasses.GeneralClasses.PubStaticFun.GetMacAddress">
+            <summary>
+            获取MAC地址
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.GeneralClasses.PubStaticFun.GetInputLanguage(System.String)">
+            <summary>
+            依据输入法描述获取输入法
+            </summary>
+            <param name="languageName">输入法描述（比如五笔）</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.GeneralClasses.PubStaticFun.WaitCursor">
+            <summary>
+            设置当前等待鼠标
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.GeneralClasses.PubStaticFun.GetCursor(System.String,System.Type)">
+            <summary>
+            设置当前鼠标
+            </summary>
+            <param name="res">鼠标资源路径字符串</param>
+            <param name="type">类型</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.GeneralClasses.PubStaticFun.GetCHNWeekName(System.String)">
+            <summary>
+            将星期的英文名称转换为中文名
+            </summary>
+            <param name="EWeekName">星期英文名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.GeneralClasses.PubStaticFun.GetPYWBM(System.String,System.Int32)">
+            <summary>
+            获取汉字字符串拼音五笔码
+            </summary>
+            <param name="nameString">汉字字符串</param>
+            <param name="type">0 拼音首拼码 1五笔首拼码 2拼音全码</param>
+            <returns></returns>
+        </member>
+        <member name="T:TrasenClasses.GeneralClasses.ItemEx">
+            <summary>
+            项目名称与项目值
+            </summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralClasses.ItemEx.Text">
+            <summary>
+            项目名称
+            </summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralClasses.ItemEx.Value">
+            <summary>
+            项目值
+            </summary>
+        </member>
+        <member name="T:TrasenClasses.GeneralClasses.ParameterEx">
+            <summary>
+            参数
+            </summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralClasses.ParameterEx.Text">
+            <summary>
+            参数名称
+            </summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralClasses.ParameterEx.Value">
+            <summary>
+            参数值
+            </summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralClasses.ParameterEx.DataType">
+            <summary>
+            参数数据类型
+            </summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralClasses.ParameterEx.ParaDirection">
+            <summary>
+            参数传入传出方向
+            </summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralClasses.ParameterEx.ParaSize">
+            <summary>
+            参数大小
+            </summary>
+        </member>
+        <member name="T:TrasenClasses.GeneralClasses.ObjectInfo">
+            <summary>
+            对象信息
+            </summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralClasses.ObjectInfo.Name">
+            <summary>
+            对象名称
+            </summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralClasses.ObjectInfo.Text">
+            <summary>
+            对象描述
+            </summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralClasses.ObjectInfo.Remark">
+            <summary>
+            对象备注
+            </summary>
+        </member>
+        <member name="T:TrasenClasses.GeneralControls.DataGridButtonColumn">
+            <summary>
+            DataGridButtonColumn 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.DataGridButtonColumn.#ctor(System.Int32)">
+            <summary>
+            根据列索引构造Column对象
+            </summary>
+            <param name="colNum">列索引</param>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.DataGridButtonColumn.Edit(System.Windows.Forms.CurrencyManager,System.Int32,System.Drawing.Rectangle,System.Boolean,System.String,System.Boolean)">
+            <summary>
+            重写父类方法
+            </summary>
+            <param name="source"></param>
+            <param name="rowNum"></param>
+            <param name="bounds"></param>
+            <param name="readOnly"></param>
+            <param name="instantText"></param>
+            <param name="cellIsVisible"></param>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.DataGridButtonColumn.DrawButton(System.Drawing.Graphics,System.Drawing.Bitmap,System.Drawing.Rectangle,System.Int32)">
+            <summary>
+            绘制按钮
+            </summary>
+            <param name="g"></param>
+            <param name="bm"></param>
+            <param name="bounds"></param>
+            <param name="row"></param>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.DataGridButtonColumn.HandleMouseUp(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            鼠标移动至网格按钮事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.DataGridButtonColumn.HandleMouseDown(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            鼠标按下网格按钮事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.DataGridButtonColumn.Paint(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.CurrencyManager,System.Int32,System.Drawing.Brush,System.Drawing.Brush,System.Boolean)">
+            <summary>
+            重写父类方法
+            </summary>
+            <param name="g"></param>
+            <param name="bounds"></param>
+            <param name="source"></param>
+            <param name="rowNum"></param>
+            <param name="backBrush"></param>
+            <param name="foreBrush"></param>
+            <param name="alignToRight"></param>
+        </member>
+        <member name="E:TrasenClasses.GeneralControls.DataGridButtonColumn.CellButtonClicked">
+            <summary>
+            定义网格中按钮按下事件
+            </summary>
+        </member>
+        <member name="T:TrasenClasses.GeneralControls.DataGridCellButtonClickEventArgs">
+            <summary>
+            DataGridCellButtonClickEventArgs 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.DataGridCellButtonClickEventArgs.#ctor(System.Int32,System.Int32)">
+            <summary>
+            根据行索引与列索引构造按钮按下事件参数对象
+            </summary>
+            <param name="row"></param>
+            <param name="col"></param>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.DataGridCellButtonClickEventArgs.RowIndex">
+            <summary>
+            获取行索引
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.DataGridCellButtonClickEventArgs.ColIndex">
+            <summary>
+            获取列索引
+            </summary>
+        </member>
+        <member name="T:TrasenClasses.GeneralControls.DataGridTextButtonColumn">
+            <summary>
+            DataGridTextButtonColumn 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.DataGridTextButtonColumn.#ctor(System.Int32)">
+            <summary>
+            根据列索引构造Column对象
+            </summary>
+            <param name="colNum">列索引</param>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.DataGridTextButtonColumn.Edit(System.Windows.Forms.CurrencyManager,System.Int32,System.Drawing.Rectangle,System.Boolean,System.String,System.Boolean)">
+            <summary>
+            重写父类方法
+            </summary>
+            <param name="source"></param>
+            <param name="rowNum"></param>
+            <param name="bounds"></param>
+            <param name="readOnly"></param>
+            <param name="instantText"></param>
+            <param name="cellIsVisible"></param>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.DataGridTextButtonColumn.HandleMouseUp(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            鼠标移动至网格按钮事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.DataGridTextButtonColumn.HandleMouseDown(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            鼠标按下网格按钮事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.DataGridTextButtonColumn.Paint(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.CurrencyManager,System.Int32,System.Drawing.Brush,System.Drawing.Brush,System.Boolean)">
+            <summary>
+            重写父类方法
+            </summary>
+            <param name="g"></param>
+            <param name="bounds"></param>
+            <param name="source"></param>
+            <param name="rowNum"></param>
+            <param name="backBrush"></param>
+            <param name="foreBrush"></param>
+            <param name="alignToRight"></param>
+        </member>
+        <member name="E:TrasenClasses.GeneralControls.DataGridTextButtonColumn.CellButtonClicked">
+            <summary>
+            网格中按钮按下事件
+            </summary>
+        </member>
+        <member name="T:TrasenClasses.GeneralControls.DataGridCellButtonClickEventHandler">
+            <summary>
+            单击DataGridCellButton事件
+            </summary>
+        </member>
+        <member name="T:TrasenClasses.GeneralControls.ButtonDataGridEx">
+            <summary>
+            UserControl1 的摘要说明。
+            </summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralControls.ButtonDataGridEx.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.ButtonDataGridEx.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.ButtonDataGridEx.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.ButtonDataGridEx.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要使用代码编辑器 
+            修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:TrasenClasses.GeneralControls.ButtonDataGridEx.DataGridCellButtonClickEventHandler">
+            <summary>
+            定义事件委托
+            </summary>
+        </member>
+        <member name="T:TrasenClasses.GeneralControls.DataGridEnableEventArgs">
+            <summary>
+            事件参数类DataGridEnableEventArgs
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.DataGridEnableEventArgs.#ctor(System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            构造事件参数
+            </summary>
+            <param name="row">行</param>
+            <param name="col">列</param>
+            <param name="val">值</param>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.DataGridEnableEventArgs.BackColor">
+            <summary>
+            返回或设置网格背景色
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.DataGridEnableEventArgs.ForeColor">
+            <summary>
+            返回或设置网格前景色
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.DataGridEnableEventArgs.Row">
+            <summary>
+            返回或设置网格行
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.DataGridEnableEventArgs.Col">
+            <summary>
+            返回或设置网格行
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.DataGridEnableEventArgs.EnableValue">
+            <summary>
+            返回或设置是否有效
+            </summary>
+        </member>
+        <member name="T:TrasenClasses.GeneralControls.DataGridEnableTextBoxColumn">
+            <summary>
+            重写dataGrid 的 DataGridTextBoxColumn 类
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.DataGridEnableTextBoxColumn.#ctor(System.Int32)">
+            <summary>
+            通过网格列索引构造一DataGridEnableTextBoxColumn
+            </summary>
+            <param name="column"></param>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.DataGridEnableTextBoxColumn.Paint(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.CurrencyManager,System.Int32,System.Drawing.Brush,System.Drawing.Brush,System.Boolean)">
+            <summary>
+            重写基类的PAINT事件，通过这个事件激活 CheckCellEnabled 事件
+            </summary>
+            <param name="g">绘图面</param>
+            <param name="rc">绘图区域</param>
+            <param name="cm">CurrencyManager</param>
+            <param name="rowNumber">行索引</param>
+            <param name="backbrush">背景画刷</param>
+            <param name="forebrush">前景景画刷</param>
+            <param name="LtoR">是否右对齐</param>
+        </member>
+        <member name="E:TrasenClasses.GeneralControls.DataGridEnableTextBoxColumn.CheckCellEnabled">
+            <summary>
+            定义事件
+            </summary>
+        </member>
+        <member name="T:TrasenClasses.GeneralControls.DataGridEnableTextBoxColumn.EnableCellEventHandler">
+            <summary>
+            定义一个事件的委托，e 为事先定义的事件参数类
+            </summary>
+        </member>
+        <member name="T:TrasenClasses.GeneralControls.DataGridEnableBoolColumn">
+            <summary>
+            重写dataGrid 的 DataGridBoolColumn 类
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.DataGridEnableBoolColumn.#ctor(System.Int32)">
+            <summary>
+            通过网格列索引构造一DataGridEnableBoolColumn
+            </summary>
+            <param name="column"></param>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.DataGridEnableBoolColumn.Paint(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.CurrencyManager,System.Int32,System.Drawing.Brush,System.Drawing.Brush,System.Boolean)">
+            <summary>
+            重写基类的PAINT事件，通过这个事件激活 CheckCellEnabled 事件
+            </summary>
+            <param name="g">绘图面</param>
+            <param name="rc">绘图区域</param>
+            <param name="cm">CurrencyManager</param>
+            <param name="rowNumber">行索引</param>
+            <param name="backbrush">背景画刷</param>
+            <param name="forebrush">前景画刷</param>
+            <param name="LtoR">是否右对齐</param>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.DataGridEnableBoolColumn.Edit(System.Windows.Forms.CurrencyManager,System.Int32,System.Drawing.Rectangle,System.Boolean,System.String,System.Boolean)">
+            <summary>
+            重写基类的Edit事件
+            </summary>
+            <param name="source">CurrencyManager</param>
+            <param name="rowNum">行索引</param>
+            <param name="bounds">区域</param>
+            <param name="OnlyRead">是否只读</param>
+            <param name="instantText">instantText</param>
+            <param name="cellIsVisible">cellIsVisible</param>
+        </member>
+        <member name="E:TrasenClasses.GeneralControls.DataGridEnableBoolColumn.CheckCellEnabled">
+            <summary>
+            定义事件
+            </summary>
+        </member>
+        <member name="T:TrasenClasses.GeneralControls.DataGridEnableBoolColumn.EnableCellEventHandler">
+            <summary>
+            定义一个事件的委托，e 为事先定义的事件参数类
+            </summary>
+        </member>
+        <member name="T:TrasenClasses.GeneralControls.delegateGetColorRowCol">
+            <summary>
+            定义一个事件的委托
+            </summary>
+        </member>
+        <member name="T:TrasenClasses.GeneralControls.DataGridColoredTextBoxColumn">
+            <summary>
+            重写dataGrid 的 DataGridTextBoxColumn 类
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.DataGridColoredTextBoxColumn.#ctor(TrasenClasses.GeneralControls.delegateGetColorRowCol,System.Int32)">
+            <summary>
+            构造DataGridColoredTextBoxColumn
+            </summary>
+            <param name="getcolorRowCol">getcolorRowCol</param>
+            <param name="column">column</param>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.DataGridColoredTextBoxColumn.Paint(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.CurrencyManager,System.Int32,System.Drawing.Brush,System.Drawing.Brush,System.Boolean)">
+            <summary>
+            重写基类的Paint事件
+            </summary>
+            <param name="g">绘图面</param>
+            <param name="bounds">绘图区域</param>
+            <param name="source">CurrencyManager</param>
+            <param name="rowNum">行索引</param>
+            <param name="backBrush">背景画刷</param>
+            <param name="foreBrush">前景画刷</param>
+            <param name="alignToRight">是否右对齐</param>
+        </member>
+        <member name="T:TrasenClasses.GeneralControls.ComboBoxEx">
+            <summary>
+            具有下拉网格的组合框
+            </summary>
+        </member>
+        <member name="T:TrasenClasses.GeneralControls.TextBoxEx">
+            <summary>
+            摘要说明:获取焦点后变色，离开焦点后恢复为原背景色,回车后光标自动跳至设定控件
+            </summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralControls.TextBoxEx.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.TextBoxEx.#ctor(System.ComponentModel.IContainer)">
+            <summary>
+            自定义TextBox(获取焦点后变色，离开焦点后恢复为原背景色)
+            </summary>
+            <param name="container"></param>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.TextBoxEx.#ctor">
+             <summary>
+            自定义TextBox(获取焦点后变色，离开焦点后恢复为原背景色)
+             </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.TextBoxEx.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.TextBoxEx.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要使用代码编辑器修改
+            此方法的内容。
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.TextBoxEx.OnKeyDown(System.Windows.Forms.KeyEventArgs)">
+            <summary>
+            重写OnKeyDown事件
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.TextBoxEx.OnEnabledChanged(System.EventArgs)">
+            <summary>
+            重写OnEnabledChanged事件
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.TextBoxEx.OnEnter(System.EventArgs)">
+            <summary>
+            重写OnEnter事件
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.TextBoxEx.OnLeave(System.EventArgs)">
+            <summary>
+             重写OnLeave事件
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.TextBoxEx.EnterForeColor">
+            <summary>
+            获得焦点后的前景色
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.TextBoxEx.EnterBackColor">
+            <summary>
+            获得焦点后的背景色
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.TextBoxEx.EnabledTrueBackColor">
+            <summary>
+            Enabled变为True时的背景颜色
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.TextBoxEx.EnabledFalseBackColor">
+            <summary>
+            Enabled变为False时的背景颜色
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.TextBoxEx.PreviousControl">
+            <summary>
+            当SelectionStart=0时按左方向键跳至该控件
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.TextBoxEx.NextControl">
+            <summary>
+            当SelectionStart=SelectionLength时按右方向键跳至该控件
+            </summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralControls.ComboBoxEx.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.ComboBoxEx.#ctor(System.ComponentModel.IContainer)">
+            <summary>
+            具有下拉网格的组合框
+            </summary>
+            <param name="container"></param>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.ComboBoxEx.#ctor">
+            <summary>
+            具有下拉网格的组合框
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.ComboBoxEx.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.ComboBoxEx.SetSelectItem(System.Object)">
+            <summary>
+            选取特定值
+            </summary>
+            <param name="selValue">要选取的值</param>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.ComboBoxEx.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要使用代码编辑器修改
+            此方法的内容。
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.ComboBoxEx.OnEnter(System.EventArgs)">
+            <summary>
+             重写OnEnter事件
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.ComboBoxEx.OnLeave(System.EventArgs)">
+            <summary>
+             重写OnLeave事件
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.ComboBoxEx.OnKeyDown(System.Windows.Forms.KeyEventArgs)">
+            <summary>
+             重写OnKeyDown事件
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.ComboBoxEx.OnTextChanged(System.EventArgs)">
+            <summary>
+            重写OnTextChanged事件,定位相应数据行
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.ComboBoxEx.OnCreateControl">
+            <summary>
+            重写OnCreateControl事件：定位BUTTON
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.ComboBoxEx.OnSizeChanged(System.EventArgs)">
+            <summary>
+            重写OnCreateControl事件：重新定位BUTTON
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="E:TrasenClasses.GeneralControls.ComboBoxEx.DropDown">
+            <summary>
+            组合框下拉激发的事件
+            </summary>
+        </member>
+        <member name="E:TrasenClasses.GeneralControls.ComboBoxEx.SelectedValueChanged">
+            <summary>
+            在更改SelectValue属性的值激发的事件
+            </summary>
+        </member>
+        <member name="E:TrasenClasses.GeneralControls.ComboBoxEx.SelectedIndexChanged">
+            <summary>
+            在更改SelectedValue属性的索引值激发的事件
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.ComboBoxEx.DataSource">
+            <summary>
+            指示该控件将用来获取其项的列表
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.ComboBoxEx.DisplayMember">
+            <summary>
+            指示要为该控件中的项显示的属性
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.ComboBoxEx.ValueMember">
+            <summary>
+            指示要为该控件中的项显示的属性
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.ComboBoxEx.DisplayMemberCaption">
+            <summary>
+            指示要为该控件中的项显示的属性的列标头
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.ComboBoxEx.ValueMemberCaption">
+            <summary>
+            指示用作该控件中项的实际值的属性的列标头
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.ComboBoxEx.SelectedValue">
+            <summary>
+            获取或设置由ValueMember属性指定的成员属性的值
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.ComboBoxEx.SelectedIndex">
+            <summary>
+            获取或设置由ValueMember属性指定的成员属性的索引
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.ComboBoxEx.DisplayMemberWidth">
+            <summary>
+            指示要为该控件中的项显示的属性的列宽
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.ComboBoxEx.ValueMemberWidth">
+            <summary>
+            指示用作该控件中项的实际值的属性的列宽
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.ComboBoxEx.DropDownWidth">
+            <summary>
+            获取和设置下拉网格宽度
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.ComboBoxEx.DropDownHeight">
+            <summary>
+            获取和设置下拉网格宽度
+            </summary>
+        </member>
+        <member name="T:TrasenClasses.GeneralControls.FIELDINFO">
+            <summary>
+            字段信息
+            </summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralControls.FIELDINFO.FieldName">
+            <summary>
+            字段名称
+            </summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralControls.FIELDINFO.FieldType">
+            <summary>
+            字段类型
+            </summary>
+        </member>
+        <member name="T:TrasenClasses.GeneralControls.ComboGridSearch">
+            <summary>
+            ComboGridSearch 的摘要说明：网格查询区域
+            </summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralControls.ComboGridSearch.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.ComboGridSearch.#ctor">
+            <summary>
+            组合网格
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.ComboGridSearch.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.ComboGridSearch.AddSearchFields">
+            <summary>
+            根据MappingDataGrid的TableStyles加载可供查询的项目
+            只支持DataSource为DataView
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.ComboGridSearch.OnLoad(System.EventArgs)">
+            <summary>
+            重写事件OnLoad，加载基础信息
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.ComboGridSearch.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要使用代码编辑器 
+            修改此方法的内容。
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.ComboGridSearch.MappingDataGrid">
+            <summary>
+            与之相匹配的网格
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.ComboGridSearch.TableStyleIndex">
+            <summary>
+            与之相匹配的网格的TableStyle索引
+            </summary>
+        </member>
+        <member name="T:TrasenClasses.GeneralControls.myDelegate">
+            <summary>
+            定义一委托
+            </summary>
+        </member>
+        <member name="T:TrasenClasses.GeneralControls.DataGridEx">
+            <summary>
+            自定义DataGrid,支持网格内TextBox的KeyDown事件响应
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.DataGridEx.#ctor">
+            <summary>
+            实例化
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.DataGridEx.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.DataGridEx.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要使用代码编辑器 
+            修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.DataGridEx.CreateTableStyle(System.String[],System.String[],System.Int32[])">
+            <summary>
+            创建网格显示格式
+            </summary>
+            <param name="headerText">列标题字符集</param>
+            <param name="columnMappingName">列匹配字段名称字符集</param>
+            <param name="columnWidth">列宽度集合</param>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.DataGridEx.CreateTableStyle(System.String[],System.String[],System.Int32[],System.Boolean[])">
+            <summary>
+            创建网格显示格式
+            </summary>
+            <param name="headerText">列标题字符集</param>
+            <param name="columnMappingName">列匹配字段名称字符集</param>
+            <param name="columnWidth">列宽度集合</param>
+            <param name="isCheckBoxStyle">列式样集合（true：CheckBoxStyle,false：TextBoxStyle）</param>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.DataGridEx.CreateTableStyle(System.String[],System.String[],System.Int32[],System.String)">
+            <summary>
+            创建网格显示格式
+            </summary>
+            <param name="headerText">列标题字符集</param>
+            <param name="columnMappingName">列匹配字段名称字符集</param>
+            <param name="columnWidth">列宽度集合</param>
+            <param name="mappingName">匹配的表名</param>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.DataGridEx.CreateTableStyle(System.String[],System.String[],System.Int32[],System.Int32)">
+            <summary>
+            创建网格显示格式
+            </summary>
+            <param name="headerText">列标题字符集</param>
+            <param name="columnMappingName">列匹配字段名称字符集</param>
+            <param name="columnWidth">列宽度集合</param>
+            <param name="rowHeaderWidth">行标头宽度</param>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.DataGridEx.CreateTableStyle(System.String[],System.String[],System.Int32[],System.Int32,System.String)">
+            <summary>
+            创建网格显示格式
+            </summary>
+            <param name="headerText">列标题字符集</param>
+            <param name="columnMappingName">列匹配字段名称字符集</param>
+            <param name="columnWidth">列宽度集合</param>
+            <param name="rowHeaderWidth">行标头宽度</param>
+            <param name="mappingName">匹配的表名</param>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.DataGridEx.CreateTableStyle(System.String[],System.String[],System.Int32[],System.Int32,System.Boolean)">
+            <summary>
+            创建网格显示格式
+            </summary>
+            <param name="headerText">列标题字符集</param>
+            <param name="columnMappingName">列匹配字段名称字符集</param>
+            <param name="columnWidth">列宽度集合</param>
+            <param name="rowHeaderWidth">行标头宽度</param>
+            <param name="columnuColorChangeable">列颜色是否可以更改</param>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.DataGridEx.CreateTableStyle(System.String[],System.String[],System.Int32[],System.Int32,System.String,System.Boolean)">
+            <summary>
+            创建网格显示格式
+            </summary>
+            <param name="headerText">列标题字符集</param>
+            <param name="columnMappingName">列匹配字段名称字符集</param>
+            <param name="columnWidth">列宽度集合</param>
+            <param name="rowHeaderWidth">行标头宽度</param>
+            <param name="mappingName">匹配的表名</param>
+            <param name="columnuColorChangeable">列颜色是否可以更改</param>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.DataGridEx.SelectCurrentRow">
+            <summary>
+            选中当前行
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.DataGridEx.PageSetup">
+            <summary>
+            设置打印格式
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.DataGridEx.Print(System.Boolean)">
+            <summary>
+            打印网格内容
+            </summary>
+            <param name="directPrint">true直接打印false预览</param>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.DataGridEx.ExportExcel(System.Boolean)">
+            <summary>
+            输出为Excel格式
+            </summary>
+            <param name="printPreview">true打印预览false显示Excel</param>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.DataGridEx.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)">
+            <summary>
+            UserControl1.ProcessCmdKey 实现
+            </summary>
+            <param name="msg">消息</param>
+            <param name="keyData">键值</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.DataGridEx.OnCurrentCellChanged(System.EventArgs)">
+            <summary>
+            重写CurrentCellChanged事件
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="E:TrasenClasses.GeneralControls.DataGridEx.myKeyDown">
+            <summary>
+            在网格DataCell有焦点的情况下按下键时发生
+            </summary>
+        </member>
+        <member name="E:TrasenClasses.GeneralControls.DataGridEx.CellValuesChanged">
+            <summary>
+            在网格DataCell值发生改变时发生
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.DataGridEx.HScrollBar">
+            <summary>
+            水平滚动条
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.DataGridEx.VScrollBar">
+            <summary>
+            垂直滚动条
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.DataGridEx.CellSelectedBackColor">
+            <summary>
+            网格单元格选中后背景颜色
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.DataGridEx.GridPrintTitle">
+            <summary>
+            网格打印主标题
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.DataGridEx.GridPrintCaption">
+            <summary>
+            网格打印子标题
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.DataGridEx.GridPrintTop">
+            <summary>
+            网格打印页顶（可以是以'|'分隔的字符串或一维数组）
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.DataGridEx.GridPrintBottom">
+            <summary>
+            网格打印页底（可以是以'|'分隔的字符串或一维数组）
+            </summary>
+        </member>
+        <member name="T:TrasenClasses.GeneralControls.DateTimePickerEx">
+            <summary>
+            XcjwTextBox 的摘要说明:获取焦点后变色，离开焦点后恢复为原背景色
+            </summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralControls.DateTimePickerEx.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.DateTimePickerEx.#ctor(System.ComponentModel.IContainer)">
+            <summary>
+            自定义TextBox(获取焦点后变色，离开焦点后恢复为原背景色)
+            </summary>
+            <param name="container"></param>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.DateTimePickerEx.#ctor">
+             <summary>
+            自定义TextBox(获取焦点后变色，离开焦点后恢复为原背景色)
+             </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.DateTimePickerEx.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.DateTimePickerEx.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要使用代码编辑器修改
+            此方法的内容。
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.DateTimePickerEx.OnKeyDown(System.Windows.Forms.KeyEventArgs)">
+            <summary>
+            重写OnKeyDown事件
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.DateTimePickerEx.OnEnter(System.EventArgs)">
+            <summary>
+            重写OnEnter事件
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.DateTimePickerEx.OnLeave(System.EventArgs)">
+            <summary>
+             重写OnLeave事件
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.DateTimePickerEx.EnterForeColor">
+            <summary>
+            获得焦点后的前景色
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.DateTimePickerEx.EnterBackColor">
+            <summary>
+            获得焦点后的背景色
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.DateTimePickerEx.NextControl">
+            <summary>
+            当SelectionStart=SelectionLength时按右方向键跳至该控件
+            </summary>
+        </member>
+        <member name="T:TrasenClasses.GeneralControls.DlgGridSearch">
+            <summary>
+            DlgGridSearch 的摘要说明。
+            </summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralControls.DlgGridSearch.DlgResult">
+            <summary> 对话框结果</summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralControls.DlgGridSearch.FilterString">
+            <summary> 筛选字符串</summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralControls.DlgGridSearch.SortString">
+            <summary> 排序字符串</summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralControls.DlgGridSearch.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.DlgGridSearch.#ctor(TrasenClasses.GeneralClasses.Item[],TrasenClasses.GeneralClasses.Item[])">
+            <summary>
+            构造函数
+            </summary>
+            <param name="fieldItems">字段名称集合</param>
+            <param name="operationItems">操作符集合</param>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.DlgGridSearch.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.DlgGridSearch.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要使用代码编辑器修改
+            此方法的内容。
+            </summary>
+        </member>
+        <member name="T:TrasenClasses.GeneralControls.BorderStyle">
+            <summary>
+            边框样式
+            </summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralControls.BorderStyle.Fixed3D">
+            <summary>
+            3D风格
+            </summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralControls.BorderStyle.FixedSingle">
+            <summary>
+            单边框
+            </summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralControls.BorderStyle.Raised">
+            <summary>
+            凸起
+            </summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralControls.BorderStyle.None">
+            <summary>
+            无
+            </summary>
+        </member>
+        <member name="T:TrasenClasses.GeneralControls.ShowFaceStyle">
+            <summary>
+            显示的外观样式
+            </summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralControls.ShowFaceStyle.Horizontal">
+            <summary>
+            颜色从左至右渐变
+            </summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralControls.ShowFaceStyle.Vertical">
+            <summary>
+            颜色从上至下渐变
+            </summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralControls.ShowFaceStyle.Shadow">
+            <summary>
+            渐变移动
+            </summary>
+        </member>
+        <member name="T:TrasenClasses.GeneralControls.ShowGuageType">
+            <summary>
+            进度条的类型（横向、纵向）
+            </summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralControls.ShowGuageType.Horizontal">
+            <summary>
+            水平方向
+            </summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralControls.ShowGuageType.Vertical">
+            <summary>
+            垂直方向
+            </summary>
+        </member>
+        <member name="T:TrasenClasses.GeneralControls.GuageBarEx">
+            <summary>
+            进度条 的摘要说明。
+            </summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralControls.GuageBarEx.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.GuageBarEx.#ctor">
+            <summary>
+            进度条
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.GuageBarEx.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.GuageBarEx.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要使用代码编辑器 
+            修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.GuageBarEx.PerformStep">
+            <summary>
+            按照Step属性的数量增加进度栏的当前位置
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.GuageBarEx.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            OnPaint
+            </summary>
+            <param name="pe"></param>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.GuageBarEx.OnResize(System.EventArgs)">
+            <summary>
+            OnResize
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.GuageBarEx.BackColor1">
+            <summary>
+            第一种颜色
+            </summary> 
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.GuageBarEx.BackColor2">
+            <summary>
+            第二种颜色
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.GuageBarEx.Maximum">
+            <summary>
+            使用范围的上限
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.GuageBarEx.Minimum">
+            <summary>
+            使用范围的下限
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.GuageBarEx.Step">
+            <summary>
+            当调用Step()方法时，控件当前值的增量
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.GuageBarEx.Value">
+            <summary>
+            进度栏的当前位置
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.GuageBarEx.BorderType">
+            <summary>
+            是否具有可见的边框
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.GuageBarEx.BorderColor">
+            <summary>
+            如果是单行边框，可设置边框颜色，否则默认是黑色
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.GuageBarEx.PercentColor">
+            <summary>
+            进度栏百分比的字体颜色
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.GuageBarEx.ShowPercent">
+            <summary>
+            是否显示百分比
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.GuageBarEx.FaceStyle">
+            <summary>
+            进度条的颜色外观样式
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.GuageBarEx.GuageType">
+            <summary>
+            获取和设置进度条的类型（横向、纵向）
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.GuageBarEx.ShadowSize">
+            <summary>
+            阴影渐变的宽度大小，只有进度条类型是Horizontal且进度条颜色外观样式是Horizontal才有效
+            </summary>
+        </member>
+        <member name="T:TrasenClasses.GeneralControls.LabelEx">
+            <summary>
+            LabelEx的摘要说明。
+            </summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralControls.LabelEx.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.LabelEx.#ctor(System.ComponentModel.IContainer)">
+            <summary>
+            自定义Label(有渐变的自定义背景色)
+            </summary>
+            <param name="container"></param>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.LabelEx.#ctor">
+            <summary>
+            自定义Label(有渐变的自定义背景色)
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.LabelEx.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.LabelEx.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要使用代码编辑器修改
+            此方法的内容。
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.LabelEx.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            OnPaint
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.LabelEx.BackColor1">
+            <summary>
+            颜色渐变的第一种颜色
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.LabelEx.BackColor2">
+            <summary>
+            颜色渐变的第二种颜色
+            </summary>
+        </member>
+        <member name="T:TrasenClasses.GeneralControls.ViewMode">
+            <summary>
+            显示模式
+            </summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralControls.ViewMode.LargeIcon">
+            <summary>
+            大图标
+            </summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralControls.ViewMode.SmallIcon">
+            <summary>
+            小图标
+            </summary>
+        </member>
+        <member name="T:TrasenClasses.GeneralControls.ListImage">
+            <summary>
+            ListViewEx 的摘要说明。
+            ListView的四个角是圆弧，可改变圆弧的大小
+            </summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralControls.ListImage.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.ListImage.#ctor(System.ComponentModel.IContainer)">
+            <summary>
+            自定义ListView
+            </summary>
+            <param name="container"></param>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.ListImage.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.ListImage.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.ListImage.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要使用代码编辑器修改
+            此方法的内容。
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.ListImage.SetSelectItem(System.Int32)">
+            <summary>
+            设定选中后的样式
+            </summary>
+            <param name="selectIndex">要选取项目的索引</param>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.ListImage.SetItemLocation">
+            <summary>
+            设置项目位置
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.ListImage.OnResize(System.EventArgs)">
+            <summary>
+            重写OnResize，根据控件大小调整ListeViewEx项目位置
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.ListImage.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            重写OnPaint，绘制Caption
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="E:TrasenClasses.GeneralControls.ListImage.SelectedIndexChanged">
+            <summary>
+            在更改SelectedValue属性的索引值激发的事件
+            </summary>
+        </member>
+        <member name="E:TrasenClasses.GeneralControls.ListImage.ItemDoubleClick">
+            <summary>
+            在双击子项目激发的事件
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.ListImage.LargeImageList">
+            <summary>
+            获取或设置显示模式为大图标时ImageList控件
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.ListImage.SmallImageList">
+            <summary>
+            获取或设置显示模式为小图标时ImageList控件
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.ListImage.Items">
+            <summary>
+            获取包含该控件中所有项的集合
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.ListImage.VerticalInterval">
+            <summary>
+            项目与项目之间在垂直方向上的间隔
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.ListImage.HorizontalInterval">
+            <summary>
+            项目与边框在水平方向上的间隔
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.ListImage.SelectedBackColor">
+            <summary>
+            获得焦点后的背景色
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.ListImage.SelectedForeColor">
+            <summary>
+            获得焦点后的背景色
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.ListImage.View">
+            <summary>
+            显示模式
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.ListImage.SelectedItem">
+            <summary>
+            获取或设置选中项目
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.ListImage.SelectedIndex">
+            <summary>
+            获取或设置选中项目的索引
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.ListImage.CaptionForeColor">
+            <summary>
+            标题前景色
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.ListImage.CaptionBackColor">
+            <summary>
+            标题背景色
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.ListImage.CaptionText">
+            <summary>
+            标题内容
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.ListImage.CaptionFont">
+            <summary>
+            标题字体
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.ListImage.CaptionVisible">
+            <summary>
+            是否显示标题
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.ListImage.CaptionImageList">
+            <summary>
+            获取或设置标题ImageList控件
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.ListImage.CaptionImageIndex">
+            <summary>
+            获取或设置标题ImageList控件图象索引
+            </summary>
+        </member>
+        <member name="T:TrasenClasses.GeneralControls.ItemChangedEventArgs">
+            <summary>
+            事件参数类
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.ItemChangedEventArgs.#ctor">
+            <summary>
+            构造一参数对象
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.ItemChangedEventArgs.#ctor(System.Int32,TrasenClasses.GeneralControls.ListImageItem)">
+            <summary>
+            构造一参数对象
+            </summary>
+            <param name="index"></param>
+            <param name="item"></param>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.ItemChangedEventArgs.Index">
+            <summary>
+            Item索引
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.ItemChangedEventArgs.Item">
+            <summary>
+            Item对象
+            </summary>
+        </member>
+        <member name="T:TrasenClasses.GeneralControls.ListImagetemCollection">
+            <summary>
+            ListImageItem集合
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.ListImagetemCollection.#ctor">
+            <summary>
+            ListImageItem集合
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.ListImagetemCollection.Add(TrasenClasses.GeneralControls.ListImageItem)">
+            <summary>
+            添加一TrasenClasses.GeneralControls.ListImageItem到集合中
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.ListImagetemCollection.Contains(TrasenClasses.GeneralControls.ListImageItem)">
+            <summary>
+            判断集合中是否包含指定ListImageItem
+            </summary>
+            <param name="item">指定ListImageItem</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.ListImagetemCollection.IndexOf(TrasenClasses.GeneralControls.ListImageItem)">
+            <summary>
+            获取指定ListImageItem在集合中的索引
+            </summary>
+            <param name="item">指定ListImageItem</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.ListImagetemCollection.Remove(TrasenClasses.GeneralControls.ListImageItem)">
+            <summary>
+            从集合中移除指定项
+            </summary>
+            <param name="item">指定ListImageItem</param>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.ListImagetemCollection.Insert(System.Int32,TrasenClasses.GeneralControls.ListImageItem)">
+            <summary>
+            向集合中插入指定项
+            </summary>
+            <param name="index"></param>
+            <param name="item"></param>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.ListImagetemCollection.OnInsertComplete(System.Int32,System.Object)">
+            <summary>
+            重写OnInsertComplete，插入集合完成后将控件加入父控件
+            </summary>
+            <param name="index">从零开始的索引，在该处插入 value</param>
+            <param name="value">在 index 处的元素的新值</param>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.ListImagetemCollection.OnRemoveComplete(System.Int32,System.Object)">
+            <summary>
+            重写OnInsertComplete，移除集合完成后将控件从父控件中移除
+            </summary>
+            <param name="index">从零开始的索引，可在该位置找到 value</param>
+            <param name="value">要从 index 移除的元素的值</param>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.ListImagetemCollection.OnClearComplete">
+            <summary>
+            重写OnClearComplete，清除集合完成后将控件从父控件中清除
+            </summary>
+        </member>
+        <member name="E:TrasenClasses.GeneralControls.ListImagetemCollection.InsertComplete">
+            <summary>
+            声明InsertComplete事件
+            </summary>
+        </member>
+        <member name="E:TrasenClasses.GeneralControls.ListImagetemCollection.RemoveComplete">
+            <summary>
+            声明RemoveComplete事件
+            </summary>
+        </member>
+        <member name="E:TrasenClasses.GeneralControls.ListImagetemCollection.ClearComplete">
+            <summary>
+            声明ClearComplete事件
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.ListImagetemCollection.Item(System.Int32)">
+            <summary>
+            根据索引获取指定项
+            </summary>
+        </member>
+        <member name="T:TrasenClasses.GeneralControls.ListImagetemCollection.ItemChangedEventHandler">
+            <summary>
+            定义一个事件的委托，e 为事先定义的事件参数类
+            </summary>
+        </member>
+        <member name="T:TrasenClasses.GeneralControls.ListImageItem">
+            <summary>
+            ListImageItemEx 的摘要说明。
+            </summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralControls.ListImageItem.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.ListImageItem.#ctor(System.ComponentModel.IContainer)">
+            <summary>
+            自定义ListViewItem
+            </summary>
+            <param name="container"></param>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.ListImageItem.#ctor">
+            <summary>
+            自定义ListViewItem
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.ListImageItem.#ctor(System.String)">
+            <summary>
+            自定义ListViewItem
+            </summary>
+            <param name="itemText">该项文本</param>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.ListImageItem.#ctor(System.String,System.Int32,System.Object)">
+            <summary>
+            自定义ListViewItem
+            </summary>
+            <param name="itemText">该项文本</param>
+            <param name="imageIndex">图像索引</param>
+            <param name="tag">与该控件关联的数据对象</param>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.ListImageItem.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.ListImageItem.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要使用代码编辑器修改
+            此方法的内容。
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.ListImageItem.SetControlHeight">
+            <summary>
+            设置控件高度
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.ListImageItem.OnCreateControl">
+            <summary>
+            重写OnCreateControl，根据Imagelist图像高度及字体设置该控件高度
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.ListImageItem.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            重写OnPaint事件
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.ListImageItem.OnMouseEnter(System.EventArgs)">
+            <summary>
+            重写OnMouseEnter，当鼠标滑到控件上时显示控件边框
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.ListImageItem.OnMouseLeave(System.EventArgs)">
+            <summary>
+            重写OnMouseLeave，当鼠标滑到控件上时不显示控件边框
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.ListImageItem.ItemText">
+            <summary>
+            获取或设置该项的文本
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.ListImageItem.LargeImageList">
+            <summary>
+            获取或设置该项的大图标ImageList控件
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.ListImageItem.SmallImageList">
+            <summary>
+            获取或设置该项的小图标ImageList控件
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.ListImageItem.ImageIndex">
+            <summary>
+            指示要为该控件中的项显示的属性
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.ListImageItem.Selected">
+            <summary>
+            指示要为该控件中的项显示的属性
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.ListImageItem.View">
+            <summary>
+            显示模式
+            </summary>
+        </member>
+        <member name="T:TrasenClasses.GeneralControls.ListViewEx">
+            <summary>
+            ListViewEx 的摘要说明。
+            </summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralControls.ListViewEx.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.ListViewEx.#ctor(System.ComponentModel.IContainer)">
+            <summary>
+            ListViewEx
+            </summary>
+            <param name="container"></param>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.ListViewEx.#ctor">
+            <summary>
+            构造ListViewEx
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.ListViewEx.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.ListViewEx.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要使用代码编辑器修改
+            此方法的内容。
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.ListViewEx.OnColumnClick(System.Windows.Forms.ColumnClickEventArgs)">
+            <summary>
+            重写OnColumnClick
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="T:TrasenClasses.GeneralControls.ListViewItemUpComparer">
+            <summary>
+            正向排序IComparer
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.ListViewItemUpComparer.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.ListViewItemUpComparer.#ctor(System.Int32)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="column"></param>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.ListViewItemUpComparer.Compare(System.Object,System.Object)">
+            <summary>
+            排序比较
+            </summary>
+            <param name="x"></param>
+            <param name="y"></param>
+            <returns></returns>
+        </member>
+        <member name="T:TrasenClasses.GeneralControls.ListViewItemDownComparer">
+            <summary>
+            逆向排序IComparer
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.ListViewItemDownComparer.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.ListViewItemDownComparer.#ctor(System.Int32)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="column"></param>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.ListViewItemDownComparer.Compare(System.Object,System.Object)">
+            <summary>
+            排序比较
+            </summary>
+            <param name="x"></param>
+            <param name="y"></param>
+            <returns></returns>
+        </member>
+        <member name="T:TrasenClasses.GeneralControls.DougScrollingTextCtrEx">
+            <summary>
+            XcjwDougScrollingTextCtr 的摘要说明。
+            </summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralControls.DougScrollingTextCtrEx.m_Timer">
+            <summary>Timer for text animation.</summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralControls.DougScrollingTextCtrEx.sScrollText">
+            <summary>Text to be displayed in the control.</summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralControls.DougScrollingTextCtrEx.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.DougScrollingTextCtrEx.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.DougScrollingTextCtrEx.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.DougScrollingTextCtrEx.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要使用代码编辑器 
+            修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.DougScrollingTextCtrEx.OnTextChanged(System.EventArgs)">
+            <summary>
+            重写TextChanged
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.DougScrollingTextCtrEx.OnClick(System.EventArgs)">
+            <summary>
+            重写OnClick
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.DougScrollingTextCtrEx.OnMouseEnter(System.EventArgs)">
+            <summary>
+            重写OnMouseEnte
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.DougScrollingTextCtrEx.OnMouseLeave(System.EventArgs)">
+            <summary>
+            重写OnMouseLeave
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.DougScrollingTextCtrEx.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            重写OnPaint
+            </summary>
+            <param name="pe"></param>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.DougScrollingTextCtrEx.DougScrollingTextColor1">
+            <summary>
+            第一种颜色
+            </summary> 
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.DougScrollingTextCtrEx.DougScrollingTextColor2">
+            <summary>
+            第二种颜色
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.DougScrollingTextCtrEx.IsStop">
+            <summary>
+            是否停止滚动
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.DougScrollingTextCtrEx.ShowText">
+            <summary>
+            显示的文本
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.DougScrollingTextCtrEx.ScrollingType">
+            <summary>
+            滚动类型属性
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.DougScrollingTextCtrEx.Waytype">
+            <summary>
+            滚动方向类型
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.DougScrollingTextCtrEx.BorderType">
+            <summary>
+            是否具有可见的边框
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.DougScrollingTextCtrEx.BorderColor">
+            <summary>
+            如果是单行边框，可设置边框颜色，否则默认是黑色
+            </summary>
+        </member>
+        <member name="T:TrasenClasses.GeneralControls.DougScrollingTextCtrEx.ScrollingTypes">
+            <summary>滚动类型</summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralControls.DougScrollingTextCtrEx.ScrollingTypes.Continuum">
+            <summary>Text连续</summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralControls.DougScrollingTextCtrEx.ScrollingTypes.NoContinuum">
+            <summary>不连续</summary>
+        </member>
+        <member name="T:TrasenClasses.GeneralControls.DougScrollingTextCtrEx.WayTypes">
+            <summary>滚动方向类型</summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralControls.DougScrollingTextCtrEx.WayTypes.Left">
+            <summary>向左</summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralControls.DougScrollingTextCtrEx.WayTypes.Right">
+            <summary>向右</summary>
+        </member>
+        <member name="T:TrasenClasses.GeneralControls.TabControlEx">
+            <summary>
+            TabControlEx 的摘要说明
+            控件的tabPage的text内容显示成竖着的字体
+            </summary>
+        </member>
+        <member name="F:TrasenClasses.GeneralControls.TabControlEx.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.TabControlEx.#ctor(System.ComponentModel.IContainer)">
+            <summary>
+            自定义TabControl
+            </summary>
+            <param name="container"></param>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.TabControlEx.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.TabControlEx.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.TabControlEx.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要使用代码编辑器修改
+            此方法的内容。
+            </summary>
+        </member>
+        <member name="M:TrasenClasses.GeneralControls.TabControlEx.OnDrawItem(System.Windows.Forms.DrawItemEventArgs)">
+            <summary>
+            重写OnDrawItem事件
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.TabControlEx.TabPageTextForeColor">
+            <summary>
+            TabPage的Text前景颜色
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.TabControlEx.TabPageTextBackColor">
+            <summary>
+            TabPage的Text背景颜色
+            </summary>
+        </member>
+        <member name="P:TrasenClasses.GeneralControls.TabControlEx.TabPageTextCurBackColor">
+            <summary>
+            TabControl当前TabPage的Text背景颜色
+            </summary>
+        </member>
+    </members>
+</doc>

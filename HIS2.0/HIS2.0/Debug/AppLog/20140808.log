@@ -1,0 +1,5 @@
+Trasen.exe Created Log File
+********************************************** Local Time : 2014-08-08 11:36:08 **********************************************
+[2014-08-08 11:36:08]Initialize Database Connection Object (TrasenFrame.Forms.FrmMdiMain.Database.Initialize( connectionString ))
+[2014-08-08 11:36:08]Start Check Update File
+[2014-08-08 11:36:08]UpdateFile.ini->[UPDATETYPE]->NotUpdate=true,Stop Update and Return to Main Program

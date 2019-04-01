@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DataSet1" msprop:Generator_DataSetName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="作废卡" msprop:Generator_UserTableName="作废卡" msprop:Generator_RowDeletedName="作废卡RowDeleted" msprop:Generator_RowChangedName="作废卡RowChanged" msprop:Generator_RowClassName="作废卡Row" msprop:Generator_RowChangingName="作废卡RowChanging" msprop:Generator_RowEvArgName="作废卡RowChangeEvent" msprop:Generator_RowEvHandlerName="作废卡RowChangeEventHandler" msprop:Generator_TableClassName="作废卡DataTable" msprop:Generator_TableVarName="table作废卡" msprop:Generator_RowDeletingName="作废卡RowDeleting" msprop:Generator_TablePropName="作废卡">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="KH" msprop:Generator_UserColumnName="KH" msprop:Generator_ColumnVarNameInTable="columnKH" msprop:Generator_ColumnPropNameInRow="KH" msprop:Generator_ColumnPropNameInTable="KHColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CKRXM" msprop:Generator_UserColumnName="CKRXM" msprop:Generator_ColumnVarNameInTable="columnCKRXM" msprop:Generator_ColumnPropNameInRow="CKRXM" msprop:Generator_ColumnPropNameInTable="CKRXMColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="XB" msprop:Generator_UserColumnName="XB" msprop:Generator_ColumnVarNameInTable="columnXB" msprop:Generator_ColumnPropNameInRow="XB" msprop:Generator_ColumnPropNameInTable="XBColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DH" msprop:Generator_UserColumnName="DH" msprop:Generator_ColumnVarNameInTable="columnDH" msprop:Generator_ColumnPropNameInRow="DH" msprop:Generator_ColumnPropNameInTable="DHColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SFZH" msprop:Generator_UserColumnName="SFZH" msprop:Generator_ColumnVarNameInTable="columnSFZH" msprop:Generator_ColumnPropNameInRow="SFZH" msprop:Generator_ColumnPropNameInTable="SFZHColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="BKJE" msprop:Generator_UserColumnName="BKJE" msprop:Generator_ColumnVarNameInTable="columnBKJE" msprop:Generator_ColumnPropNameInRow="BKJE" msprop:Generator_ColumnPropNameInTable="BKJEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ZFDJY" msprop:Generator_UserColumnName="ZFDJY" msprop:Generator_ColumnVarNameInTable="columnZFDJY" msprop:Generator_ColumnPropNameInRow="ZFDJY" msprop:Generator_ColumnPropNameInTable="ZFDJYColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ZFSJ" msprop:Generator_UserColumnName="ZFSJ" msprop:Generator_ColumnVarNameInTable="columnZFSJ" msprop:Generator_ColumnPropNameInRow="ZFSJ" msprop:Generator_ColumnPropNameInTable="ZFSJColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="冻结卡" msprop:Generator_UserTableName="冻结卡" msprop:Generator_RowDeletedName="冻结卡RowDeleted" msprop:Generator_RowChangedName="冻结卡RowChanged" msprop:Generator_RowClassName="冻结卡Row" msprop:Generator_RowChangingName="冻结卡RowChanging" msprop:Generator_RowEvArgName="冻结卡RowChangeEvent" msprop:Generator_RowEvHandlerName="冻结卡RowChangeEventHandler" msprop:Generator_TableClassName="冻结卡DataTable" msprop:Generator_TableVarName="table冻结卡" msprop:Generator_RowDeletingName="冻结卡RowDeleting" msprop:Generator_TablePropName="冻结卡">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="KH" msprop:Generator_UserColumnName="KH" msprop:Generator_ColumnVarNameInTable="columnKH" msprop:Generator_ColumnPropNameInRow="KH" msprop:Generator_ColumnPropNameInTable="KHColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CKRXM" msprop:Generator_UserColumnName="CKRXM" msprop:Generator_ColumnVarNameInTable="columnCKRXM" msprop:Generator_ColumnPropNameInRow="CKRXM" msprop:Generator_ColumnPropNameInTable="CKRXMColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="XB" msprop:Generator_UserColumnName="XB" msprop:Generator_ColumnVarNameInTable="columnXB" msprop:Generator_ColumnPropNameInRow="XB" msprop:Generator_ColumnPropNameInTable="XBColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DH" msprop:Generator_UserColumnName="DH" msprop:Generator_ColumnVarNameInTable="columnDH" msprop:Generator_ColumnPropNameInRow="DH" msprop:Generator_ColumnPropNameInTable="DHColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SFZH" msprop:Generator_UserColumnName="SFZH" msprop:Generator_ColumnVarNameInTable="columnSFZH" msprop:Generator_ColumnPropNameInRow="SFZH" msprop:Generator_ColumnPropNameInTable="SFZHColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="KYE" msprop:Generator_UserColumnName="KYE" msprop:Generator_ColumnVarNameInTable="columnKYE" msprop:Generator_ColumnPropNameInRow="KYE" msprop:Generator_ColumnPropNameInTable="KYEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DJDJY" msprop:Generator_UserColumnName="DJDJY" msprop:Generator_ColumnVarNameInTable="columnDJDJY" msprop:Generator_ColumnPropNameInRow="DJDJY" msprop:Generator_ColumnPropNameInTable="DJDJYColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DJSJ" msprop:Generator_UserColumnName="DJSJ" msprop:Generator_ColumnVarNameInTable="columnDJSJ" msprop:Generator_ColumnPropNameInRow="DJSJ" msprop:Generator_ColumnPropNameInTable="DJSJColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="挂失卡" msprop:Generator_UserTableName="挂失卡" msprop:Generator_RowDeletedName="挂失卡RowDeleted" msprop:Generator_TableClassName="挂失卡DataTable" msprop:Generator_RowChangedName="挂失卡RowChanged" msprop:Generator_RowClassName="挂失卡Row" msprop:Generator_RowChangingName="挂失卡RowChanging" msprop:Generator_RowEvArgName="挂失卡RowChangeEvent" msprop:Generator_RowEvHandlerName="挂失卡RowChangeEventHandler" msprop:Generator_TablePropName="挂失卡" msprop:Generator_TableVarName="table挂失卡" msprop:Generator_RowDeletingName="挂失卡RowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="KH" msprop:Generator_UserColumnName="KH" msprop:Generator_ColumnPropNameInRow="KH" msprop:Generator_ColumnVarNameInTable="columnKH" msprop:Generator_ColumnPropNameInTable="KHColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CKRXM" msprop:Generator_UserColumnName="CKRXM" msprop:Generator_ColumnPropNameInRow="CKRXM" msprop:Generator_ColumnVarNameInTable="columnCKRXM" msprop:Generator_ColumnPropNameInTable="CKRXMColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="XB" msprop:Generator_UserColumnName="XB" msprop:Generator_ColumnPropNameInRow="XB" msprop:Generator_ColumnVarNameInTable="columnXB" msprop:Generator_ColumnPropNameInTable="XBColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DH" msprop:Generator_UserColumnName="DH" msprop:Generator_ColumnPropNameInRow="DH" msprop:Generator_ColumnVarNameInTable="columnDH" msprop:Generator_ColumnPropNameInTable="DHColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SFZH" msprop:Generator_UserColumnName="SFZH" msprop:Generator_ColumnPropNameInRow="SFZH" msprop:Generator_ColumnVarNameInTable="columnSFZH" msprop:Generator_ColumnPropNameInTable="SFZHColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="KYE" msprop:Generator_UserColumnName="KYE" msprop:Generator_ColumnPropNameInRow="KYE" msprop:Generator_ColumnVarNameInTable="columnKYE" msprop:Generator_ColumnPropNameInTable="KYEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="GSDJY" msprop:Generator_UserColumnName="GSDJY" msprop:Generator_ColumnPropNameInRow="GSDJY" msprop:Generator_ColumnVarNameInTable="columnGSDJY" msprop:Generator_ColumnPropNameInTable="GSDJYColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="GSSJ" msprop:Generator_UserColumnName="GSSJ" msprop:Generator_ColumnPropNameInRow="GSSJ" msprop:Generator_ColumnVarNameInTable="columnGSSJ" msprop:Generator_ColumnPropNameInTable="GSSJColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<configuration>
+	<runtime>
+		<assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+			<dependentAssembly>
+				<assemblyIdentity name="CrystalDecisions.CrystalReports.Engine" publicKeyToken="692FBEA5521E1304" culture="neutral"/>
+				<bindingRedirect oldVersion="0.0.0.0-12.0.2000.0" newVersion="12.0.2000.0"/>
+			</dependentAssembly>
+			<dependentAssembly>
+				<assemblyIdentity name="CrystalDecisions.Windows.Forms" publicKeyToken="692FBEA5521E1304" culture="neutral"/>
+				<bindingRedirect oldVersion="0.0.0.0-12.0.2000.0" newVersion="12.0.2000.0"/>
+			</dependentAssembly>
+		</assemblyBinding>
+	</runtime>
+</configuration>

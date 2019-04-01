@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <appSettings>
+    <add key="CA" value="221.232.224.75;8000;"/>
+    <add key="CATimesTamp" value="221.232.224.75;8084;/hbcaTSS/hbusiness"/>
+    <add key="CACLASS" value="ts_ca_OperatorClass"/>
+  </appSettings>
+</configuration>

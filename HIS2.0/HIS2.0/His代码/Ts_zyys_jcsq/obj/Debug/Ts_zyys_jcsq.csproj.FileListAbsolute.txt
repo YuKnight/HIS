@@ -1,0 +1,14 @@
+E:\HIS2.0\His代码\Ts_zyys_jcsq\obj\Debug\Ts_zyys_jcsq.csprojResolveAssemblyReference.cache
+E:\HIS2.0\His代码\Ts_zyys_jcsq\obj\Debug\Ts_zyys_jcsq.FrmBmsave.resources
+E:\HIS2.0\His代码\Ts_zyys_jcsq\obj\Debug\Ts_zyys_jcsq.FrmBW.resources
+E:\HIS2.0\His代码\Ts_zyys_jcsq\obj\Debug\Ts_zyys_jcsq.FrmGroup.resources
+E:\HIS2.0\His代码\Ts_zyys_jcsq\obj\Debug\Ts_zyys_jcsq.FrmJCBWSZ.resources
+E:\HIS2.0\His代码\Ts_zyys_jcsq\obj\Debug\Ts_zyys_jcsq.FrmJCBWXX.resources
+E:\HIS2.0\His代码\Ts_zyys_jcsq\obj\Debug\Ts_zyys_jcsq.FrmJCSQ.resources
+E:\HIS2.0\His代码\Ts_zyys_jcsq\obj\Debug\Ts_zyys_jcsq.FrmJCSQBW.resources
+E:\HIS2.0\His代码\Ts_zyys_jcsq\obj\Debug\Ts_zyys_jcsq.FrmJybsSz.resources
+E:\HIS2.0\His代码\Ts_zyys_jcsq\obj\Debug\Ts_zyys_jcsq.FrmSetJCBW.resources
+E:\HIS2.0\His代码\Ts_zyys_jcsq\obj\Debug\Ts_zyys_jcsq.FrmYGXX.resources
+E:\HIS2.0\His代码\Ts_zyys_jcsq\obj\Debug\Ts_zyys_jcsq.Properties.Resources.resources
+E:\HIS2.0\His代码\Ts_zyys_jcsq\obj\Debug\Ts_zyys_jcsq.csproj.GenerateResource.cache
+E:\HIS2.0\His代码\Ts_zyys_jcsq\obj\Debug\Ts_zyys_jcsq.csproj.CoreCompileInputs.cache

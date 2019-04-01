@@ -1,0 +1,603 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{83DC6AD1-3E94-4C0A-BE74-BD4988B57AC7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ts_mz_report</RootNamespace>
+    <AssemblyName>ts_mz_report</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Output\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\DLL引用\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Web, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataSet1.cs">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GH_挂号发票.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GH_挂号发票.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MZSF_小票%28只打一张%29.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MZSF_小票%28只打一张%29.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MZSF_小票.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MZSF_小票.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MZ_医保结算统计%28按收费员汇总%29.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MZ_医保结算统计%28按收费员汇总%29.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MZ_医保结算统计%28明细不分页%29.cs">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MZ_医保结算统计%28明细不分页%29.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="MZ_医生收入情况统计.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MZ_医生收入情况统计.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MZ_医生收入报表%28会计%29.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MZ_医生收入报表%28会计%29.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MZ_医生收入报表%28经管%29.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MZ_医生收入报表%28经管%29.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MZ_工商银行自助机对账明细统计%28医院端%29.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MZ_工商银行自助机对账明细统计%28医院端%29.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MZ_工商银行自助机对账明细统计%28银行端%29.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MZ_工商银行自助机对账明细统计%28银行端%29.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MZ_工商银行自助机对账统计.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MZ_工商银行自助机对账统计.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MZ_操作员收款汇总表.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MZ_操作员收款汇总表.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MZ_操作员缴款汇总表.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MZ_操作员缴款汇总表.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MZ_操作员缴款表.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MZ_操作员缴款表.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MZ_科室收入报表%28会计%29.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MZ_科室收入报表%28会计%29.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MZ_科室收入报表%28经管%29.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MZ_科室收入报表%28经管%29.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MZ_诊疗卡办卡数统计.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MZ_诊疗卡办卡数统计.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MZ_诊疗卡办卡明细统计.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MZ_诊疗卡办卡明细统计.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MZ_银医诊疗卡办卡统计.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MZ_银医诊疗卡办卡统计.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MZ_银医诊疗卡支付方式统计.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MZ_银医诊疗卡支付方式统计.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MZ_银医退卡退预交金明细统计.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MZ_银医退卡退预交金明细统计.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MZ_门诊医生接诊量统计.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MZ_门诊医生接诊量统计.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MZ_门诊收费员工作量统计.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MZ_门诊收费员工作量统计.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MZ_门诊收费项目及收入统计.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MZ_门诊收费项目及收入统计.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MZ_预交款对帐单.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MZ_预交款对帐单.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MZ_预交款收款明细表.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MZ_预交款收款明细表.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MZ_预交款结余情况表.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MZ_预交款结余情况表.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MZ_预交款缴款明细表.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MZ_预交款缴款明细表.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MZ_预交款缴款汇总表.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MZ_预交款缴款汇总表.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MZ_预交金消费对账.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MZ_预交金消费对账.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MZ_预收款票据.cs">
+      <DependentUpon>MZ_预收款票据.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="MZ_挂号人次统计.cs">
+      <DependentUpon>MZ_挂号人次统计.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="MZ_Pos明细表.cs">
+      <DependentUpon>MZ_Pos明细表.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="MZ_合同单位汇总.cs">
+      <DependentUpon>MZ_合同单位汇总.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="MZ_门诊医保日统计.cs">
+      <DependentUpon>MZ_门诊医保日统计.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="YY_执行科室收入明细情况.cs">
+      <DependentUpon>YY_执行科室收入明细情况.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="GH_挂号小票.cs">
+      <DependentUpon>GH_挂号小票.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="MZ_预交款按收费员汇总.cs">
+      <DependentUpon>MZ_预交款按收费员汇总.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="MZ_预交款按缴款员汇总.cs">
+      <DependentUpon>MZ_预交款按缴款员汇总.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="MZ_医保结算统计%28明细%29.cs">
+      <DependentUpon>MZ_医保结算统计%28明细%29.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="MZ_医保结算统计%28汇总%29.cs">
+      <DependentUpon>MZ_医保结算统计%28汇总%29.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="MZ_门诊收入项目及支付项日报表.cs">
+      <DependentUpon>MZ_门诊收入项目及支付项日报表.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="诊疗卡费.cs">
+      <DependentUpon>诊疗卡费.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="津市人民医院\MZ_操作员收款汇总表.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MZ_操作员收款汇总表.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="津市人民医院\MZ_操作员缴款汇总表.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MZ_操作员缴款汇总表.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="津市人民医院\MZ_操作员缴款表.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MZ_操作员缴款表.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="津市人民医院\MZ_门诊收费项目及收入统计.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MZ_门诊收费项目及收入统计.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="邵阳人民医院\MZ_预收款票据.cs">
+      <DependentUpon>MZ_预收款票据.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3924545A-F8E2-475A-B1A4-05175BC41E50}" />
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DataSet1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DataSet1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GH_挂号发票.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>GH_挂号发票.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MZSF_小票%28只打一张%29.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MZSF_小票%28只打一张%29.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MZSF_小票.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MZSF_小票.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MZ_医保结算统计%28按收费员汇总%29.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MZ_医保结算统计%28按收费员汇总%29.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MZ_医保结算统计%28明细不分页%29.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MZ_医保结算统计%28明细不分页%29.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MZ_医生收入情况统计.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MZ_医生收入情况统计.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MZ_医生收入报表%28会计%29.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MZ_医生收入报表%28会计%29.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MZ_医生收入报表%28经管%29.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MZ_医生收入报表%28经管%29.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MZ_工商银行自助机对账明细统计%28医院端%29.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MZ_工商银行自助机对账明细统计%28医院端%29.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MZ_工商银行自助机对账明细统计%28银行端%29.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MZ_工商银行自助机对账明细统计%28银行端%29.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MZ_工商银行自助机对账统计.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MZ_工商银行自助机对账统计.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MZ_操作员收款汇总表.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MZ_操作员收款汇总表.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MZ_操作员缴款汇总表.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MZ_操作员缴款汇总表.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MZ_操作员缴款表.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MZ_操作员缴款表.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MZ_科室收入报表%28会计%29.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MZ_科室收入报表%28会计%29.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MZ_科室收入报表%28经管%29.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MZ_科室收入报表%28经管%29.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MZ_诊疗卡办卡数统计.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MZ_诊疗卡办卡数统计.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MZ_诊疗卡办卡明细统计.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MZ_诊疗卡办卡明细统计.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MZ_银医诊疗卡办卡统计.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MZ_银医诊疗卡办卡统计.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MZ_银医诊疗卡支付方式统计.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MZ_银医诊疗卡支付方式统计.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MZ_银医退卡退预交金明细统计.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MZ_银医退卡退预交金明细统计.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MZ_门诊医生接诊量统计.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MZ_门诊医生接诊量统计.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MZ_门诊收费员工作量统计.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MZ_门诊收费员工作量统计.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MZ_门诊收费项目及收入统计.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MZ_门诊收费项目及收入统计.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MZ_预交款对帐单.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MZ_预交款对帐单.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MZ_预交款收款明细表.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MZ_预交款收款明细表.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MZ_预交款结余情况表.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MZ_预交款结余情况表.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MZ_预交款缴款明细表.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MZ_预交款缴款明细表.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MZ_预交款缴款汇总表.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MZ_预交款缴款汇总表.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MZ_预交金消费对账.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MZ_预交金消费对账.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MZ_预收款票据.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MZ_预收款票据.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MZ_挂号人次统计.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MZ_挂号人次统计.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MZ_Pos明细表.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MZ_Pos明细表.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MZ_合同单位汇总.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MZ_合同单位汇总.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MZ_门诊医保日统计.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MZ_门诊医保日统计.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YY_执行科室收入明细情况.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>YY_执行科室收入明细情况.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GH_挂号小票.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>GH_挂号小票.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MZ_预交款按收费员汇总.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MZ_预交款按收费员汇总.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MZ_预交款按缴款员汇总.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MZ_预交款按缴款员汇总.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MZ_医保结算统计%28明细%29.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MZ_医保结算统计%28明细%29.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MZ_医保结算统计%28汇总%29.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MZ_医保结算统计%28汇总%29.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MZ_门诊收入项目及支付项日报表.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MZ_门诊收入项目及支付项日报表.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="诊疗卡费.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>诊疗卡费.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="津市人民医院\MZ_操作员收款汇总表.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MZ_操作员收款汇总表.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="津市人民医院\MZ_操作员缴款汇总表.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MZ_操作员缴款汇总表.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="津市人民医院\MZ_操作员缴款表.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MZ_操作员缴款表.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="津市人民医院\MZ_门诊收费项目及收入统计.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MZ_门诊收费项目及收入统计.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="邵阳人民医院\MZ_预收款票据.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MZ_预收款票据.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

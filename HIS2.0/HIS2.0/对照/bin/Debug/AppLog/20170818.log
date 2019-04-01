@@ -1,0 +1,13 @@
+Trasen.exe Created Log File
+********************************************** Local Time : 2017/8/18 11:40:37 **********************************************
+[2017-08-18 11:40:37]Begin Invoke “StartupMain(string,TrasenFrame.Classs.ConnectionType,string,bool,bool)”
+[2017-08-18 11:40:42]Initialize Database Connection Object (TrasenFrame.Forms.FrmMdiMain.Database.Initialize( connectionString ))
+[2017-08-18 11:40:42]Start Check Update File
+[2017-08-18 11:40:42]UpdateFile.ini->[UPDATETYPE]->NotUpdate=true,Stop Update and Return to Main Program
+[2017-08-18 11:41:43]Mian Window Load Successfully
+********************************************** Local Time : 2017/8/18 13:20:57 **********************************************
+[2017-08-18 13:20:57]Begin Invoke “StartupMain(string,TrasenFrame.Classs.ConnectionType,string,bool,bool)”
+[2017-08-18 13:21:01]Initialize Database Connection Object (TrasenFrame.Forms.FrmMdiMain.Database.Initialize( connectionString ))
+[2017-08-18 13:21:01]Start Check Update File
+[2017-08-18 13:21:01]UpdateFile.ini->[UPDATETYPE]->NotUpdate=true,Stop Update and Return to Main Program
+[2017-08-18 13:21:21]Mian Window Load Successfully

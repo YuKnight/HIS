@@ -1,0 +1,1525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempurl.org" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempurl.org" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempurl.org">
+      <s:element name="get_dept">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="as_yylb" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_zljb" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_returntype" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_clientid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_logpwd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="get_deptResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="get_deptResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="get_expertinfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="as_ysbm" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_returntype" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_clientid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_logpwd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="get_expertinfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="get_expertinfoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="get_dept_intro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="as_ksbm" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_yylb" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_zljb" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_returntype" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_clientid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_logpwd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="get_dept_introResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="get_dept_introResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="get_remainsour">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="as_ksbm" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_jzrq" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_bc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_ysbm" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_returntype" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_clientid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_logpwd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="get_remainsourResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="get_remainsourResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="get_expert_image">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="as_ysbm" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_ysxm" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_clientid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ab_image" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="get_expert_imageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="get_expert_imageResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ab_image" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="mz_mzdetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="as_dbdh" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_outputtype" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_clientid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="mz_mzdetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="mz_mzdetailResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="mz_mzreport">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="as_personid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_startdatetime" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_enddatetime" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_outputtype" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_clientid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_return" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="mz_mzreportResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="mz_mzreportResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_return" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ypxm_pharmaceutical">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="as_pageindex" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_pagesize" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_outputtype" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_clientid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ypxm_pharmaceuticalResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ypxm_pharmaceuticalResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ypxm_project">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="as_pageindex" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_pagesize" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_outputtype" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_clientid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ypxm_projectResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ypxm_projectResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="tj_tjjghz">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="as_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_outputtype" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_clientid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="tj_tjjghzResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tj_tjjghzResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="tj_tjxx">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="as_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_outputtype" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_clientid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="tj_tjxxResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tj_tjxxResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="id_getpatientinfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="as_ckh" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_type" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_sjh" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_clientid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="id_getpatientinfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id_getpatientinfoResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="mzjs_get_cfxm">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="as_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_clientid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_return" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="mzjs_get_cfxmResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="mzjs_get_cfxmResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_return" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="mzjs_fybjs_dkyhk">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="as_hisid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_clientid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_xmdhs" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_cfdhs" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_ysje" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_ssje" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_yhkh" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_yhlsh" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_yhshh" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_yhckh" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_yhzdh" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_yhjysj" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_yhjyje" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_fpxh" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="mzjs_fybjs_dkyhkResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="mzjs_fybjs_dkyhkResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_fpxh" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="mzjs_fybjs_dkyhk2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="as_hisid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_clientid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_xmdhs" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_cfdhs" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_ysje" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_ssje" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_yhkh" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_yhlsh" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_yhshh" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_yhckh" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_yhzdh" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_yhjysj" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_yhjyje" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_fpxh" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_fyckh" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="mzjs_fybjs_dkyhk2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="mzjs_fybjs_dkyhk2Result" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_fpxh" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_fyckh" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="mzjs_if_js">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="as_hisid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_clientid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_xmdhs" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_cfdhs" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_xmzts" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_cfzts" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="mzjs_if_jsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="mzjs_if_jsResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_xmzts" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_cfzts" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="gh_jd_wk">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="as_clientid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_sfzhm" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_xm" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_xb" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_csrq" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_mz" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_xxzz" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_lxdh" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_hisid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="gh_jd_wkResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="gh_jd_wkResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_hisid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="id_getpatientinfo2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="as_clientid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_cardno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="id_getpatientinfo2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id_getpatientinfo2Result" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="zy_brzhxx">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="as_clientid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_zyh" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_returntype" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_brzhxx" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="zy_brzhxxResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="zy_brzhxxResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_brzhxx" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="id_linkcardno">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="as_clientid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_cardno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_cardtype" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_patientid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="id_linkcardnoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id_linkcardnoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="zy_yjmx">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="as_clientid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_zyh" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_returntype" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_yjkxx" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="zy_yjmxResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="zy_yjmxResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_yjkxx" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="mzjs_cfmx">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="as_clientid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_cfdh" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_returntype" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_return" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="mzjs_cfmxResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="mzjs_cfmxResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_return" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="id_getpatientinfo_sfzh">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="as_clientid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_sfzh" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="id_getpatientinfo_sfzhResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id_getpatientinfo_sfzhResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="zy_yjk">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="as_clientid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_zyh" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_jkje" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_shh" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_zdh" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_jysj" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_jsckh" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_yhkh" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_kyxq" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_bankno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_lsh" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_sjhm" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="zy_yjkResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="zy_yjkResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_sjhm" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="mzjs_ybjs_ydk">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="as_clientid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_ybkh" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_xmdhs" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_cfdhs" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_xml_ybjsxx" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_xml_ybjsxm" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_xml_yhdkxx" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_fpxh" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_fyckh" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="mzjs_ybjs_ydkResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="mzjs_ybjs_ydkResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_fpxh" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_fyckh" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="mzjs_get_xntfjyjl">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="as_clientid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_pwd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="mzjs_get_xntfjyjlResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="mzjs_get_xntfjyjlResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="mzjs_set_xntfjyjl">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="as_clientid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_jlh" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_transdate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_transtime" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_hosttrace" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_postracenum" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_merchantnum" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_bankcardno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_authornum" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_terminalid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_transamount" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="mzjs_set_xntfjyjlResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="mzjs_set_xntfjyjlResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="mzjs_get_cfxm_emr">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="as_clientid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_adviceid_cf" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_adviceid_xm" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_return_xml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="mzjs_get_cfxm_emrResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="mzjs_get_cfxm_emrResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_return_xml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="mzjs_jscx">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="as_clientid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_hisid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="mzjs_jscxResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="mzjs_jscxResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="mzjs_get_cfxm2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="as_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_clientid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_jslx" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_returntype" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_return" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="mzjs_get_cfxm2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="mzjs_get_cfxm2Result" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_return" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="mzjs_get_fyckh">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="as_fphm" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_yybm" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="mzjs_get_fyckhResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="mzjs_get_fyckhResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="as_error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="get_deptSoapIn">
+    <wsdl:part name="parameters" element="tns:get_dept" />
+  </wsdl:message>
+  <wsdl:message name="get_deptSoapOut">
+    <wsdl:part name="parameters" element="tns:get_deptResponse" />
+  </wsdl:message>
+  <wsdl:message name="get_expertinfoSoapIn">
+    <wsdl:part name="parameters" element="tns:get_expertinfo" />
+  </wsdl:message>
+  <wsdl:message name="get_expertinfoSoapOut">
+    <wsdl:part name="parameters" element="tns:get_expertinfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="get_dept_introSoapIn">
+    <wsdl:part name="parameters" element="tns:get_dept_intro" />
+  </wsdl:message>
+  <wsdl:message name="get_dept_introSoapOut">
+    <wsdl:part name="parameters" element="tns:get_dept_introResponse" />
+  </wsdl:message>
+  <wsdl:message name="get_remainsourSoapIn">
+    <wsdl:part name="parameters" element="tns:get_remainsour" />
+  </wsdl:message>
+  <wsdl:message name="get_remainsourSoapOut">
+    <wsdl:part name="parameters" element="tns:get_remainsourResponse" />
+  </wsdl:message>
+  <wsdl:message name="get_expert_imageSoapIn">
+    <wsdl:part name="parameters" element="tns:get_expert_image" />
+  </wsdl:message>
+  <wsdl:message name="get_expert_imageSoapOut">
+    <wsdl:part name="parameters" element="tns:get_expert_imageResponse" />
+  </wsdl:message>
+  <wsdl:message name="mz_mzdetailSoapIn">
+    <wsdl:part name="parameters" element="tns:mz_mzdetail" />
+  </wsdl:message>
+  <wsdl:message name="mz_mzdetailSoapOut">
+    <wsdl:part name="parameters" element="tns:mz_mzdetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="mz_mzreportSoapIn">
+    <wsdl:part name="parameters" element="tns:mz_mzreport" />
+  </wsdl:message>
+  <wsdl:message name="mz_mzreportSoapOut">
+    <wsdl:part name="parameters" element="tns:mz_mzreportResponse" />
+  </wsdl:message>
+  <wsdl:message name="ypxm_pharmaceuticalSoapIn">
+    <wsdl:part name="parameters" element="tns:ypxm_pharmaceutical" />
+  </wsdl:message>
+  <wsdl:message name="ypxm_pharmaceuticalSoapOut">
+    <wsdl:part name="parameters" element="tns:ypxm_pharmaceuticalResponse" />
+  </wsdl:message>
+  <wsdl:message name="ypxm_projectSoapIn">
+    <wsdl:part name="parameters" element="tns:ypxm_project" />
+  </wsdl:message>
+  <wsdl:message name="ypxm_projectSoapOut">
+    <wsdl:part name="parameters" element="tns:ypxm_projectResponse" />
+  </wsdl:message>
+  <wsdl:message name="tj_tjjghzSoapIn">
+    <wsdl:part name="parameters" element="tns:tj_tjjghz" />
+  </wsdl:message>
+  <wsdl:message name="tj_tjjghzSoapOut">
+    <wsdl:part name="parameters" element="tns:tj_tjjghzResponse" />
+  </wsdl:message>
+  <wsdl:message name="tj_tjxxSoapIn">
+    <wsdl:part name="parameters" element="tns:tj_tjxx" />
+  </wsdl:message>
+  <wsdl:message name="tj_tjxxSoapOut">
+    <wsdl:part name="parameters" element="tns:tj_tjxxResponse" />
+  </wsdl:message>
+  <wsdl:message name="id_getpatientinfoSoapIn">
+    <wsdl:part name="parameters" element="tns:id_getpatientinfo" />
+  </wsdl:message>
+  <wsdl:message name="id_getpatientinfoSoapOut">
+    <wsdl:part name="parameters" element="tns:id_getpatientinfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="mzjs_get_cfxmSoapIn">
+    <wsdl:part name="parameters" element="tns:mzjs_get_cfxm" />
+  </wsdl:message>
+  <wsdl:message name="mzjs_get_cfxmSoapOut">
+    <wsdl:part name="parameters" element="tns:mzjs_get_cfxmResponse" />
+  </wsdl:message>
+  <wsdl:message name="mzjs_fybjs_dkyhkSoapIn">
+    <wsdl:part name="parameters" element="tns:mzjs_fybjs_dkyhk" />
+  </wsdl:message>
+  <wsdl:message name="mzjs_fybjs_dkyhkSoapOut">
+    <wsdl:part name="parameters" element="tns:mzjs_fybjs_dkyhkResponse" />
+  </wsdl:message>
+  <wsdl:message name="mzjs_fybjs_dkyhk2SoapIn">
+    <wsdl:part name="parameters" element="tns:mzjs_fybjs_dkyhk2" />
+  </wsdl:message>
+  <wsdl:message name="mzjs_fybjs_dkyhk2SoapOut">
+    <wsdl:part name="parameters" element="tns:mzjs_fybjs_dkyhk2Response" />
+  </wsdl:message>
+  <wsdl:message name="mzjs_if_jsSoapIn">
+    <wsdl:part name="parameters" element="tns:mzjs_if_js" />
+  </wsdl:message>
+  <wsdl:message name="mzjs_if_jsSoapOut">
+    <wsdl:part name="parameters" element="tns:mzjs_if_jsResponse" />
+  </wsdl:message>
+  <wsdl:message name="gh_jd_wkSoapIn">
+    <wsdl:part name="parameters" element="tns:gh_jd_wk" />
+  </wsdl:message>
+  <wsdl:message name="gh_jd_wkSoapOut">
+    <wsdl:part name="parameters" element="tns:gh_jd_wkResponse" />
+  </wsdl:message>
+  <wsdl:message name="id_getpatientinfo2SoapIn">
+    <wsdl:part name="parameters" element="tns:id_getpatientinfo2" />
+  </wsdl:message>
+  <wsdl:message name="id_getpatientinfo2SoapOut">
+    <wsdl:part name="parameters" element="tns:id_getpatientinfo2Response" />
+  </wsdl:message>
+  <wsdl:message name="zy_brzhxxSoapIn">
+    <wsdl:part name="parameters" element="tns:zy_brzhxx" />
+  </wsdl:message>
+  <wsdl:message name="zy_brzhxxSoapOut">
+    <wsdl:part name="parameters" element="tns:zy_brzhxxResponse" />
+  </wsdl:message>
+  <wsdl:message name="id_linkcardnoSoapIn">
+    <wsdl:part name="parameters" element="tns:id_linkcardno" />
+  </wsdl:message>
+  <wsdl:message name="id_linkcardnoSoapOut">
+    <wsdl:part name="parameters" element="tns:id_linkcardnoResponse" />
+  </wsdl:message>
+  <wsdl:message name="zy_yjmxSoapIn">
+    <wsdl:part name="parameters" element="tns:zy_yjmx" />
+  </wsdl:message>
+  <wsdl:message name="zy_yjmxSoapOut">
+    <wsdl:part name="parameters" element="tns:zy_yjmxResponse" />
+  </wsdl:message>
+  <wsdl:message name="mzjs_cfmxSoapIn">
+    <wsdl:part name="parameters" element="tns:mzjs_cfmx" />
+  </wsdl:message>
+  <wsdl:message name="mzjs_cfmxSoapOut">
+    <wsdl:part name="parameters" element="tns:mzjs_cfmxResponse" />
+  </wsdl:message>
+  <wsdl:message name="id_getpatientinfo_sfzhSoapIn">
+    <wsdl:part name="parameters" element="tns:id_getpatientinfo_sfzh" />
+  </wsdl:message>
+  <wsdl:message name="id_getpatientinfo_sfzhSoapOut">
+    <wsdl:part name="parameters" element="tns:id_getpatientinfo_sfzhResponse" />
+  </wsdl:message>
+  <wsdl:message name="zy_yjkSoapIn">
+    <wsdl:part name="parameters" element="tns:zy_yjk" />
+  </wsdl:message>
+  <wsdl:message name="zy_yjkSoapOut">
+    <wsdl:part name="parameters" element="tns:zy_yjkResponse" />
+  </wsdl:message>
+  <wsdl:message name="mzjs_ybjs_ydkSoapIn">
+    <wsdl:part name="parameters" element="tns:mzjs_ybjs_ydk" />
+  </wsdl:message>
+  <wsdl:message name="mzjs_ybjs_ydkSoapOut">
+    <wsdl:part name="parameters" element="tns:mzjs_ybjs_ydkResponse" />
+  </wsdl:message>
+  <wsdl:message name="mzjs_get_xntfjyjlSoapIn">
+    <wsdl:part name="parameters" element="tns:mzjs_get_xntfjyjl" />
+  </wsdl:message>
+  <wsdl:message name="mzjs_get_xntfjyjlSoapOut">
+    <wsdl:part name="parameters" element="tns:mzjs_get_xntfjyjlResponse" />
+  </wsdl:message>
+  <wsdl:message name="mzjs_set_xntfjyjlSoapIn">
+    <wsdl:part name="parameters" element="tns:mzjs_set_xntfjyjl" />
+  </wsdl:message>
+  <wsdl:message name="mzjs_set_xntfjyjlSoapOut">
+    <wsdl:part name="parameters" element="tns:mzjs_set_xntfjyjlResponse" />
+  </wsdl:message>
+  <wsdl:message name="mzjs_get_cfxm_emrSoapIn">
+    <wsdl:part name="parameters" element="tns:mzjs_get_cfxm_emr" />
+  </wsdl:message>
+  <wsdl:message name="mzjs_get_cfxm_emrSoapOut">
+    <wsdl:part name="parameters" element="tns:mzjs_get_cfxm_emrResponse" />
+  </wsdl:message>
+  <wsdl:message name="mzjs_jscxSoapIn">
+    <wsdl:part name="parameters" element="tns:mzjs_jscx" />
+  </wsdl:message>
+  <wsdl:message name="mzjs_jscxSoapOut">
+    <wsdl:part name="parameters" element="tns:mzjs_jscxResponse" />
+  </wsdl:message>
+  <wsdl:message name="mzjs_get_cfxm2SoapIn">
+    <wsdl:part name="parameters" element="tns:mzjs_get_cfxm2" />
+  </wsdl:message>
+  <wsdl:message name="mzjs_get_cfxm2SoapOut">
+    <wsdl:part name="parameters" element="tns:mzjs_get_cfxm2Response" />
+  </wsdl:message>
+  <wsdl:message name="mzjs_get_fyckhSoapIn">
+    <wsdl:part name="parameters" element="tns:mzjs_get_fyckh" />
+  </wsdl:message>
+  <wsdl:message name="mzjs_get_fyckhSoapOut">
+    <wsdl:part name="parameters" element="tns:mzjs_get_fyckhResponse" />
+  </wsdl:message>
+  <wsdl:portType name="n_yyghSoap">
+    <wsdl:operation name="get_dept">
+      <wsdl:input message="tns:get_deptSoapIn" />
+      <wsdl:output message="tns:get_deptSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="get_expertinfo">
+      <wsdl:input message="tns:get_expertinfoSoapIn" />
+      <wsdl:output message="tns:get_expertinfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="get_dept_intro">
+      <wsdl:input message="tns:get_dept_introSoapIn" />
+      <wsdl:output message="tns:get_dept_introSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="get_remainsour">
+      <wsdl:input message="tns:get_remainsourSoapIn" />
+      <wsdl:output message="tns:get_remainsourSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="get_expert_image">
+      <wsdl:input message="tns:get_expert_imageSoapIn" />
+      <wsdl:output message="tns:get_expert_imageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="mz_mzdetail">
+      <wsdl:input message="tns:mz_mzdetailSoapIn" />
+      <wsdl:output message="tns:mz_mzdetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="mz_mzreport">
+      <wsdl:input message="tns:mz_mzreportSoapIn" />
+      <wsdl:output message="tns:mz_mzreportSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ypxm_pharmaceutical">
+      <wsdl:input message="tns:ypxm_pharmaceuticalSoapIn" />
+      <wsdl:output message="tns:ypxm_pharmaceuticalSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ypxm_project">
+      <wsdl:input message="tns:ypxm_projectSoapIn" />
+      <wsdl:output message="tns:ypxm_projectSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="tj_tjjghz">
+      <wsdl:input message="tns:tj_tjjghzSoapIn" />
+      <wsdl:output message="tns:tj_tjjghzSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="tj_tjxx">
+      <wsdl:input message="tns:tj_tjxxSoapIn" />
+      <wsdl:output message="tns:tj_tjxxSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="id_getpatientinfo">
+      <wsdl:input message="tns:id_getpatientinfoSoapIn" />
+      <wsdl:output message="tns:id_getpatientinfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="mzjs_get_cfxm">
+      <wsdl:input message="tns:mzjs_get_cfxmSoapIn" />
+      <wsdl:output message="tns:mzjs_get_cfxmSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="mzjs_fybjs_dkyhk">
+      <wsdl:input message="tns:mzjs_fybjs_dkyhkSoapIn" />
+      <wsdl:output message="tns:mzjs_fybjs_dkyhkSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="mzjs_fybjs_dkyhk2">
+      <wsdl:input message="tns:mzjs_fybjs_dkyhk2SoapIn" />
+      <wsdl:output message="tns:mzjs_fybjs_dkyhk2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="mzjs_if_js">
+      <wsdl:input message="tns:mzjs_if_jsSoapIn" />
+      <wsdl:output message="tns:mzjs_if_jsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="gh_jd_wk">
+      <wsdl:input message="tns:gh_jd_wkSoapIn" />
+      <wsdl:output message="tns:gh_jd_wkSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="id_getpatientinfo2">
+      <wsdl:input message="tns:id_getpatientinfo2SoapIn" />
+      <wsdl:output message="tns:id_getpatientinfo2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="zy_brzhxx">
+      <wsdl:input message="tns:zy_brzhxxSoapIn" />
+      <wsdl:output message="tns:zy_brzhxxSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="id_linkcardno">
+      <wsdl:input message="tns:id_linkcardnoSoapIn" />
+      <wsdl:output message="tns:id_linkcardnoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="zy_yjmx">
+      <wsdl:input message="tns:zy_yjmxSoapIn" />
+      <wsdl:output message="tns:zy_yjmxSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="mzjs_cfmx">
+      <wsdl:input message="tns:mzjs_cfmxSoapIn" />
+      <wsdl:output message="tns:mzjs_cfmxSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="id_getpatientinfo_sfzh">
+      <wsdl:input message="tns:id_getpatientinfo_sfzhSoapIn" />
+      <wsdl:output message="tns:id_getpatientinfo_sfzhSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="zy_yjk">
+      <wsdl:input message="tns:zy_yjkSoapIn" />
+      <wsdl:output message="tns:zy_yjkSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="mzjs_ybjs_ydk">
+      <wsdl:input message="tns:mzjs_ybjs_ydkSoapIn" />
+      <wsdl:output message="tns:mzjs_ybjs_ydkSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="mzjs_get_xntfjyjl">
+      <wsdl:input message="tns:mzjs_get_xntfjyjlSoapIn" />
+      <wsdl:output message="tns:mzjs_get_xntfjyjlSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="mzjs_set_xntfjyjl">
+      <wsdl:input message="tns:mzjs_set_xntfjyjlSoapIn" />
+      <wsdl:output message="tns:mzjs_set_xntfjyjlSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="mzjs_get_cfxm_emr">
+      <wsdl:input message="tns:mzjs_get_cfxm_emrSoapIn" />
+      <wsdl:output message="tns:mzjs_get_cfxm_emrSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="mzjs_jscx">
+      <wsdl:input message="tns:mzjs_jscxSoapIn" />
+      <wsdl:output message="tns:mzjs_jscxSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="mzjs_get_cfxm2">
+      <wsdl:input message="tns:mzjs_get_cfxm2SoapIn" />
+      <wsdl:output message="tns:mzjs_get_cfxm2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="mzjs_get_fyckh">
+      <wsdl:input message="tns:mzjs_get_fyckhSoapIn" />
+      <wsdl:output message="tns:mzjs_get_fyckhSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="n_yyghSoap" type="tns:n_yyghSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="get_dept">
+      <soap:operation soapAction="http://tempurl.org/get_dept" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_expertinfo">
+      <soap:operation soapAction="http://tempurl.org/get_expertinfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_dept_intro">
+      <soap:operation soapAction="http://tempurl.org/get_dept_intro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_remainsour">
+      <soap:operation soapAction="http://tempurl.org/get_remainsour" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_expert_image">
+      <soap:operation soapAction="http://tempurl.org/get_expert_image" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mz_mzdetail">
+      <soap:operation soapAction="http://tempurl.org/mz_mzdetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mz_mzreport">
+      <soap:operation soapAction="http://tempurl.org/mz_mzreport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ypxm_pharmaceutical">
+      <soap:operation soapAction="http://tempurl.org/ypxm_pharmaceutical" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ypxm_project">
+      <soap:operation soapAction="http://tempurl.org/ypxm_project" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="tj_tjjghz">
+      <soap:operation soapAction="http://tempurl.org/tj_tjjghz" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="tj_tjxx">
+      <soap:operation soapAction="http://tempurl.org/tj_tjxx" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="id_getpatientinfo">
+      <soap:operation soapAction="http://tempurl.org/id_getpatientinfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mzjs_get_cfxm">
+      <soap:operation soapAction="http://tempurl.org/mzjs_get_cfxm" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mzjs_fybjs_dkyhk">
+      <soap:operation soapAction="http://tempurl.org/mzjs_fybjs_dkyhk" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mzjs_fybjs_dkyhk2">
+      <soap:operation soapAction="http://tempurl.org/mzjs_fybjs_dkyhk2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mzjs_if_js">
+      <soap:operation soapAction="http://tempurl.org/mzjs_if_js" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="gh_jd_wk">
+      <soap:operation soapAction="http://tempurl.org/gh_jd_wk" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="id_getpatientinfo2">
+      <soap:operation soapAction="http://tempurl.org/id_getpatientinfo2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="zy_brzhxx">
+      <soap:operation soapAction="http://tempurl.org/zy_brzhxx" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="id_linkcardno">
+      <soap:operation soapAction="http://tempurl.org/id_linkcardno" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="zy_yjmx">
+      <soap:operation soapAction="http://tempurl.org/zy_yjmx" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mzjs_cfmx">
+      <soap:operation soapAction="http://tempurl.org/mzjs_cfmx" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="id_getpatientinfo_sfzh">
+      <soap:operation soapAction="http://tempurl.org/id_getpatientinfo_sfzh" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="zy_yjk">
+      <soap:operation soapAction="http://tempurl.org/zy_yjk" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mzjs_ybjs_ydk">
+      <soap:operation soapAction="http://tempurl.org/mzjs_ybjs_ydk" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mzjs_get_xntfjyjl">
+      <soap:operation soapAction="http://tempurl.org/mzjs_get_xntfjyjl" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mzjs_set_xntfjyjl">
+      <soap:operation soapAction="http://tempurl.org/mzjs_set_xntfjyjl" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mzjs_get_cfxm_emr">
+      <soap:operation soapAction="http://tempurl.org/mzjs_get_cfxm_emr" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mzjs_jscx">
+      <soap:operation soapAction="http://tempurl.org/mzjs_jscx" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mzjs_get_cfxm2">
+      <soap:operation soapAction="http://tempurl.org/mzjs_get_cfxm2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mzjs_get_fyckh">
+      <soap:operation soapAction="http://tempurl.org/mzjs_get_fyckh" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="n_yyghSoap12" type="tns:n_yyghSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="get_dept">
+      <soap12:operation soapAction="http://tempurl.org/get_dept" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_expertinfo">
+      <soap12:operation soapAction="http://tempurl.org/get_expertinfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_dept_intro">
+      <soap12:operation soapAction="http://tempurl.org/get_dept_intro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_remainsour">
+      <soap12:operation soapAction="http://tempurl.org/get_remainsour" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_expert_image">
+      <soap12:operation soapAction="http://tempurl.org/get_expert_image" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mz_mzdetail">
+      <soap12:operation soapAction="http://tempurl.org/mz_mzdetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mz_mzreport">
+      <soap12:operation soapAction="http://tempurl.org/mz_mzreport" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ypxm_pharmaceutical">
+      <soap12:operation soapAction="http://tempurl.org/ypxm_pharmaceutical" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ypxm_project">
+      <soap12:operation soapAction="http://tempurl.org/ypxm_project" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="tj_tjjghz">
+      <soap12:operation soapAction="http://tempurl.org/tj_tjjghz" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="tj_tjxx">
+      <soap12:operation soapAction="http://tempurl.org/tj_tjxx" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="id_getpatientinfo">
+      <soap12:operation soapAction="http://tempurl.org/id_getpatientinfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mzjs_get_cfxm">
+      <soap12:operation soapAction="http://tempurl.org/mzjs_get_cfxm" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mzjs_fybjs_dkyhk">
+      <soap12:operation soapAction="http://tempurl.org/mzjs_fybjs_dkyhk" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mzjs_fybjs_dkyhk2">
+      <soap12:operation soapAction="http://tempurl.org/mzjs_fybjs_dkyhk2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mzjs_if_js">
+      <soap12:operation soapAction="http://tempurl.org/mzjs_if_js" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="gh_jd_wk">
+      <soap12:operation soapAction="http://tempurl.org/gh_jd_wk" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="id_getpatientinfo2">
+      <soap12:operation soapAction="http://tempurl.org/id_getpatientinfo2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="zy_brzhxx">
+      <soap12:operation soapAction="http://tempurl.org/zy_brzhxx" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="id_linkcardno">
+      <soap12:operation soapAction="http://tempurl.org/id_linkcardno" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="zy_yjmx">
+      <soap12:operation soapAction="http://tempurl.org/zy_yjmx" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mzjs_cfmx">
+      <soap12:operation soapAction="http://tempurl.org/mzjs_cfmx" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="id_getpatientinfo_sfzh">
+      <soap12:operation soapAction="http://tempurl.org/id_getpatientinfo_sfzh" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="zy_yjk">
+      <soap12:operation soapAction="http://tempurl.org/zy_yjk" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mzjs_ybjs_ydk">
+      <soap12:operation soapAction="http://tempurl.org/mzjs_ybjs_ydk" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mzjs_get_xntfjyjl">
+      <soap12:operation soapAction="http://tempurl.org/mzjs_get_xntfjyjl" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mzjs_set_xntfjyjl">
+      <soap12:operation soapAction="http://tempurl.org/mzjs_set_xntfjyjl" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mzjs_get_cfxm_emr">
+      <soap12:operation soapAction="http://tempurl.org/mzjs_get_cfxm_emr" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mzjs_jscx">
+      <soap12:operation soapAction="http://tempurl.org/mzjs_jscx" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mzjs_get_cfxm2">
+      <soap12:operation soapAction="http://tempurl.org/mzjs_get_cfxm2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mzjs_get_fyckh">
+      <soap12:operation soapAction="http://tempurl.org/mzjs_get_fyckh" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="n_yygh">
+    <wsdl:port name="n_yyghSoap" binding="tns:n_yyghSoap">
+      <soap:address location="http://192.168.0.34/yygh/n_yygh.asmx" />
+    </wsdl:port>
+    <wsdl:port name="n_yyghSoap12" binding="tns:n_yyghSoap12">
+      <soap12:address location="http://192.168.0.34/yygh/n_yygh.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

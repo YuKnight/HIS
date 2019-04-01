@@ -1,0 +1,14 @@
+E:\HIS2.0\对照\obj\Debug\ResolveAssemblyReference.cache
+E:\HIS2.0\对照\obj\Debug\ts_yk_dz.Frmgjks.resources
+E:\HIS2.0\对照\obj\Debug\ts_yk_dz.Properties.Resources.resources
+E:\HIS2.0\对照\obj\Debug\国标科室对照.csproj.GenerateResource.Cache
+E:\HIS2.0\对照\bin\Debug\ts_yk_dz.exe
+E:\HIS2.0\对照\bin\Debug\ts_yk_dz.pdb
+E:\HIS2.0\对照\bin\Debug\TrasenClasses.dll
+E:\HIS2.0\对照\bin\Debug\TrasenFrame.dll
+E:\HIS2.0\对照\bin\Debug\Trasen.Editor.dll
+E:\HIS2.0\对照\bin\Debug\ts_HospData_Share.dll
+E:\HIS2.0\对照\bin\Debug\TrasenClasses.xml
+E:\HIS2.0\对照\bin\Debug\ts_HospData_Share.pdb
+E:\HIS2.0\对照\obj\Debug\ts_yk_dz.exe
+E:\HIS2.0\对照\obj\Debug\ts_yk_dz.pdb

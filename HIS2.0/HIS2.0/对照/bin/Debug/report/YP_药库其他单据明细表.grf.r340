@@ -1,0 +1,369 @@
+﻿Object Report
+	Version='5.8.0.5'
+	Title='你的报表标题'
+	Object Font
+		Name='宋体'
+		Size=105000,0
+		Weight=400
+		Charset=134
+	End
+	Object Printer
+		Oriention=Landscape
+		LeftMargin=1
+		TopMargin=1
+		RightMargin=1
+		BottomMargin=1
+	End
+	Object DetailGrid
+		BorderWidth=2
+		Object Recordset
+			Items Field
+				Item
+					Name='编码'
+					Type=Integer
+				End
+				Item
+					Name='业务类型'
+				End
+				Item
+					Name='品名'
+				End
+				Item
+					Name='规格'
+				End
+				Item
+					Name='单位'
+				End
+				Item
+					Name='数量'
+					Type=Float
+				End
+				Item
+					Name='单价'
+					Type=Float
+				End
+				Item
+					Name='金额'
+					Type=Float
+				End
+			End
+		End
+		Items Column
+			Item
+				Name='编码'
+				Width=2.16958
+			End
+			Item
+				Name='业务类型'
+				Width=3.01625
+			End
+			Item
+				Name='品名'
+				Width=6.58813
+			End
+			Item
+				Name='规格'
+				Width=5.3975
+			End
+			Item
+				Name='单位'
+				Width=1.40229
+			End
+			Item
+				Name='数量'
+			End
+			Item
+				Name='单价'
+			End
+			Item
+				Name='金额'
+			End
+		End
+		Object ColumnContent
+			Items ColumnContentCell
+				Item
+					Column='编码'
+					Object Font
+						Name='宋体'
+						Size=90000,0
+						Weight=400
+						Charset=134
+					End
+					DataField='编码'
+				End
+				Item
+					Column='业务类型'
+					Object Font
+						Name='仿宋'
+						Size=90000,0
+						Weight=400
+						Charset=134
+					End
+					DataField='业务类型'
+				End
+				Item
+					Column='品名'
+					Object Font
+						Name='仿宋'
+						Size=90000,0
+						Weight=400
+						Charset=134
+					End
+					DataField='品名'
+				End
+				Item
+					Column='规格'
+					Object Font
+						Name='仿宋'
+						Size=90000,0
+						Weight=400
+						Charset=134
+					End
+					DataField='规格'
+				End
+				Item
+					Column='单位'
+					Object Font
+						Name='仿宋'
+						Size=90000,0
+						Weight=400
+						Charset=134
+					End
+					DataField='单位'
+				End
+				Item
+					Column='数量'
+					Object Font
+						Name='幼圆'
+						Size=90000,0
+						Weight=400
+						Charset=134
+					End
+					TextAlign=MiddleRight
+					DataField='数量'
+				End
+				Item
+					Column='单价'
+					Object Font
+						Name='幼圆'
+						Size=90000,0
+						Weight=400
+						Charset=134
+					End
+					TextAlign=MiddleRight
+					DataField='单价'
+				End
+				Item
+					Column='金额'
+					Object Font
+						Name='幼圆'
+						Size=90000,0
+						Weight=400
+						Charset=134
+					End
+					TextAlign=MiddleRight
+					DataField='金额'
+				End
+			End
+		End
+		Object ColumnTitle
+			Items ColumnTitleCell
+				Item
+					GroupTitle=F
+					Column='编码'
+					Object Font
+						Name='方正姚体'
+						Size=105000,0
+						Weight=400
+						Charset=134
+					End
+					TextAlign=MiddleCenter
+					Text='编码'
+				End
+				Item
+					GroupTitle=F
+					Column='业务类型'
+					Object Font
+						Name='方正姚体'
+						Size=105000,0
+						Weight=400
+						Charset=134
+					End
+					TextAlign=MiddleCenter
+					Text='业务类型'
+				End
+				Item
+					GroupTitle=F
+					Column='品名'
+					Object Font
+						Name='方正姚体'
+						Size=105000,0
+						Weight=400
+						Charset=134
+					End
+					TextAlign=MiddleCenter
+					Text='品名'
+				End
+				Item
+					GroupTitle=F
+					Column='规格'
+					Object Font
+						Name='方正姚体'
+						Size=105000,0
+						Weight=400
+						Charset=134
+					End
+					TextAlign=MiddleCenter
+					Text='规格'
+				End
+				Item
+					GroupTitle=F
+					Column='单位'
+					Object Font
+						Name='方正姚体'
+						Size=105000,0
+						Weight=400
+						Charset=134
+					End
+					TextAlign=MiddleCenter
+					Text='单位'
+				End
+				Item
+					GroupTitle=F
+					Column='数量'
+					Object Font
+						Name='方正姚体'
+						Size=105000,0
+						Weight=400
+						Charset=134
+					End
+					TextAlign=MiddleCenter
+					Text='数量'
+				End
+				Item
+					GroupTitle=F
+					Column='单价'
+					Object Font
+						Name='方正姚体'
+						Size=105000,0
+						Weight=400
+						Charset=134
+					End
+					TextAlign=MiddleCenter
+					Text='单价'
+				End
+				Item
+					GroupTitle=F
+					Column='金额'
+					Object Font
+						Name='方正姚体'
+						Size=105000,0
+						Weight=400
+						Charset=134
+					End
+					TextAlign=MiddleCenter
+					Text='金额'
+				End
+			End
+		End
+		Items Group
+			Item
+				Name='Group1'
+				Object GroupHeader
+					Height=0
+				End
+				Object GroupFooter
+					Height=0.635
+					Items Control
+						Item
+							Type=SummaryBox
+							Name='SummaryBox1'
+							AlignColumn='金额'
+							Left=24.5533
+							Width=3.01625
+							Height=0.608542
+							Object Font
+								Name='幼圆'
+								Size=105000,0
+								Bold=T
+								Charset=134
+							End
+							TextAlign=MiddleRight
+							DataField='金额'
+						End
+						Item
+							Type=StaticBox
+							Name='StaticBox1'
+							AlignColumn='单价'
+							Left=21.5635
+							Width=3.01625
+							Height=0.608542
+							Object Font
+								Name='仿宋'
+								Size=105000,0
+								Bold=T
+								Charset=134
+							End
+							Text='合计金额:'
+						End
+					End
+				End
+			End
+		End
+	End
+	Items Parameter
+		Item
+			Name='库房类型'
+		End
+		Item
+			Name='库房名称'
+		End
+		Item
+			Name='价格统计方式'
+		End
+		Item
+			Name='统计年份'
+		End
+		Item
+			Name='统计月份'
+		End
+	End
+	Items Section
+		Item
+			Type=ReportHeader
+			Height=1.79917
+			Items Control
+				Item
+					Type=MemoBox
+					Name='MemoBox1'
+					Anchor=[Left|Top|Right]
+					Width=27.596
+					Height=1.00542
+					Object Font
+						Name='方正姚体'
+						Size=150000,0
+						Weight=400
+						Charset=134
+					End
+					TextAlign=MiddleCenter
+					Text='([#库房名称#])其他单据明细统计([#{价格统计方式}#])'
+				End
+				Item
+					Type=MemoBox
+					Name='MemoBox2'
+					Top=1.00542
+					Width=27.596
+					Height=0.608542
+					Object Font
+						Name='仿宋'
+						Size=105000,0
+						Weight=400
+						Charset=134
+					End
+					TextAlign=MiddleCenter
+					Text='统计年月：[#统计年份#]年[#{统计月份}#]月'
+				End
+			End
+		End
+	End
+End

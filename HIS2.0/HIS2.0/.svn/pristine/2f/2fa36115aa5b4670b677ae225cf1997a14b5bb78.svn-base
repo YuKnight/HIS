@@ -1,0 +1,208 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9C828FCF-D53B-4986-ACBA-16EE17A62101}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ts_mz_xtsz</RootNamespace>
+    <AssemblyName>ts_mz_xtsz</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Output\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\Debug\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Excel, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="MagicLibrary, Version=1.7.0.0, Culture=neutral, PublicKeyToken=3a6eb82f876a49bc">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Trasen.Controls, Version=1.0.0.26, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="TrasenClasses, Version=2011.6.7.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="TrasenFrame, Version=2011.12.26.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ts_HospData_Share, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ts_mzys_class, Version=10.12.18.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ts_mz_class, Version=10.12.18.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ts_yb_interface, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ts_yb_ybpp, Version=2011.12.27.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="ts_YpClass, Version=1.0.4468.19576, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Frm_XgFpd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_XgFpd.Designer.cs">
+      <DependentUpon>Frm_XgFpd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="门诊用法关联费用.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="门诊用法关联费用.Designer.cs">
+      <DependentUpon>门诊用法关联费用.cs</DependentUpon>
+    </Compile>
+    <Compile Include="药品科室限制.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="药品科室限制.Designer.cs">
+      <DependentUpon>药品科室限制.cs</DependentUpon>
+    </Compile>
+    <Compile Include="刷新医保比例及匹配关系.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="刷新医保比例及匹配关系.Designer.cs">
+      <DependentUpon>刷新医保比例及匹配关系.cs</DependentUpon>
+    </Compile>
+    <Compile Include="导出HIS目录到医保.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="导出HIS目录到医保.Designer.cs">
+      <DependentUpon>导出HIS目录到医保.cs</DependentUpon>
+    </Compile>
+    <Compile Include="常用药品项目.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="常用药品项目.designer.cs">
+      <DependentUpon>常用药品项目.cs</DependentUpon>
+    </Compile>
+    <Compile Include="门诊留观项目设置.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="门诊留观项目设置.designer.cs">
+      <DependentUpon>门诊留观项目设置.cs</DependentUpon>
+    </Compile>
+    <Compile Include="常用诊断.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="常用诊断.designer.cs">
+      <DependentUpon>常用诊断.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstanceForm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="发票管理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="发票管理.Designer.cs">
+      <DependentUpon>发票管理.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Frm_XgFpd.resx">
+      <DependentUpon>Frm_XgFpd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="刷新医保比例及匹配关系.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>刷新医保比例及匹配关系.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="导出HIS目录到医保.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>导出HIS目录到医保.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="常用药品项目.resx">
+      <DependentUpon>常用药品项目.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="药品科室限制.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>药品科室限制.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="门诊用法关联费用.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>门诊用法关联费用.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="门诊留观项目设置.resx">
+      <DependentUpon>门诊留观项目设置.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="常用诊断.resx">
+      <DependentUpon>常用诊断.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="发票管理.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>发票管理.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001_01.gif" />
+    <None Include="Resources\001_36.gif" />
+    <None Include="Resources\001_05.gif" />
+    <None Include="Resources\001_03.gif" />
+    <None Include="Resources\001_60.gif" />
+    <None Include="Resources\001_39.gif" />
+    <None Include="Resources\001_09.gif" />
+    <None Include="Resources\001_38.gif" />
+    <Content Include="Resources\BOOK06.ICO" />
+    <Content Include="Resources\Delete1.ico" />
+    <Content Include="Resources\Delete2.ico" />
+    <Content Include="Resources\MISC1054.ICO" />
+    <Content Include="Resources\MISC1059.ICO" />
+    <Content Include="Resources\MIXE~306.ICO" />
+    <Content Include="Resources\NOTE10B.ICO" />
+    <Content Include="Resources\NOTE16.ICO" />
+    <Content Include="Resources\NOTE17.ICO" />
+    <Content Include="Resources\NOTEPAD.ICO" />
+    <Content Include="Resources\post.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

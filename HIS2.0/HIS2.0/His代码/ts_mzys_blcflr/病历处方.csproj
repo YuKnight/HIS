@@ -1,0 +1,677 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2DDAA29F-4365-4E8D-AE9F-09271D2415E3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ts_mzys_blcflr</RootNamespace>
+    <AssemblyName>ts_mzys_blcflr</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Output\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\Debug\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DotNetSpeech, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Excel, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DLL引用\Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="MagicLibrary, Version=1.7.0.0, Culture=neutral, PublicKeyToken=3a6eb82f876a49bc">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DLL引用\MagicLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="PrintClass, Version=1.0.4849.24517, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DLL引用\PrintClass.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Trasen.Controls, Version=1.0.0.61, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLL引用\Trasen.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Trasen.Print.Grid5, Version=1.1.5290.17820, Culture=neutral, processorArchitecture=x86" />
+    <Reference Include="TrasenClasses, Version=2011.6.7.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLL引用\TrasenClasses.dll</HintPath>
+    </Reference>
+    <Reference Include="TrasenFrame, Version=5.1.5102.28272, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLL引用\TrasenFrame.dll</HintPath>
+    </Reference>
+    <Reference Include="ts_blxt_cxtj, Version=2013.7.16.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ts_Caller, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLL引用\ts_Caller.dll</HintPath>
+    </Reference>
+    <Reference Include="Ts_Clinicalpathway_Factory, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLL引用\Ts_Clinicalpathway_Factory.dll</HintPath>
+    </Reference>
+    <Reference Include="Ts_Fz_Help, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLL引用\Ts_Fz_Help.dll</HintPath>
+    </Reference>
+    <Reference Include="Ts_Hlyy_Interface, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLL引用\Ts_Hlyy_Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="ts_jc_disease, Version=12.3.4575.20242, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLL引用\ts_jc_disease.dll</HintPath>
+    </Reference>
+    <Reference Include="ts_jc_log, Version=12.3.4847.30382, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ts_jc_wardbed, Version=12.3.4534.38011, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLL引用\ts_jc_wardbed.dll</HintPath>
+    </Reference>
+    <Reference Include="ts_jc_ysghxhsz, Version=12.3.5072.36846, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLL引用\ts_jc_ysghxhsz.dll</HintPath>
+    </Reference>
+    <Reference Include="ts_mzlg_yslg, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLL引用 - 副本\ts_mzlg_yslg.dll</HintPath>
+    </Reference>
+    <Reference Include="ts_mzmr_OperateClass, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLL引用\ts_mzmr_OperateClass.dll</HintPath>
+    </Reference>
+    <Reference Include="ts_mzys_class, Version=10.12.18.1, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="ts_mzys_fzgl, Version=10.12.18.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLL引用\ts_mzys_fzgl.dll</HintPath>
+    </Reference>
+    <Reference Include="ts_mzys_yjsqd, Version=10.12.18.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLL引用\ts_mzys_yjsqd.dll</HintPath>
+    </Reference>
+    <Reference Include="ts_mz_class, Version=10.12.18.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLL引用\ts_mz_class.dll</HintPath>
+    </Reference>
+    <Reference Include="ts_mz_cx, Version=12.2.15.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLL引用\ts_mz_cx.dll</HintPath>
+    </Reference>
+    <Reference Include="ts_mz_kgl, Version=10.12.18.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLL引用\ts_mz_kgl.dll</HintPath>
+    </Reference>
+    <Reference Include="Ts_OrderRegist, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Ts_PacsCx, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLL引用\Ts_PacsCx.dll</HintPath>
+    </Reference>
+    <Reference Include="ts_pacs_interface, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLL引用\ts_pacs_interface.dll</HintPath>
+    </Reference>
+    <Reference Include="ts_pjq, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLL引用\ts_pjq.dll</HintPath>
+    </Reference>
+    <Reference Include="ts_Read_hospitalCard, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLL引用\ts_Read_hospitalCard.dll</HintPath>
+    </Reference>
+    <Reference Include="Ts_Visit_Class, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ts_Xd_interface, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLL引用\ts_Xd_interface.dll</HintPath>
+    </Reference>
+    <Reference Include="ts_yb_interface, Version=1.0.0.27507, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLL引用\ts_yb_interface.dll</HintPath>
+    </Reference>
+    <Reference Include="ts_yb_mzgl, Version=10.10.21.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLL引用\ts_yb_mzgl.dll</HintPath>
+    </Reference>
+    <Reference Include="ts_Yk_ReportView, Version=1.0.4542.23184, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLL引用\ts_Yk_ReportView.dll</HintPath>
+    </Reference>
+    <Reference Include="ts_YpClass, Version=1.0.5189.19785, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLL引用\ts_YpClass.dll</HintPath>
+    </Reference>
+    <Reference Include="Ts_zyys_jcsq, Version=1.0.5074.30102, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLL引用\Ts_zyys_jcsq.dll</HintPath>
+    </Reference>
+    <Reference Include="Ts_zyys_public, Version=1.0.5184.28693, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLL引用\Ts_zyys_public.dll</HintPath>
+    </Reference>
+    <Reference Include="Ts_zyys_yzgl, Version=1.0.5075.16384, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLL引用\Ts_zyys_yzgl.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="UCKeyborad.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCKeyborad.Designer.cs">
+      <DependentUpon>UCKeyborad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="修改药品单位.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="修改药品单位.Designer.cs">
+      <DependentUpon>修改药品单位.cs</DependentUpon>
+    </Compile>
+    <Compile Include="体征录入.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="体征录入.designer.cs">
+      <DependentUpon>体征录入.cs</DependentUpon>
+    </Compile>
+    <Compile Include="执行科室选择.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="执行科室选择.Designer.cs">
+      <DependentUpon>执行科室选择.cs</DependentUpon>
+    </Compile>
+    <Compile Include="院感处理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="院感处理.Designer.cs">
+      <DependentUpon>院感处理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="住院证查询.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="住院证查询.Designer.cs">
+      <DependentUpon>住院证查询.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ZdModel.cs" />
+    <Compile Include="新建模板.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="新建模板.Designer.cs">
+      <DependentUpon>新建模板.cs</DependentUpon>
+    </Compile>
+    <Compile Include="新病人登记%28关联健康卡%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="新病人登记%28关联健康卡%29.Designer.cs">
+      <DependentUpon>新病人登记%28关联健康卡%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="用药申请.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="用药申请.Designer.cs">
+      <DependentUpon>用药申请.cs</DependentUpon>
+    </Compile>
+    <Compile Include="用药级别审核.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="用药级别审核.Designer.cs">
+      <DependentUpon>用药级别审核.cs</DependentUpon>
+    </Compile>
+    <Compile Include="诊断修改.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="诊断修改.Designer.cs">
+      <DependentUpon>诊断修改.cs</DependentUpon>
+    </Compile>
+    <Compile Include="诊断清除.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="诊断清除.Designer.cs">
+      <DependentUpon>诊断清除.cs</DependentUpon>
+    </Compile>
+    <Compile Include="三级退费申请.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="三级退费申请.designer.cs">
+      <DependentUpon>三级退费申请.cs</DependentUpon>
+    </Compile>
+    <Compile Include="医生站挂号.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="医生站挂号.Designer.cs">
+      <DependentUpon>医生站挂号.cs</DependentUpon>
+    </Compile>
+    <Compile Include="病人月经史.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="病人月经史.Designer.cs">
+      <DependentUpon>病人月经史.cs</DependentUpon>
+    </Compile>
+    <Compile Include="选择关联费用.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="选择关联费用.Designer.cs">
+      <DependentUpon>选择关联费用.cs</DependentUpon>
+    </Compile>
+    <Compile Include="健康档案浏览器.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="健康档案浏览器.Designer.cs">
+      <DependentUpon>健康档案浏览器.cs</DependentUpon>
+    </Compile>
+    <Compile Include="模板维护.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="模板维护.Designer.cs">
+      <DependentUpon>模板维护.cs</DependentUpon>
+    </Compile>
+    <Compile Include="选择医保类型.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="选择医保类型.Designer.cs">
+      <DependentUpon>选择医保类型.cs</DependentUpon>
+    </Compile>
+    <Compile Include="处方备注维护.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="处方备注维护.Designer.cs">
+      <DependentUpon>处方备注维护.cs</DependentUpon>
+    </Compile>
+    <Compile Include="委托申请.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="委托申请.designer.cs">
+      <DependentUpon>委托申请.cs</DependentUpon>
+    </Compile>
+    <Compile Include="住院证.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="住院证.Designer.cs">
+      <DependentUpon>住院证.cs</DependentUpon>
+    </Compile>
+    <Compile Include="诊断选择.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="诊断选择.Designer.cs">
+      <DependentUpon>诊断选择.cs</DependentUpon>
+    </Compile>
+    <Compile Include="嘱托选择.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="嘱托选择.Designer.cs">
+      <DependentUpon>嘱托选择.cs</DependentUpon>
+    </Compile>
+    <Compile Include="转诊申请.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="转诊申请.Designer.cs">
+      <DependentUpon>转诊申请.cs</DependentUpon>
+    </Compile>
+    <Compile Include="选择药品.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="选择药品.Designer.cs">
+      <DependentUpon>选择药品.cs</DependentUpon>
+    </Compile>
+    <Compile Include="选择模板明细.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="选择模板明细.Designer.cs">
+      <DependentUpon>选择模板明细.cs</DependentUpon>
+    </Compile>
+    <Compile Include="病人就诊历史查询.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="病人就诊历史查询.Designer.cs">
+      <DependentUpon>病人就诊历史查询.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstanceForm.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="病历处方查询.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="病历处方查询.Designer.cs">
+      <DependentUpon>病历处方查询.cs</DependentUpon>
+    </Compile>
+    <Compile Include="病历处方.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="病历处方.Designer.cs">
+      <DependentUpon>病历处方.cs</DependentUpon>
+    </Compile>
+    <Compile Include="病历处方.SystemCfg.cs">
+      <DependentUpon>病历处方.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="新病人登记.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="新病人登记.Designer.cs">
+      <DependentUpon>新病人登记.cs</DependentUpon>
+    </Compile>
+    <Compile Include="诊室确认.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="诊室确认.Designer.cs">
+      <DependentUpon>诊室确认.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="UCKeyborad.resx">
+      <DependentUpon>UCKeyborad.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="修改药品单位.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>修改药品单位.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="体征录入.resx">
+      <DependentUpon>体征录入.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="执行科室选择.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>执行科室选择.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="院感处理.resx">
+      <DependentUpon>院感处理.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="住院证查询.resx">
+      <DependentUpon>住院证查询.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="三级退费申请.resx">
+      <DependentUpon>三级退费申请.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="医生站挂号.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>医生站挂号.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="健康档案浏览器.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>健康档案浏览器.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="新建模板.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>新建模板.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="新病人登记%28关联健康卡%29.resx">
+      <DependentUpon>新病人登记%28关联健康卡%29.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="模板维护.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>模板维护.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="选择医保类型.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>选择医保类型.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="处方备注维护.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>处方备注维护.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="委托申请.resx">
+      <DependentUpon>委托申请.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="住院证.resx">
+      <DependentUpon>住院证.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="用药申请.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>用药申请.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="用药级别审核.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>用药级别审核.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="病人月经史.resx">
+      <DependentUpon>病人月经史.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="诊断修改.resx">
+      <DependentUpon>诊断修改.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="诊断清除.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>诊断清除.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="诊断选择.resx">
+      <DependentUpon>诊断选择.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="嘱托选择.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>嘱托选择.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="转诊申请.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>转诊申请.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="选择关联费用.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>选择关联费用.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="选择药品.resx">
+      <DependentUpon>选择药品.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="病人就诊历史查询.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>病人就诊历史查询.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="病历处方查询.resx">
+      <DependentUpon>病历处方查询.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="病历处方.resx">
+      <DependentUpon>病历处方.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="新病人登记.resx">
+      <DependentUpon>新病人登记.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="诊室确认.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>诊室确认.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="选择模板明细.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>选择模板明细.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MISC1054.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NOTEPAD.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MIXE~306.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NOTE17.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NOTE16.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NOTE10B.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BOOK06.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MISC1059.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\post.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tongs.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\THE dynamo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exclamation mark-7.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NOTE11.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MO3_G.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BMPVIEW2.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VIEWER1.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FLOPPY1.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FINDER.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FINDER2.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fax1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pen1 020.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pospe.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recyclerfull.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pen1 033.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Online.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FILESYS.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PRINTER.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VIEWER11.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\0.bmp" />
+    <Content Include="Resources\1.bmp" />
+    <Content Include="Resources\2.bmp" />
+    <None Include="app.config" />
+    <None Include="Resources\20120321020054727_easyicon_cn_24.png" />
+    <Content Include="Resources\3.bmp" />
+    <Content Include="Resources\4.bmp" />
+    <None Include="Resources\yp2.gif" />
+    <None Include="Resources\yp.bmp" />
+    <None Include="Resources\yp.gif" />
+    <None Include="Resources\yp1.gif" />
+    <None Include="Resources\FLOPPY2.ICO" />
+    <None Include="Resources\AddImage.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

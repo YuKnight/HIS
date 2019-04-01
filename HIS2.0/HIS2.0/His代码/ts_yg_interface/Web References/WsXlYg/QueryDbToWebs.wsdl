@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:intf="http://jdbc.ycy.xinglin.com" xmlns:impl="http://jdbc.ycy.xinglin.com" targetNamespace="http://jdbc.ycy.xinglin.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://jdbc.ycy.xinglin.com">
+      <xsd:element name="getInfo1">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="xml" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getInfo1Response">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="getInfo1Return" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="getInfo1Response">
+    <wsdl:part name="parameters" element="impl:getInfo1Response" />
+  </wsdl:message>
+  <wsdl:message name="getInfo1Request">
+    <wsdl:part name="parameters" element="impl:getInfo1" />
+  </wsdl:message>
+  <wsdl:portType name="QueryDbToWebs">
+    <wsdl:operation name="getInfo1">
+      <wsdl:input name="getInfo1Request" message="impl:getInfo1Request" />
+      <wsdl:output name="getInfo1Response" message="impl:getInfo1Response" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="QueryDbToWebsSoapBinding" type="impl:QueryDbToWebs">
+    <wsdlsoap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getInfo1">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="getInfo1Request">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getInfo1Response">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="QueryDbToWebsService">
+    <wsdl:port name="QueryDbToWebs" binding="impl:QueryDbToWebsSoapBinding">
+      <wsdlsoap:address location="http://192.168.100.126/DataHandling/services/QueryDbToWebs" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

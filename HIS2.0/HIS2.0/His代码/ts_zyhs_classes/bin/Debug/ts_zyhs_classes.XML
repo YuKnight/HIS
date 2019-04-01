@@ -1,0 +1,867 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ts_zyhs_classes</name>
+    </assembly>
+    <members>
+        <member name="T:ts_zyhs_classes.ClassStatic">
+            <summary>
+            ClassStatic 的摘要说明。
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet">
+             <summary>
+            Represents a strongly typed in-memory cache of data.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabzxdDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabGrdDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabscjlDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabYbhljlDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabWzhljlDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabWardjbjlDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabWardjbjl_brdtDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabRypgDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabpbbDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabPbgzlDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabJydprtDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.MedYPMXDDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.MedYPTLDDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.ZXD_SYKDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.BRFeeMXDDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.BRFeeHZDDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.EQUAPPLSDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.EQUAPPLYDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabJbrMedprtDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabWardGzrzDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabWardGzrzMxDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.EQUAPPLS1DataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabBqkssrDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabJYSQDDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabYbbryfDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabYkjxcqkbDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.repJSBRSRDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabfeelistDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabCwsylDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabZYJZPZDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.BRFeeCKDDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabsqzxdDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.BRFeeCKDHZDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabzxdRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabGrdRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabscjlRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabYbhljlRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabWzhljlRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabWardjbjlRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabWardjbjl_brdtRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabRypgRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabpbbRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabPbgzlRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabJydprtRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.MedYPMXDRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.MedYPTLDRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.ZXD_SYKRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.BRFeeMXDRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.BRFeeHZDRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.EQUAPPLSRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.EQUAPPLYRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabJbrMedprtRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabWardGzrzRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabWardGzrzMxRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.EQUAPPLS1Row">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabBqkssrRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabJYSQDRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabYbbryfRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabYkjxcqkbRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.repJSBRSRRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabfeelistRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabCwsylRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabZYJZPZRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.BRFeeCKDRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabsqzxdRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.BRFeeCKDHZRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabzxdRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabGrdRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabscjlRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabYbhljlRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabWzhljlRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabWardjbjlRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabWardjbjl_brdtRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabRypgRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabpbbRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabPbgzlRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabJydprtRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.MedYPMXDRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.MedYPTLDRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.ZXD_SYKRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.BRFeeMXDRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.BRFeeHZDRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.EQUAPPLSRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.EQUAPPLYRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabJbrMedprtRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabWardGzrzRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabWardGzrzMxRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.EQUAPPLS1RowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabBqkssrRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabJYSQDRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabYbbryfRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabYkjxcqkbRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.repJSBRSRRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabfeelistRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabCwsylRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabZYJZPZRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.BRFeeCKDRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.tabsqzxdRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.TheReportDateSet.BRFeeCKDHZRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.frmInPassword">
+            <summary>
+            Form1 的摘要说明。
+            </summary>
+        </member>
+        <member name="F:ts_zyhs_classes.frmInPassword.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:ts_zyhs_classes.frmInPassword.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+        </member>
+        <member name="M:ts_zyhs_classes.frmInPassword.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要使用代码编辑器修改
+            此方法的内容。
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.BaseFunc">
+            <summary>
+            护士站的基本函数
+            </summary>
+        </member>
+        <member name="F:ts_zyhs_classes.BaseFunc.Cpinterface">
+            <summary>
+            临床路径接口
+            </summary>
+        </member>
+        <member name="M:ts_zyhs_classes.BaseFunc.InitGrd(System.String[],System.String[],System.Int32[],System.Windows.Forms.DataGrid)">
+            <summary>
+            初始化datagird
+            </summary>
+            <param name="GrdMappingName"></param> MappingName数组
+            <param name="GrdHeaderText"></param>  GrdHeaderText数组
+            <param name="GrdWidth"></param> Width数组
+            <param name="myTb"></param> 
+            <param name="dataGrid1"></param>
+        </member>
+        <member name="M:ts_zyhs_classes.BaseFunc.InitGrd_sub(System.String[],System.String[],System.Int32[],System.Windows.Forms.DataGrid)">
+            <summary>
+            初始化网格
+            </summary>
+            <param name="GrdMappingName"></param>
+            <param name="GrdHeaderText"></param>
+            <param name="GrdWidth"></param>
+            <param name="dataGrid"></param>
+        </member>
+        <member name="M:ts_zyhs_classes.BaseFunc.InitmyGrd(System.String[],System.String[],System.Int32[],System.Boolean[],TrasenClasses.GeneralControls.DataGridEx)">
+            <summary>
+            初始化mydatagird
+            </summary>
+            <param name="GrdMappingName"></param> MappingName数组
+            <param name="GrdHeaderText"></param>  GrdHeaderText数组
+            <param name="GrdWidth"></param>       Width数组
+            <param name="GrdReadOnly"></param>    ReadOnly数组
+            <param name="mydataGrid"></param>
+        </member>
+        <member name="M:ts_zyhs_classes.BaseFunc.InitGridSQL(System.String,System.String[],System.Int32[],System.Int32[],TrasenClasses.GeneralControls.DataGridEx)">
+            <summary>
+            
+            </summary>
+            <param name="sSql"></param>
+            <param name="GrdMappingName"></param>
+            <param name="GrdWidth"></param>
+            <param name="Alignment"></param>
+            <param name="myDataGrid"></param>
+        </member>
+        <member name="M:ts_zyhs_classes.BaseFunc.GetBinOrdrs(System.String,System.Guid,System.Int64,System.Int32,System.Int32,System.Int64,System.DateTime,System.String,System.Int64)">
+            <summary>
+            病人医嘱查询
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ts_zyhs_classes.BaseFunc.GetBinOrdrsSSMZ(System.String,System.Guid,System.Int64,System.Int32,System.Int32,System.Int64,System.DateTime,System.String)">
+            <summary>
+            病人医嘱查询-手术麻醉
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ts_zyhs_classes.BaseFunc.SetItemInfo(System.Guid,System.Int64,System.Double,System.String,System.Int32)">
+            <summary>
+            Modiby by zouchihua 2013-3-17 把Ssql 传入医嘱id
+            </summary>
+            <param name="sSql"></param>
+            <param name="HOitemID"></param>
+            <param name="num"></param>
+            <param name="Use_Name"></param>
+            <param name="Jgbm"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ts_zyhs_classes.BaseFunc.GetYPTLD(System.Guid,System.String,System.Int32)">
+            <summary>
+            药品统领单
+            </summary>
+            <param name="_applyId"></param>
+            <param name="_wardId"></param>
+            <param name="_tlfs"></param>统领方式（0=普通1=缺药）
+            <returns></returns>
+        </member>
+        <member name="M:ts_zyhs_classes.BaseFunc.GetJSYTLD(System.String,System.String)">
+            <summary>
+            基数药统领单（按单种药品统计）
+            </summary>
+            <param name="wardid">病区ID</param>
+            <param name="shh">药品货号</param>
+            <returns></returns>
+        </member>
+        <member name="M:ts_zyhs_classes.BaseFunc.ExecOrdersWithData(TrasenClasses.GeneralControls.DataGridEx,System.Int32,System.Int32,System.Windows.Forms.ProgressBar,System.Guid,System.Int64,System.DateTime,System.DateTime,System.Boolean,System.Int32)">
+            <summary>
+            发送医嘱
+            </summary>
+            <param name="myDataGrid"></param>指定发送网格内选定数据
+            <param name="MNGType"></param>医嘱类型 0长期医嘱 1临时医嘱 2长期账单 4临时账单 9所有医嘱和账单
+            <param name="Kind"></param>0所有 1选择 2不发送 3仅药品,(4 全部药品，5 仅口服药，6 非口服药  add by zouchihua 2012-01-13 )
+            <param name="progressBar1"></param>滚动条
+            <param name="BinID"></param>病人inpatient_id
+            <param name="BabyID"></param>baby_id
+            <param name="BookDate"></param>操作时间
+            <param name="ExecDate"></param>执行时间
+            <param name="_isExecCurDeptOrder"></param>是否只执行执行科室为本科室医嘱
+            <returns></returns>
+        </member>
+        <member name="M:ts_zyhs_classes.BaseFunc.ExecOrdersWithData(System.Int64,System.String,System.Int64,System.Int64,System.Guid,System.Int64,System.DateTime,System.Int32)">
+            <summary>
+            发送医嘱（手术麻醉用），执行直接发送药品
+            </summary>
+            <param name="DeptId"></param>科室ID
+            <param name="WardId"></param>病区ID
+            <param name="EmpId"></param>employee_id
+            <param name="BinID"></param>病人inpatient_id
+            <param name="BabyID"></param>baby_id
+            <param name="ExecDate"></param>执行时间
+            <returns></returns>
+        </member>
+        <member name="M:ts_zyhs_classes.BaseFunc.GetZcyExectMessage(System.String,System.String,System.String)">
+            <summary>
+            获
+            </summary>
+            <param name="inpatient_id"></param>
+            <param name="baby_id"></param>
+            <param name="group_id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ts_zyhs_classes.BaseFunc.SendYPFY(System.Int32,System.Int32,System.String,System.Int64,System.Int64,System.DateTime,System.Int64,System.Int32)">
+            <summary>
+            药品统领
+            </summary>
+            <param name="TLFS">统领方式（0=普通[1=缺药 该种状态仅供查询]2=重新发送）</param>
+            <param name="MsgType">消息类型（0=普通1=退药）</param>
+            <param name="WardID">病区</param>
+            <param name="WardDeptId">病区科室</param>
+            <param name="NurseID">执行护士</param>
+            <param name="SendDate">日期</param>
+            <param name="ExecDept_Id">执行药房</param>
+            <returns></returns>
+        </member>
+        <member name="M:ts_zyhs_classes.BaseFunc.SendYP(System.Data.DataTable,System.String,System.Int64,System.DateTime,System.Int64,System.Int32,System.Int32)">
+            <summary>
+            生成药品统领单
+            </summary>
+            <param name="tb">格式参见SP_ZYHS_YPFY_SELECT出参</param>
+            <param name="WardID">病区ID</param>
+            <param name="EmpID">用户ID</param>
+            <param name="SendDate">发送日期</param>
+            <param name="Jgbm">机构编码</param>
+        </member>
+        <member name="M:ts_zyhs_classes.BaseFunc.SendYPzcgl(System.Data.DataTable,System.String,System.Int64,System.DateTime,System.Int64,System.Int32,System.Int32)">
+            <summary>
+            生成药品统领单
+            </summary>
+            <param name="tb">格式参见SP_ZYHS_YPFY_SELECT出参</param>
+            <param name="WardID">病区ID</param>
+            <param name="EmpID">用户ID</param>
+            <param name="SendDate">发送日期</param>
+            <param name="Jgbm">机构编码</param>
+        </member>
+        <member name="M:ts_zyhs_classes.BaseFunc.HS_ORDERPRINT(System.Guid,System.Int64,System.Int32,System.Int32,System.Int64,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            重打时调用
+            </summary>
+            <param name="_inpatient_id"></param>
+            <param name="_baby_id"></param>
+            <param name="_OrderType"></param>
+            <param name="_Type"></param>
+            <param name="_user_id"></param>
+            <param name="_bpage"></param>
+            <param name="_epage"></param>
+            <param name="_bRow"></param>
+            <param name="_Erow"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ts_zyhs_classes.BaseFunc.HS_ORDERPRINT(System.Guid,System.Int64,System.Int32,System.Int32,System.Int64,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            不在使用
+            </summary>
+            <param name="_inpatient_id"></param>
+            <param name="_baby_id"></param>
+            <param name="_OrderType"></param>
+            <param name="_Type"></param>
+            <param name="_user_id"></param>
+            <param name="_bpage"></param>
+            <param name="_epage"></param>
+            <param name="onlyexec"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ts_zyhs_classes.BaseFunc.GetPatMinExecYE(System.Guid)">
+            <summary>
+            得到该病人医嘱执行的最小余额
+            </summary>
+        </member>
+        <member name="M:ts_zyhs_classes.BaseFunc.GetPatMinExecYE(System.Guid,TrasenClasses.DatabaseAccess.RelationalDatabase)">
+            <summary>
+            得到该病人医嘱执行的最小余额
+            </summary>
+        </member>
+        <member name="M:ts_zyhs_classes.BaseFunc.IsHSZ(System.Int32)">
+            <summary>
+            是否护士长
+            </summary>
+            <param name="emp_id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ts_zyhs_classes.BaseFunc.IsZZHS(System.Int32)">
+            <summary>
+            是否组长护士
+            </summary>
+            <param name="emp_id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ts_zyhs_classes.BaseFunc.OutFlag(System.Guid,System.Int64)">
+            <summary>
+            判断是否是出院或死亡状态
+            </summary>
+            <param name="inpatientID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ts_zyhs_classes.BaseFunc.ZYHS_YPFY_SELECT(System.Int32,System.Int32,System.Int64,System.String,System.Guid,System.Int64,System.Int64,System.Boolean)">
+            <summary>
+            查询历史库
+            </summary>
+            <param name="_tlfs"></param>
+            <param name="_msg_type"></param>
+            <param name="DeptLy"></param>
+            <param name="WardId"></param>
+            <param name="_inpatient_id"></param>
+            <param name="_baby_id"></param>
+            <param name="_execdept_id"></param>
+            <param name="Ls"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ts_zyhs_classes.BaseFunc.PrintOutNotice(System.Guid,System.Int32)">
+            <summary>
+            打印出院通知单
+            </summary>
+            <param name="_inpatientid"></param>
+            <param name="_babyid"></param>
+        </member>
+        <member name="M:ts_zyhs_classes.BaseFunc.GetYbye(System.Decimal,System.Decimal,System.Guid)">
+            <summary>
+            获取医保病人余额
+            </summary>
+            <param name="zfy">总费用</param>
+            <param name="yjj">预交金</param>
+            <param name="inpatient_id">病人ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:ts_zyhs_classes.BaseFunc.GetBrzt(System.Guid)">
+            <summary>
+            获取病人的状态 >1、冻结状态 2、病人所在科室的机构编码
+            </summary>
+            <param name="inpatient_id"></param>
+            <returns>rtnStr[0] 冻结状态，rtnStr[1] 机构编码 rtnStr[2] 未完成跨院特殊治疗数 </returns>
+        </member>
+        <member name="M:ts_zyhs_classes.BaseFunc.OprateXnkc(System.Guid,System.Int64,System.Guid,System.Int32,System.Int32)">
+            <summary>
+            更新虚拟库存
+            </summary>
+            <param name="inpatient_id"></param>
+            <param name="baby_id"></param>
+            <param name="Order_id"></param>
+            <param name="Group_id"></param>
+            <param name="type">0=减 1=加</param>
+            <returns></returns>
+        </member>
+        <member name="M:ts_zyhs_classes.BaseFunc.SendZc(System.Data.DataTable,System.String,System.String,System.Boolean,System.Int64)">
+            <summary>
+            发送到暂存 9为暂存药
+            </summary>
+            <param name="tb"></param>
+        </member>
+        <member name="M:ts_zyhs_classes.BaseFunc.Gxypsl(System.Data.DataTable,System.Int32,System.String,System.Int32@,System.Decimal@)">
+            <summary>
+            根据输入数量，选择勾选的数量
+            </summary>
+            <param name="tb"></param>
+            <param name="xsl"></param>
+            <param name="cjid"></param>
+            <param name="ReturnValue"></param>
+            <param name="je"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ts_zyhs_classes.BaseFunc.GetCpzt(System.String,System.String)">
+            <summary>
+            获得cp状态
+            </summary>
+            <param name="inpatient_id"></param>
+            <param name="bayb_id"></param>
+            <returns>0表示正常</returns>
+        </member>
+        <member name="M:ts_zyhs_classes.BaseFunc.GetExectime(System.String,System.String,System.DateTime,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="exectime"></param>
+            <param name="times"></param>
+            <param name="dt"></param>
+            <param name="type">1=首次，2=末次</param>
+            <returns></returns>
+        </member>
+        <member name="M:ts_zyhs_classes.BaseFunc.GetFirsttimes(System.String,System.DateTime)">
+            <summary>
+            根据时间获得首次
+            </summary>
+            <param name="pl"></param>
+            <param name="dt">医嘱开始时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:ts_zyhs_classes.BaseFunc.GetLasttimes(System.String,System.DateTime)">
+            <summary>
+            根据时间获得末次
+            </summary>
+            <param name="pl"></param>
+            <param name="dt">医嘱开始时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:ts_zyhs_classes.BaseFunc.GetZcAndYFfs_Tb(System.Data.DataTable,System.Int32,System.Int32)">
+            <summary>
+            获取发送到暂存药品的表和需要发送到药房的表
+            </summary>
+            <param name="tb"></param>
+            <param name="deptly"></param>
+            <param name="yfksid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ts_zyhs_classes.BaseFunc.GetCZcy(System.Guid,System.Int64,System.String,System.DateTime)">
+            <summary>
+            出院自动冲账床位费  yaokx2014-03-15
+            </summary>
+            <param name="inpatientID"></param>
+            <param name="str"></param>
+        </member>
+    </members>
+</doc>

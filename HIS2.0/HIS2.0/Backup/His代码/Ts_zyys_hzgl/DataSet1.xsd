@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DataSet1" msprop:Generator_DataSetName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Hzd" msprop:Generator_UserTableName="Hzd" msprop:Generator_RowDeletedName="HzdRowDeleted" msprop:Generator_RowChangedName="HzdRowChanged" msprop:Generator_RowClassName="HzdRow" msprop:Generator_RowChangingName="HzdRowChanging" msprop:Generator_RowEvArgName="HzdRowChangeEvent" msprop:Generator_RowEvHandlerName="HzdRowChangeEventHandler" msprop:Generator_TableClassName="HzdDataTable" msprop:Generator_TableVarName="tableHzd" msprop:Generator_RowDeletingName="HzdRowDeleting" msprop:Generator_TablePropName="Hzd">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="姓名" msprop:Generator_UserColumnName="姓名" msprop:Generator_ColumnPropNameInRow="姓名" msprop:Generator_ColumnVarNameInTable="column姓名" msprop:Generator_ColumnPropNameInTable="姓名Column" type="xs:string" minOccurs="0" />
+              <xs:element name="床号" msprop:Generator_UserColumnName="床号" msprop:Generator_ColumnPropNameInRow="床号" msprop:Generator_ColumnVarNameInTable="column床号" msprop:Generator_ColumnPropNameInTable="床号Column" type="xs:string" minOccurs="0" />
+              <xs:element name="住院号" msprop:Generator_UserColumnName="住院号" msprop:Generator_ColumnPropNameInRow="住院号" msprop:Generator_ColumnVarNameInTable="column住院号" msprop:Generator_ColumnPropNameInTable="住院号Column" type="xs:string" minOccurs="0" />
+              <xs:element name="病区" msprop:Generator_UserColumnName="病区" msprop:Generator_ColumnPropNameInRow="病区" msprop:Generator_ColumnVarNameInTable="column病区" msprop:Generator_ColumnPropNameInTable="病区Column" type="xs:string" minOccurs="0" />
+              <xs:element name="年龄" msprop:Generator_UserColumnName="年龄" msprop:Generator_ColumnPropNameInRow="年龄" msprop:Generator_ColumnVarNameInTable="column年龄" msprop:Generator_ColumnPropNameInTable="年龄Column" type="xs:string" minOccurs="0" />
+              <xs:element name="性别" msprop:Generator_UserColumnName="性别" msprop:Generator_ColumnPropNameInRow="性别" msprop:Generator_ColumnVarNameInTable="column性别" msprop:Generator_ColumnPropNameInTable="性别Column" type="xs:string" minOccurs="0" />
+              <xs:element name="简要病史及检查" msprop:Generator_UserColumnName="简要病史及检查" msprop:Generator_ColumnPropNameInRow="简要病史及检查" msprop:Generator_ColumnVarNameInTable="column简要病史及检查" msprop:Generator_ColumnPropNameInTable="简要病史及检查Column" type="xs:string" minOccurs="0" />
+              <xs:element name="会诊目的" msprop:Generator_UserColumnName="会诊目的" msprop:Generator_ColumnPropNameInRow="会诊目的" msprop:Generator_ColumnVarNameInTable="column会诊目的" msprop:Generator_ColumnPropNameInTable="会诊目的Column" type="xs:string" minOccurs="0" />
+              <xs:element name="申请医师" msprop:Generator_UserColumnName="申请医师" msprop:Generator_ColumnPropNameInRow="申请医师" msprop:Generator_ColumnVarNameInTable="column申请医师" msprop:Generator_ColumnPropNameInTable="申请医师Column" type="xs:string" minOccurs="0" />
+              <xs:element name="申请日期" msprop:Generator_UserColumnName="申请日期" msprop:Generator_ColumnPropNameInRow="申请日期" msprop:Generator_ColumnVarNameInTable="column申请日期" msprop:Generator_ColumnPropNameInTable="申请日期Column" type="xs:string" minOccurs="0" />
+              <xs:element name="会诊意见" msprop:Generator_UserColumnName="会诊意见" msprop:Generator_ColumnPropNameInRow="会诊意见" msprop:Generator_ColumnVarNameInTable="column会诊意见" msprop:Generator_ColumnPropNameInTable="会诊意见Column" type="xs:string" minOccurs="0" />
+              <xs:element name="会诊医师" msprop:Generator_UserColumnName="会诊医师" msprop:Generator_ColumnPropNameInRow="会诊医师" msprop:Generator_ColumnVarNameInTable="column会诊医师" msprop:Generator_ColumnPropNameInTable="会诊医师Column" type="xs:string" minOccurs="0" />
+              <xs:element name="会诊日期" msprop:Generator_UserColumnName="会诊日期" msprop:Generator_ColumnPropNameInRow="会诊日期" msprop:Generator_ColumnVarNameInTable="column会诊日期" msprop:Generator_ColumnPropNameInTable="会诊日期Column" type="xs:string" minOccurs="0" />
+              <xs:element name="bz2" msprop:Generator_UserColumnName="bz2" msprop:Generator_ColumnPropNameInRow="bz2" msprop:Generator_ColumnVarNameInTable="columnbz2" msprop:Generator_ColumnPropNameInTable="bz2Column" type="xs:string" minOccurs="0" />
+              <xs:element name="bz1" msprop:Generator_UserColumnName="bz1" msprop:Generator_ColumnPropNameInRow="bz1" msprop:Generator_ColumnVarNameInTable="columnbz1" msprop:Generator_ColumnPropNameInTable="bz1Column" type="xs:string" minOccurs="0" />
+              <xs:element name="bz3" msprop:Generator_UserColumnName="bz3" msprop:Generator_ColumnPropNameInRow="bz3" msprop:Generator_ColumnVarNameInTable="columnbz3" msprop:Generator_ColumnPropNameInTable="bz3Column" type="xs:string" minOccurs="0" />
+              <xs:element name="bz4" msprop:Generator_UserColumnName="bz4" msprop:Generator_ColumnPropNameInRow="bz4" msprop:Generator_ColumnVarNameInTable="columnbz4" msprop:Generator_ColumnPropNameInTable="bz4Column" type="xs:string" minOccurs="0" />
+              <xs:element name="bz5" msprop:Generator_UserColumnName="bz5" msprop:Generator_ColumnPropNameInRow="bz5" msprop:Generator_ColumnVarNameInTable="columnbz5" msprop:Generator_ColumnPropNameInTable="bz5Column" type="xs:string" minOccurs="0" />
+              <xs:element name="bz6" msprop:Generator_UserColumnName="bz6" msprop:Generator_ColumnPropNameInRow="bz6" msprop:Generator_ColumnVarNameInTable="columnbz6" msprop:Generator_ColumnPropNameInTable="bz6Column" type="xs:string" minOccurs="0" />
+              <xs:element name="bz7" msprop:Generator_UserColumnName="bz7" msprop:Generator_ColumnPropNameInRow="bz7" msprop:Generator_ColumnVarNameInTable="columnbz7" msprop:Generator_ColumnPropNameInTable="bz7Column" type="xs:string" minOccurs="0" />
+              <xs:element name="被邀科室" msprop:Generator_UserColumnName="被邀科室" msprop:Generator_ColumnVarNameInTable="column被邀科室" msprop:Generator_ColumnPropNameInRow="被邀科室" msprop:Generator_ColumnPropNameInTable="被邀科室Column" type="xs:string" minOccurs="0" />
+              <xs:element name="科室" msprop:Generator_UserColumnName="科室" msprop:Generator_ColumnPropNameInRow="科室" msprop:Generator_ColumnVarNameInTable="column科室" msprop:Generator_ColumnPropNameInTable="科室Column" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,30 @@
+[2014-07-30 08:47:15]Trasen.exe Created Log File
+[2014-07-30 08:47:15]Begin Invoke “StartupMain(string,TrasenFrame.Classs.ConnectionType,string,bool,bool)”
+[2014-07-30 08:47:16]Initialize Database Connection Object (TrasenFrame.Forms.FrmMdiMain.Database.Initialize( connectionString ))
+[2014-07-30 08:47:16]Start Check Update File
+[2014-07-30 08:47:16]UpdateFile.ini->[UPDATETYPE]->NotUpdate=true,Stop Update and Return to Main Program
+[2014-07-30 08:47:33]Mian Window Load Successfully
+[2014-07-30 08:48:03]Begin Invoke “StartupMain(string,TrasenFrame.Classs.ConnectionType,string,bool,bool)”
+[2014-07-30 08:48:04]Initialize Database Connection Object (TrasenFrame.Forms.FrmMdiMain.Database.Initialize( connectionString ))
+[2014-07-30 08:48:04]Start Check Update File
+[2014-07-30 08:48:04]UpdateFile.ini->[UPDATETYPE]->NotUpdate=true,Stop Update and Return to Main Program
+[2014-07-30 08:48:15]Mian Window Load Successfully
+[2014-07-30 08:52:58]Begin Invoke “StartupMain(string,TrasenFrame.Classs.ConnectionType,string,bool,bool)”
+[2014-07-30 08:52:58]Initialize Database Connection Object (TrasenFrame.Forms.FrmMdiMain.Database.Initialize( connectionString ))
+[2014-07-30 08:52:58]Start Check Update File
+[2014-07-30 08:52:58]UpdateFile.ini->[UPDATETYPE]->NotUpdate=true,Stop Update and Return to Main Program
+[2014-07-30 08:53:25]Mian Window Load Successfully
+[2014-07-30 08:56:56]Begin Invoke “StartupMain(string,TrasenFrame.Classs.ConnectionType,string,bool,bool)”
+[2014-07-30 08:56:57]Initialize Database Connection Object (TrasenFrame.Forms.FrmMdiMain.Database.Initialize( connectionString ))
+[2014-07-30 08:56:57]Start Check Update File
+[2014-07-30 08:56:57]UpdateFile.ini->[UPDATETYPE]->NotUpdate=true,Stop Update and Return to Main Program
+[2014-07-30 08:57:38]Begin Invoke “StartupMain(string,TrasenFrame.Classs.ConnectionType,string,bool,bool)”
+[2014-07-30 08:57:39]Initialize Database Connection Object (TrasenFrame.Forms.FrmMdiMain.Database.Initialize( connectionString ))
+[2014-07-30 08:57:39]Start Check Update File
+[2014-07-30 08:57:39]UpdateFile.ini->[UPDATETYPE]->NotUpdate=true,Stop Update and Return to Main Program
+[2014-07-30 08:57:52]Mian Window Load Successfully
+[2014-07-30 09:04:48]Begin Invoke “StartupMain(string,TrasenFrame.Classs.ConnectionType,string,bool,bool)”
+[2014-07-30 09:04:49]Initialize Database Connection Object (TrasenFrame.Forms.FrmMdiMain.Database.Initialize( connectionString ))
+[2014-07-30 09:04:49]Start Check Update File
+[2014-07-30 09:04:49]UpdateFile.ini->[UPDATETYPE]->NotUpdate=true,Stop Update and Return to Main Program
+[2014-07-30 09:05:00]Mian Window Load Successfully

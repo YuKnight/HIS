@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Dstdzxd" targetNamespace="http://tempuri.org/Dstdzxd.xsd" xmlns:mstns="http://tempuri.org/Dstdzxd.xsd" xmlns="http://tempuri.org/Dstdzxd.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Dstdzxd" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="Dstdzxd" msprop:Generator_DataSetName="Dstdzxd">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dszxd" msprop:Generator_UserTableName="dszxd" msprop:Generator_RowDeletedName="dszxdRowDeleted" msprop:Generator_TableClassName="dszxdDataTable" msprop:Generator_RowChangedName="dszxdRowChanged" msprop:Generator_RowClassName="dszxdRow" msprop:Generator_RowChangingName="dszxdRowChanging" msprop:Generator_RowEvArgName="dszxdRowChangeEvent" msprop:Generator_RowEvHandlerName="dszxdRowChangeEventHandler" msprop:Generator_TablePropName="dszxd" msprop:Generator_TableVarName="tabledszxd" msprop:Generator_RowDeletingName="dszxdRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="colCWH" msprop:Generator_UserColumnName="colCWH" msprop:Generator_ColumnPropNameInRow="colCWH" msprop:Generator_ColumnVarNameInTable="columncolCWH" msprop:Generator_ColumnPropNameInTable="colCWHColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="colXM" msprop:Generator_UserColumnName="colXM" msprop:Generator_ColumnPropNameInRow="colXM" msprop:Generator_ColumnVarNameInTable="columncolXM" msprop:Generator_ColumnPropNameInTable="colXMColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="colZLXM" msprop:Generator_UserColumnName="colZLXM" msprop:Generator_ColumnPropNameInRow="colZLXM" msprop:Generator_ColumnVarNameInTable="columncolZLXM" msprop:Generator_ColumnPropNameInTable="colZLXMColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="colZXSJ" msprop:Generator_UserColumnName="colZXSJ" msprop:Generator_ColumnPropNameInRow="colZXSJ" msprop:Generator_ColumnVarNameInTable="columncolZXSJ" msprop:Generator_ColumnPropNameInTable="colZXSJColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="colPL" msprop:Generator_UserColumnName="colPL" msprop:Generator_ColumnPropNameInRow="colPL" msprop:Generator_ColumnVarNameInTable="columncolPL" msprop:Generator_ColumnPropNameInTable="colPLColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="colQM" msprop:Generator_UserColumnName="colQM" msprop:Generator_ColumnPropNameInRow="colQM" msprop:Generator_ColumnVarNameInTable="columncolQM" msprop:Generator_ColumnPropNameInTable="colQMColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="colBZ" msprop:Generator_UserColumnName="colBZ" msprop:Generator_ColumnPropNameInRow="colBZ" msprop:Generator_ColumnVarNameInTable="columncolBZ" msprop:Generator_ColumnPropNameInTable="colBZColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="colAUDITING_USER" msprop:Generator_UserColumnName="colAUDITING_USER" msprop:Generator_ColumnPropNameInRow="colAUDITING_USER" msprop:Generator_ColumnVarNameInTable="columncolAUDITING_USER" msprop:Generator_ColumnPropNameInTable="colAUDITING_USERColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="colAUDITING_USER1" msprop:Generator_UserColumnName="colAUDITING_USER1" msprop:Generator_ColumnPropNameInRow="colAUDITING_USER1" msprop:Generator_ColumnVarNameInTable="columncolAUDITING_USER1" msprop:Generator_ColumnPropNameInTable="colAUDITING_USER1Column" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

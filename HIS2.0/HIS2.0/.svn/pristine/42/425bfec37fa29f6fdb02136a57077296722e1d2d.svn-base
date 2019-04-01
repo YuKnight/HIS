@@ -1,0 +1,372 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{48823870-3444-4083-8BC9-3D8BFD03DEBD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ts_zygl_tjbb</RootNamespace>
+    <AssemblyName>ts_zygl_tjbb</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Common Files\Business Objects\2.7\Managed\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Interop.Excel, Version=1.3.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\dll引用\Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TrasenClasses, Version=2011.6.7.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\dll引用\TrasenClasses.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="TrasenFrame, Version=2011.12.26.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\dll引用\TrasenFrame.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="TszyHIS, Version=1.0.4478.21723, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\dll引用\TszyHIS.dll</HintPath>
+    </Reference>
+    <Reference Include="ts_jc_log, Version=12.3.4664.24522, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\dll引用\ts_jc_log.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="dsReport.cs">
+      <DependentUpon>dsReport.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dsReport.Designer.cs">
+      <DependentUpon>dsReport.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="FrmBrsrtj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBrsrtj.Designer.cs">
+      <DependentUpon>FrmBrsrtj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBrsrtjxm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBrsrtjxm.Designer.cs">
+      <DependentUpon>FrmBrsrtjxm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCybrxxtj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCybrxxtj.Designer.cs">
+      <DependentUpon>FrmCybrxxtj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmYbbrsrtj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmYbbrsrtj.designer.cs">
+      <DependentUpon>FrmYbbrsrtj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmZkbrsrtj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmZkbrsrtj.Designer.cs">
+      <DependentUpon>FrmZkbrsrtj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmZykssrtj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmZykssrtj.Designer.cs">
+      <DependentUpon>FrmZykssrtj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmYjjtj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmYjjtj.Designer.cs">
+      <DependentUpon>FrmYjjtj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmJkhz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmJkhz.Designer.cs">
+      <DependentUpon>FrmJkhz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmJstj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmJstj.Designer.cs">
+      <DependentUpon>FrmJstj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmZykssrtjEx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmZykssrtjEx.Designer.cs">
+      <DependentUpon>FrmZykssrtjEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSfxmtj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSfxmtj.Designer.cs">
+      <DependentUpon>FrmSfxmtj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmZysskstj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmZysskstj.Designer.cs">
+      <DependentUpon>FrmZysskstj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmZyyssrtj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmZyyssrtj.Designer.cs">
+      <DependentUpon>FrmZyyssrtj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmZyzxkssrtj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmZyzxkssrtj.Designer.cs">
+      <DependentUpon>FrmZyzxkssrtj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmZyzxkssrtj_mx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmZyzxkssrtj_mx.Designer.cs">
+      <DependentUpon>FrmZyzxkssrtj_mx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstanceForm.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmBrsrtj.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmBrsrtj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBrsrtjxm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmBrsrtjxm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCybrxxtj.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmCybrxxtj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmJstj.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmJstj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmJkhz.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmJkhz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmYbbrsrtj.resx">
+      <DependentUpon>FrmYbbrsrtj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmZkbrsrtj.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmZkbrsrtj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmZykssrtj.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmZykssrtj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmYjjtj.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmYjjtj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmZykssrtjEx.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmZykssrtjEx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSfxmtj.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmSfxmtj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmZysskstj.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmZysskstj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmZyyssrtj.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmZyyssrtj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmZyzxkssrtj.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmZyzxkssrtj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmZyzxkssrtj_mx.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmZyzxkssrtj_mx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ZYGL_住院收款汇总统计.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYGL_住院收款汇总统计.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ZYGL_在院病人信息.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYGL_在院病人信息.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ZYGL_执行科室收入统计.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYGL_执行科室收入统计.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ZYGL_执行科室收入统计动态.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYGL_执行科室收入统计动态.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ZYGL_病人结算明细统计.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYGL_病人结算明细统计.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ZYGL_病人结算统计.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYGL_病人结算统计.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ZYGL_科室收入统计.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYGL_科室收入统计.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ZYGL_科室收入统计动态.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYGL_科室收入统计动态.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ZYGL_预交金统计.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYGL_预交金统计.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSfxmtjOther.resx">
+      <DependentUpon>FrmSfxmtjOther.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="dsReport.xsc">
+      <DependentUpon>dsReport.xsd</DependentUpon>
+    </None>
+    <None Include="dsReport.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsReport.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsReport.xss">
+      <DependentUpon>dsReport.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Report\ZYGL_住院收款汇总统计.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZYGL_住院收款汇总统计.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ZYGL_在院病人信息.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZYGL_在院病人信息.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ZYGL_执行科室收入统计.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZYGL_执行科室收入统计.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ZYGL_执行科室收入统计动态.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZYGL_执行科室收入统计动态.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ZYGL_病人结算明细统计.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZYGL_病人结算明细统计.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ZYGL_病人结算统计.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZYGL_病人结算统计.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ZYGL_科室收入统计.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZYGL_科室收入统计.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ZYGL_科室收入统计动态.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZYGL_科室收入统计动态.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ZYGL_预交金统计.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZYGL_预交金统计.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FrmSfxmtjOther.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSfxmtjOther.Designer.cs">
+      <DependentUpon>FrmSfxmtjOther.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

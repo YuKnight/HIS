@@ -1,0 +1,6 @@
+[武汉市中心医院]
+url=http://192.168.0.81:8012/lisService.asmx
+csurl=http://192.168.0.143:8012/lisService.asmx
+
+QueryUrl=http://192.168.0.81:8012/showreportlist.aspx?patientid=
+PrintUrl=http://192.168.0.81:805/ShowAllReport.htm?pID=

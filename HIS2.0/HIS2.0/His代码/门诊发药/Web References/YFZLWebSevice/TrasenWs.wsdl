@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.trasen.com.cn/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://www.trasen.com.cn/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.trasen.com.cn/">
+      <s:element name="ExeWebService">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PostType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PostString" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExeWebServiceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExeWebServiceResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetXml">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PostType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PostString" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetXmlResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetXmlResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ExeWebServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:ExeWebService" />
+  </wsdl:message>
+  <wsdl:message name="ExeWebServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:ExeWebServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetXmlSoapIn">
+    <wsdl:part name="parameters" element="tns:GetXml" />
+  </wsdl:message>
+  <wsdl:message name="GetXmlSoapOut">
+    <wsdl:part name="parameters" element="tns:GetXmlResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExeWebServiceHttpGetIn">
+    <wsdl:part name="PostType" type="s:string" />
+    <wsdl:part name="PostString" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ExeWebServiceHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetXmlHttpGetIn">
+    <wsdl:part name="PostType" type="s:string" />
+    <wsdl:part name="PostString" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetXmlHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ExeWebServiceHttpPostIn">
+    <wsdl:part name="PostType" type="s:string" />
+    <wsdl:part name="PostString" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ExeWebServiceHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetXmlHttpPostIn">
+    <wsdl:part name="PostType" type="s:string" />
+    <wsdl:part name="PostString" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetXmlHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="TrasenWSSoap">
+    <wsdl:operation name="ExeWebService">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">1、ExeWebService</wsdl:documentation>
+      <wsdl:input message="tns:ExeWebServiceSoapIn" />
+      <wsdl:output message="tns:ExeWebServiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetXml">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">2、GetXml</wsdl:documentation>
+      <wsdl:input message="tns:GetXmlSoapIn" />
+      <wsdl:output message="tns:GetXmlSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="TrasenWSHttpGet">
+    <wsdl:operation name="ExeWebService">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">1、ExeWebService</wsdl:documentation>
+      <wsdl:input message="tns:ExeWebServiceHttpGetIn" />
+      <wsdl:output message="tns:ExeWebServiceHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetXml">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">2、GetXml</wsdl:documentation>
+      <wsdl:input message="tns:GetXmlHttpGetIn" />
+      <wsdl:output message="tns:GetXmlHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="TrasenWSHttpPost">
+    <wsdl:operation name="ExeWebService">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">1、ExeWebService</wsdl:documentation>
+      <wsdl:input message="tns:ExeWebServiceHttpPostIn" />
+      <wsdl:output message="tns:ExeWebServiceHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetXml">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">2、GetXml</wsdl:documentation>
+      <wsdl:input message="tns:GetXmlHttpPostIn" />
+      <wsdl:output message="tns:GetXmlHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="TrasenWSSoap" type="tns:TrasenWSSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ExeWebService">
+      <soap:operation soapAction="http://www.trasen.com.cn/ExeWebService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetXml">
+      <soap:operation soapAction="http://www.trasen.com.cn/GetXml" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="TrasenWSSoap12" type="tns:TrasenWSSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ExeWebService">
+      <soap12:operation soapAction="http://www.trasen.com.cn/ExeWebService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetXml">
+      <soap12:operation soapAction="http://www.trasen.com.cn/GetXml" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="TrasenWSHttpGet" type="tns:TrasenWSHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="ExeWebService">
+      <http:operation location="/ExeWebService" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetXml">
+      <http:operation location="/GetXml" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="TrasenWSHttpPost" type="tns:TrasenWSHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="ExeWebService">
+      <http:operation location="/ExeWebService" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetXml">
+      <http:operation location="/GetXml" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="TrasenWS">
+    <wsdl:port name="TrasenWSSoap" binding="tns:TrasenWSSoap">
+      <soap:address location="http://192.168.0.90:88/TrasenWs.asmx" />
+    </wsdl:port>
+    <wsdl:port name="TrasenWSSoap12" binding="tns:TrasenWSSoap12">
+      <soap12:address location="http://192.168.0.90:88/TrasenWs.asmx" />
+    </wsdl:port>
+    <wsdl:port name="TrasenWSHttpGet" binding="tns:TrasenWSHttpGet">
+      <http:address location="http://192.168.0.90:88/TrasenWs.asmx" />
+    </wsdl:port>
+    <wsdl:port name="TrasenWSHttpPost" binding="tns:TrasenWSHttpPost">
+      <http:address location="http://192.168.0.90:88/TrasenWs.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

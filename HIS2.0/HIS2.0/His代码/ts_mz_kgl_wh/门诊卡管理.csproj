@@ -1,0 +1,315 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F5AFCB1F-F204-4DE9-AEE1-68EA47898F66}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ts_mz_kgl</RootNamespace>
+    <AssemblyName>ts_mz_kgl</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\Debug\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Output\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.0.3300.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.0.3300.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.0.3300.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=10.0.3300.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Excel, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Debug\Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Trasen.Controls, Version=1.0.0.61, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Trasen.Print.Grid5, Version=1.1.5238.19355, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="TrasenClasses, Version=2011.6.7.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Debug\TrasenClasses.dll</HintPath>
+    </Reference>
+    <Reference Include="TrasenFrame, Version=2011.12.26.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Debug\TrasenFrame.dll</HintPath>
+    </Reference>
+    <Reference Include="ts_call, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ts_HospData_Share, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Debug\ts_HospData_Share.dll</HintPath>
+    </Reference>
+    <Reference Include="ts_jc_log, Version=12.3.4597.20802, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Debug\ts_jc_log.dll</HintPath>
+    </Reference>
+    <Reference Include="ts_mz_class, Version=2014.9.12.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ts_mz_report, Version=10.12.18.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Debug\ts_mz_report.dll</HintPath>
+    </Reference>
+    <Reference Include="ts_Pos, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ts_ReadCard, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Debug\ts_ReadCard.dll</HintPath>
+    </Reference>
+    <Reference Include="ts_Read_hospitalCard, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLL引用\ts_Read_hospitalCard.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="C_CardManager.cs" />
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCardChange_FL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCardChange_FL.Designer.cs">
+      <DependentUpon>FrmCardChange_FL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_SelectBr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_SelectBr.Designer.cs">
+      <DependentUpon>Frm_SelectBr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="作废卡.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>作废卡.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="冻结卡.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>冻结卡.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="卡优惠科室限制.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="卡优惠科室限制.Designer.cs">
+      <DependentUpon>卡优惠科室限制.cs</DependentUpon>
+    </Compile>
+    <Compile Include="卡领用管理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="卡领用管理.Designer.cs">
+      <DependentUpon>卡领用管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="挂失卡.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>挂失卡.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="老卡换新卡.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="老卡换新卡.designer.cs">
+      <DependentUpon>老卡换新卡.cs</DependentUpon>
+    </Compile>
+    <Compile Include="病人信息查询.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="病人信息查询.Designer.cs">
+      <DependentUpon>病人信息查询.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="借卡与换卡确认.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="借卡与换卡确认.Designer.cs">
+      <DependentUpon>借卡与换卡确认.cs</DependentUpon>
+    </Compile>
+    <Compile Include="卡优惠类型设置.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="卡优惠类型设置.Designer.cs">
+      <DependentUpon>卡优惠类型设置.cs</DependentUpon>
+    </Compile>
+    <Compile Include="病人卡充值.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="病人卡充值.Designer.cs">
+      <DependentUpon>病人卡充值.cs</DependentUpon>
+    </Compile>
+    <Compile Include="病人信息登记.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="病人信息登记.Designer.cs">
+      <DependentUpon>病人信息登记.cs</DependentUpon>
+    </Compile>
+    <Compile Include="卡类型设置.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="卡类型设置.Designer.cs">
+      <DependentUpon>卡类型设置.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstanceForm.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="换卡与借卡.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="换卡与借卡.Designer.cs">
+      <DependentUpon>换卡与借卡.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="借卡与换卡确认.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>借卡与换卡确认.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="卡优惠科室限制.resx">
+      <DependentUpon>卡优惠科室限制.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="卡优惠类型设置.resx">
+      <DependentUpon>卡优惠类型设置.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="卡领用管理.resx">
+      <DependentUpon>卡领用管理.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="病人信息查询.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>病人信息查询.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="病人卡充值.resx">
+      <DependentUpon>病人卡充值.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="病人信息登记.resx">
+      <DependentUpon>病人信息登记.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="卡类型设置.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>卡类型设置.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="换卡与借卡.resx">
+      <DependentUpon>换卡与借卡.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <EmbeddedResource Include="CardReport.grf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCardChange_FL.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmCardChange_FL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_SelectBr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_SelectBr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="作废卡.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>作废卡.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="冻结卡.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>冻结卡.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="挂失卡.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>挂失卡.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="老卡换新卡.resx">
+      <DependentUpon>老卡换新卡.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3924545A-F8E2-475A-B1A4-05175BC41E50}" />
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PrintClass\PrintClass.csproj">
+      <Project>{2D9E4498-DC7D-49F1-9C22-F9A53A06FF36}</Project>
+      <Name>PrintClass</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

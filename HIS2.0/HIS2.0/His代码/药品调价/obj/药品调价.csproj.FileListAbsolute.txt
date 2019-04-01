@@ -1,0 +1,11 @@
+E:\HIS2.0\His代码\药品调价\obj\Debug\ResolveAssemblyReference.cache
+E:\HIS2.0\His代码\药品调价\obj\Debug\ts_yp_tj.Frmpltj.resources
+E:\HIS2.0\His代码\药品调价\obj\Debug\ts_yp_tj.Frmtitle.resources
+E:\HIS2.0\His代码\药品调价\obj\Debug\ts_yp_tj.Frmtjwh.resources
+E:\HIS2.0\His代码\药品调价\obj\Debug\ts_yp_tj.Frmtjwhmx.resources
+E:\HIS2.0\His代码\药品调价\obj\Debug\ts_yp_tj.Frmwshdj.resources
+E:\HIS2.0\His代码\药品调价\obj\Debug\ts_yp_tj.Frmypgysfp.resources
+E:\HIS2.0\His代码\药品调价\obj\Debug\ts_yp_tj.FrmYpgysfpDetail.resources
+E:\HIS2.0\His代码\药品调价\obj\Debug\ts_yp_tj.Frmyptj.resources
+E:\HIS2.0\His代码\药品调价\obj\Debug\ts_yp_tj.FrmYptjCWBB.resources
+E:\HIS2.0\His代码\药品调价\obj\Debug\药品调价.csproj.GenerateResource.Cache

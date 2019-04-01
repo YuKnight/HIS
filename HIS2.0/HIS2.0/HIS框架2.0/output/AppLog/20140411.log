@@ -1,0 +1,21 @@
+Trasen.exe Created Log File
+********************************************** Local Time : 2014/4/11 8:40:19 **********************************************
+[2014-04-11 08:40:19]Begin Invoke “StartupMain(string,TrasenFrame.Classs.ConnectionType,string,bool,bool)”
+[2014-04-11 08:40:19]Initialize Database Connection Object (TrasenFrame.Forms.FrmMdiMain.Database.Initialize( connectionString ))
+[2014-04-11 08:40:19]Start Check Update File
+[2014-04-11 08:40:20]UpdateFile.ini->[UPDATETYPE]->NotUpdate=true,Stop Update and Return to Main Program
+********************************************** Local Time : 2014/4/11 8:44:31 **********************************************
+[2014-04-11 08:44:31]Begin Invoke “StartupMain(string,TrasenFrame.Classs.ConnectionType,string,bool,bool)”
+[2014-04-11 08:44:31]Initialize Database Connection Object (TrasenFrame.Forms.FrmMdiMain.Database.Initialize( connectionString ))
+[2014-04-11 08:44:31]Start Check Update File
+[2014-04-11 08:44:31]UpdateFile.ini->[UPDATETYPE]->NotUpdate=true,Stop Update and Return to Main Program
+********************************************** Local Time : 2014/4/11 8:52:35 **********************************************
+[2014-04-11 08:52:35]Begin Invoke “StartupMain(string,TrasenFrame.Classs.ConnectionType,string,bool,bool)”
+[2014-04-11 08:52:35]Initialize Database Connection Object (TrasenFrame.Forms.FrmMdiMain.Database.Initialize( connectionString ))
+[2014-04-11 08:52:35]Start Check Update File
+[2014-04-11 08:52:35]UpdateFile.ini->[UPDATETYPE]->NotUpdate=true,Stop Update and Return to Main Program
+********************************************** Local Time : 2014/4/11 8:55:13 **********************************************
+[2014-04-11 08:55:13]Begin Invoke “StartupMain(string,TrasenFrame.Classs.ConnectionType,string,bool,bool)”
+[2014-04-11 08:55:13]Initialize Database Connection Object (TrasenFrame.Forms.FrmMdiMain.Database.Initialize( connectionString ))
+[2014-04-11 08:55:13]Start Check Update File
+[2014-04-11 08:55:13]UpdateFile.ini->[UPDATETYPE]->NotUpdate=true,Stop Update and Return to Main Program

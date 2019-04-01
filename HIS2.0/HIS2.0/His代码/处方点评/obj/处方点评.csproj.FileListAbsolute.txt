@@ -1,0 +1,7 @@
+E:\HIS2.0\Debug\ts_yp_cfsh.dll
+E:\HIS2.0\Debug\ts_yp_cfsh.pdb
+E:\HIS2.0\His代码\处方点评\obj\Debug\ResolveAssemblyReference.cache
+E:\HIS2.0\His代码\处方点评\obj\Debug\ts_yp_cfsh.FrmMzcfdp.resources
+E:\HIS2.0\His代码\处方点评\obj\Debug\处方点评.csproj.GenerateResource.Cache
+E:\HIS2.0\His代码\处方点评\obj\Debug\ts_yp_cfsh.dll
+E:\HIS2.0\His代码\处方点评\obj\Debug\ts_yp_cfsh.pdb

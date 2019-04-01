@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--此文件由 XML 架构设计器自动生成。它包含设计器表面组件的布局信息。-->
+<XSDDesignerLayout layoutVersion="2" viewPortLeft="-1132" viewPortTop="-6993" zoom="100">
+    <采购入库单_XmlElement left="714" top="-11113" width="3175" height="8890" selected="0" zOrder="1" index="0" expanded="1" />
+    <普通入库单_XmlElement left="4313" top="-11060" width="2910" height="8044" selected="0" zOrder="2" index="1" expanded="1" />
+    <药品申请单_XmlElement left="7619" top="-10983" width="2911" height="8044" selected="0" zOrder="4" index="2" expanded="1" />
+    <药品出库单_XmlElement left="10768" top="-10874" width="3334" height="7196" selected="0" zOrder="6" index="3" expanded="1" />
+    <药品调价单_XmlElement left="14420" top="-10673" width="3757" height="7197" selected="0" zOrder="22" index="4" expanded="1" />
+    <报损报溢单_XmlElement left="608" top="-1879" width="5503" height="4657" selected="0" zOrder="8" index="5" expanded="1" />
+    <药品盘点单_XmlElement left="6403" top="-2540" width="3863" height="4657" selected="0" zOrder="10" index="6" expanded="1" />
+    <药品采购计划_XmlElement left="10821" top="-2752" width="2911" height="4234" selected="0" zOrder="12" index="7" expanded="1" />
+    <进销存情况表_XmlElement left="14081" top="-2570" width="5292" height="2963" selected="0" zOrder="24" index="8" expanded="1" />
+    <付款情况表_XmlElement left="558" top="3065" width="5292" height="2963" selected="0" zOrder="14" index="9" expanded="1" />
+    <保管明细帐_XmlElement left="6699" top="2929" width="5292" height="2963" selected="0" zOrder="16" index="10" expanded="1" />
+    <库存情况表_XmlElement left="12837" top="2799" width="5292" height="2963" selected="0" zOrder="26" index="11" expanded="1" />
+    <药品失效报警_XmlElement left="582" top="6298" width="5133" height="3387" selected="0" zOrder="18" index="12" expanded="1" />
+    <药品高低储报警_XmlElement left="6858" top="6530" width="5292" height="2963" selected="0" zOrder="20" index="13" expanded="1" />
+    <进出货排名统计_XmlElement left="12892" top="6769" width="5292" height="2963" selected="0" zOrder="28" index="14" expanded="1" />
+    <配发药工作量_XmlElement left="238" top="10028" width="6297" height="2964" selected="0" zOrder="29" index="15" expanded="1" />
+    <病人处方清单_XmlElement left="7276" top="9658" width="7515" height="4233" selected="0" zOrder="30" index="16" expanded="1" />
+    <发药明细单_XmlElement left="15584" top="9790" width="5186" height="5080" selected="0" zOrder="31" index="17" expanded="1" />
+    <药品汇总统计_XmlElement left="-132" top="14394" width="6244" height="4233" selected="0" zOrder="32" index="18" expanded="1" />
+    <处方统计_XmlElement left="6562" top="14632" width="7091" height="3387" selected="0" zOrder="33" index="19" expanded="1" />
+    <收费发药处方统计_XmlElement left="14288" top="15268" width="4974" height="5503" selected="0" zOrder="34" index="20" expanded="1" />
+    <单据汇总统计_XmlElement left="-79" top="18865" width="5609" height="4234" selected="0" zOrder="35" index="21" expanded="1" />
+    <贵重药品统计_XmlElement left="6562" top="18442" width="5344" height="5927" selected="0" zOrder="36" index="22" expanded="1" />
+</XSDDesignerLayout>

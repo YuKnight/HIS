@@ -1,0 +1,13 @@
+E:\HIS2.0\His代码\住院发药\obj\Debug\ResolveAssemblyReference.cache
+E:\HIS2.0\His代码\住院发药\obj\Debug\ts_yf_zyfy.YF_住院处方清单(中药).rpt
+E:\HIS2.0\His代码\住院发药\obj\Debug\ts_yf_zyfy.Frmcffy.resources
+E:\HIS2.0\His代码\住院发药\obj\Debug\ts_yf_zyfy.Frmcffy_cx.resources
+E:\HIS2.0\His代码\住院发药\obj\Debug\ts_yf_zyfy.Frmhy.resources
+E:\HIS2.0\His代码\住院发药\obj\Debug\ts_yf_zyfy.Frmks.resources
+E:\HIS2.0\His代码\住院发药\obj\Debug\ts_yf_zyfy.Frmmxcx.resources
+E:\HIS2.0\His代码\住院发药\obj\Debug\ts_yf_zyfy.FrmPrintTymx.resources
+E:\HIS2.0\His代码\住院发药\obj\Debug\ts_yf_zyfy.FrmSeleByType.resources
+E:\HIS2.0\His代码\住院发药\obj\Debug\ts_yf_zyfy.Frmtlfy.resources
+E:\HIS2.0\His代码\住院发药\obj\Debug\ts_yf_zyfy.Properties.Resources.resources
+E:\HIS2.0\His代码\住院发药\obj\Debug\ts_yf_zyfy.Frmtlfy_cx.resources
+E:\HIS2.0\His代码\住院发药\obj\Debug\住院发药.csproj.GenerateResource.Cache

@@ -1,0 +1,318 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D2916514-CD83-43DA-917B-E03EB819857F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ts_mzys_fzgl</RootNamespace>
+    <AssemblyName>ts_mzys_fzgl</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Output\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\Debug\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DotNetSpeech, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Debug\DotNetSpeech.dll</HintPath>
+    </Reference>
+    <Reference Include="MagicLibrary, Version=1.7.0.0, Culture=neutral, PublicKeyToken=3a6eb82f876a49bc">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Debug\MagicLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Speech, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+    <Reference Include="Trasen.DbAcc, Version=1.0.4628.33451, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="TrasenClasses, Version=2011.6.7.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLL引用\TrasenClasses.dll</HintPath>
+    </Reference>
+    <Reference Include="TrasenFrame, Version=5.1.5102.28272, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLL引用\TrasenFrame.dll</HintPath>
+    </Reference>
+    <Reference Include="ts_Caller, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLL引用\ts_Caller.dll</HintPath>
+    </Reference>
+    <Reference Include="Ts_Clinicalpathway_Factory, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLL引用\Ts_Clinicalpathway_Factory.dll</HintPath>
+    </Reference>
+    <Reference Include="Ts_Fz_Help, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="ts_mzys_class, Version=10.12.18.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLL引用\ts_mzys_class.dll</HintPath>
+    </Reference>
+    <Reference Include="ts_mz_class, Version=10.12.18.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ts_mz_rizhi, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ts_Read_hospitalCard, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLL引用\ts_Read_hospitalCard.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFzNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFzNew.Designer.cs">
+      <DependentUpon>FrmFzNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFz_Tzlr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFz_Tzlr.designer.cs">
+      <DependentUpon>FrmFz_Tzlr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmQh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_SelectBdfs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_SelectBdfs.Designer.cs">
+      <DependentUpon>Frm_SelectBdfs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="护士分诊.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="护士分诊.Designer.cs">
+      <DependentUpon>护士分诊.cs</DependentUpon>
+    </Compile>
+    <Compile Include="护士分诊管理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="护士分诊管理.Designer.cs">
+      <DependentUpon>护士分诊管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstanceForm.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFzNew.resx">
+      <DependentUpon>FrmFzNew.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFz_Tzlr.resx">
+      <DependentUpon>FrmFz_Tzlr.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmQh.resx">
+      <DependentUpon>FrmQh.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_SelectBdfs.resx">
+      <DependentUpon>Frm_SelectBdfs.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="护士分诊.resx">
+      <DependentUpon>护士分诊.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="护士分诊管理.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>护士分诊管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="护士新分诊管理.resx">
+      <DependentUpon>护士新分诊管理.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="自助取号报表文件（口腔医院）.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>自助取号报表文件（口腔医院）.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="跨诊区转诊.resx">
+      <DependentUpon>跨诊区转诊.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="转诊确认.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>转诊确认.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="护士新分诊管理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="护士新分诊管理.designer.cs">
+      <DependentUpon>护士新分诊管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="自助取号报表文件（口腔医院）.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>自助取号报表文件（口腔医院）.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="跨诊区转诊.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="跨诊区转诊.Designer.cs">
+      <DependentUpon>跨诊区转诊.cs</DependentUpon>
+    </Compile>
+    <Compile Include="转诊确认.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="转诊确认.Designer.cs">
+      <DependentUpon>转诊确认.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ARW02UP.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ARW02DN.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FINDER2.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\wuyin\G0.wav" />
+    <None Include="bin\Debug\wuyin\G1.wav" />
+    <None Include="bin\Debug\wuyin\G2.wav" />
+    <None Include="bin\Debug\wuyin\G3.wav" />
+    <None Include="bin\Debug\wuyin\G4.wav" />
+    <None Include="bin\Debug\wuyin\G5.wav" />
+    <None Include="bin\Debug\wuyin\G6.wav" />
+    <None Include="bin\Debug\wuyin\G7.wav" />
+    <None Include="bin\Debug\wuyin\G8.wav" />
+    <None Include="bin\Debug\wuyin\G9.wav" />
+    <None Include="bin\Debug\wuyin\G10.wav" />
+    <None Include="bin\Debug\wuyin\G100.wav" />
+    <None Include="bin\Debug\wuyin\G1000.wav" />
+    <None Include="bin\Debug\wuyin\Gplease.wav" />
+    <None Include="bin\Debug\wuyin\Gto.wav" />
+    <None Include="bin\Debug\wuyin\Gwindow4.wav" />
+    <None Include="bin\Debug\wuyin\Gwindow.wav" />
+    <None Include="bin\Debug\wuyin\number.wav" />
+    <None Include="bin\Debug\wuyin\Phone.wav" />
+    <Content Include="Resources\G0.wav" />
+    <Content Include="Resources\G1.wav" />
+    <Content Include="Resources\G10.wav" />
+    <Content Include="Resources\G100.wav" />
+    <Content Include="Resources\G1000.wav" />
+    <Content Include="Resources\G2.wav" />
+    <Content Include="Resources\G3.wav" />
+    <Content Include="Resources\G4.wav" />
+    <Content Include="Resources\G5.wav" />
+    <Content Include="Resources\G6.wav" />
+    <Content Include="Resources\G7.wav" />
+    <Content Include="Resources\G8.wav" />
+    <Content Include="Resources\G9.wav" />
+    <Content Include="Resources\Gplease.wav" />
+    <Content Include="Resources\Gto.wav" />
+    <Content Include="Resources\Gwindow.wav" />
+    <Content Include="Resources\Gwindow4.wav" />
+    <Content Include="Resources\number.wav" />
+    <Content Include="Resources\Phone.wav" />
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\VOLUME01.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

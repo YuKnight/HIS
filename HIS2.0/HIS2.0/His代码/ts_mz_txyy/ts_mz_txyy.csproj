@@ -1,0 +1,290 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3290A932-2868-42F0-8275-F848A50168FD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ts_mz_txyy</RootNamespace>
+    <AssemblyName>ts_mz_txyy</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Output\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Excel, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Trasen.Paltform-v2.0\Library\Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TrasenClasses, Version=5.1.5254.30542, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Debug\TrasenClasses.dll</HintPath>
+    </Reference>
+    <Reference Include="TrasenFrame, Version=5.1.5619.19696, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Debug\TrasenFrame.dll</HintPath>
+    </Reference>
+    <Reference Include="ts_mz_class, Version=10.12.18.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Trasen.Paltform-v2.0\BusinessLibrary\ts_mz_class.dll</HintPath>
+    </Reference>
+    <Reference Include="ts_mz_kgl, Version=10.12.18.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Trasen.Paltform-v2.0\BusinessLibrary\ts_mz_kgl.dll</HintPath>
+    </Reference>
+    <Reference Include="ts_Read_hospitalCard, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Trasen.Paltform-v2.0\BusinessLibrary\ts_Read_hospitalCard.dll</HintPath>
+    </Reference>
+    <Reference Include="ts_Yk_ReportView, Version=1.0.6450.31227, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Trasen.Paltform-v2.0\BusinessLibrary\ts_Yk_ReportView.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataSet1.cs">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="FrmAddPat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddPat.Designer.cs">
+      <DependentUpon>FrmAddPat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmksssh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmksssh.Designer.cs">
+      <DependentUpon>Frmksssh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmmz_ypffjl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmmz_ypffjl.Designer.cs">
+      <DependentUpon>Frmmz_ypffjl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSearch.Designer.cs">
+      <DependentUpon>FrmSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmsubks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmsubks.Designer.cs">
+      <DependentUpon>Frmsubks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTxYy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTxYy.Designer.cs">
+      <DependentUpon>FrmTxYy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUrgentOrdMsg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUrgentOrdMsg.Designer.cs">
+      <DependentUpon>FrmUrgentOrdMsg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_mz_ksdzwh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_mz_ksdzwh.Designer.cs">
+      <DependentUpon>Frm_mz_ksdzwh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_yp_fzyywh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_yp_fzyywh.Designer.cs">
+      <DependentUpon>Frm_yp_fzyywh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GrantCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GrantCard.Designer.cs">
+      <DependentUpon>GrantCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GrantCardDAL.cs" />
+    <Compile Include="InstanceForm.cs" />
+    <Compile Include="OutPatientBackNum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OutPatientBackNum.Designer.cs">
+      <DependentUpon>OutPatientBackNum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OutPatientBackNumDAL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAddPat.resx">
+      <DependentUpon>FrmAddPat.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmksssh.resx">
+      <DependentUpon>Frmksssh.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmmz_ypffjl.resx">
+      <DependentUpon>Frmmz_ypffjl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSearch.resx">
+      <DependentUpon>FrmSearch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmsubks.resx">
+      <DependentUpon>Frmsubks.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTxYy.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmTxYy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUrgentOrdMsg.resx">
+      <DependentUpon>FrmUrgentOrdMsg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_mz_ksdzwh.resx">
+      <DependentUpon>Frm_mz_ksdzwh.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_yp_fzyywh.resx">
+      <DependentUpon>Frm_yp_fzyywh.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GrantCard.resx">
+      <DependentUpon>GrantCard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutPatientBackNum.resx">
+      <DependentUpon>OutPatientBackNum.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yygzltj.resx">
+      <DependentUpon>yygzltj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\TrasenWs\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\TrasenWs\TrasenWS.wsdl" />
+    <None Include="Web References\WsNewHisPat\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WsNewHisPat\WebService.wsdl" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Web References\TrasenWs\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WsNewHisPat\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="yygzltj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yygzltj.Designer.cs">
+      <DependentUpon>yygzltj.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://192.168.0.90:89/TrasenWS.asmx%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\TrasenWs\</RelPath>
+      <UpdateFromURL>http://192.168.0.90:89/TrasenWS.asmx%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>ts_mz_txyy_TrasenWs_TrasenWS</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://192.168.201.1:19889//WebService.asmx%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WsNewHisPat\</RelPath>
+      <UpdateFromURL>http://192.168.201.1:19889//WebService.asmx%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>ts_mz_txyy_WebReference_WebService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

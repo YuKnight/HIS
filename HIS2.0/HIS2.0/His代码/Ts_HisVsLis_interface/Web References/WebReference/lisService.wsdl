@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/23" xmlns:s1="http://wuhanzhongxinyiyuan.org" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/23" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/23">
+      <s:import namespace="http://wuhanzhongxinyiyuan.org" />
+      <s:element name="LisServiceInput">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xml_content" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LisServiceInputResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LisServiceInputResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Event_log">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Event_logResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Event_logResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertMz">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="infos" type="s1:MZOrderInfos" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertMzResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertMzResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://wuhanzhongxinyiyuan.org">
+      <s:complexType name="MZOrderInfos">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="OrderInfo" type="s1:ArrayOfMZOrderInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfMZOrderInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="MZOrderInfo" nillable="true" type="s1:MZOrderInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="MZOrderInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="SL" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="birthday" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="billNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="fpNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="chargeDT" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="gender" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="orderDept" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="orderDeptId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="orderDocId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="orderDocName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="orderSystem" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="patientId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="testItemId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="testItemName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="tfbz" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="LisServiceInputSoapIn">
+    <wsdl:part name="parameters" element="tns:LisServiceInput" />
+  </wsdl:message>
+  <wsdl:message name="LisServiceInputSoapOut">
+    <wsdl:part name="parameters" element="tns:LisServiceInputResponse" />
+  </wsdl:message>
+  <wsdl:message name="Event_logSoapIn">
+    <wsdl:part name="parameters" element="tns:Event_log" />
+  </wsdl:message>
+  <wsdl:message name="Event_logSoapOut">
+    <wsdl:part name="parameters" element="tns:Event_logResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertMzSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertMz" />
+  </wsdl:message>
+  <wsdl:message name="InsertMzSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertMzResponse" />
+  </wsdl:message>
+  <wsdl:message name="LisServiceInputHttpGetIn">
+    <wsdl:part name="xml_content" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="LisServiceInputHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Event_logHttpGetIn">
+    <wsdl:part name="id" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Event_logHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="LisServiceInputHttpPostIn">
+    <wsdl:part name="xml_content" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="LisServiceInputHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Event_logHttpPostIn">
+    <wsdl:part name="id" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Event_logHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="lisServiceSoap">
+    <wsdl:operation name="LisServiceInput">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">lis web服务入口</wsdl:documentation>
+      <wsdl:input message="tns:LisServiceInputSoapIn" />
+      <wsdl:output message="tns:LisServiceInputSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Event_log">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">门诊核收</wsdl:documentation>
+      <wsdl:input message="tns:Event_logSoapIn" />
+      <wsdl:output message="tns:Event_logSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertMz">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">门诊申请</wsdl:documentation>
+      <wsdl:input message="tns:InsertMzSoapIn" />
+      <wsdl:output message="tns:InsertMzSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="lisServiceHttpGet">
+    <wsdl:operation name="LisServiceInput">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">lis web服务入口</wsdl:documentation>
+      <wsdl:input message="tns:LisServiceInputHttpGetIn" />
+      <wsdl:output message="tns:LisServiceInputHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Event_log">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">门诊核收</wsdl:documentation>
+      <wsdl:input message="tns:Event_logHttpGetIn" />
+      <wsdl:output message="tns:Event_logHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="lisServiceHttpPost">
+    <wsdl:operation name="LisServiceInput">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">lis web服务入口</wsdl:documentation>
+      <wsdl:input message="tns:LisServiceInputHttpPostIn" />
+      <wsdl:output message="tns:LisServiceInputHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Event_log">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">门诊核收</wsdl:documentation>
+      <wsdl:input message="tns:Event_logHttpPostIn" />
+      <wsdl:output message="tns:Event_logHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="lisServiceSoap" type="tns:lisServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="LisServiceInput">
+      <soap:operation soapAction="http://tempuri.org/23/LisServiceInput" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Event_log">
+      <soap:operation soapAction="http://tempuri.org/23/Event_log" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertMz">
+      <soap:operation soapAction="http://tempuri.org/23/InsertMz" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="lisServiceSoap12" type="tns:lisServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="LisServiceInput">
+      <soap12:operation soapAction="http://tempuri.org/23/LisServiceInput" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Event_log">
+      <soap12:operation soapAction="http://tempuri.org/23/Event_log" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertMz">
+      <soap12:operation soapAction="http://tempuri.org/23/InsertMz" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="lisServiceHttpGet" type="tns:lisServiceHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="LisServiceInput">
+      <http:operation location="/LisServiceInput" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Event_log">
+      <http:operation location="/Event_log" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="lisServiceHttpPost" type="tns:lisServiceHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="LisServiceInput">
+      <http:operation location="/LisServiceInput" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Event_log">
+      <http:operation location="/Event_log" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="lisService">
+    <wsdl:port name="lisServiceSoap" binding="tns:lisServiceSoap">
+      <soap:address location="http://192.168.0.81:8012/lisService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="lisServiceSoap12" binding="tns:lisServiceSoap12">
+      <soap12:address location="http://192.168.0.81:8012/lisService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="lisServiceHttpGet" binding="tns:lisServiceHttpGet">
+      <http:address location="http://192.168.0.81:8012/lisService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="lisServiceHttpPost" binding="tns:lisServiceHttpPost">
+      <http:address location="http://192.168.0.81:8012/lisService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

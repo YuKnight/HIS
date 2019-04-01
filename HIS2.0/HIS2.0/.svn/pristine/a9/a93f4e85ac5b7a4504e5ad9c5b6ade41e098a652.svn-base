@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ts_yf_yfjh", "ts_yf_yfjh.csproj", "{B00C6E89-CC2E-47B3-A2CB-A970EAABD74A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trasen", "..\Trasen\Trasen.csproj", "{156BF713-A2C3-4933-B85E-49969BE7BAC1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B00C6E89-CC2E-47B3-A2CB-A970EAABD74A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B00C6E89-CC2E-47B3-A2CB-A970EAABD74A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B00C6E89-CC2E-47B3-A2CB-A970EAABD74A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B00C6E89-CC2E-47B3-A2CB-A970EAABD74A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{156BF713-A2C3-4933-B85E-49969BE7BAC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{156BF713-A2C3-4933-B85E-49969BE7BAC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{156BF713-A2C3-4933-B85E-49969BE7BAC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{156BF713-A2C3-4933-B85E-49969BE7BAC1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

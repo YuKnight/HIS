@@ -1,0 +1,18 @@
+IF EXISTS (SELECT name 
+	   FROM   sysobjects 
+	   WHERE  name = N'SP_YP_EXECSQL' 
+	   AND 	  type = 'P')
+    DROP PROCEDURE SP_YP_EXECSQL
+GO
+CREATE PROCEDURE SP_YP_EXECSQL
+ (
+   @SSQL VARCHAR(8000)
+ ) 
+as
+BEGIN
+
+
+
+  EXEC(@SSQL)
+
+end ;

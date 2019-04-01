@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetjk" targetNamespace="http://tempuri.org/DataSetjk.xsd" xmlns:mstns="http://tempuri.org/DataSetjk.xsd" xmlns="http://tempuri.org/DataSetjk.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" xmlns:NameSpace1="urn:schemas-microsoft-com:xml-msdatasource" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetjk" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DataSetjk" msprop:Generator_DataSetName="DataSetjk">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TB_mzyjj" msprop:Generator_UserTableName="TB_mzyjj" msprop:Generator_RowDeletedName="TB_mzyjjRowDeleted" msprop:Generator_TableClassName="TB_mzyjjDataTable" msprop:Generator_RowChangedName="TB_mzyjjRowChanged" msprop:Generator_RowClassName="TB_mzyjjRow" msprop:Generator_RowChangingName="TB_mzyjjRowChanging" msprop:Generator_RowEvArgName="TB_mzyjjRowChangeEvent" msprop:Generator_RowEvHandlerName="TB_mzyjjRowChangeEventHandler" msprop:Generator_TablePropName="TB_mzyjj" msprop:Generator_TableVarName="tableTB_mzyjj" msprop:Generator_RowDeletingName="TB_mzyjjRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="支付方式" msprop:Generator_UserColumnName="支付方式" msprop:Generator_ColumnPropNameInRow="支付方式" msprop:Generator_ColumnVarNameInTable="column支付方式" msprop:Generator_ColumnPropNameInTable="支付方式Column" type="xs:string" minOccurs="0" />
+              <xs:element name="金额" msprop:Generator_UserColumnName="金额" msprop:Generator_ColumnPropNameInRow="金额" msprop:Generator_ColumnVarNameInTable="column金额" msprop:Generator_ColumnPropNameInTable="金额Column" type="xs:string" minOccurs="0" />
+              <xs:element name="登记时间" msprop:Generator_UserColumnName="登记时间" msprop:Generator_ColumnPropNameInRow="登记时间" msprop:Generator_ColumnVarNameInTable="column登记时间" msprop:Generator_ColumnPropNameInTable="登记时间Column" type="xs:string" minOccurs="0" />
+              <xs:element name="登记员" msprop:Generator_UserColumnName="登记员" msprop:Generator_ColumnPropNameInRow="登记员" msprop:Generator_ColumnVarNameInTable="column登记员" msprop:Generator_ColumnPropNameInTable="登记员Column" type="xs:string" minOccurs="0" />
+              <xs:element name="到帐日期" msprop:Generator_UserColumnName="到帐日期" msprop:Generator_ColumnPropNameInRow="到帐日期" msprop:Generator_ColumnVarNameInTable="column到帐日期" msprop:Generator_ColumnPropNameInTable="到帐日期Column" type="xs:string" minOccurs="0" />
+              <xs:element name="到帐员" msprop:Generator_UserColumnName="到帐员" msprop:Generator_ColumnPropNameInRow="到帐员" msprop:Generator_ColumnVarNameInTable="column到帐员" msprop:Generator_ColumnPropNameInTable="到帐员Column" type="xs:string" minOccurs="0" />
+              <xs:element name="支票号" msprop:Generator_UserColumnName="支票号" msprop:Generator_ColumnPropNameInRow="支票号" msprop:Generator_ColumnVarNameInTable="column支票号" msprop:Generator_ColumnPropNameInTable="支票号Column" type="xs:string" minOccurs="0" />
+              <xs:element name="开户银行" msprop:Generator_UserColumnName="开户银行" msprop:Generator_ColumnPropNameInRow="开户银行" msprop:Generator_ColumnVarNameInTable="column开户银行" msprop:Generator_ColumnPropNameInTable="开户银行Column" type="xs:string" minOccurs="0" />
+              <xs:element name="开户单位" msprop:Generator_UserColumnName="开户单位" msprop:Generator_ColumnPropNameInRow="开户单位" msprop:Generator_ColumnVarNameInTable="column开户单位" msprop:Generator_ColumnPropNameInTable="开户单位Column" type="xs:string" minOccurs="0" />
+              <xs:element name="bz1" msprop:Generator_UserColumnName="bz1" msprop:Generator_ColumnPropNameInRow="bz1" msprop:Generator_ColumnVarNameInTable="columnbz1" msprop:Generator_ColumnPropNameInTable="bz1Column" type="xs:string" minOccurs="0" />
+              <xs:element name="bz2" msprop:Generator_UserColumnName="bz2" msprop:Generator_ColumnPropNameInRow="bz2" msprop:Generator_ColumnVarNameInTable="columnbz2" msprop:Generator_ColumnPropNameInTable="bz2Column" type="xs:string" minOccurs="0" />
+              <xs:element name="bz3" msprop:Generator_UserColumnName="bz3" msprop:Generator_ColumnPropNameInRow="bz3" msprop:Generator_ColumnVarNameInTable="columnbz3" msprop:Generator_ColumnPropNameInTable="bz3Column" type="xs:string" minOccurs="0" />
+              <xs:element name="bz4" msprop:Generator_UserColumnName="bz4" msprop:Generator_ColumnPropNameInRow="bz4" msprop:Generator_ColumnVarNameInTable="columnbz4" msprop:Generator_ColumnPropNameInTable="bz4Column" type="xs:string" minOccurs="0" />
+              <xs:element name="bz5" msprop:Generator_UserColumnName="bz5" msprop:Generator_ColumnPropNameInRow="bz5" msprop:Generator_ColumnVarNameInTable="columnbz5" msprop:Generator_ColumnPropNameInTable="bz5Column" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="yjjszqk">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="收款员" type="xs:string" />
+        <xs:element name="现金收款" type="xs:string" />
+        <xs:element name="POS收款" type="xs:string" />
+        <xs:element name="转帐收款" type="xs:string" />
+        <xs:element name="收款合计" type="xs:string" />
+        <xs:element name="现金退款" type="xs:string" />
+        <xs:element name="POS退款" type="xs:string" />
+        <xs:element name="转帐退款" type="xs:string" />
+        <xs:element name="退款合计" type="xs:string" />
+        <xs:element name="收支净额" type="xs:string" />
+        <xs:element name="财务记账" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,11 @@
+E:\2.0\HIS\ts.SettingUserGroupSysConfig\bin\Debug\ts.SettingUserGroupSysConfig.exe
+E:\2.0\HIS\ts.SettingUserGroupSysConfig\bin\Debug\ts.SettingUserGroupSysConfig.pdb
+E:\2.0\HIS\ts.SettingUserGroupSysConfig\obj\Debug\ResolveAssemblyReference.cache
+E:\2.0\HIS\ts.SettingUserGroupSysConfig\obj\Debug\ts.SettingUserGroupSysConfig.Properties.Resources.resources
+E:\2.0\HIS\ts.SettingUserGroupSysConfig\obj\Debug\ts.SettingUserGroupSysConfig.csproj.GenerateResource.Cache
+E:\2.0\HIS\ts.SettingUserGroupSysConfig\obj\Debug\ts.SettingUserGroupSysConfig.exe
+E:\2.0\HIS\ts.SettingUserGroupSysConfig\obj\Debug\ts.SettingUserGroupSysConfig.pdb
+E:\2.0\HIS\ts.SettingUserGroupSysConfig\obj\Debug\ts.SettingUserGroupSysConfig.FrmSetUserGroupSysConfig.resources
+E:\2.0\HIS\ts.SettingUserGroupSysConfig\obj\Debug\ts.SettingUserGroupSysConfig.FrmUserGroupConfigEdit.resources
+E:\2.0\HIS\Debug\ts.SettingUserGroupSysConfig.exe
+E:\2.0\HIS\Debug\ts.SettingUserGroupSysConfig.pdb

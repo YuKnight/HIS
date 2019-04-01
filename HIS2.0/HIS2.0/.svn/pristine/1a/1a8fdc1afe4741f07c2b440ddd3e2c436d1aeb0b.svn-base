@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:tns="http://service.ts.hrwms.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://service.resolveXml.hrwms.org/" xmlns:ns2="http://schemas.xmlsoap.org/soap/http" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="getTsDoctorAdvice" targetNamespace="http://service.ts.hrwms.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="http://service.resolveXml.hrwms.org/" location="http://192.168.100.170:8080/org.platform.core/ws/tsDoctorAdvice?wsdl=TsDoctorAdviceService.wsdl" />
+  <wsdl:types />
+  <wsdl:binding name="getTsDoctorAdviceSoapBinding" type="ns1:TsDoctorAdviceService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getTsDoctorAdvice">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getTsDoctorAdvice">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getTsDoctorAdviceResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="getTsDoctorAdvice">
+    <wsdl:port name="TsDoctorAdviceMachinePort" binding="tns:getTsDoctorAdviceSoapBinding">
+      <soap:address location="http://192.168.100.170:8080/org.platform.core/ws/tsDoctorAdvice" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://192.168.0.94:8080/SAP_WCF/SAPtoSCM.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Ipedf.App.SAP_WCF" />
+  <xs:element name="GetPucharseFromSap">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Ipedf.App.SAP_WCF" minOccurs="0" name="purcharseList" nillable="true" type="q1:ArrayOfSap_PurchasePlan" />
+        <xs:element minOccurs="0" name="Flag" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPucharseFromSapResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetPucharseFromSapResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDrugFromHIS">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Ipedf.App.SAP_WCF" minOccurs="0" name="drugList" nillable="true" type="q2:ArrayOfHIS_DRUG" />
+        <xs:element minOccurs="0" name="Flag" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDrugFromHISResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetDrugFromHISResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

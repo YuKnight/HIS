@@ -1,0 +1,7 @@
+E:\HIS2.0\His代码\ts_zyhs_dycy\obj\Debug\ts_zyhs_dycy.csprojResolveAssemblyReference.cache
+E:\HIS2.0\His代码\ts_zyhs_dycy\obj\Debug\ts_zyhs_dycy.AlterOutDate.resources
+E:\HIS2.0\His代码\ts_zyhs_dycy\obj\Debug\ts_zyhs_dycy.frmDYCY.resources
+E:\HIS2.0\His代码\ts_zyhs_dycy\obj\Debug\ts_zyhs_dycy.csproj.GenerateResource.cache
+E:\HIS2.0\His代码\ts_zyhs_dycy\obj\Debug\ts_zyhs_dycy.csproj.CoreCompileInputs.cache
+E:\HIS2.0\His代码\ts_zyhs_dycy\obj\Debug\ts_zyhs_dycy.dll
+E:\HIS2.0\His代码\ts_zyhs_dycy\obj\Debug\ts_zyhs_dycy.pdb

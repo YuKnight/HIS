@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<systems>
+  <system>
+    <name>病案统计接口系统</name>
+    <menu>Fun_ts_zy_zhcx</menu>
+    <tabs>
+      <tab>tpFyhz</tab>
+      <tab>tpFymx</tab>
+      <tab>tpYpxx</tab>
+    </tabs>
+  </system>
+
+  <system>
+    <name>抗生素系统</name>
+    <menu>Fun_ts_zy_zhcx</menu>
+    <tabs>
+      <tab>tpFyhz</tab>
+      <tab>tpFymx</tab>
+      <tab>tpYpxx</tab>
+    </tabs>
+  </system>
+
+  <system>
+    <name>住院医生工作站</name>
+    <menu>Fun_ts_zy_zhcx</menu>
+    <tabs>
+      <tab>tpFyhz</tab>
+      <tab>tpFymx</tab>
+      <tab>tpYpxx</tab>
+    </tabs>
+  </system>
+
+  <system>
+    <name>经济成本核算管理</name>
+    <menu>Fun_ts_zy_zhcx_all</menu>
+    <tabs>
+      <tab>tpFyhz</tab>
+      <tab>tpFymx</tab>
+      <tab>tpYpxx</tab>
+    </tabs>
+  </system>
+
+  <system>
+    <name>特殊治疗系统</name>
+    <menu>Fun_ts_zy_zhcx_all</menu>
+    <tabs>
+      <tab>tpFyhz</tab>
+      <tab>tpFymx</tab>
+      <tab>tpYpxx</tab>
+    </tabs>
+  </system>
+
+  <system>
+    <name>医技管理系统</name>
+    <menu>Fun_ts_zy_zhcx_all</menu>
+    <tabs>
+      <tab>tpFyhz</tab>
+      <tab>tpFymx</tab>
+      <tab>tpYpxx</tab>
+    </tabs>
+  </system>
+
+  <system>
+    <name>质控管理系统</name>
+    <menu>Fun_ts_zy_zhcx_all</menu>
+    <tabs>
+      <tab>tpFyhz</tab>
+      <tab>tpFymx</tab>
+      <tab>tpYpxx</tab>
+    </tabs>
+  </system>
+  <!--author:Daniel
+      time:2014-08-27-->
+</systems>
+
+<!--此xml文档是针对系统禁用标签页的配置文件，其中'name'的值表示系统名，'menu'中的值表示二级菜单名，'tab'的值表示要屏蔽的标签页名-->
+<!--费用大项:tpFydx, 费用汇总:tpFyhz, 费用明细:tpFymx, 医嘱费用:tpYzfy, 转科信息:tpZkxx, 预交信息:tpYjxx,
+    结算信息:tpJsxx, 未记账费用:tpWjzfymx, 手术信息:tpSsxx, 医保试算:tpYbss, 医保结算:tpYbjs,
+    病人信息:tpBrxx, 药品信息:tpYpxx,-->
+<!--住院病人综合查询：Fun_ts_zy_zhcx，住院病人综合查询（全部病区）：Fun_ts_zy_zhcx_all-->

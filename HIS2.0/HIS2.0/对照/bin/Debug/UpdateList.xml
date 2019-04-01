@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="gb2312"?>
+<AutoUpdater>
+  <description>Application autoUpdate</description>
+  <Updater>
+	<Url>http://192.168.0.9:8080/SoftUpdate/</Url>
+	<LastUpdateTime>2010-05-10</LastUpdateTime>
+  </Updater>
+<Application applicationId="ItemSoft">
+    <EntryPoint>TrasenEmr.exe</EntryPoint>
+    <Location>.</Location>
+	<Version>1.0.0.0</Version>
+</Application>
+  <Files>
+	<File Ver="1.1.3.9"  Name= "EmrEditPublicWs.dll"/>   
+        <File Ver="1.1.1.5"  Name= "EmrSysPublic.dll"/>  
+        <File Ver="1.1.2.2"  Name= "EmrTemplate.dll"/>  
+        <File Ver="1.1.1.0"  Name= "EmrEditor.dll"/>  
+ 	<File Ver="1.1.0.4"  Name= "EmrPersonalSet.dll"/>  
+        <File Ver="1.1.0.8"  Name= "EmrBussinessLogic.dll"/>  
+        <File Ver="1.1.1.0"  Name= "EmrDoctorWs.dll"/>  
+	<File Ver="1.1.0.1"  Name= "KB925488.全角半角问题.msp"/>  
+        <File Ver="1.0.0.8"  Name= "EmrBa.dll"/> 
+	<File Ver="1.0.0.1"  Name= "EmrBaseClass.dll"/>  
+        <File Ver="1.0.0.2"  Name= "EmrNurseWs.dll"/> 
+        <File Ver="1.0.0.2"  Name= "EmrQCWs.dll"/> 
+        <File Ver="1.0.0.2"  Name= "EmrDeptQc.dll"/> 
+	<File Ver="1.0.0.4"  Name= "EmrOrderRecordInterface.dll"/> 
+        <File Ver="1.0.0.1"  Name= "ts_zyhs_yzdy.dll"/> 
+  </Files>
+</AutoUpdater>

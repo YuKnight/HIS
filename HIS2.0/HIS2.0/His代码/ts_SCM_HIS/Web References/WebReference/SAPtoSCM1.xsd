@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Ipedf.App.SAP_WCF" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Ipedf.App.SAP_WCF" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfSap_PurchasePlan">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Sap_PurchasePlan" nillable="true" type="tns:Sap_PurchasePlan" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSap_PurchasePlan" nillable="true" type="tns:ArrayOfSap_PurchasePlan" />
+  <xs:complexType name="Sap_PurchasePlan">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BEDAT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EBELN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EBELP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EINDT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LGORT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LIFNR" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MATNR" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MEINS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MENGE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MSEHT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NETPR" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TXZ01" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WERKS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WERKST" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Sap_PurchasePlan" nillable="true" type="tns:Sap_PurchasePlan" />
+  <xs:complexType name="ArrayOfHIS_DRUG">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HIS_DRUG" nillable="true" type="tns:HIS_DRUG" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHIS_DRUG" nillable="true" type="tns:ArrayOfHIS_DRUG" />
+  <xs:complexType name="HIS_DRUG">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FACTORY" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MRJJ" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SPEC" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="HIS_DRUG" nillable="true" type="tns:HIS_DRUG" />
+</xs:schema>

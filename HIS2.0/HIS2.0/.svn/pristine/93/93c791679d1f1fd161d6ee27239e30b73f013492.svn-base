@@ -1,0 +1,542 @@
+using System;
+using System.Drawing;
+using System.Collections;
+using System.ComponentModel;
+using System.Windows.Forms;
+using System.Data;
+using TrasenFrame.Classes;
+using TrasenClasses.GeneralControls;
+using TrasenClasses.GeneralClasses;
+using YpClass;
+
+
+namespace ts_yp_ypcd
+{
+	/// <summary>
+	/// Frmks 的摘要说明。
+	/// </summary>
+	public class Frmhb : System.Windows.Forms.Form
+	{
+		private System.Windows.Forms.Button butcancel;
+		public System.Windows.Forms.Button butok;
+		public myDataGrid.myDataGrid myDataGrid1;
+		private System.Windows.Forms.Label label1;
+		private System.Windows.Forms.GroupBox groupBox1;
+		public DataRow[] UpdateRows;
+		private System.Windows.Forms.Panel panel1;
+		private System.Windows.Forms.Panel panel2;
+		private System.Windows.Forms.Panel panel3;
+		public System.Windows.Forms.Panel panel4;
+		public myDataGrid.myDataGrid myDataGrid2;
+		private System.Windows.Forms.DataGridTableStyle dataGridTableStyle2;
+		private System.Windows.Forms.DataGridTableStyle dataGridTableStyle1;
+		public System.Windows.Forms.Label label2;
+		public System.Windows.Forms.TextBox txtdm;
+		public System.Windows.Forms.Button butok_hb;
+		
+		/// <summary>
+		/// 必需的设计器变量。
+		/// </summary>
+		private System.ComponentModel.Container components = null;
+
+		public Frmhb()
+		{
+			//
+			// Windows 窗体设计器支持所必需的
+			//
+			InitializeComponent();
+
+            string[] HeaderText ={ "序号", "合并", "货号", "英文名", "品名", "商品名", "备注", "规格", "单位", "厂家", "批发价", "零售价", "领药方式", "医保", "登记时间", "停用", "GGID", "CJID" };
+            string[] MappingName ={ "序号", "合并", "货号", "英文名", "品名", "商品名", "备注", "规格", "单位", "厂家", "批发价", "零售价", "领药方式", "医保", "登记时间", "停用", "GGID", "CJID" };
+            int[] ColWidth =	 { 30, 0, 90, 100, 110, 110, 50, 100, 40, 100, 0, 65, 0, 0, 100, 40, 0, 0 };
+            bool[] BoolCol =		 { false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, false };
+			
+			//this.myDataGrid1.ReadOnly=true;
+			
+			FunBase.csMydataGrid(this.myDataGrid1,HeaderText,MappingName,BoolCol,ColWidth,false);
+			this.myDataGrid1.TableStyles[0].GridColumnStyles["合并"].Width=30;
+			this.myDataGrid1.TableStyles[0].GridColumnStyles["英文名"].Width=0;
+
+
+			//////////////////////////////////////
+			string[] HeaderText1	={"序号","英文名","品名","商品名","备注","规格","单位","GGID"};
+			string[] MappingName1={"序号","英文名","品名","商品名","备注","规格","单位","GGID"};
+			int	  [] ColWidth1=	 {40,100,110,110,40,100,40,0};
+			bool[] BoolCol1=		 {false,false,false,false,false,false,false,false};
+			
+			//this.myDataGrid1.ReadOnly=true;
+			
+			FunBase.csMydataGrid(this.myDataGrid2,HeaderText1,MappingName1,BoolCol1,ColWidth1,false);
+
+            this.Text = this.Text + " [" + InstanceForm._menuTag.Jgbm + "]";
+			//
+			// TODO: 在 InitializeComponent 调用后添加任何构造函数代码
+			//
+		}
+
+		/// <summary>
+		/// 清理所有正在使用的资源。
+		/// </summary>
+		protected override void Dispose( bool disposing )
+		{
+			if( disposing )
+			{
+				if(components != null)
+				{
+					components.Dispose();
+				}
+			}
+			base.Dispose( disposing );
+		}
+
+		#region Windows 窗体设计器生成的代码
+		/// <summary>
+		/// 设计器支持所需的方法 - 不要使用代码编辑器修改
+		/// 此方法的内容。
+		/// </summary>
+		private void InitializeComponent()
+		{
+            this.butcancel = new System.Windows.Forms.Button();
+            this.butok = new System.Windows.Forms.Button();
+            this.myDataGrid1 = new myDataGrid.myDataGrid();
+            this.dataGridTableStyle1 = new System.Windows.Forms.DataGridTableStyle();
+            this.label1 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.myDataGrid2 = new myDataGrid.myDataGrid();
+            this.dataGridTableStyle2 = new System.Windows.Forms.DataGridTableStyle();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.butok_hb = new System.Windows.Forms.Button();
+            this.txtdm = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            ((System.ComponentModel.ISupportInitialize)(this.myDataGrid1)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.myDataGrid2)).BeginInit();
+            this.panel3.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // butcancel
+            // 
+            this.butcancel.Location = new System.Drawing.Point(442, 0);
+            this.butcancel.Name = "butcancel";
+            this.butcancel.Size = new System.Drawing.Size(104, 32);
+            this.butcancel.TabIndex = 3;
+            this.butcancel.Text = "取消(&C)";
+            this.butcancel.Click += new System.EventHandler(this.butcancel_Click);
+            // 
+            // butok
+            // 
+            this.butok.Location = new System.Drawing.Point(336, 0);
+            this.butok.Name = "butok";
+            this.butok.Size = new System.Drawing.Size(103, 32);
+            this.butok.TabIndex = 2;
+            this.butok.Text = "确定(&S)";
+            this.butok.Click += new System.EventHandler(this.butok_Click);
+            // 
+            // myDataGrid1
+            // 
+            this.myDataGrid1.BackgroundColor = System.Drawing.Color.White;
+            this.myDataGrid1.CaptionVisible = false;
+            this.myDataGrid1.DataMember = "";
+            this.myDataGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.myDataGrid1.HeaderForeColor = System.Drawing.SystemColors.ControlText;
+            this.myDataGrid1.Location = new System.Drawing.Point(3, 17);
+            this.myDataGrid1.Name = "myDataGrid1";
+            this.myDataGrid1.ReadOnly = true;
+            this.myDataGrid1.Size = new System.Drawing.Size(514, 90);
+            this.myDataGrid1.TabIndex = 4;
+            this.myDataGrid1.TableStyles.AddRange(new System.Windows.Forms.DataGridTableStyle[] {
+            this.dataGridTableStyle1});
+            this.myDataGrid1.Click += new System.EventHandler(this.myDataGrid1_Click);
+            // 
+            // dataGridTableStyle1
+            // 
+            this.dataGridTableStyle1.DataGrid = this.myDataGrid1;
+            this.dataGridTableStyle1.HeaderForeColor = System.Drawing.SystemColors.ControlText;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.SystemColors.Info;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label1.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.ForeColor = System.Drawing.Color.Brown;
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(520, 32);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "请选择要将下列药品合并到哪个规格上";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.myDataGrid1);
+            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox1.Location = new System.Drawing.Point(0, 0);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(520, 110);
+            this.groupBox1.TabIndex = 7;
+            this.groupBox1.TabStop = false;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.panel4);
+            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 142);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(520, 207);
+            this.panel1.TabIndex = 8;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.myDataGrid2);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(0, 34);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(520, 173);
+            this.panel4.TabIndex = 5;
+            // 
+            // myDataGrid2
+            // 
+            this.myDataGrid2.BackgroundColor = System.Drawing.Color.White;
+            this.myDataGrid2.CaptionVisible = false;
+            this.myDataGrid2.DataMember = "";
+            this.myDataGrid2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.myDataGrid2.HeaderForeColor = System.Drawing.SystemColors.ControlText;
+            this.myDataGrid2.Location = new System.Drawing.Point(0, 0);
+            this.myDataGrid2.Name = "myDataGrid2";
+            this.myDataGrid2.ReadOnly = true;
+            this.myDataGrid2.Size = new System.Drawing.Size(520, 173);
+            this.myDataGrid2.TabIndex = 5;
+            this.myDataGrid2.TableStyles.AddRange(new System.Windows.Forms.DataGridTableStyle[] {
+            this.dataGridTableStyle2});
+            // 
+            // dataGridTableStyle2
+            // 
+            this.dataGridTableStyle2.DataGrid = this.myDataGrid2;
+            this.dataGridTableStyle2.HeaderForeColor = System.Drawing.SystemColors.ControlText;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.butok_hb);
+            this.panel3.Controls.Add(this.txtdm);
+            this.panel3.Controls.Add(this.label2);
+            this.panel3.Controls.Add(this.butcancel);
+            this.panel3.Controls.Add(this.butok);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(520, 34);
+            this.panel3.TabIndex = 4;
+            // 
+            // butok_hb
+            // 
+            this.butok_hb.Location = new System.Drawing.Point(336, 1);
+            this.butok_hb.Name = "butok_hb";
+            this.butok_hb.Size = new System.Drawing.Size(103, 32);
+            this.butok_hb.TabIndex = 6;
+            this.butok_hb.Text = "确定(&S)";
+            this.butok_hb.Click += new System.EventHandler(this.butok_hb_Click);
+            // 
+            // txtdm
+            // 
+            this.txtdm.Location = new System.Drawing.Point(134, 8);
+            this.txtdm.Name = "txtdm";
+            this.txtdm.Size = new System.Drawing.Size(118, 21);
+            this.txtdm.TabIndex = 4;
+            this.txtdm.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtdm_KeyPress);
+            // 
+            // label2
+            // 
+            this.label2.Location = new System.Drawing.Point(0, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(144, 17);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "查找以前废弃的规格";
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.groupBox1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 32);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(520, 110);
+            this.panel2.TabIndex = 9;
+            // 
+            // Frmhb
+            // 
+            this.AutoScaleBaseSize = new System.Drawing.Size(6, 14);
+            this.ClientSize = new System.Drawing.Size(520, 349);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.label1);
+            this.Name = "Frmhb";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "合并药品";
+            this.Load += new System.EventHandler(this.Frmhb_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.myDataGrid1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.myDataGrid2)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.ResumeLayout(false);
+
+		}
+		#endregion
+
+		private void Frmhb_Load(object sender, System.EventArgs e)
+		{
+
+		}
+
+		private void myDataGrid1_Click(object sender, System.EventArgs e)
+		{
+			DataTable tb=(DataTable)this.myDataGrid1.DataSource;
+			//this.myDataGrid1.CurrentCell=new DataGridCell(this.myDataGrid1.CurrentCell.RowNumber,this.myDataGrid1.CurrentCell.ColumnNumber);
+			this.myDataGrid1.Select(this.myDataGrid1.CurrentCell.RowNumber);
+			string colname=this.myDataGrid1.TableStyles[0].GridColumnStyles[this.myDataGrid1.CurrentCell.ColumnNumber].HeaderText.Trim();
+			if (colname.Trim()=="合并")
+			{
+				for(int i=0;i<=tb.Rows.Count-1;i++)
+				{
+					tb.Rows[i]["合并"]=(short)0;
+				}
+
+				if (Convert.ToBoolean(tb.Rows[this.myDataGrid1.CurrentCell.RowNumber][colname.Trim()])==true)
+					tb.Rows[this.myDataGrid1.CurrentCell.RowNumber][colname.Trim()]=(short)0;
+				else
+					tb.Rows[this.myDataGrid1.CurrentCell.RowNumber][colname.Trim()]=(short)1;
+			}
+
+		}
+
+		private void butcancel_Click(object sender, System.EventArgs e)
+		{
+			this.Close();
+		}
+
+		private void butok_Click(object sender, System.EventArgs e)
+		{
+			DataTable tb=(DataTable)this.myDataGrid1.DataSource;
+			DataRow[] rows=tb.Select("合并=1");
+			DataRow[] hbrow=tb.Select("合并=0");
+			if (rows.Length==0) 
+			{
+				MessageBox.Show("没有选择规格","提示",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+				return;
+			}
+
+			if (hbrow.Length==0) 
+			{
+				MessageBox.Show("没有可匹配的药品，最少要选择两个药品","提示",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+				return;
+			}
+
+			int _gg_ggid=Convert.ToInt32(rows[0]["ggid"]);
+			
+			try
+			{
+
+                Ypgg gg = new Ypgg(_gg_ggid, InstanceForm.BDatabase);
+				if (gg.GGID==0) {MessageBox.Show("该规格可能已经不存在了");return;}
+
+                string[] ss=new string[hbrow.Length] ;
+ 
+				InstanceForm.BDatabase.BeginTransaction();
+
+				for (int i=0;i<=hbrow.Length-1;i++)
+				{
+					int _cj_cjid=Convert.ToInt32(hbrow[i]["CJID"]);
+
+					//厂家
+					string ssql="update yp_ypcjd set ggid="+_gg_ggid+",s_ypspm='"+gg.YPSPM+"',s_yppm='"+gg.YPPM+
+                        "',s_ypspmbz='" + gg.YPSPMBZ + "',s_ypgg='" + gg.YPGG + "',s_ypdw='" + Yp.SeekYpdw(gg.YPDW, InstanceForm.BDatabase) + "' where cjid=" + _cj_cjid + " ";
+					InstanceForm.BDatabase.DoCommand(ssql);
+
+					//药房库存
+					ssql="update yf_kcmx set ggid="+_gg_ggid+" where cjid="+_cj_cjid+" ";
+					InstanceForm.BDatabase.DoCommand(ssql);
+					//药房批号
+					ssql="update yf_kcph set ggid="+_gg_ggid+" where cjid="+_cj_cjid+" ";
+					InstanceForm.BDatabase.DoCommand(ssql);
+					//药库库存
+					ssql="update yk_kcmx set ggid="+_gg_ggid+" where cjid="+_cj_cjid+" ";
+					InstanceForm.BDatabase.DoCommand(ssql);
+					//药库批号
+					ssql="update yk_kcph set ggid="+_gg_ggid+" where cjid="+_cj_cjid+" ";
+					InstanceForm.BDatabase.DoCommand(ssql);
+					//药房盘点表
+					ssql="update yf_pdtemp set ggid="+_gg_ggid+" where cjid="+_cj_cjid+" ";
+					InstanceForm.BDatabase.DoCommand(ssql);
+					//药库盘点表
+					ssql="update yk_kcph set ggid="+_gg_ggid+" where cjid="+_cj_cjid+" ";
+					InstanceForm.BDatabase.DoCommand(ssql);
+					//药品拆零表
+					ssql="update yp_ypcl set ggid="+_gg_ggid+" where cjid="+_cj_cjid+" ";
+					InstanceForm.BDatabase.DoCommand(ssql);
+
+                    //三院数据处理_____保存日志 
+                    Ypcj cj = new Ypcj(_cj_cjid,InstanceForm.BDatabase);
+                    string bz = "将" + hbrow[i]["品名"].ToString() + " CJID=" + hbrow[i]["CJID"] + "的药品合并到新规格 ";
+                    Guid log_djid = Guid.Empty;
+                    ts_HospData_Share.ts_update_log ts = new ts_HospData_Share.ts_update_log();
+                    ts.Save_log(ts_HospData_Share.czlx.yp_药品合并, bz, "YP_YPCJD", "CJID", _cj_cjid.ToString(), InstanceForm._menuTag.Jgbm, 0, "", out log_djid, InstanceForm.BDatabase);
+                    ss[i] = log_djid.ToString();
+
+				}
+
+				//更新药品货号
+				Ypcj ypcj =new Ypcj();
+				int _errcode=0;
+				string _errtext="";
+                ypcj.Update_shh(_gg_ggid, out _errcode, out _errtext, InstanceForm.BDatabase);
+				if (_errcode!=0) throw new Exception(_errtext);
+
+				InstanceForm.BDatabase.CommitTransaction();
+
+				UpdateRows=hbrow;
+
+                //三院数据处理___执行同步操作 
+                string msg = "";
+                for (int i = 0; i <= ss.Length - 1; i++)
+                {
+                    string errtext = "";
+                    ts_HospData_Share.ts_update_type ty = new ts_HospData_Share.ts_update_type((int)ts_HospData_Share.czlx.yp_药品合并, InstanceForm.BDatabase);
+                    if (ty.Bzx == 1) //只有当立即执行标志为1时才执行
+                    {
+                        ts_HospData_Share.ts_update_log ts = new ts_HospData_Share.ts_update_log();
+                        ts.Pexec_log(new Guid(ss[i]), InstanceForm.BDatabase, out errtext);
+                    }
+                    msg = msg + errtext;
+                    if (msg != "") MessageBox.Show("药品合并成功 " + errtext, "合并", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+				this.Close();
+			}
+			catch(System.Exception err)
+			{
+				UpdateRows=null;
+				InstanceForm.BDatabase.RollbackTransaction();
+				MessageBox.Show(err.Message,"提示",MessageBoxButtons.OK,MessageBoxIcon.Error);
+			}
+
+
+
+
+		}
+
+		private void txtdm_KeyPress(object sender, System.Windows.Forms.KeyPressEventArgs e)
+		{
+			string[] HeaderText	={"序号","英文名","品名","商品名","备注","规格","单位","GGID"};
+			int nkey=(int)e.KeyChar;
+			if (nkey!=13) return;
+			string ssql="select 0 序号,ypywm 英文名,yppm 品名,ypspm 商品名,bz 备注 ,ypgg 规格 ,dbo.fun_yp_ypdw(ypdw) 单位,ggid from yp_ypggd where ggid not in(select ggid from yp_ypcjd) and (pym like '%"+txtdm.Text.Trim()+"%' or ypspm like '%"+txtdm.Text.Trim()+"%' or yppm like '%"+txtdm.Text.Trim()+"%')";
+			DataTable tb=InstanceForm.BDatabase.GetDataTable(ssql);
+			tb.TableName="tab";
+			this.myDataGrid2.DataSource=tb;
+			this.myDataGrid2.TableStyles[0].MappingName="tab";
+		}
+
+		private void butok_hb_Click(object sender, System.EventArgs e)
+		{
+			DataTable tb=(DataTable)this.myDataGrid1.DataSource;
+			DataTable tab=(DataTable)this.myDataGrid2.DataSource;
+			int nrow1=this.myDataGrid1.CurrentCell.RowNumber;
+			int nrow2=this.myDataGrid2.CurrentCell.RowNumber;
+			if (nrow1>tb.Rows.Count-1) return;
+			if (nrow2>tab.Rows.Count-1) return;
+
+			if(MessageBox.Show("您确定要将上面的厂家替换成下面的规格吗 ？","询问窗",MessageBoxButtons.YesNo,MessageBoxIcon.Question,MessageBoxDefaultButton.Button2)==DialogResult.No)
+			return;
+
+			//要替换成的规格ID
+			int _gg_ggid=Convert.ToInt32(tab.Rows[nrow2]["ggid"]);
+			
+			
+			try
+			{
+
+                Ypgg gg = new Ypgg(_gg_ggid, InstanceForm.BDatabase);
+				if (gg.GGID==0) {MessageBox.Show("该规格可能已经不存在了");return;}
+
+				InstanceForm.BDatabase.BeginTransaction();
+
+				//要被替换的厂家ID
+				int _cj_cjid=Convert.ToInt32(tb.Rows[nrow1]["CJID"]);
+
+				//厂家
+				string ssql="update yp_ypcjd set ggid="+_gg_ggid+",s_ypspm='"+gg.YPSPM+"',s_yppm='"+gg.YPPM+
+                "',s_ypspmbz='" + gg.YPSPMBZ + "',s_ypgg='" + gg.YPGG + "',s_ypdw='" + Yp.SeekYpdw(gg.YPDW, InstanceForm.BDatabase) + "' where cjid=" + _cj_cjid + " ";
+				InstanceForm.BDatabase.DoCommand(ssql);
+				//药房库存
+				ssql="update yf_kcmx set ggid="+_gg_ggid+" where cjid="+_cj_cjid+" ";
+				InstanceForm.BDatabase.DoCommand(ssql);
+				//药房批号
+				ssql="update yf_kcph set ggid="+_gg_ggid+" where cjid="+_cj_cjid+" ";
+				InstanceForm.BDatabase.DoCommand(ssql);
+				//药库库存
+				ssql="update yk_kcmx set ggid="+_gg_ggid+" where cjid="+_cj_cjid+" ";
+				InstanceForm.BDatabase.DoCommand(ssql);
+				//药库批号
+				ssql="update yk_kcph set ggid="+_gg_ggid+" where cjid="+_cj_cjid+" ";
+				InstanceForm.BDatabase.DoCommand(ssql);
+				//药房盘点表
+				ssql="update yf_pdtemp set ggid="+_gg_ggid+" where cjid="+_cj_cjid+" ";
+				InstanceForm.BDatabase.DoCommand(ssql);
+				//药库盘点表
+				ssql="update yk_kcph set ggid="+_gg_ggid+" where cjid="+_cj_cjid+" ";
+				InstanceForm.BDatabase.DoCommand(ssql);
+				//药品拆零表
+				ssql="update yp_ypcl set ggid="+_gg_ggid+" where cjid="+_cj_cjid+" ";
+				InstanceForm.BDatabase.DoCommand(ssql);
+
+
+				//更新药品货号
+				Ypcj ypcj =new Ypcj();
+				int _errcode=0;
+				string _errtext="";
+                ypcj.Update_shh(_gg_ggid, out _errcode, out _errtext, InstanceForm.BDatabase);
+				if (_errcode!=0) throw new Exception(_errtext);
+
+
+                //三院数据处理_____保存日志 
+                Ypcj cj = new Ypcj(_cj_cjid,InstanceForm.BDatabase);
+                string bz = "取消药品合并:" + cj.S_YPPM + " CJID=" + cj.CJID + " ";
+                Guid log_djid = Guid.Empty;
+                ts_HospData_Share.ts_update_log ts = new ts_HospData_Share.ts_update_log();
+                ts.Save_log(ts_HospData_Share.czlx.yp_药品取消合并, bz, "YP_YPCJD", "CJID", _cj_cjid.ToString(), InstanceForm._menuTag.Jgbm, 0, "", out log_djid, InstanceForm.BDatabase);
+
+
+				InstanceForm.BDatabase.CommitTransaction();
+
+
+                //三院数据处理___执行同步操作 
+                string errtext = "";
+                ts_HospData_Share.ts_update_type ty = new ts_HospData_Share.ts_update_type((int)ts_HospData_Share.czlx.yp_药品取消合并, InstanceForm.BDatabase);
+                if (ty.Bzx == 1) //只有当立即执行标志为1时才执行
+                    ts.Pexec_log(log_djid, InstanceForm.BDatabase, out errtext);
+                if (errtext != "") MessageBox.Show("取消药品合并成功 " + errtext, "取消合并", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+				this.Close();
+			}
+			catch(System.Exception err)
+			{
+				UpdateRows=null;
+				InstanceForm.BDatabase.RollbackTransaction();
+				MessageBox.Show(err.Message,"提示",MessageBoxButtons.OK,MessageBoxIcon.Error);
+			}
+
+		
+		}
+
+
+	}
+}

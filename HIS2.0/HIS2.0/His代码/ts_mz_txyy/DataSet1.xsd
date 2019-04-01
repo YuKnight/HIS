@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DataSet1" msprop:Generator_DataSetName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="挂号室发卡量统计" msprop:Generator_UserTableName="挂号室发卡量统计" msprop:Generator_RowDeletedName="挂号室发卡量统计RowDeleted" msprop:Generator_RowChangedName="挂号室发卡量统计RowChanged" msprop:Generator_RowClassName="挂号室发卡量统计Row" msprop:Generator_RowChangingName="挂号室发卡量统计RowChanging" msprop:Generator_RowEvArgName="挂号室发卡量统计RowChangeEvent" msprop:Generator_RowEvHandlerName="挂号室发卡量统计RowChangeEventHandler" msprop:Generator_TableClassName="挂号室发卡量统计DataTable" msprop:Generator_TableVarName="table挂号室发卡量统计" msprop:Generator_RowDeletingName="挂号室发卡量统计RowDeleting" msprop:Generator_TablePropName="挂号室发卡量统计">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="登记员" msprop:Generator_UserColumnName="登记员" msprop:Generator_ColumnVarNameInTable="column登记员" msprop:Generator_ColumnPropNameInRow="登记员" msprop:Generator_ColumnPropNameInTable="登记员Column" type="xs:string" minOccurs="0" />
+              <xs:element name="发卡量" msprop:Generator_UserColumnName="发卡量" msprop:Generator_ColumnVarNameInTable="column发卡量" msprop:Generator_ColumnPropNameInRow="发卡量" msprop:Generator_ColumnPropNameInTable="发卡量Column" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="门诊科室退号量" msprop:Generator_UserTableName="门诊科室退号量" msprop:Generator_RowDeletedName="门诊科室退号量RowDeleted" msprop:Generator_TableClassName="门诊科室退号量DataTable" msprop:Generator_RowChangedName="门诊科室退号量RowChanged" msprop:Generator_RowClassName="门诊科室退号量Row" msprop:Generator_RowChangingName="门诊科室退号量RowChanging" msprop:Generator_RowEvArgName="门诊科室退号量RowChangeEvent" msprop:Generator_RowEvHandlerName="门诊科室退号量RowChangeEventHandler" msprop:Generator_TablePropName="门诊科室退号量" msprop:Generator_TableVarName="table门诊科室退号量" msprop:Generator_RowDeletingName="门诊科室退号量RowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="名称" msprop:Generator_UserColumnName="名称" msprop:Generator_ColumnPropNameInRow="名称" msprop:Generator_ColumnVarNameInTable="column名称" msprop:Generator_ColumnPropNameInTable="名称Column" type="xs:string" minOccurs="0" />
+              <xs:element name="退号数" msprop:Generator_UserColumnName="退号数" msprop:Generator_ColumnPropNameInRow="退号数" msprop:Generator_ColumnVarNameInTable="column退号数" msprop:Generator_ColumnPropNameInTable="退号数Column" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

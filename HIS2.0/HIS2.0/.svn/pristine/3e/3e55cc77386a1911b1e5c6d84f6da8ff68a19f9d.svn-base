@@ -1,0 +1,340 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F3708EC3-1FB2-4123-A6BB-F36ADBC8A153}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>TrasenClasses</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>TrasenClasses</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\output\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\output\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Management">
+      <Name>System.Management</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DatabaseAccess\EntityException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DatabaseAccess\IbmDb2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DatabaseAccess\MsAccess.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DatabaseAccess\MsSqlServer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DatabaseAccess\Odbc.cs" />
+    <Compile Include="DatabaseAccess\OdbcVfpDbf.cs" />
+    <Compile Include="DatabaseAccess\OleDB.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DatabaseAccess\Oracle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DatabaseAccess\RelationalDatabase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GeneralClasses\Age.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GeneralClasses\ApiFunction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DatabaseAccess\ConnectType.cs" />
+    <Compile Include="GeneralClasses\Convertor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GeneralClasses\Crypto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GeneralClasses\DateManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GeneralClasses\Enum.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GeneralClasses\IdentityNo.cs" />
+    <Compile Include="GeneralClasses\Item.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GeneralClasses\Money.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GeneralClasses\PubStaticFun.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GeneralClasses\Query\Enums.cs" />
+    <Compile Include="GeneralClasses\Query\QueryItem.cs" />
+    <Compile Include="GeneralClasses\Query\QueryItemCollection.cs" />
+    <Compile Include="GeneralClasses\Struct.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GeneralControls\ButtonDataGridEx\ButtonDataGridEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GeneralControls\ButtonDataGridEx\DataGridButtonColumn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GeneralControls\ButtonDataGridEx\DataGridCellButtonClickEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GeneralControls\ButtonDataGridEx\DataGridTextButtonColumn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GeneralControls\ButtonEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GeneralControls\ColumnEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GeneralControls\ComboBoxEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GeneralControls\ComboGridSearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GeneralControls\ComboGridViewSearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GeneralControls\ControlState.cs" />
+    <Compile Include="GeneralControls\DataGridEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GeneralControls\DataGridViewComboBoxColumnEx.cs" />
+    <Compile Include="GeneralControls\DataGridViewEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GeneralControls\DataGridViewGroupColumn.cs" />
+    <Compile Include="GeneralControls\DateTimePickerEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GeneralControls\DlgGridSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralControls\GraphicsPathHelper.cs" />
+    <Compile Include="GeneralControls\GuageBareEx.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GeneralControls\InpatientNoTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GeneralControls\LabelEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GeneralControls\ListImage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GeneralControls\ListImageItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GeneralControls\ListViewEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GeneralControls\OutlookGrid\DataSourceManager.cs" />
+    <Compile Include="GeneralControls\OutlookGrid\OutlookGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GeneralControls\OutlookGrid\OutlookGrid.Designer.cs">
+      <DependentUpon>OutlookGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralControls\OutlookGrid\OutlookGridGroup.cs" />
+    <Compile Include="GeneralControls\OutlookGrid\OutlookGridRow.cs" />
+    <Compile Include="GeneralControls\RichTextBoxEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GeneralControls\RoundStyle.cs" />
+    <Compile Include="GeneralControls\ScrollingTextCtrEx.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GeneralControls\TabControlEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GeneralControls\TextBoxEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GeneralControls\TSWinTopPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GeneralControls\UCOutLookGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GeneralControls\UCOutLookGrid.designer.cs">
+      <DependentUpon>UCOutLookGrid.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="GeneralClasses\FullPym.resources" />
+    <EmbeddedResource Include="GeneralClasses\Pym.resources" />
+    <EmbeddedResource Include="GeneralClasses\wait.cur" />
+    <EmbeddedResource Include="GeneralClasses\Wbm.resources" />
+    <EmbeddedResource Include="GeneralControls\ButtonDataGridEx\ButtonDataGridEx.resx">
+      <DependentUpon>ButtonDataGridEx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralControls\ButtonDataGridEx\buttonface.bmp" />
+    <EmbeddedResource Include="GeneralControls\ButtonDataGridEx\buttonfacepressed.bmp" />
+    <EmbeddedResource Include="GeneralControls\ButtonDataGridEx\DataGridButtonColumn.resx">
+      <DependentUpon>DataGridButtonColumn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralControls\ButtonDataGridEx\DataGridTextButtonColumn.resx">
+      <DependentUpon>DataGridTextButtonColumn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralControls\ButtonDataGridEx\fullbuttonface.bmp" />
+    <EmbeddedResource Include="GeneralControls\ButtonDataGridEx\fullbuttonfacepressed.bmp" />
+    <EmbeddedResource Include="GeneralControls\ComboBoxbuttonface.bmp" />
+    <EmbeddedResource Include="GeneralControls\ComboBoxEx.resx">
+      <DependentUpon>ComboBoxEx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralControls\ComboGridSearch.resx">
+      <DependentUpon>ComboGridSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralControls\ComboGridViewSearch.resx">
+      <DependentUpon>ComboGridViewSearch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralControls\DataGridEx.resx">
+      <DependentUpon>DataGridEx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralControls\DateTimePickerEx.resx">
+      <DependentUpon>DateTimePickerEx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralControls\DlgGridSearch.resx">
+      <DependentUpon>DlgGridSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralControls\GuageBareEx.resx">
+      <DependentUpon>GuageBareEx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralControls\InpatientNoTextBox.resx">
+      <DependentUpon>InpatientNoTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralControls\LabelEx.resx">
+      <DependentUpon>LabelEx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralControls\ListImage.resx">
+      <DependentUpon>ListImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralControls\ListImageItem.resx">
+      <DependentUpon>ListImageItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralControls\ListViewEx.resx">
+      <DependentUpon>ListViewEx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralControls\RichTextBoxEx.resx">
+      <DependentUpon>RichTextBoxEx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralControls\ScrollingTextCtrEx.resx">
+      <DependentUpon>ScrollingTextCtrEx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralControls\TabControlEx.resx">
+      <DependentUpon>TabControlEx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralControls\TextBoxEx.resx">
+      <DependentUpon>TextBoxEx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralControls\TSWinTopPanel.resx">
+      <DependentUpon>TSWinTopPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralControls\UCOutLookGrid.resx">
+      <DependentUpon>UCOutLookGrid.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

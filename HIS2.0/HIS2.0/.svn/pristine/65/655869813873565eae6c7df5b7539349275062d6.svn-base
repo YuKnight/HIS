@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="TrasenHIS.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="TrasenHIS_TrasenWS_TrasenWS" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://192.168.0.90:88/TrasenWS.asmx</Value>
+    </Setting>
+    <Setting Name="TrasenHIS_EMRWS_WebSActionService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://192.168.0.26:8008/emrwebs/services/WebSAction</Value>
+    </Setting>
+    <Setting Name="TrasenHIS_Notice_Notice" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://192.168.100.154:8080/WebServices/Notice.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

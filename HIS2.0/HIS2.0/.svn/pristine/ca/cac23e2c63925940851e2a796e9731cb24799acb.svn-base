@@ -1,0 +1,24 @@
+﻿<REQUEST>
+  <HEAD>
+    <JQMC></JQMC>
+    <WKDZ></WKDZ>
+    <YWBH></YWBH>
+    <YHDM></YHDM>
+    <YYBM></YYBM>
+    <CZSJ></CZSJ>
+    <ERRCODE></ERRCODE>
+    <ERRTEXT></ERRTEXT>
+  </HEAD>
+  <DATA>
+    <BRLX>1</BRLX>
+    <CYKSRQ></CYKSRQ>
+    <CYJSRQ></CYJSRQ>
+    <KSID>1213</KSID>
+    <BRXM></BRXM>
+    <CWH></CWH>
+    <ZYH></ZYH>
+    <LXFS></LXFS>
+    <SFZH></SFZH>
+    <JTDZ></JTDZ>
+  </DATA>
+</REQUEST>

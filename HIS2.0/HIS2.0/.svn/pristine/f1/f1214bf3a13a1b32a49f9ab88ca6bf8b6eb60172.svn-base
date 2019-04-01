@@ -1,0 +1,315 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3FA17918-B2EA-40CE-BC44-3F30D92B97F5}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>App.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>ts_zyhs_yzgl</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ts_zyhs_yzgl</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\..\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Excel, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\DLL引用\Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="HospitalManage.DataAccess, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\DLL引用\HospitalManage.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="HospitalManage.Services, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\DLL引用\HospitalManage.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="Trasen.Controls, Version=1.0.0.68, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Trasen.DbAcc, Version=1.0.4628.33451, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\DLL引用\Trasen.DbAcc.dll</HintPath>
+    </Reference>
+    <Reference Include="TrasenClasses, Version=5.1.5119.28719, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\DLL引用\TrasenClasses.dll</HintPath>
+    </Reference>
+    <Reference Include="TrasenFrame, Version=5.1.5218.23105, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\DLL引用\TrasenFrame.dll</HintPath>
+    </Reference>
+    <Reference Include="TszyHIS, Version=1.0.0.20090, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\DLL引用\TszyHIS.dll</HintPath>
+    </Reference>
+    <Reference Include="Ts_Ba_tj, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\DLL引用\Ts_Ba_tj.dll</HintPath>
+    </Reference>
+    <Reference Include="ts_yf_zyfy, Version=1.0.5560.17146, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ts_yj_class, Version=10.12.3.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\DLL引用\ts_yj_class.dll</HintPath>
+    </Reference>
+    <Reference Include="Ts_zygl_ybgl, Version=1.0.0.17143, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="ts_zyhs_classes, Version=1.0.5204.17659, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\DLL引用\ts_zyhs_classes.dll</HintPath>
+    </Reference>
+    <Reference Include="ts_zyhs_ypxx, Version=1.0.5179.41822, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\DLL引用\ts_zyhs_ypxx.dll</HintPath>
+    </Reference>
+    <Reference Include="价格信息, Version=1.0.4146.21106, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\DLL引用\价格信息.dll</HintPath>
+    </Reference>
+    <Reference Include="病人信息, Version=1.0.5078.18187, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\DLL引用\病人信息.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App.ico" />
+    <Content Include="Resources\YELLOW2.ICO" />
+    <None Include="Resources\under.ico" />
+    <None Include="Resources\23.ICO" />
+    <None Include="Resources\gomme.ico" />
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CzDataAccess.cs" />
+    <Compile Include="FrmCzhz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCzhz.designer.cs">
+      <DependentUpon>FrmCzhz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCzxx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCzxx.Designer.cs">
+      <DependentUpon>FrmCzxx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDgqm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDgqm.Designer.cs">
+      <DependentUpon>FrmDgqm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPvsCancelScn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPvsCancelScn.Designer.cs">
+      <DependentUpon>FrmPvsCancelScn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmQFZX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmQFZX.Designer.cs">
+      <DependentUpon>FrmQFZX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReason.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReason.Designer.cs">
+      <DependentUpon>FrmReason.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmWzxm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWzxm.Designer.cs">
+      <DependentUpon>FrmWzxm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UCWzxm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCWzxm.Designer.cs">
+      <DependentUpon>UCWzxm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="查询.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="查询.Designer.cs">
+      <DependentUpon>查询.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstanceForm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="医嘱管理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="医嘱详细信息.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="医嘱选择发送.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="执行时间.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="账单停止.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="FrmCzhz.resx">
+      <DependentUpon>FrmCzhz.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCzxx.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmCzxx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDgqm.resx">
+      <DependentUpon>FrmDgqm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPvsCancelScn.resx">
+      <DependentUpon>FrmPvsCancelScn.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmQFZX.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmQFZX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReason.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmReason.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWzxm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmWzxm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCWzxm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCWzxm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="医嘱管理.resx">
+      <DependentUpon>医嘱管理.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="医嘱详细信息.resx">
+      <DependentUpon>医嘱详细信息.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="医嘱选择发送.resx">
+      <DependentUpon>医嘱选择发送.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="执行时间.resx">
+      <DependentUpon>执行时间.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="查询.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>查询.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="账单停止.resx">
+      <DependentUpon>账单停止.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,19 @@
+Trasen.exe Created Log File
+********************************************** Local Time : 2014-09-11 16:09:44 **********************************************
+[2014-09-11 16:09:44]Begin Invoke “StartupMain(string,TrasenFrame.Classs.ConnectionType,string,bool,bool)”
+********************************************** Local Time : 2014-09-11 16:10:14 **********************************************
+[2014-09-11 16:10:14]Begin Invoke “StartupMain(string,TrasenFrame.Classs.ConnectionType,string,bool,bool)”
+[2014-09-11 16:10:14]Initialize Database Connection Object (TrasenFrame.Forms.FrmMdiMain.Database.Initialize( connectionString ))
+[2014-09-11 16:10:14]Start Check Update File
+[2014-09-11 16:10:14]Detected New Version Of File : SystemUpdateEx.exe,Ready To Download
+[2014-09-11 16:10:15]Ready from Update File:SystemUpdateEx.exe
+[2014-09-11 16:10:16]Delete Old File:E:\工作目录\HIS\HIS框架2.0\output\SysUpdateEx.exe
+[2014-09-11 16:10:16]Write content to File : E:\工作目录\HIS\HIS框架2.0\output\SysUpdateEx.exe
+[2014-09-11 16:10:16]SystemUpdateEx.exe Update Successfully，Version:20140614102156
+[2014-09-11 16:10:16]SystemUpdateEx.exe Download Finished
+[2014-09-11 16:10:16]UpdateFile.ini->[UPDATETYPE]->NotUpdate=true,Stop Update and Return to Main Program
+********************************************** Local Time : 2014-09-11 16:12:58 **********************************************
+[2014-09-11 16:12:58]Begin Invoke “StartupMain(string,TrasenFrame.Classs.ConnectionType,string,bool,bool)”
+[2014-09-11 16:12:58]Initialize Database Connection Object (TrasenFrame.Forms.FrmMdiMain.Database.Initialize( connectionString ))
+[2014-09-11 16:12:58]Start Check Update File
+[2014-09-11 16:12:58]UpdateFile.ini->[UPDATETYPE]->NotUpdate=true,Stop Update and Return to Main Program

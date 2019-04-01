@@ -1,0 +1,129 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D4DF7461-CDB9-48B3-97AA-5288074D45C6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ts_DocGroup</RootNamespace>
+    <AssemblyName>ts_DocGroup</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TrasenClasses, Version=5.1.5252.18151, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Output\TrasenClasses.dll</HintPath>
+    </Reference>
+    <Reference Include="TrasenFrame, Version=5.1.5008.25537, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Output\TrasenFrame.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmDocGoup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDocGoup.Designer.cs">
+      <DependentUpon>FrmDocGoup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDocGoupMidify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDocGoupMidify.Designer.cs">
+      <DependentUpon>FrmDocGoupMidify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDocGroupList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDocGroupList.Designer.cs">
+      <DependentUpon>FrmDocGroupList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDocGroupListModify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDocGroupListModify.Designer.cs">
+      <DependentUpon>FrmDocGroupListModify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmZffl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmZffl.Designer.cs">
+      <DependentUpon>FrmZffl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstanceForm.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmDocGoup.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmDocGoup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDocGoupMidify.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmDocGoupMidify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDocGroupList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmDocGroupList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDocGroupListModify.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmDocGroupListModify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmZffl.resx">
+      <DependentUpon>FrmZffl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

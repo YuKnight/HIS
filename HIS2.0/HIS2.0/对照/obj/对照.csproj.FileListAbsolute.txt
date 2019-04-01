@@ -1,0 +1,4 @@
+E:\HIS2.0\对照\obj\Debug\ResolveAssemblyReference.cache
+E:\HIS2.0\对照\obj\Debug\对照.Form1.resources
+E:\HIS2.0\对照\obj\Debug\对照.Properties.Resources.resources
+E:\HIS2.0\对照\obj\Debug\对照.csproj.GenerateResource.Cache

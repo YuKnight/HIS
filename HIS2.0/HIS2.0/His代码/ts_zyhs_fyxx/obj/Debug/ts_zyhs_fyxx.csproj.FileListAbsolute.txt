@@ -1,0 +1,12 @@
+E:\HIS2.0\Debug\ts_zyhs_fyxx.dll
+E:\HIS2.0\Debug\ts_zyhs_fyxx.pdb
+E:\HIS2.0\His代码\ts_zyhs_fyxx\obj\Debug\ts_zyhs_fyxx.csprojResolveAssemblyReference.cache
+E:\HIS2.0\His代码\ts_zyhs_fyxx\obj\Debug\ts_zyhs_fyxx.FrmNcycf.resources
+E:\HIS2.0\His代码\ts_zyhs_fyxx\obj\Debug\ts_zyhs_fyxx.FrmncycfPgc.resources
+E:\HIS2.0\His代码\ts_zyhs_fyxx\obj\Debug\ts_zyhs_fyxx.FrmZfxmQd.resources
+E:\HIS2.0\His代码\ts_zyhs_fyxx\obj\Debug\ts_zyhs_fyxx.frmFYXX.resources
+E:\HIS2.0\His代码\ts_zyhs_fyxx\obj\Debug\ts_zyhs_fyxx.csproj.GenerateResource.cache
+E:\HIS2.0\His代码\ts_zyhs_fyxx\obj\Debug\ts_zyhs_fyxx.csproj.CoreCompileInputs.cache
+E:\HIS2.0\His代码\ts_zyhs_fyxx\obj\Debug\ts_zyhs_fyxx.csproj.CopyComplete
+E:\HIS2.0\His代码\ts_zyhs_fyxx\obj\Debug\ts_zyhs_fyxx.dll
+E:\HIS2.0\His代码\ts_zyhs_fyxx\obj\Debug\ts_zyhs_fyxx.pdb

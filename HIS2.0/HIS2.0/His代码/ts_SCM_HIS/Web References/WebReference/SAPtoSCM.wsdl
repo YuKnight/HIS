@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" name="SAPtoSCM" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://192.168.0.94:8080/SAP_WCF/SAPtoSCM.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://192.168.0.94:8080/SAP_WCF/SAPtoSCM.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://192.168.0.94:8080/SAP_WCF/SAPtoSCM.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Ipedf.App.SAP_WCF" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ISAPtoSCM_GetPucharseFromSap_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPucharseFromSap" />
+  </wsdl:message>
+  <wsdl:message name="ISAPtoSCM_GetPucharseFromSap_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPucharseFromSapResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISAPtoSCM_GetDrugFromHIS_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDrugFromHIS" />
+  </wsdl:message>
+  <wsdl:message name="ISAPtoSCM_GetDrugFromHIS_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDrugFromHISResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ISAPtoSCM">
+    <wsdl:operation name="GetPucharseFromSap">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISAPtoSCM/GetPucharseFromSap" message="tns:ISAPtoSCM_GetPucharseFromSap_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISAPtoSCM/GetPucharseFromSapResponse" message="tns:ISAPtoSCM_GetPucharseFromSap_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDrugFromHIS">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISAPtoSCM/GetDrugFromHIS" message="tns:ISAPtoSCM_GetDrugFromHIS_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISAPtoSCM/GetDrugFromHISResponse" message="tns:ISAPtoSCM_GetDrugFromHIS_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ISAPtoSCM" type="tns:ISAPtoSCM">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetPucharseFromSap">
+      <soap:operation soapAction="http://tempuri.org/ISAPtoSCM/GetPucharseFromSap" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDrugFromHIS">
+      <soap:operation soapAction="http://tempuri.org/ISAPtoSCM/GetDrugFromHIS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SAPtoSCM">
+    <wsdl:port name="BasicHttpBinding_ISAPtoSCM" binding="tns:BasicHttpBinding_ISAPtoSCM">
+      <soap:address location="http://192.168.0.94:8080/SAP_WCF/SAPtoSCM.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

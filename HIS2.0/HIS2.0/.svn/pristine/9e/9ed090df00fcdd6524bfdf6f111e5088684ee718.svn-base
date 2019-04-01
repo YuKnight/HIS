@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <configSections>
+        <sectionGroup name="applicationSettings" type="System.Configuration.ApplicationSettingsGroup, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" >
+            <section name="ts_call.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" requirePermission="false" />
+        </sectionGroup>
+    </configSections>
+    <applicationSettings>
+        <ts_call.Properties.Settings>
+            <setting name="ts_call_WebReference_WHCentralhospital" serializeAs="String">
+                <value>http://192.168.0.141:81/HQSWcfService/WHCentralhospital.asmx</value>
+            </setting>
+            <setting name="ts_call_Whzxyybyjh_WebServiceTerminalCall" serializeAs="String">
+                <value>http://192.168.100.182:81/WebServiceTerminalCall.asmx</value>
+            </setting>
+            <setting name="ts_call_MzCallWs_WebServiceTerminalCall" serializeAs="String">
+                <value>http://192.168.0.141:81/WebServiceTerminalCall.asmx</value>
+            </setting>
+        </ts_call.Properties.Settings>
+    </applicationSettings>
+</configuration>

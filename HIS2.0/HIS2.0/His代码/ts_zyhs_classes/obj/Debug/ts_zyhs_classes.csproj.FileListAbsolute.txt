@@ -1,0 +1,8 @@
+E:\HIS2.0\His代码\ts_zyhs_classes\obj\Debug\ts_zyhs_classes.csprojResolveAssemblyReference.cache
+E:\HIS2.0\His代码\ts_zyhs_classes\obj\Debug\ts_zyhs_classes.FrmJdt.resources
+E:\HIS2.0\His代码\ts_zyhs_classes\obj\Debug\ts_zyhs_classes.UcShowCard.resources
+E:\HIS2.0\His代码\ts_zyhs_classes\obj\Debug\ts_zyhs_classes.frmInPassword.resources
+E:\HIS2.0\His代码\ts_zyhs_classes\obj\Debug\ts_zyhs_classes.csproj.GenerateResource.cache
+E:\HIS2.0\His代码\ts_zyhs_classes\obj\Debug\ts_zyhs_classes.csproj.CoreCompileInputs.cache
+E:\HIS2.0\His代码\ts_zyhs_classes\obj\Debug\ts_zyhs_classes.dll
+E:\HIS2.0\His代码\ts_zyhs_classes\obj\Debug\ts_zyhs_classes.pdb

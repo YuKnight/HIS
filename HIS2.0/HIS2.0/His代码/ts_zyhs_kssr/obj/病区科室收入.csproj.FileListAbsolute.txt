@@ -1,0 +1,16 @@
+D:\3.实施项目\02.津市市人民医院\系统升级\程序代码\病区科室收入\bin\Debug\ts_zyhs_kssr.dll
+D:\3.实施项目\02.津市市人民医院\系统升级\程序代码\病区科室收入\bin\Debug\ts_zyhs_kssr.pdb
+D:\3.实施项目\02.津市市人民医院\系统升级\程序代码\病区科室收入\bin\Debug\TrasenMessage.dll
+D:\3.实施项目\02.津市市人民医院\系统升级\程序代码\病区科室收入\bin\Debug\MagicLibrary.dll
+D:\3.实施项目\02.津市市人民医院\系统升级\程序代码\病区科室收入\bin\Debug\ts_HospData_Share.dll
+D:\3.实施项目\02.津市市人民医院\系统升级\程序代码\病区科室收入\obj\Debug\ResolveAssemblyReference.cache
+D:\3.实施项目\02.津市市人民医院\系统升级\程序代码\病区科室收入\obj\Debug\ts_zyhs_kssr.frmSRTJ.resources
+D:\3.实施项目\02.津市市人民医院\系统升级\程序代码\病区科室收入\obj\Debug\病区科室收入.csproj.GenerateResource.Cache
+D:\3.实施项目\02.津市市人民医院\系统升级\程序代码\病区科室收入\obj\Debug\ts_zyhs_kssr.dll
+D:\3.实施项目\02.津市市人民医院\系统升级\程序代码\病区科室收入\obj\Debug\ts_zyhs_kssr.pdb
+D:\3.实施项目\02.津市市人民医院\系统升级\程序代码\病区科室收入\bin\Debug\ts_zyhs_classes.dll
+D:\3.实施项目\02.津市市人民医院\系统升级\程序代码\病区科室收入\bin\Debug\TrasenClasses.dll
+D:\3.实施项目\02.津市市人民医院\系统升级\程序代码\病区科室收入\bin\Debug\TrasenFrame.dll
+D:\3.实施项目\02.津市市人民医院\系统升级\程序代码\病区科室收入\bin\Debug\myDataGrid.dll
+D:\3.实施项目\02.津市市人民医院\系统升级\程序代码\病区科室收入\bin\Debug\ts_YpClass.dll
+D:\3.实施项目\02.津市市人民医院\系统升级\程序代码\病区科室收入\obj\Debug\ts_zyhs_kssr.FrmBqsr.resources

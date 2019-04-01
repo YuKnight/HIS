@@ -1,0 +1,381 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D9C95101-FFD8-48E8-BAB7-B6A51860FF87}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>App.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>ts_yf_tjbb</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ts_yf_tjbb</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\..\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Interop.Excel, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Debug\Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="myDataGrid, Version=1.0.1373.27523, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Debug\myDataGrid.DLL</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="TrasenClasses, Version=11.2.15.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Debug\TrasenClasses.dll</HintPath>
+    </Reference>
+    <Reference Include="TrasenFrame, Version=11.2.15.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Debug\TrasenFrame.dll</HintPath>
+    </Reference>
+    <Reference Include="ts_jc_log, Version=12.3.4717.18354, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ts_Yk_ReportView, Version=1.0.3761.26397, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Debug\ts_Yk_ReportView.dll</HintPath>
+    </Reference>
+    <Reference Include="ts_YpClass, Version=1.0.3332.37594, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App.ico" />
+    <Content Include="ts_yf_tjbb.csproj" />
+    <Content Include="ts_yf_tjbb.csproj.user" />
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Frmcftj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmData.designer.cs">
+      <DependentUpon>frmData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmdjqktj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmgzyptj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmjhpm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmjxcqkb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmJyxsHZtj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmJyxsHZtj.Designer.cs">
+      <DependentUpon>FrmJyxsHZtj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmJzFycftj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmkcgdcbj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLYYP_KS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLYYP_KS.Designer.cs">
+      <DependentUpon>FrmLYYP_KS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMedSaleOrd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMedSaleOrd.Designer.cs">
+      <DependentUpon>FrmMedSaleOrd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmmzSfFycftj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPDRate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPDRate.Designer.cs">
+      <DependentUpon>FrmPDRate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmpyrgzl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmtldhz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmxqbj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmyfckmx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmyfckmx.Designer.cs">
+      <DependentUpon>Frmyfckmx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmYfGzlTj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmYfGzlTj.Designer.cs">
+      <DependentUpon>FrmYfGzlTj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmylfltj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmysyytj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InstanceForm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Frmcffy_jy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmzzyptj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmzxyptj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmypxhtj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Xspm_kss.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Xspm_kss.Designer.cs">
+      <DependentUpon>Xspm_kss.cs</DependentUpon>
+    </Compile>
+    <Compile Include="单据汇总统计\Frmbsbyhztj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="单据汇总统计\Frmckhztj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="单据汇总统计\Frmpdhztj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="单据汇总统计\Frmrkhztj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="单据汇总统计\Frmtjmx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="Frmcftj.resx">
+      <DependentUpon>Frmcftj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmData.resx">
+      <DependentUpon>frmData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmdjqktj.resx">
+      <DependentUpon>Frmdjqktj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmgzyptj.resx">
+      <DependentUpon>Frmgzyptj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmjhpm.resx">
+      <DependentUpon>Frmjhpm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmjxcqkb.resx">
+      <DependentUpon>Frmjxcqkb.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmJyxsHZtj.resx">
+      <DependentUpon>FrmJyxsHZtj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmJzFycftj.resx">
+      <DependentUpon>FrmJzFycftj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmkcgdcbj.resx">
+      <DependentUpon>Frmkcgdcbj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLYYP_KS.resx">
+      <DependentUpon>FrmLYYP_KS.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMedSaleOrd.resx">
+      <DependentUpon>FrmMedSaleOrd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmmzSfFycftj.resx">
+      <DependentUpon>FrmmzSfFycftj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPDRate.resx">
+      <DependentUpon>FrmPDRate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmpyrgzl.resx">
+      <DependentUpon>Frmpyrgzl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmtldhz.resx">
+      <DependentUpon>Frmtldhz.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmxqbj.resx">
+      <DependentUpon>Frmxqbj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmyfckmx.resx">
+      <DependentUpon>Frmyfckmx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmYfGzlTj.resx">
+      <DependentUpon>FrmYfGzlTj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmylfltj.resx">
+      <DependentUpon>Frmylfltj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmysyytj.resx">
+      <DependentUpon>Frmysyytj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmcffy_jy.resx">
+      <DependentUpon>Frmcffy_jy.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmzzyptj.resx">
+      <DependentUpon>Frmzzyptj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmzxyptj.resx">
+      <DependentUpon>Frmzxyptj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmypxhtj.resx">
+      <DependentUpon>Frmypxhtj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Xspm_kss.resx">
+      <DependentUpon>Xspm_kss.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="单据汇总统计\Frmbsbyhztj.resx">
+      <DependentUpon>Frmbsbyhztj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="单据汇总统计\Frmckhztj.resx">
+      <DependentUpon>Frmckhztj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="单据汇总统计\Frmpdhztj.resx">
+      <DependentUpon>Frmpdhztj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="单据汇总统计\Frmrkhztj.resx">
+      <DependentUpon>Frmrkhztj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="单据汇总统计\Frmtjmx.resx">
+      <DependentUpon>Frmtjmx.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Desktop_1.ini" />
+    <None Include="单据汇总统计\Desktop_1.ini" />
+    <None Include="单据汇总统计\vssver2.scc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

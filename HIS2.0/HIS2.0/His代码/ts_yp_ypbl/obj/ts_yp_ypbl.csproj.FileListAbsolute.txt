@@ -1,0 +1,12 @@
+E:\HIS2.0\Debug\ts_yp_ypbl.dll
+E:\HIS2.0\Debug\ts_yp_ypbl.pdb
+E:\HIS2.0\His代码\ts_yp_ypbl\obj\Debug\ResolveAssemblyReference.cache
+E:\HIS2.0\His代码\ts_yp_ypbl\obj\Debug\ts_yp_ypbl.Frmaddbl.resources
+E:\HIS2.0\His代码\ts_yp_ypbl\obj\Debug\ts_yp_ypbl.FrmMain.resources
+E:\HIS2.0\His代码\ts_yp_ypbl\obj\Debug\ts_yp_ypbl.FrmYPKHBL_Update.resources
+E:\HIS2.0\His代码\ts_yp_ypbl\obj\Debug\ts_yp_ypbl.FrmYPKH_Rept.resources
+E:\HIS2.0\His代码\ts_yp_ypbl\obj\Debug\ts_yp_ypbl.JC_UpdateYPBL.resources
+E:\HIS2.0\His代码\ts_yp_ypbl\obj\Debug\ts_yp_ypbl.JC_YPKHBL.resources
+E:\HIS2.0\His代码\ts_yp_ypbl\obj\Debug\ts_yp_ypbl.csproj.GenerateResource.Cache
+E:\HIS2.0\His代码\ts_yp_ypbl\obj\Debug\ts_yp_ypbl.dll
+E:\HIS2.0\His代码\ts_yp_ypbl\obj\Debug\ts_yp_ypbl.pdb

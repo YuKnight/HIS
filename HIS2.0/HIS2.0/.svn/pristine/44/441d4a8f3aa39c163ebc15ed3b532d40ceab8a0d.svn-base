@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <configSections>
+        <sectionGroup name="applicationSettings" type="System.Configuration.ApplicationSettingsGroup, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" >
+            <section name="TrasenHIS.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" requirePermission="false" />
+        </sectionGroup>
+    </configSections>
+    <applicationSettings>
+        <TrasenHIS.Properties.Settings>
+            <setting name="TrasenHIS_TrasenWS_TrasenWS" serializeAs="String">
+                <value>http://192.168.0.90:88/TrasenWS.asmx</value>
+            </setting>
+            <setting name="TrasenHIS_EMRWS_WebSActionService" serializeAs="String">
+                <value>http://192.168.0.26:8008/emrwebs/services/WebSAction</value>
+            </setting>
+            <setting name="TrasenHIS_Notice_Notice" serializeAs="String">
+                <value>http://192.168.100.154:8080/WebServices/Notice.asmx</value>
+            </setting>
+        </TrasenHIS.Properties.Settings>
+    </applicationSettings>
+</configuration>

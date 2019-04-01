@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>wz_to_sb</name>
+    </assembly>
+    <members>
+        <member name="M:wz_to_sb.get_database.GetDataBase">
+            <summary>
+            初始化数据库字段;
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:wz_to_sb.WZ_WZPMK_Service">
+            <summary>
+            物资品名库
+            </summary>
+        </member>
+        <member name="M:wz_to_sb.WZ_WZPMK_Service.Add(System.Collections.Generic.List{ts_eq_class.SB_SYJBXX},System.Int32@,System.String@,TrasenClasses.DatabaseAccess.RelationalDatabase)">
+            <summary>
+            添加转换数据
+            </summary>
+            <param name="list"></param>
+            <param name="err_code"></param>
+            <param name="err_text"></param>
+            <param name="db"></param>
+            <returns></returns>
+        </member>
+        <member name="M:wz_to_sb.WZ_WZPMK_Service.Add(ts_eq_class.SB_SYJBXX,System.Int32@,System.String@,TrasenClasses.DatabaseAccess.RelationalDatabase)">
+            <summary>
+            添加转换数据
+            </summary>
+            <param name="jbxx"></param>
+            <param name="err_code"></param>
+            <param name="err_text"></param>
+            <param name="db"></param>
+            <returns></returns>
+        </member>
+        <member name="M:wz_to_sb.WZ_WZPMK_Service.Del(System.String,TrasenClasses.DatabaseAccess.RelationalDatabase)">
+            <summary>
+            删除待审核信息;
+            </summary>
+            <param name="WZ_DJBH">物资系统中的单据编号</param>
+            <param name="db">db数据库连接</param>
+            <returns></returns>
+        </member>
+        <member name="T:wz_to_sb.wz_to_sb_data">
+            <summary>
+            物资系统数据存入设备系统
+            </summary>
+        </member>
+        <member name="M:wz_to_sb.wz_to_sb_data.add_data(System.Data.DataTable,TrasenClasses.DatabaseAccess.RelationalDatabase)">
+            <summary>
+            添加数据;
+            </summary>
+            <param name="dt">dt[0]物品名称,dt[1]物品子类型,dt[2]所属科室,dt[3]品牌,dt[4]规格型号,dt[5]设备单价,dt[6]物资单据编号</param>
+            <param name="db">数据库连接实例,为null则默认当前HIS数据库</param>       
+            <returns>返回执行结果</returns>
+        </member>
+        <member name="M:wz_to_sb.wz_to_sb_data.add_data(System.String,System.Int32,System.Int32,System.String,System.String,System.Decimal,System.String,TrasenClasses.DatabaseAccess.RelationalDatabase)">
+            <summary>
+            添加数据;
+            </summary>        
+            <param name="SBMC">设备名称</param>
+            <param name="SBLX">设备子类型</param>
+            <param name="KSID">物资所属科室</param>
+            <param name="SBPP">品牌</param>
+            <param name="GGXH">规格型号</param>
+            <param name="DC">设备单价</param>
+            <param name="WZDJBH">物资单据编号</param>
+            <param name="db">数据库连接实例,为null则默认当前HIS数据库</param>
+            <returns></returns>
+        </member>
+        <member name="M:wz_to_sb.wz_to_sb_data.del_data(System.String,TrasenClasses.DatabaseAccess.RelationalDatabase)">
+            <summary>
+            删除一条物资信息
+            </summary>
+            <param name="WZDJBH"></param>
+            <param name="db"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

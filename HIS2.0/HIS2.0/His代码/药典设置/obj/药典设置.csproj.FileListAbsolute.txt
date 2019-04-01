@@ -1,0 +1,8 @@
+E:\HIS2.0\His代码\药典设置\obj\Debug\ResolveAssemblyReference.cache
+E:\HIS2.0\His代码\药典设置\obj\Debug\Interop.grproLib.dll
+E:\HIS2.0\His代码\药典设置\obj\Debug\药典设置.csproj.ResolveComReference.cache
+E:\HIS2.0\His代码\药典设置\obj\Debug\ts_yp_ypcd.Frmhb.resources
+E:\HIS2.0\His代码\药典设置\obj\Debug\ts_yp_ypcd.Frmtitle.resources
+E:\HIS2.0\His代码\药典设置\obj\Debug\ts_yp_ypcd.Frmwbks.resources
+E:\HIS2.0\His代码\药典设置\obj\Debug\ts_yp_ypcd.Frmypcd.resources
+E:\HIS2.0\His代码\药典设置\obj\Debug\药典设置.csproj.GenerateResource.Cache

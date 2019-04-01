@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="Call">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Call_PatientInfo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CallResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CallResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CallDrug">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Call_PatientInfo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="macs" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CallDrugResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CallDrugResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="CallSoapIn">
+    <wsdl:part name="parameters" element="tns:Call" />
+  </wsdl:message>
+  <wsdl:message name="CallSoapOut">
+    <wsdl:part name="parameters" element="tns:CallResponse" />
+  </wsdl:message>
+  <wsdl:message name="CallDrugSoapIn">
+    <wsdl:part name="parameters" element="tns:CallDrug" />
+  </wsdl:message>
+  <wsdl:message name="CallDrugSoapOut">
+    <wsdl:part name="parameters" element="tns:CallDrugResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WebServiceTerminalCallSoap">
+    <wsdl:operation name="Call">
+      <wsdl:input message="tns:CallSoapIn" />
+      <wsdl:output message="tns:CallSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CallDrug">
+      <wsdl:input message="tns:CallDrugSoapIn" />
+      <wsdl:output message="tns:CallDrugSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebServiceTerminalCallSoap" type="tns:WebServiceTerminalCallSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Call">
+      <soap:operation soapAction="http://tempuri.org/Call" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CallDrug">
+      <soap:operation soapAction="http://tempuri.org/CallDrug" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebServiceTerminalCallSoap12" type="tns:WebServiceTerminalCallSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Call">
+      <soap12:operation soapAction="http://tempuri.org/Call" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CallDrug">
+      <soap12:operation soapAction="http://tempuri.org/CallDrug" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebServiceTerminalCall">
+    <wsdl:port name="WebServiceTerminalCallSoap" binding="tns:WebServiceTerminalCallSoap">
+      <soap:address location="http://192.168.100.182:81/WebServiceTerminalCall.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebServiceTerminalCallSoap12" binding="tns:WebServiceTerminalCallSoap12">
+      <soap12:address location="http://192.168.100.182:81/WebServiceTerminalCall.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

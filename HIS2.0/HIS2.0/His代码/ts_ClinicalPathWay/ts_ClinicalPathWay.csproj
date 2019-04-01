@@ -1,0 +1,400 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1FD807B5-E022-4BE4-894E-71E827D199A1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ts_ClinicalPathWay</RootNamespace>
+    <AssemblyName>ts_ClinicalPathWay</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\CrystalDecisions.CrystalReports.Engine\10.2.3600.0__692fbea5521e1304\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\CrystalDecisions.ReportSource\10.2.3600.0__692fbea5521e1304\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\CrystalDecisions.Shared\10.2.3600.0__692fbea5521e1304\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="DevExpress.Data3, Version=3.2.1.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll引用\DevExpress.Data3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Tutorials, Version=1.2.10.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll引用\DevExpress.Tutorials.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils3, Version=3.2.1.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll引用\DevExpress.Utils3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars3, Version=3.7.1.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll引用\DevExpress.XtraBars3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars3.Design, Version=3.7.1.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll引用\DevExpress.XtraBars3.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors3, Version=3.2.1.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll引用\DevExpress.XtraEditors3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors3.Design, Version=3.2.1.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll引用\DevExpress.XtraEditors3.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid3, Version=3.2.1.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll引用\DevExpress.XtraGrid3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid3.Design, Version=3.2.1.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll引用\DevExpress.XtraGrid3.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar3, Version=2.7.1.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll引用\DevExpress.XtraNavBar3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar3.Design, Version=2.7.1.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll引用\DevExpress.XtraNavBar3.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid3, Version=1.2.1.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll引用\DevExpress.XtraPivotGrid3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid3.Design, Version=1.2.1.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll引用\DevExpress.XtraPivotGrid3.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting3, Version=1.12.1.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll引用\DevExpress.XtraPrinting3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting3.Design, Version=1.12.1.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll引用\DevExpress.XtraPrinting3.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports3, Version=1.12.1.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll引用\DevExpress.XtraReports3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports3.Design, Version=1.12.1.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll引用\DevExpress.XtraReports3.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports3.Import, Version=1.12.1.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll引用\DevExpress.XtraReports3.Import.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler3, Version=1.1.1.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll引用\DevExpress.XtraScheduler3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler3.Design, Version=1.1.1.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll引用\DevExpress.XtraScheduler3.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler3.OutlookExchange, Version=1.1.1.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll引用\DevExpress.XtraScheduler3.OutlookExchange.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler3.VCalendarExchange, Version=1.1.1.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll引用\DevExpress.XtraScheduler3.VCalendarExchange.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList3, Version=1.11.1.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList3.Design, Version=1.11.1.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll引用\DevExpress.XtraTreeList3.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid3, Version=1.6.1.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4" />
+    <Reference Include="FlowWay, Version=1.0.4533.18090, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll引用\FlowWay.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Office, Version=2.1.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll引用\Interop.Office.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.VBIDE, Version=5.3.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll引用\Interop.VBIDE.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Word, Version=8.1.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll引用\Interop.Word.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Trasen.Base, Version=1.0.4533.18090, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll引用\Trasen.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="TrasenClasses, Version=2011.6.7.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll引用\TrasenClasses.dll</HintPath>
+    </Reference>
+    <Reference Include="TrasenFrame, Version=2011.12.26.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll引用\TrasenFrame.dll</HintPath>
+    </Reference>
+    <Reference Include="TrasenMessage, Version=2011.6.1.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll引用\TrasenMessage.dll</HintPath>
+    </Reference>
+    <Reference Include="WinWordControl, Version=1.0.2099.29690, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll引用\WinWordControl.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Enum.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddBdmc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddBdmc.Designer.cs">
+      <DependentUpon>FrmAddBdmc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEmrItemRelation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEmrItemRelation.Designer.cs">
+      <DependentUpon>FrmEmrItemRelation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPathReason.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPathReason.Designer.cs">
+      <DependentUpon>FrmPathReason.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPathTableConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPathTableConfig.Designer.cs">
+      <DependentUpon>FrmPathTableConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPathTableSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPathTableSelect.Designer.cs">
+      <DependentUpon>FrmPathTableSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPathTableShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPathTableShow.Designer.cs">
+      <DependentUpon>FrmPathTableShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPathWay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPathWay.Designer.cs">
+      <DependentUpon>FrmPathWay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPathWayAssessment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPathWayAssessment.Designer.cs">
+      <DependentUpon>FrmPathWayAssessment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPathWayCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPathWayCode.Designer.cs">
+      <DependentUpon>FrmPathWayCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPathWayModify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPathWayModify.Designer.cs">
+      <DependentUpon>FrmPathWayModify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPathWayModify1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPathWayModify1.Designer.cs">
+      <DependentUpon>FrmPathWayModify1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPathWayReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPathWayReport.Designer.cs">
+      <DependentUpon>FrmPathWayReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPathWayTablePrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPathWayTablePrint.Designer.cs">
+      <DependentUpon>FrmPathWayTablePrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPath_Jbxx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPath_Jbxx.Designer.cs">
+      <DependentUpon>FrmPath_Jbxx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRuleDictionary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRuleDictionary.Designer.cs">
+      <DependentUpon>FrmRuleDictionary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstanceForm.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddBdmc.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmAddBdmc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEmrItemRelation.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmEmrItemRelation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPathReason.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmPathReason.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPathTableConfig.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmPathTableConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPathTableSelect.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmPathTableSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPathTableShow.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmPathTableShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPathWay.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmPathWay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPathWayAssessment.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmPathWayAssessment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPathWayCode.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmPathWayCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPathWayModify.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmPathWayModify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPathWayModify1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmPathWayModify1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPathWayReport.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmPathWayReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPathWayTablePrint.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmPathWayTablePrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPath_Jbxx.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmPath_Jbxx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRuleDictionary.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmRuleDictionary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WordClass.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ts_Clinical_Class\ts_Clinical_Class.csproj">
+      <Project>{993C37E3-9073-4ADF-A86D-F2363614EC91}</Project>
+      <Name>ts_Clinical_Class</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,55 @@
+[2014-07-01 09:31:58]Trasen.exe Created Log File
+[2014-07-01 09:31:58]Begin Invoke “StartupMain(string,TrasenFrame.Classs.ConnectionType,string,bool,bool)”
+[2014-07-01 09:34:24]Begin Invoke “StartupMain(string,TrasenFrame.Classs.ConnectionType,string,bool,bool)”
+[2014-07-01 09:34:25]Initialize Database Connection Object (TrasenFrame.Forms.FrmMdiMain.Database.Initialize( connectionString ))
+[2014-07-01 09:34:25]Start Check Update File
+[2014-07-01 09:34:26]UpdateFile.ini->[UPDATETYPE]->NotUpdate=true,Stop Update and Return to Main Program
+[2014-07-01 09:34:39]Mian Window Load Successfully
+[2014-07-01 10:24:20]Begin Invoke “StartupMain(string,TrasenFrame.Classs.ConnectionType,string,bool,bool)”
+[2014-07-01 10:24:21]Initialize Database Connection Object (TrasenFrame.Forms.FrmMdiMain.Database.Initialize( connectionString ))
+[2014-07-01 10:24:21]Start Check Update File
+[2014-07-01 10:24:21]UpdateFile.ini->[UPDATETYPE]->NotUpdate=true,Stop Update and Return to Main Program
+[2014-07-01 11:42:40]Begin Invoke “StartupMain(string,TrasenFrame.Classs.ConnectionType,string,bool,bool)”
+[2014-07-01 11:42:41]Initialize Database Connection Object (TrasenFrame.Forms.FrmMdiMain.Database.Initialize( connectionString ))
+[2014-07-01 11:42:41]Start Check Update File
+[2014-07-01 11:42:41]UpdateFile.ini->[UPDATETYPE]->NotUpdate=true,Stop Update and Return to Main Program
+[2014-07-01 11:42:59]Mian Window Load Successfully
+[2014-07-01 14:50:08]Begin Invoke “StartupMain(string,TrasenFrame.Classs.ConnectionType,string,bool,bool)”
+[2014-07-01 14:50:09]Initialize Database Connection Object (TrasenFrame.Forms.FrmMdiMain.Database.Initialize( connectionString ))
+[2014-07-01 14:50:09]Start Check Update File
+[2014-07-01 14:50:09]UpdateFile.ini->[UPDATETYPE]->NotUpdate=true,Stop Update and Return to Main Program
+[2014-07-01 14:50:32]Mian Window Load Successfully
+[2014-07-01 14:50:35]记录菜单点击日志发生错误！
+                     错误消息：字串或二進位資料會被截斷。
+陳述式已經結束。命令：insert into Pub_Menu_ClickLog(SYSTEM_ID,FUNCTION_NAME,EMPLOYE_ID,CONTENT,IP,MAC) values (12,'Fun_ts_yf_zyfy_tld',1,'用户[管理员]于[2014-07-01 14:50:35]点击了子系统[药房管理系统]中的菜单项中的[住院统领发药],登录科室[住院药房(仁济楼)],引出函数[Fun_ts_yf_zyfy_tld]','192.168.1.105|192.168.1.103','28:D2:44:4C:BE:05')
+[2014-07-01 15:00:29]Begin Invoke “StartupMain(string,TrasenFrame.Classs.ConnectionType,string,bool,bool)”
+[2014-07-01 15:00:29]Initialize Database Connection Object (TrasenFrame.Forms.FrmMdiMain.Database.Initialize( connectionString ))
+[2014-07-01 15:00:29]Start Check Update File
+[2014-07-01 15:00:29]UpdateFile.ini->[UPDATETYPE]->NotUpdate=true,Stop Update and Return to Main Program
+[2014-07-01 15:03:00]Mian Window Load Successfully
+[2014-07-01 15:03:39]记录菜单点击日志发生错误！
+                     错误消息：字串或二進位資料會被截斷。
+陳述式已經結束。命令：insert into Pub_Menu_ClickLog(SYSTEM_ID,FUNCTION_NAME,EMPLOYE_ID,CONTENT,IP,MAC) values (12,'Fun_ts_yf_zyfy_tld',1,'用户[管理员]于[2014-07-01 15:03:39]点击了子系统[药房管理系统]中的菜单项中的[住院统领发药],登录科室[住院药房(仁济楼)],引出函数[Fun_ts_yf_zyfy_tld]','192.168.1.105|192.168.1.103','28:D2:44:4C:BE:05')
+[2014-07-01 15:21:31]Begin Invoke “StartupMain(string,TrasenFrame.Classs.ConnectionType,string,bool,bool)”
+[2014-07-01 15:21:31]Initialize Database Connection Object (TrasenFrame.Forms.FrmMdiMain.Database.Initialize( connectionString ))
+[2014-07-01 15:21:31]Start Check Update File
+[2014-07-01 15:21:31]UpdateFile.ini->[UPDATETYPE]->NotUpdate=true,Stop Update and Return to Main Program
+[2014-07-01 15:21:46]Mian Window Load Successfully
+[2014-07-01 15:21:47]记录菜单点击日志发生错误！
+                     错误消息：字串或二進位資料會被截斷。
+陳述式已經結束。命令：insert into Pub_Menu_ClickLog(SYSTEM_ID,FUNCTION_NAME,EMPLOYE_ID,CONTENT,IP,MAC) values (12,'Fun_ts_yf_zyfy_tld',1,'用户[管理员]于[2014-07-01 15:21:47]点击了子系统[药房管理系统]中的菜单项中的[住院统领发药],登录科室[住院药房(仁济楼)],引出函数[Fun_ts_yf_zyfy_tld]','192.168.1.105|192.168.1.103','28:D2:44:4C:BE:05')
+[2014-07-01 15:25:00]记录菜单点击日志发生错误！
+                     错误消息：字串或二進位資料會被截斷。
+陳述式已經結束。命令：insert into Pub_Menu_ClickLog(SYSTEM_ID,FUNCTION_NAME,EMPLOYE_ID,CONTENT,IP,MAC) values (12,'Fun_ts_yf_zyfy_cf',1,'用户[管理员]于[2014-07-01 15:24:56]点击了子系统[药房管理系统]中的菜单项中的[住院处方发药],登录科室[住院药房(仁济楼)],引出函数[Fun_ts_yf_zyfy_cf]','192.168.1.105|192.168.1.103','28:D2:44:4C:BE:05')
+[2014-07-01 15:25:03]记录菜单点击日志发生错误！
+                     错误消息：字串或二進位資料會被截斷。
+陳述式已經結束。命令：insert into Pub_Menu_ClickLog(SYSTEM_ID,FUNCTION_NAME,EMPLOYE_ID,CONTENT,IP,MAC) values (12,'Fun_ts_yf_zyfy_tld',1,'用户[管理员]于[2014-07-01 15:24:58]点击了子系统[药房管理系统]中的菜单项中的[住院统领发药],登录科室[住院药房(仁济楼)],引出函数[Fun_ts_yf_zyfy_tld]','192.168.1.105|192.168.1.103','28:D2:44:4C:BE:05')
+[2014-07-01 16:20:12]Begin Invoke “StartupMain(string,TrasenFrame.Classs.ConnectionType,string,bool,bool)”
+[2014-07-01 16:20:18]Initialize Database Connection Object (TrasenFrame.Forms.FrmMdiMain.Database.Initialize( connectionString ))
+[2014-07-01 16:20:18]Start Check Update File
+[2014-07-01 16:20:18]UpdateFile.ini->[UPDATETYPE]->NotUpdate=true,Stop Update and Return to Main Program
+[2014-07-01 16:45:35]Begin Invoke “StartupMain(string,TrasenFrame.Classs.ConnectionType,string,bool,bool)”
+[2014-07-01 16:45:36]Initialize Database Connection Object (TrasenFrame.Forms.FrmMdiMain.Database.Initialize( connectionString ))
+[2014-07-01 16:45:36]Start Check Update File
+[2014-07-01 16:45:36]UpdateFile.ini->[UPDATETYPE]->NotUpdate=true,Stop Update and Return to Main Program
+[2014-07-01 16:45:51]Mian Window Load Successfully

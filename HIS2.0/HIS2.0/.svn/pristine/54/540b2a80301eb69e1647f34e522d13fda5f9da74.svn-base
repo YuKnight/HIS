@@ -1,0 +1,19 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<!--<xml说明。请不要删除>RegFileTab 一标记表示一个需要注册的文件，FileName是文件名（可以支持%systemroot%(表示windows目录)，不带盘符及%systemroot%的自动加上当前路径）,comLib表示类id-->
+<NewDataSet>
+  <RegFileTab>
+    <fileName>grdes50.dll</fileName>
+    <comLib>grdes.DesignerProps.5</comLib>
+  </RegFileTab>
+  <RegFileTab>
+    <fileName>gregn50.dll</fileName>
+    <comLib>grpro.GRDisplayViewer.5</comLib>
+  </RegFileTab>
+  <RegFileTab>
+    <fileName>EMRPad30.ocx</fileName>
+    <comLib>EMRPAD30.EMRPad30Ctrl.1</comLib>
+  </RegFileTab>
+
+
+
+</NewDataSet>

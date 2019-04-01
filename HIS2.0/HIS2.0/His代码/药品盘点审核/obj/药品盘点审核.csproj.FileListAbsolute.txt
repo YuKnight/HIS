@@ -1,0 +1,9 @@
+E:\HIS2.0\His代码\药品盘点审核\obj\Debug\ResolveAssemblyReference.cache
+E:\HIS2.0\His代码\药品盘点审核\obj\Debug\ts_yp_pd.Frmpdsh.resources
+E:\HIS2.0\His代码\药品盘点审核\obj\Debug\ts_yp_pd.Frmtitle.resources
+E:\HIS2.0\His代码\药品盘点审核\obj\Debug\ts_yp_pd.Frmpdsh_kcmx.resources
+E:\HIS2.0\His代码\药品盘点审核\obj\Debug\药品盘点审核.csproj.GenerateResource.Cache
+E:\HIS2.0\Debug\ts_yp_pd.dll
+E:\HIS2.0\Debug\ts_yp_pd.pdb
+E:\HIS2.0\His代码\药品盘点审核\obj\Debug\ts_yp_pd.dll
+E:\HIS2.0\His代码\药品盘点审核\obj\Debug\ts_yp_pd.pdb

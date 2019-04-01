@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--此文件由 XML 架构设计器自动生成。它包含设计器图面组件的布局信息。-->
+<XSDDesignerLayout Style="TopDown" layoutVersion="2" viewPortLeft="-7123" viewPortTop="0" zoom="100">
+    <TheReportDateSet_XmlElement left="317" top="254" width="5292" height="2963" selected="0" zOrder="1" index="0" expanded="1">
+        <tabzxd_XmlElement left="-99814" top="3725" width="5292" height="10160" selected="0" zOrder="19" index="0" expanded="1" />
+        <tabGrd_XmlElement left="-93888" top="3725" width="7197" height="7620" selected="0" zOrder="21" index="1" expanded="1" />
+        <tabscjl_XmlElement left="-86057" top="3725" width="5292" height="2963" selected="0" zOrder="23" index="2" expanded="1" />
+        <tabYbhljl_XmlElement left="-80131" top="3725" width="5292" height="2963" selected="0" zOrder="25" index="3" expanded="1" />
+        <tabWzhljl_XmlElement left="-74205" top="3725" width="5609" height="4657" selected="0" zOrder="27" index="4" expanded="1" />
+        <tabWardjbjl_XmlElement left="-67962" top="3725" width="5609" height="4234" selected="0" zOrder="29" index="5" expanded="1" />
+        <tabWardjbjl_brdt_XmlElement left="-61719" top="3725" width="5398" height="3810" selected="0" zOrder="31" index="6" expanded="1" />
+        <tabRypg_XmlElement left="-55687" top="3725" width="7408" height="7621" selected="0" zOrder="33" index="7" expanded="1" />
+        <tabpbb_XmlElement left="-47645" top="3725" width="5292" height="2963" selected="0" zOrder="35" index="8" expanded="1" />
+        <tabPbgzl_XmlElement left="-41719" top="3725" width="7726" height="6773" selected="0" zOrder="37" index="9" expanded="1" />
+        <tabJydprt_XmlElement left="-33359" top="3725" width="6456" height="7197" selected="0" zOrder="39" index="10" expanded="1" />
+        <MedYPMXD_XmlElement left="-26269" top="3725" width="6085" height="7197" selected="0" zOrder="41" index="11" expanded="1" />
+        <MedYPTLD_XmlElement left="-19550" top="3725" width="5292" height="6774" selected="0" zOrder="43" index="12" expanded="1" />
+        <ZXD_SYK_XmlElement left="-13624" top="3725" width="5926" height="7621" selected="0" zOrder="45" index="13" expanded="1" />
+        <BRFeeMXD_XmlElement left="-7064" top="3725" width="5292" height="2963" selected="0" zOrder="47" index="14" expanded="1" />
+        <BRFeeCKD_XmlElement left="-1138" top="3725" width="5292" height="8467" selected="0" zOrder="2" index="15" expanded="1" />
+        <BRFeeHZD_XmlElement left="4788" top="3725" width="5292" height="2963" selected="0" zOrder="4" index="16" expanded="1" />
+        <EQUAPPLS_XmlElement left="10714" top="3725" width="5292" height="2963" selected="0" zOrder="7" index="17" expanded="1" />
+        <EQUAPPLY_XmlElement left="16640" top="3725" width="5292" height="2963" selected="0" zOrder="10" index="18" expanded="1" />
+        <tabJbrMedprt_XmlElement left="22566" top="3725" width="7620" height="5927" selected="0" zOrder="13" index="19" expanded="1" />
+        <tabWardGzrz_XmlElement left="30820" top="3725" width="5874" height="5503" selected="0" zOrder="16" index="20" expanded="1" />
+        <tabWardGzrzMx_XmlElement left="37328" top="3725" width="7567" height="5926" selected="0" zOrder="49" index="21" expanded="1" />
+        <EQUAPPLS1_XmlElement left="45529" top="3725" width="5292" height="2963" selected="0" zOrder="51" index="22" expanded="1" />
+        <tabBqkssr_XmlElement left="51455" top="3725" width="5715" height="4234" selected="0" zOrder="53" index="23" expanded="1" />
+        <tabYbbryf_XmlElement left="57804" top="3725" width="5239" height="5080" selected="0" zOrder="56" index="24" expanded="1" />
+        <tabYkjxcqkb_XmlElement left="63677" top="3725" width="5292" height="2963" selected="0" zOrder="59" index="25" expanded="1" />
+        <repJSBRSR_XmlElement left="69603" top="3725" width="5292" height="2963" selected="0" zOrder="62" index="26" expanded="1" />
+        <tabfeelist_XmlElement left="75529" top="3725" width="5080" height="2963" selected="0" zOrder="65" index="27" expanded="1" />
+        <tabZYJZPZ_XmlElement left="81243" top="3725" width="5292" height="2963" selected="0" zOrder="68" index="28" expanded="1" />
+        <tabCwsyl_XmlElement left="87169" top="3725" width="5292" height="2963" selected="0" zOrder="71" index="29" expanded="1" />
+        <tabFyhj_XmlElement left="93095" top="3725" width="5292" height="2963" selected="0" zOrder="74" index="30" expanded="1" />
+        <tabJYSQD_XmlElement left="99021" top="3725" width="6720" height="10584" selected="0" zOrder="76" index="31" expanded="1" />
+    </TheReportDateSet_XmlElement>
+</XSDDesignerLayout>

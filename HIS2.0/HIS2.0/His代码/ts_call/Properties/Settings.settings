@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ts_call.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ts_call_WebReference_WHCentralhospital" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://192.168.0.141:81/HQSWcfService/WHCentralhospital.asmx</Value>
+    </Setting>
+    <Setting Name="ts_call_Whzxyybyjh_WebServiceTerminalCall" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://192.168.100.182:81/WebServiceTerminalCall.asmx</Value>
+    </Setting>
+    <Setting Name="ts_call_MzCallWs_WebServiceTerminalCall" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://192.168.0.141:81/WebServiceTerminalCall.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

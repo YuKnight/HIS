@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReportDataSet" targetNamespace="http://tempuri.org/ReportDataSet.xsd" xmlns:mstns="http://tempuri.org/ReportDataSet.xsd" xmlns="http://tempuri.org/ReportDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ReportDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="ReportDataSet" msprop:Generator_DataSetName="ReportDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="MZFPDY" msprop:Generator_UserTableName="MZFPDY" msprop:Generator_RowDeletedName="MZFPDYRowDeleted" msprop:Generator_TableClassName="MZFPDYDataTable" msprop:Generator_RowChangedName="MZFPDYRowChanged" msprop:Generator_RowClassName="MZFPDYRow" msprop:Generator_RowChangingName="MZFPDYRowChanging" msprop:Generator_RowEvArgName="MZFPDYRowChangeEvent" msprop:Generator_RowEvHandlerName="MZFPDYRowChangeEventHandler" msprop:Generator_TablePropName="MZFPDY" msprop:Generator_TableVarName="tableMZFPDY" msprop:Generator_RowDeletingName="MZFPDYRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="门诊号" msprop:Generator_UserColumnName="门诊号" msprop:Generator_ColumnPropNameInRow="门诊号" msprop:Generator_ColumnVarNameInTable="column门诊号" msprop:Generator_ColumnPropNameInTable="门诊号Column" type="xs:string" minOccurs="0" />
+              <xs:element name="病人姓名" msprop:Generator_UserColumnName="病人姓名" msprop:Generator_ColumnPropNameInRow="病人姓名" msprop:Generator_ColumnVarNameInTable="column病人姓名" msprop:Generator_ColumnPropNameInTable="病人姓名Column" type="xs:string" minOccurs="0" />
+              <xs:element name="收费日期" msprop:Generator_UserColumnName="收费日期" msprop:Generator_ColumnPropNameInRow="收费日期" msprop:Generator_ColumnVarNameInTable="column收费日期" msprop:Generator_ColumnPropNameInTable="收费日期Column" type="xs:string" minOccurs="0" />
+              <xs:element name="打印时间" msprop:Generator_UserColumnName="打印时间" msprop:Generator_ColumnPropNameInRow="打印时间" msprop:Generator_ColumnVarNameInTable="column打印时间" msprop:Generator_ColumnPropNameInTable="打印时间Column" type="xs:string" minOccurs="0" />
+              <xs:element name="发票号" msprop:Generator_UserColumnName="发票号" msprop:Generator_ColumnPropNameInRow="发票号" msprop:Generator_ColumnVarNameInTable="column发票号" msprop:Generator_ColumnPropNameInTable="发票号Column" type="xs:string" minOccurs="0" />
+              <xs:element name="总金额" msprop:Generator_UserColumnName="总金额" msprop:Generator_ColumnPropNameInRow="总金额" msprop:Generator_ColumnVarNameInTable="column总金额" msprop:Generator_ColumnPropNameInTable="总金额Column" type="xs:string" minOccurs="0" />
+              <xs:element name="科室" msprop:Generator_UserColumnName="科室" msprop:Generator_ColumnPropNameInRow="科室" msprop:Generator_ColumnVarNameInTable="column科室" msprop:Generator_ColumnPropNameInTable="科室Column" type="xs:string" minOccurs="0" />
+              <xs:element name="医生" msprop:Generator_UserColumnName="医生" msprop:Generator_ColumnPropNameInRow="医生" msprop:Generator_ColumnVarNameInTable="column医生" msprop:Generator_ColumnPropNameInTable="医生Column" type="xs:string" minOccurs="0" />
+              <xs:element name="收费员" msprop:Generator_UserColumnName="收费员" msprop:Generator_ColumnPropNameInRow="收费员" msprop:Generator_ColumnVarNameInTable="column收费员" msprop:Generator_ColumnPropNameInTable="收费员Column" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

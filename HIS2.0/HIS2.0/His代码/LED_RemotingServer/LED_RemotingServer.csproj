@@ -1,0 +1,133 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5155E7E7-EA8A-4F29-BFAB-98ACCDEA4850}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LED_RemotingServer</RootNamespace>
+    <AssemblyName>LED_RemotingServer</AssemblyName>
+    <ApplicationIcon>recourse\audio-cd.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Interop.SpeechLib, Version=5.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Interop.SpeechLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Speech, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TrasenClasses, Version=1.0.3631.27519, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>E:\工作目录\HIS\Debug\TrasenClasses.dll</HintPath>
+    </Reference>
+    <Reference Include="TrasenFrame, Version=5.1.5008.25537, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\工作目录\HIS\Debug\TrasenFrame.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CallAccess.cs" />
+    <Compile Include="FrmServer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmServer.Designer.cs">
+      <DependentUpon>FrmServer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LED_Operate.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmServer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmServer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SpeechCall.cs" />
+    <Compile Include="WindowsInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ICommon\ICommon.csproj">
+      <Project>{8A3F453B-24D0-4E0F-8D7E-657D0E9C37BF}</Project>
+      <Name>ICommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LedShow\RemoteObj.csproj">
+      <Project>{6170E9E4-1D5F-4C6A-AFE5-FD74949AE7EB}</Project>
+      <Name>RemoteObj</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="recourse\3.5 floppy drive.ico" />
+    <Content Include="recourse\5.25 floppy drive.ico" />
+    <Content Include="recourse\audio-cd.ico" />
+    <Content Include="recourse\briefcase.ico" />
+    <Content Include="recourse\cd-rom.ico" />
+    <Content Include="recourse\close folder.ico" />
+    <Content Include="recourse\control panel.ico" />
+    <Content Include="recourse\desktop.ico" />
+    <Content Include="recourse\dialup.ico" />
+    <Content Include="recourse\favorite.ico" />
+    <Content Include="recourse\folder.ico" />
+    <Content Include="recourse\hard drive.ico" />
+    <Content Include="recourse\help.ico" />
+    <Content Include="recourse\history.ico" />
+    <Content Include="recourse\my computer.ico" />
+    <Content Include="recourse\my document.ico" />
+    <Content Include="recourse\network computer.ico" />
+    <Content Include="recourse\printer.ico" />
+    <Content Include="recourse\program files.ico" />
+    <Content Include="recourse\removable.ico" />
+    <Content Include="recourse\shortcut.ico" />
+    <Content Include="recourse\task.ico" />
+    <Content Include="recourse\trash empty.ico" />
+    <Content Include="recourse\trash full.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,12 @@
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\ts_jc_sjwh.FrmDataMaintenance.resources
+obj\Debug\ts_jc_sjwh.FrmMaintenanceSetting.resources
+obj\Debug\ts_jc_sjwh.csproj.GenerateResource.Cache
+obj\Debug\ts_jc_sjwh.dll
+obj\Debug\ts_jc_sjwh.pdb
+bin\Debug\ts_jc_sjwh.dll
+bin\Debug\ts_jc_sjwh.pdb
+bin\Debug\TrasenClasses.dll
+bin\Debug\TrasenFrame.dll
+bin\Debug\MagicLibrary.dll
+bin\Debug\TrasenMessage.dll

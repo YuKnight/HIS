@@ -1,0 +1,10 @@
+E:\HIS2.0\Debug\ts_yp_ksstj.dll
+E:\HIS2.0\Debug\ts_yp_ksstj.pdb
+E:\HIS2.0\His代码\抗生素统计\obj\Debug\ResolveAssemblyReference.cache
+E:\HIS2.0\His代码\抗生素统计\obj\Debug\ts_yp_ksstj.FrmzyksstjI.resources
+E:\HIS2.0\His代码\抗生素统计\obj\Debug\ts_yp_ksstj.Frmzydddtj_all.resources
+E:\HIS2.0\His代码\抗生素统计\obj\Debug\ts_yp_ksstj.Frmkjywzbtj.resources
+E:\HIS2.0\His代码\抗生素统计\obj\Debug\ts_yp_ksstj.Frmzydddtj.resources
+E:\HIS2.0\His代码\抗生素统计\obj\Debug\抗生素统计.csproj.GenerateResource.Cache
+E:\HIS2.0\His代码\抗生素统计\obj\Debug\ts_yp_ksstj.dll
+E:\HIS2.0\His代码\抗生素统计\obj\Debug\ts_yp_ksstj.pdb

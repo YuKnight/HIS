@@ -1,0 +1,4 @@
+E:\HIS2.0\His代码\Ts_zyys_zlsq\obj\Debug\Ts_zyys_zlsq.csprojResolveAssemblyReference.cache
+E:\HIS2.0\His代码\Ts_zyys_zlsq\obj\Debug\Ts_zyys_zlsq.FrmZLSQ.resources
+E:\HIS2.0\His代码\Ts_zyys_zlsq\obj\Debug\Ts_zyys_zlsq.csproj.GenerateResource.cache
+E:\HIS2.0\His代码\Ts_zyys_zlsq\obj\Debug\Ts_zyys_zlsq.csproj.CoreCompileInputs.cache

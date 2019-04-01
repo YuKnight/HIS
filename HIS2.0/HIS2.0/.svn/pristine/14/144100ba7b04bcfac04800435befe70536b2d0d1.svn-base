@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <configSections>
+        <sectionGroup name="applicationSettings" type="System.Configuration.ApplicationSettingsGroup, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" >
+            <section name="ts_mz_txyy.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" requirePermission="false" />
+        </sectionGroup>
+        <sectionGroup name="userSettings" type="System.Configuration.UserSettingsGroup, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" >
+            <section name="ts_mz_txyy.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" allowExeDefinition="MachineToLocalUser" requirePermission="false" />
+        </sectionGroup>
+    </configSections>
+    <applicationSettings>
+        <ts_mz_txyy.Properties.Settings>
+            <setting name="ts_mz_txyy_TrasenWs_TrasenWS" serializeAs="String">
+                <value>http://192.168.0.90:89/TrasenWS.asmx</value>
+            </setting>
+            <setting name="ts_mz_txyy_WebReference_WebService" serializeAs="String">
+                <value>http://192.168.201.1:19889/WebService.asmx</value>
+            </setting>
+        </ts_mz_txyy.Properties.Settings>
+    </applicationSettings>
+    <userSettings>
+        <ts_mz_txyy.Properties.Settings>
+            <setting name="ts_mz_txyy_WsNewHisPat_WebService" serializeAs="String">
+                <value>http://192.168.201.1:19889/WebService.asmx</value>
+            </setting>
+        </ts_mz_txyy.Properties.Settings>
+    </userSettings>
+</configuration>

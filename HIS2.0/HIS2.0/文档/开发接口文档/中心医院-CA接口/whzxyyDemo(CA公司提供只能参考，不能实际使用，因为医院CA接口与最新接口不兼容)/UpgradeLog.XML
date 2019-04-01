@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="HBCADemo">
+</Property><Property Name="解决方案文件" Value="E:\CA\whzxyyDemo\HBCADemo.sln">
+</Property><Property Name="用户选项文件" Value="E:\CA\whzxyyDemo\HBCADemo.suo">
+</Property><Property Name="Date" Value="2014年4月8日">
+</Property><Property Name="Time" Value="11:58">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="HBCADemo.sln" Description="文件已成功备份为 E:\CA\whzxyyDemo\Backup\HBCADemo.sln">
+</Event><Event ErrorLevel="0" Project="" Source="HBCADemo.suo" Description="文件已成功备份为 E:\CA\whzxyyDemo\Backup\HBCADemo.suo">
+</Event><Event ErrorLevel="0" Project="HBCADemo" Source="HBCADemo\HBCADemo.csproj" Description="项目文件已成功备份为 E:\CA\whzxyyDemo\Backup\HBCADemo\HBCADemo.csproj">
+</Event><Event ErrorLevel="0" Project="HBCADemo" Source="HBCADemo\Form1.cs" Description="文件已成功备份为 E:\CA\whzxyyDemo\Backup\HBCADemo\Form1.cs">
+</Event><Event ErrorLevel="0" Project="HBCADemo" Source="HBCADemo\Form1.Designer.cs" Description="文件已成功备份为 E:\CA\whzxyyDemo\Backup\HBCADemo\Form1.Designer.cs">
+</Event><Event ErrorLevel="0" Project="HBCADemo" Source="HBCADemo\MedicalTK.cs" Description="文件已成功备份为 E:\CA\whzxyyDemo\Backup\HBCADemo\MedicalTK.cs">
+</Event><Event ErrorLevel="0" Project="HBCADemo" Source="HBCADemo\Program.cs" Description="文件已成功备份为 E:\CA\whzxyyDemo\Backup\HBCADemo\Program.cs">
+</Event><Event ErrorLevel="0" Project="HBCADemo" Source="HBCADemo\Properties\AssemblyInfo.cs" Description="文件已成功备份为 E:\CA\whzxyyDemo\Backup\HBCADemo\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="HBCADemo" Source="HBCADemo\Properties\Resources.Designer.cs" Description="文件已成功备份为 E:\CA\whzxyyDemo\Backup\HBCADemo\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="HBCADemo" Source="HBCADemo\Properties\Settings.Designer.cs" Description="文件已成功备份为 E:\CA\whzxyyDemo\Backup\HBCADemo\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="HBCADemo" Source="HBCADemo\Properties\Settings.settings" Description="文件已成功备份为 E:\CA\whzxyyDemo\Backup\HBCADemo\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="HBCADemo" Source="HBCADemo\Form1.resx" Description="文件已成功备份为 E:\CA\whzxyyDemo\Backup\HBCADemo\Form1.resx">
+</Event><Event ErrorLevel="0" Project="HBCADemo" Source="HBCADemo\Properties\Resources.resx" Description="文件已成功备份为 E:\CA\whzxyyDemo\Backup\HBCADemo\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="HBCADemo" Source="HBCADemo\HBCADemo.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="HBCADemo" Source="HBCADemo\HBCADemo.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="HBCADemo.sln" Description="成功转换解决方案">
+</Event><Event ErrorLevel="3" Project="" Source="HBCADemo.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="HBCADemo" Source="HBCADemo\HBCADemo.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event></UpgradeLog>

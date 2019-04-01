@@ -1,0 +1,8 @@
+E:\HIS2.0\Debug\ts_yk_xtdz.dll
+E:\HIS2.0\Debug\ts_yk_xtdz.pdb
+E:\HIS2.0\His代码\药库对帐\obj\Debug\ResolveAssemblyReference.cache
+E:\HIS2.0\His代码\药库对帐\obj\Debug\ts_yk_xtdz.Frmxtdz.resources
+E:\HIS2.0\His代码\药库对帐\obj\Debug\ts_yk_xtdz.Frmxtdzmx.resources
+E:\HIS2.0\His代码\药库对帐\obj\Debug\药库对帐.csproj.GenerateResource.Cache
+E:\HIS2.0\His代码\药库对帐\obj\Debug\ts_yk_xtdz.dll
+E:\HIS2.0\His代码\药库对帐\obj\Debug\ts_yk_xtdz.pdb

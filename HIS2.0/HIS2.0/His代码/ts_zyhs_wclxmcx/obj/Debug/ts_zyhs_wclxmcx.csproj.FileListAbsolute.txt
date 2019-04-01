@@ -1,0 +1,9 @@
+E:\HIS2.0\Debug\ts_zyhs_wclxmcx.dll
+E:\HIS2.0\Debug\ts_zyhs_wclxmcx.pdb
+E:\HIS2.0\His代码\ts_zyhs_wclxmcx\obj\Debug\ts_zyhs_wclxmcx.csprojResolveAssemblyReference.cache
+E:\HIS2.0\His代码\ts_zyhs_wclxmcx\obj\Debug\ts_zyhs_wclxmcx.frmWCLXM.resources
+E:\HIS2.0\His代码\ts_zyhs_wclxmcx\obj\Debug\ts_zyhs_wclxmcx.csproj.GenerateResource.cache
+E:\HIS2.0\His代码\ts_zyhs_wclxmcx\obj\Debug\ts_zyhs_wclxmcx.csproj.CoreCompileInputs.cache
+E:\HIS2.0\His代码\ts_zyhs_wclxmcx\obj\Debug\ts_zyhs_wclxmcx.csproj.CopyComplete
+E:\HIS2.0\His代码\ts_zyhs_wclxmcx\obj\Debug\ts_zyhs_wclxmcx.dll
+E:\HIS2.0\His代码\ts_zyhs_wclxmcx\obj\Debug\ts_zyhs_wclxmcx.pdb

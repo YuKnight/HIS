@@ -1,0 +1,6 @@
+<Enviroument>
+  <BackgroundImage>
+    <Image loginCode="ts" imageType="resourse">ts001.JPG</Image>
+    <Image loginCode="001" imageType="resourse">ts003.JPG</Image>
+  </BackgroundImage>
+</Enviroument>

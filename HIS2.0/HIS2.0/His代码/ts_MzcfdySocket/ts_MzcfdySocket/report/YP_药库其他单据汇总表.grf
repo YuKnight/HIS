@@ -1,0 +1,283 @@
+﻿Object Report
+	Version='5.8.0.5'
+	Title='你的报表标题'
+	Object Font
+		Name='宋体'
+		Size=105000,0
+		Weight=400
+		Charset=134
+	End
+	Object Printer
+	End
+	Object DetailGrid
+		BorderWidth=2
+		Object Recordset
+			Items Field
+				Item
+					Name='业务类型'
+				End
+				Item
+					Name='增加金额'
+					Type=Float
+				End
+				Item
+					Name='减少金额'
+					Type=Float
+				End
+				Item
+					Name='实际金额'
+					Type=Float
+				End
+			End
+		End
+		Items Column
+			Item
+				Name='业务类型'
+				Width=5.74146
+			End
+			Item
+				Name='增加金额'
+			End
+			Item
+				Name='减少金额'
+			End
+			Item
+				Name='实际金额'
+			End
+		End
+		Object ColumnContent
+			Items ColumnContentCell
+				Item
+					Column='业务类型'
+					Object Font
+						Name='仿宋'
+						Size=105000,0
+						Weight=400
+						Charset=134
+					End
+					DataField='业务类型'
+				End
+				Item
+					Column='增加金额'
+					Object Font
+						Name='幼圆'
+						Size=105000,0
+						Weight=400
+						Charset=134
+					End
+					TextAlign=MiddleRight
+					DataField='增加金额'
+				End
+				Item
+					Column='减少金额'
+					Object Font
+						Name='幼圆'
+						Size=105000,0
+						Weight=400
+						Charset=134
+					End
+					TextAlign=MiddleRight
+					DataField='减少金额'
+				End
+				Item
+					Column='实际金额'
+					Object Font
+						Name='幼圆'
+						Size=105000,0
+						Weight=400
+						Charset=134
+					End
+					TextAlign=MiddleRight
+					DataField='实际金额'
+				End
+			End
+		End
+		Object ColumnTitle
+			Height=0.79375
+			Items ColumnTitleCell
+				Item
+					GroupTitle=F
+					Column='业务类型'
+					Object Font
+						Name='方正姚体'
+						Size=105000,0
+						Weight=400
+						Charset=134
+					End
+					TextAlign=MiddleCenter
+					Text='业务类型'
+				End
+				Item
+					GroupTitle=F
+					Column='增加金额'
+					Object Font
+						Name='方正姚体'
+						Size=105000,0
+						Weight=400
+						Charset=134
+					End
+					TextAlign=MiddleCenter
+					Text='增加金额'
+				End
+				Item
+					GroupTitle=F
+					Column='减少金额'
+					Object Font
+						Name='方正姚体'
+						Size=105000,0
+						Weight=400
+						Charset=134
+					End
+					TextAlign=MiddleCenter
+					Text='减少金额'
+				End
+				Item
+					GroupTitle=F
+					Column='实际金额'
+					Object Font
+						Name='方正姚体'
+						Size=105000,0
+						Weight=400
+						Charset=134
+					End
+					TextAlign=MiddleCenter
+					Text='实际金额'
+				End
+			End
+		End
+		Items Group
+			Item
+				Name='Group1'
+				Object GroupHeader
+					Height=0
+				End
+				Object GroupFooter
+					Height=0.608542
+					Items Control
+						Item
+							Type=SummaryBox
+							Name='SummaryBox1'
+							AlignColumn='实际金额'
+							Left=11.721
+							Width=3.01625
+							Height=0.608542
+							Object Font
+								Name='幼圆'
+								Size=105000,0
+								Bold=T
+								Charset=134
+							End
+							TextAlign=MiddleRight
+							DataField='实际金额'
+							Format='0.00'
+						End
+						Item
+							Type=SummaryBox
+							Name='SummaryBox2'
+							AlignColumn='减少金额'
+							Left=8.73125
+							Width=3.01625
+							Height=0.608542
+							Object Font
+								Name='宋体'
+								Size=105000,0
+								Bold=T
+								Charset=134
+							End
+							TextAlign=MiddleRight
+							DataField='减少金额'
+							Format='0.00'
+						End
+						Item
+							Type=SummaryBox
+							Name='SummaryBox3'
+							AlignColumn='增加金额'
+							Left=5.74146
+							Width=3.01625
+							Height=0.608542
+							Object Font
+								Name='宋体'
+								Size=105000,0
+								Bold=T
+								Charset=134
+							End
+							TextAlign=MiddleRight
+							DataField='增加金额'
+							Format='0.00'
+						End
+						Item
+							Type=StaticBox
+							Name='StaticBox1'
+							AlignColumn='业务类型'
+							Width=5.76792
+							Height=0.608542
+							Object Font
+								Name='仿宋'
+								Size=105000,0
+								Bold=T
+								Charset=134
+							End
+							Text='合计金额：'
+						End
+					End
+				End
+			End
+		End
+	End
+	Items Parameter
+		Item
+			Name='库房类型'
+		End
+		Item
+			Name='库房名称'
+		End
+		Item
+			Name='价格统计方式'
+		End
+		Item
+			Name='统计年份'
+		End
+		Item
+			Name='统计月份'
+		End
+	End
+	Items Section
+		Item
+			Type=ReportHeader
+			Height=1.5875
+			Items Control
+				Item
+					Type=MemoBox
+					Name='MemoBox1'
+					Anchor=[Left|Top|Right]
+					Width=16.0073
+					Height=1.00542
+					Object Font
+						Name='方正姚体'
+						Size=150000,0
+						Weight=400
+						Charset=134
+					End
+					TextAlign=MiddleCenter
+					Text='([#库房名称#])其他单据汇总统计([#{价格统计方式}#])'
+				End
+				Item
+					Type=MemoBox
+					Name='MemoBox2'
+					Anchor=[Left|Top|Right]
+					Top=1.00542
+					Width=16.0073
+					Height=0.582083
+					Object Font
+						Name='仿宋'
+						Size=105000,0
+						Bold=T
+						Charset=134
+					End
+					TextAlign=MiddleCenter
+					Text='统计年月:[#统计年份#]年[#{统计月份}#]月'
+				End
+			End
+		End
+	End
+End

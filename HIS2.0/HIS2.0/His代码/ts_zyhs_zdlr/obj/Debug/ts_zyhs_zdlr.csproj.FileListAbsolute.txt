@@ -1,0 +1,8 @@
+E:\HIS2.0\His代码\ts_zyhs_zdlr\obj\Debug\ts_zyhs_zdlr.csprojResolveAssemblyReference.cache
+E:\HIS2.0\His代码\ts_zyhs_zdlr\obj\Debug\ts_zyhs_zdlr.frmYZModel.resources
+E:\HIS2.0\His代码\ts_zyhs_zdlr\obj\Debug\ts_zyhs_zdlr.DlgModelNameInput.resources
+E:\HIS2.0\His代码\ts_zyhs_zdlr\obj\Debug\ts_zyhs_zdlr.frmZDLR.resources
+E:\HIS2.0\His代码\ts_zyhs_zdlr\obj\Debug\ts_zyhs_zdlr.csproj.GenerateResource.cache
+E:\HIS2.0\His代码\ts_zyhs_zdlr\obj\Debug\ts_zyhs_zdlr.csproj.CoreCompileInputs.cache
+E:\HIS2.0\His代码\ts_zyhs_zdlr\obj\Debug\ts_zyhs_zdlr.dll
+E:\HIS2.0\His代码\ts_zyhs_zdlr\obj\Debug\ts_zyhs_zdlr.pdb

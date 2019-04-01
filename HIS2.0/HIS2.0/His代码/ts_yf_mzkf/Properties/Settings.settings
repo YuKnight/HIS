@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ts_yf_mzkf.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ts_yf_mzkf_WebReference_getHisInfoToWillach" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://192.168.100.170:8080/org.platform.core/ws/willach?wsdl</Value>
+    </Setting>
+    <Setting Name="ts_yf_mzkf_NyMzkf_ServiceHis" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://192.168.0.44:8000/ConsisWebService/ServiceHis.svc</Value>
+    </Setting>
+    <Setting Name="ts_yf_mzkf_TrasenWS_TrasenWS" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://192.168.0.90:88/TrasenWS.Asmx</Value>
+    </Setting>
+    <Setting Name="ts_yf_mzkf_HHMZKF_ServiceHis" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://192.168.100.171:8003/ConsisWebService/ServiceHis.svc</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,107 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{86401BB9-4D78-482D-B00A-8127A62B0002}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ts_yp_ksstj</RootNamespace>
+    <AssemblyName>ts_yp_ksstj</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Excel, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Debug\Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TrasenClasses, Version=1.0.3671.25179, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Debug\TrasenClasses.dll</HintPath>
+    </Reference>
+    <Reference Include="TrasenFrame, Version=2011.12.26.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Debug\TrasenFrame.dll</HintPath>
+    </Reference>
+    <Reference Include="ts_mz_class, Version=10.12.18.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Debug\ts_mz_class.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="住院抗菌药物统计I.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="住院抗菌药物统计I.Designer.cs">
+      <DependentUpon>住院抗菌药物统计I.cs</DependentUpon>
+    </Compile>
+    <Compile Include="住院抗菌药物DDD使用强度及使用率统计%28包含在院%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="住院抗菌药物DDD使用强度及使用率统计%28包含在院%29.Designer.cs">
+      <DependentUpon>住院抗菌药物DDD使用强度及使用率统计%28包含在院%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="抗菌药物指标综合统计.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="抗菌药物指标综合统计.Designer.cs">
+      <DependentUpon>抗菌药物指标综合统计.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstanceForm.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="住院抗菌药物DDD使用强度及使用率统计.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="住院抗菌药物DDD使用强度及使用率统计.Designer.cs">
+      <DependentUpon>住院抗菌药物DDD使用强度及使用率统计.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="住院抗菌药物统计I.resx">
+      <DependentUpon>住院抗菌药物统计I.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="住院抗菌药物DDD使用强度及使用率统计%28包含在院%29.resx">
+      <DependentUpon>住院抗菌药物DDD使用强度及使用率统计%28包含在院%29.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="抗菌药物指标综合统计.resx">
+      <DependentUpon>抗菌药物指标综合统计.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="住院抗菌药物DDD使用强度及使用率统计.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>住院抗菌药物DDD使用强度及使用率统计.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

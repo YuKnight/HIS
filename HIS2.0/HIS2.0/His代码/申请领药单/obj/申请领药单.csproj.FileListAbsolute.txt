@@ -1,0 +1,8 @@
+E:\HIS2.0\Debug\ts_yp_ypqlrk.dll
+E:\HIS2.0\Debug\ts_yp_ypqlrk.pdb
+E:\HIS2.0\His代码\申请领药单\obj\Debug\ResolveAssemblyReference.cache
+E:\HIS2.0\His代码\申请领药单\obj\Debug\ts_yp_ypqlrk.Frmtitle.resources
+E:\HIS2.0\His代码\申请领药单\obj\Debug\ts_yp_ypqlrk.Frmypqlrk.resources
+E:\HIS2.0\His代码\申请领药单\obj\Debug\申请领药单.csproj.GenerateResource.Cache
+E:\HIS2.0\His代码\申请领药单\obj\Debug\ts_yp_ypqlrk.dll
+E:\HIS2.0\His代码\申请领药单\obj\Debug\ts_yp_ypqlrk.pdb

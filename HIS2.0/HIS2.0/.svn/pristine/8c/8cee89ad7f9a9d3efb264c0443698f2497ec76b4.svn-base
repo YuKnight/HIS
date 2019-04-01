@@ -1,0 +1,253 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="15.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{702FA2BC-8C14-410D-AE19-7DC764FC3994}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ts_mz_cx</RootNamespace>
+    <AssemblyName>ts_mz_cx</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Output\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\Debug\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Web, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Excel, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Trasen.Paltform-WHv2.0\Library\Excel.dll</HintPath>
+      <HintPath>..\..\..\Trasen.Paltform-v2.0\Library\Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="PrintClass, Version=2014.8.29.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\Trasen.Paltform-WHv2.0\Library\PrintClass.dll</HintPath>
+    </Reference>
+    <Reference Include="PrintClass, Version=1.0.4769.26547, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Trasen.Paltform-v2.0\Library\PrintClass.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TrasenClasses, Version=5.1.5367.29052, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Trasen.Paltform-WHv2.0\Library\TrasenClasses.dll</HintPath>
+      <HintPath>..\..\..\Trasen.Paltform-v2.0\Library\TrasenClasses.dll</HintPath>
+    </Reference>
+    <Reference Include="TrasenFrame, Version=5.1.5367.29053, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Trasen.Paltform-WHv2.0\Library\TrasenFrame.dll</HintPath>
+      <HintPath>..\..\..\Trasen.Paltform-v2.0\Library\TrasenFrame.dll</HintPath>
+    </Reference>
+    <Reference Include="ts_jc_log, Version=12.3.5547.17372, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Trasen.Paltform-WHv2.0\BusinessLibrary\ts_jc_log.dll</HintPath>
+      <HintPath>..\..\..\Trasen.Paltform-v2.0\BusinessLibrary\ts_jc_log.dll</HintPath>
+    </Reference>
+    <Reference Include="ts_mz_class, Version=2014.9.12.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\Trasen.Paltform-WHv2.0\BusinessLibrary\ts_mz_class.dll</HintPath>
+    </Reference>
+    <Reference Include="ts_mz_class, Version=10.12.18.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Trasen.Paltform-v2.0\BusinessLibrary\ts_mz_class.dll</HintPath>
+    </Reference>
+    <Reference Include="ts_Read_hospitalCard, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Trasen.Paltform-WHv2.0\BusinessLibrary\ts_Read_hospitalCard.dll</HintPath>
+      <HintPath>..\..\..\Trasen.Paltform-v2.0\BusinessLibrary\ts_Read_hospitalCard.dll</HintPath>
+    </Reference>
+    <Reference Include="ts_yb_interface, Version=1.0.0.17023, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Trasen.Paltform-WHv2.0\BusinessLibrary\ts_yb_interface.dll</HintPath>
+      <HintPath>..\..\..\Trasen.Paltform-v2.0\BusinessLibrary\ts_yb_interface.dll</HintPath>
+    </Reference>
+    <Reference Include="ts_yb_mzgl, Version=10.10.21.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Trasen.Paltform-WHv2.0\BusinessLibrary\ts_yb_mzgl.dll</HintPath>
+      <HintPath>..\..\..\Trasen.Paltform-v2.0\BusinessLibrary\ts_yb_mzgl.dll</HintPath>
+    </Reference>
+    <Reference Include="ts_Yk_ReportView, Version=1.0.6450.31227, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Trasen.Paltform-WHv2.0\BusinessLibrary\ts_Yk_ReportView.dll</HintPath>
+      <HintPath>..\..\..\Trasen.Paltform-v2.0\BusinessLibrary\ts_Yk_ReportView.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmSjtflccx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSjtflccx.Designer.cs">
+      <DependentUpon>FrmSjtflccx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_DetailsOfCharges.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_DetailsOfCharges.Designer.cs">
+      <DependentUpon>Frm_DetailsOfCharges.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Mzrz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Mzrz.Designer.cs">
+      <DependentUpon>Frm_Mzrz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_mzyspbqkcx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_mzyspbqkcx.Designer.cs">
+      <DependentUpon>Frm_mzyspbqkcx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstanceForm.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report\Ds_Mzrz.cs">
+      <DependentUpon>Ds_Mzrz.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Ds_Mzrz.designer.cs">
+      <DependentUpon>Ds_Mzrz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Ds_Mzrz1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Mzrz.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Yyghxxcx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Yyghxxcx.designer.cs">
+      <DependentUpon>Frm_Yyghxxcx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="修改合同单位信息.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="修改合同单位信息.Designer.cs">
+      <DependentUpon>修改合同单位信息.cs</DependentUpon>
+    </Compile>
+    <Compile Include="发票查询.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="发票查询.Designer.cs">
+      <DependentUpon>发票查询.cs</DependentUpon>
+    </Compile>
+    <Compile Include="处方查询.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="处方查询.Designer.cs">
+      <DependentUpon>处方查询.cs</DependentUpon>
+    </Compile>
+    <Compile Include="挂号信息查询.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="挂号信息查询.Designer.cs">
+      <DependentUpon>挂号信息查询.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmSjtflccx.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmSjtflccx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_DetailsOfCharges.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_DetailsOfCharges.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Mzrz.resx">
+      <DependentUpon>Frm_Mzrz.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_mzyspbqkcx.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_mzyspbqkcx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\MZ_导引单.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MZ_导引单.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\MZ_门诊收费清单.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MZ_门诊收费清单.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\MZ_门诊日志统计.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MZ_门诊日志统计.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Yyghxxcx.resx">
+      <DependentUpon>Frm_Yyghxxcx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="修改合同单位信息.resx">
+      <DependentUpon>修改合同单位信息.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="发票查询.resx">
+      <DependentUpon>发票查询.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="处方查询.resx">
+      <DependentUpon>处方查询.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="挂号信息查询.resx">
+      <DependentUpon>挂号信息查询.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Report\Ds_Mzrz.xsc">
+      <DependentUpon>Ds_Mzrz.xsd</DependentUpon>
+    </None>
+    <None Include="Report\Ds_Mzrz.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Mzrz1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Report\Ds_Mzrz.xss">
+      <DependentUpon>Ds_Mzrz.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3924545A-F8E2-475A-B1A4-05175BC41E50}" />
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\门诊类库\门诊类库.csproj">
+      <Project>{CF2D24CB-C847-4D6E-92C6-DFE41754EB41}</Project>
+      <Name>门诊类库</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,101 @@
+﻿Object Report
+	Version='5.8.0.5'
+	Title='你的报表标题'
+	Object Font
+		Name='宋体'
+		Size=105000,0
+		Weight=400
+		Charset=134
+	End
+	Object Printer
+	End
+	Items Parameter
+		Item
+			Name='barcode'
+		End
+		Item
+			Name='name'
+		End
+		Item
+			Name='sex'
+		End
+	End
+	Items Section
+		Item
+			Type=ReportHeader
+			Name='ReportHeader1'
+			Height=7.2
+			Items Control
+				Item
+					Type=Barcode
+					Name='Barcode1'
+					Left=2.24896
+					Top=1.56104
+					Width=10.3981
+					Height=2.01083
+					Text='[#barcode#]'
+				End
+				Item
+					Type=MemoBox
+					Name='MemoBox1'
+					Left=2.24896
+					Top=3.96875
+					Width=1.19063
+					Height=0.608542
+					Object Font
+						Name='宋体'
+						Size=105000,0
+						Bold=T
+						Charset=134
+					End
+					Text='姓名：'
+				End
+				Item
+					Type=MemoBox
+					Name='MemoBox2'
+					Left=6.85271
+					Top=3.96875
+					Width=1.37583
+					Height=0.608542
+					Object Font
+						Name='宋体'
+						Size=105000,0
+						Bold=T
+						Charset=134
+					End
+					Text='性别：'
+				End
+				Item
+					Type=MemoBox
+					Name='MemoBox5'
+					Left=8.44021
+					Top=3.96875
+					Width=1.79917
+					Height=0.582083
+					Object Font
+						Name='宋体'
+						Size=105000,0
+						Bold=T
+						Charset=134
+					End
+					Text='[#sex#]'
+				End
+				Item
+					Type=MemoBox
+					Name='MemoBox6'
+					Left=3.65125
+					Top=3.96875
+					Width=2.80458
+					Height=0.58
+					Object Font
+						Name='宋体'
+						Size=105000,0
+						Bold=T
+						Charset=134
+					End
+					Text='[#name#]'
+				End
+			End
+		End
+	End
+End

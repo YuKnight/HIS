@@ -1,0 +1,11 @@
+E:\HIS2.0\Debug\ts_Yk_ReportView.dll
+E:\HIS2.0\Debug\ts_Yk_ReportView.pdb
+E:\HIS2.0\His代码\ReportView\obj\Debug\ResolveAssemblyReference.cache
+E:\HIS2.0\His代码\ReportView\obj\Debug\ts_Yk_ReportView.MZ_麻精一处方清单(处方格式).rpt
+E:\HIS2.0\His代码\ReportView\obj\Debug\ts_Yk_ReportView.YF_住院处方清单(中药).rpt
+E:\HIS2.0\His代码\ReportView\obj\Debug\ts_Yk_ReportView.YF_药品统领单 - 副本.rpt
+E:\HIS2.0\His代码\ReportView\obj\Debug\ts_Yk_ReportView.复件 YF_住院处方清单(中药).rpt
+E:\HIS2.0\His代码\ReportView\obj\Debug\ts_Yk_ReportView.复件 YF_住院处方清单.rpt
+E:\HIS2.0\His代码\ReportView\obj\Debug\ts_Yk_ReportView.复件 YK_付款情况表明细.rpt
+E:\HIS2.0\His代码\ReportView\obj\Debug\ts_Yk_ReportView.dll
+E:\HIS2.0\His代码\ReportView\obj\Debug\ts_Yk_ReportView.pdb

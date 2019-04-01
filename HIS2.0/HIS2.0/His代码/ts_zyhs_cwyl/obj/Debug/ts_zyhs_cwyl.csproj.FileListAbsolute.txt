@@ -1,0 +1,10 @@
+E:\HIS2.0\His代码\ts_zyhs_cwyl\obj\Debug\ts_zyhs_cwyl.csprojResolveAssemblyReference.cache
+E:\HIS2.0\His代码\ts_zyhs_cwyl\obj\Debug\ts_zyhs_cwyl.frmFM.resources
+E:\HIS2.0\His代码\ts_zyhs_cwyl\obj\Debug\ts_zyhs_cwyl.frmBC.resources
+E:\HIS2.0\His代码\ts_zyhs_cwyl\obj\Debug\ts_zyhs_cwyl.frmCWYL.resources
+E:\HIS2.0\His代码\ts_zyhs_cwyl\obj\Debug\ts_zyhs_cwyl.FrmCwgl.resources
+E:\HIS2.0\His代码\ts_zyhs_cwyl\obj\Debug\ts_zyhs_cwyl.frmZC.resources
+E:\HIS2.0\His代码\ts_zyhs_cwyl\obj\Debug\ts_zyhs_cwyl.csproj.GenerateResource.cache
+E:\HIS2.0\His代码\ts_zyhs_cwyl\obj\Debug\ts_zyhs_cwyl.csproj.CoreCompileInputs.cache
+E:\HIS2.0\His代码\ts_zyhs_cwyl\obj\Debug\ts_zyhs_cwyl.dll
+E:\HIS2.0\His代码\ts_zyhs_cwyl\obj\Debug\ts_zyhs_cwyl.pdb

@@ -1,0 +1,2075 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TrasenFrame</name>
+    </assembly>
+    <members>
+        <member name="T:TrasenFrame.Classes.Constant">
+            <summary>
+            常量
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Classes.Constant.GetSerialNumber">
+            <summary>
+            取得本机硬盘序列号
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:TrasenFrame.Classes.Constant.ApplicationDirectory">
+            <summary>
+            项目路径
+            </summary>
+        </member>
+        <member name="P:TrasenFrame.Classes.Constant.SerialNumber">
+            <summary>
+            本机硬盘序列号
+            </summary>
+        </member>
+        <member name="P:TrasenFrame.Classes.Constant.CustomDirectory">
+            <summary>
+            用户自定义可改写路径
+            </summary>
+        </member>
+        <member name="P:TrasenFrame.Classes.Constant.CustomImeMode">
+            <summary>
+            输入法
+            </summary>
+        </member>
+        <member name="P:TrasenFrame.Classes.Constant.CustomSearchType">
+            <summary>
+            过滤方式
+            </summary>
+        </member>
+        <member name="P:TrasenFrame.Classes.Constant.CustomFilterType">
+            <summary>
+            过滤字段
+            </summary>
+        </member>
+        <member name="P:TrasenFrame.Classes.Constant.BackGroundPicturePath">
+            <summary>
+             背景图片路径
+            </summary>
+        </member>
+        <member name="P:TrasenFrame.Classes.Constant.ComPort">
+            <summary>
+             报价器COM端口
+            </summary>
+        </member>
+        <member name="P:TrasenFrame.Classes.Constant.CInvoicePrinterName">
+            <summary>
+             发票打印机
+            </summary>
+        </member>
+        <member name="P:TrasenFrame.Classes.Constant.CReportPrinterName">
+            <summary>
+             报表打印机
+            </summary>
+        </member>
+        <member name="P:TrasenFrame.Classes.Constant.RegisterCode">
+            <summary>
+            软件注册码
+            </summary>
+        </member>
+        <member name="T:TrasenFrame.Classes.Department">
+            <summary>
+            科室类
+            </summary>
+        </member>
+        <member name="T:TrasenFrame.Classes.IStdObject">
+            <summary>
+            标准模型接口
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Classes.IStdObject.Save">
+            <summary>
+            保存方法
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenFrame.Classes.IStdObject.Retrieve">
+            <summary>
+            恢复
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenFrame.Classes.IStdObject.Delete">
+            <summary>
+            删除方法
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:TrasenFrame.Classes.IStdObject.Database">
+            <summary>
+            数据库访问对象
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Classes.Department.#ctor">
+            <summary>
+            构造一空科室对象
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Classes.Department.#ctor(System.Int32,TrasenClasses.DatabaseAccess.RelationalDatabase)">
+            <summary>
+            构造一科室对象
+            </summary>
+            <param name="deptID">科室ID</param>
+            <param name="database">数据库访问对象</param>
+        </member>
+        <member name="M:TrasenFrame.Classes.Department.GetDeptInfo(System.Int32)">
+            <summary>
+            根据科室ID实例
+            </summary>
+            <param name="deptID"></param>
+        </member>
+        <member name="M:TrasenFrame.Classes.Department.GetEmployees">
+            <summary>
+            获取本部门的人员
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenFrame.Classes.Department.Save">
+            <summary>
+            保存
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenFrame.Classes.Department.Retrieve">
+            <summary>
+            刷新
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenFrame.Classes.Department.Delete">
+            <summary>
+            删除
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:TrasenFrame.Classes.Department.DeptId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:TrasenFrame.Classes.Department.DeptName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:TrasenFrame.Classes.Department.Pym">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:TrasenFrame.Classes.Department.Wbm">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:TrasenFrame.Classes.Department.NumCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:TrasenFrame.Classes.Department.P_DeptId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:TrasenFrame.Classes.Department.P_DeptName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:TrasenFrame.Classes.Department.Place">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:TrasenFrame.Classes.Department.Mz_Flag">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:TrasenFrame.Classes.Department.Zy_Flag">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:TrasenFrame.Classes.Department.Jz_Flag">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:TrasenFrame.Classes.Department.DeptTypeCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:TrasenFrame.Classes.Department.DeptTypeName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:TrasenFrame.Classes.Department.Gh_Flag">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:TrasenFrame.Classes.Department.IsJz">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:TrasenFrame.Classes.Department.Hz_Flag">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:TrasenFrame.Classes.Department.Database">
+            <summary>
+            数据库访问对象
+            </summary>
+        </member>
+        <member name="T:TrasenFrame.Classes.Employee">
+            <summary>
+            员工类
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Classes.Employee.#ctor">
+            <summary>
+            构造一空员工对象
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Classes.Employee.#ctor(System.Int32,TrasenClasses.DatabaseAccess.RelationalDatabase)">
+            <summary>
+            构造一员工对象
+            <param name="employeeID">员工ID</param>
+            <param name="database">数据库访问对象</param>
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Classes.Employee.InitEmployee(System.Int32)">
+            <summary>
+            根据员工代码初始化员工对象
+            </summary>
+            <param name="employeeID">员工ID</param>
+        </member>
+        <member name="M:TrasenFrame.Classes.Employee.GetEmpRoleDept">
+            <summary>
+             取得该员工的角色科室
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenFrame.Classes.Employee.Save">
+            <summary>
+            保存
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenFrame.Classes.Employee.Retrieve">
+            <summary>
+            刷新
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenFrame.Classes.Employee.Delete">
+            <summary>
+            删除
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:TrasenFrame.Classes.Employee.EmployeeId">
+            <summary>
+            编号
+            </summary>
+        </member>
+        <member name="P:TrasenFrame.Classes.Employee.Name">
+            <summary>
+             姓名
+            </summary>
+        </member>
+        <member name="P:TrasenFrame.Classes.Employee.Pym">
+            <summary>
+             拼音码
+             </summary>
+        </member>
+        <member name="P:TrasenFrame.Classes.Employee.Wbm">
+            <summary>
+             五笔码
+             </summary>
+        </member>
+        <member name="P:TrasenFrame.Classes.Employee.ZwjbDm">
+            <summary>
+             职务级别代码
+             </summary>
+        </member>
+        <member name="P:TrasenFrame.Classes.Employee.ZwjbMc">
+            <summary>
+             职务级别名称
+             </summary>
+        </member>
+        <member name="P:TrasenFrame.Classes.Employee.ZcjbDm">
+            <summary>
+             职称级别代码
+             </summary>
+        </member>
+        <member name="P:TrasenFrame.Classes.Employee.ZcjbMc">
+            <summary>
+             职称级别名称
+             </summary>
+        </member>
+        <member name="P:TrasenFrame.Classes.Employee.RylxDm">
+            <summary>
+             人员类型代码
+             </summary>
+        </member>
+        <member name="P:TrasenFrame.Classes.Employee.RylxMc">
+            <summary>
+             人员类型名称
+             </summary>
+        </member>
+        <member name="P:TrasenFrame.Classes.Employee.Database">
+            <summary>
+            数据库访问对象
+            </summary>
+        </member>
+        <member name="T:TrasenFrame.Classes.CImeMode">
+            <summary>
+            自定义默认输入法
+            </summary>
+        </member>
+        <member name="F:TrasenFrame.Classes.CImeMode.拼音输入法">
+            <summary>拼音输入法</summary>
+        </member>
+        <member name="F:TrasenFrame.Classes.CImeMode.五笔输入法">
+            <summary>五笔输入法</summary>
+        </member>
+        <member name="T:TrasenFrame.Classes.SearchType">
+            <summary>
+            查找类型
+            </summary>
+        </member>
+        <member name="F:TrasenFrame.Classes.SearchType.前导相似">
+            <summary>前导相似</summary>
+        </member>
+        <member name="F:TrasenFrame.Classes.SearchType.精确定位">
+            <summary>精确定位</summary>
+        </member>
+        <member name="F:TrasenFrame.Classes.SearchType.模糊查询">
+            <summary>模糊查询</summary>
+        </member>
+        <member name="T:TrasenFrame.Classes.FilterType">
+            <summary>
+            过滤类型
+            </summary>
+        </member>
+        <member name="F:TrasenFrame.Classes.FilterType.五笔">
+            <summary>五笔</summary>
+        </member>
+        <member name="F:TrasenFrame.Classes.FilterType.拼音">
+            <summary>拼音</summary>
+        </member>
+        <member name="F:TrasenFrame.Classes.FilterType.数字">
+            <summary>数字</summary>
+        </member>
+        <member name="F:TrasenFrame.Classes.FilterType.自编">
+            <summary>自编</summary>
+        </member>
+        <member name="F:TrasenFrame.Classes.FilterType.智能">
+            <summary>智能</summary>
+        </member>
+        <member name="T:TrasenFrame.Classes.ConnectionType">
+            <summary>
+            数据库连接类型
+            </summary>
+        </member>
+        <member name="F:TrasenFrame.Classes.ConnectionType.SQLSERVER">
+            <summary>微软SQLSERVER数据库</summary>
+        </member>
+        <member name="F:TrasenFrame.Classes.ConnectionType.IBMDB2">
+            <summary>IBMDB2数据库</summary>
+        </member>
+        <member name="F:TrasenFrame.Classes.ConnectionType.ORACLE">
+            <summary>Oracle数据库</summary>
+        </member>
+        <member name="F:TrasenFrame.Classes.ConnectionType.MSACCESS">
+            <summary>微软Access数据库</summary>
+        </member>
+        <member name="F:TrasenFrame.Classes.ConnectionType.OTHER">
+            <summary>其他类型</summary>
+        </member>
+        <member name="T:TrasenFrame.Classes.FieldSpeciType">
+            <summary>
+            字段特殊类型
+            </summary>
+        </member>
+        <member name="F:TrasenFrame.Classes.FieldSpeciType.NULL">
+            <summary>无类型</summary>
+        </member>
+        <member name="F:TrasenFrame.Classes.FieldSpeciType.PASSWORD">
+            <summary>密码类型</summary>
+        </member>
+        <member name="F:TrasenFrame.Classes.FieldSpeciType.IMAGE">
+            <summary>图片类型</summary>
+        </member>
+        <member name="F:TrasenFrame.Classes.FieldSpeciType.SOUND">
+            <summary>声音类型</summary>
+        </member>
+        <member name="F:TrasenFrame.Classes.FieldSpeciType.OTHER">
+            <summary>其他类型</summary>
+        </member>
+        <member name="T:TrasenFrame.Classes.CurrentStatus">
+            <summary>
+            记录当前状态
+            </summary>
+        </member>
+        <member name="F:TrasenFrame.Classes.CurrentStatus.查询状态">
+            <summary>
+            查询状态
+            </summary>
+        </member>
+        <member name="F:TrasenFrame.Classes.CurrentStatus.新建状态">
+            <summary>
+            新建状态
+            </summary>
+        </member>
+        <member name="F:TrasenFrame.Classes.CurrentStatus.修改状态">
+            <summary>
+            修改状态
+            </summary>
+        </member>
+        <member name="T:TrasenFrame.Classes.IDllInformation">
+            <summary>
+            IDllInformation 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Classes.IDllInformation.InstanceWorkForm">
+            <summary>
+            实例化工作窗体
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Classes.IDllInformation.GetFunctionsInfo">
+            <summary>
+            获得所有引出函数信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenFrame.Classes.IDllInformation.GetDllInfo">
+            <summary>
+            获得Dll信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:TrasenFrame.Classes.IDllInformation.FunctionName">
+            <summary>
+            实例化窗体函数名称	
+            </summary>
+        </member>
+        <member name="P:TrasenFrame.Classes.IDllInformation.ChineseName">
+            <summary>
+            窗体中文名称
+            </summary>
+        </member>
+        <member name="P:TrasenFrame.Classes.IDllInformation.CurrentUser">
+            <summary>
+            当前操作员ID
+            </summary>
+        </member>
+        <member name="P:TrasenFrame.Classes.IDllInformation.CurrentDept">
+            <summary>
+            当前操作科室ID
+            </summary>
+        </member>
+        <member name="P:TrasenFrame.Classes.IDllInformation.MenuId">
+            <summary>
+            菜单ID
+            </summary>
+        </member>
+        <member name="P:TrasenFrame.Classes.IDllInformation.MdiParent">
+            <summary>
+            Mdi父窗体
+            </summary>
+        </member>
+        <member name="P:TrasenFrame.Classes.IDllInformation.Database">
+            <summary>
+            数据库访问类
+            </summary>
+        </member>
+        <member name="P:TrasenFrame.Classes.IDllInformation.FunctionTag">
+            <summary>
+            菜单附加值
+            </summary>
+        </member>
+        <member name="T:TrasenFrame.Classes.IInnerCommunicate">
+            <summary>
+            IInnerCommunicate 的摘要说明。
+            供程序内部DLL相互调用使用
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Classes.IInnerCommunicate.GetObject">
+            <summary>
+            返回一个对象
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:TrasenFrame.Classes.IInnerCommunicate.CommunicateValue">
+            <summary>
+            通信参数(如病人唯一标识号)
+            </summary>
+        </member>
+        <member name="T:TrasenFrame.Classes.MenuItemEx">
+            <summary>
+            MenuItemEx 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Classes.MenuItemEx.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Classes.MenuItemEx.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="Text"></param>
+        </member>
+        <member name="M:TrasenFrame.Classes.MenuItemEx.#ctor(System.String,System.EventHandler)">
+            <summary>
+            
+            </summary>
+            <param name="Text"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:TrasenFrame.Classes.MenuItemEx.#ctor(System.String,System.EventHandler,System.Windows.Forms.Shortcut)">
+            <summary>
+            
+            </summary>
+            <param name="Text"></param>
+            <param name="e"></param>
+            <param name="shortcut"></param>
+        </member>
+        <member name="P:TrasenFrame.Classes.MenuItemEx.Tag">
+            <summary>
+            Tag属性，类型object
+            </summary>
+        </member>
+        <member name="T:TrasenFrame.Classes.TableField">
+            <summary>
+             数据库表字段信息
+            </summary>
+        </member>
+        <member name="F:TrasenFrame.Classes.TableField.DatabaseName">
+            <summary>
+            数据库字段名称
+            </summary>
+        </member>
+        <member name="F:TrasenFrame.Classes.TableField.ChineseName">
+            <summary>
+            显示列标题
+            </summary>
+        </member>
+        <member name="F:TrasenFrame.Classes.TableField.ViewWidth">
+            <summary>
+            显示宽度
+            </summary>
+        </member>
+        <member name="F:TrasenFrame.Classes.TableField.ShowCardSql">
+            <summary>
+            弹出ShowCard选项卡SQL语句(必须有item_id,item_name,py_code,wb_code,d_code列)
+            </summary>
+        </member>
+        <member name="F:TrasenFrame.Classes.TableField.DefaultValue">
+            <summary>
+            默认值
+            </summary>
+        </member>
+        <member name="F:TrasenFrame.Classes.TableField.RegularExpressions">
+            <summary>
+            正则表达式
+            </summary>
+        </member>
+        <member name="F:TrasenFrame.Classes.TableField.IsUniqueKey">
+            <summary>
+            是否为唯一索引字段
+            </summary>
+        </member>
+        <member name="F:TrasenFrame.Classes.TableField.IsDeleteField">
+            <summary>
+            是否为删除标记字段
+            </summary>
+        </member>
+        <member name="F:TrasenFrame.Classes.TableField.IsAutoIncrease">
+            <summary>
+            是否自动增长字段
+            </summary>
+        </member>
+        <member name="F:TrasenFrame.Classes.TableField.IsPYField">
+            <summary>
+            拼音码字段
+            </summary>
+        </member>
+        <member name="F:TrasenFrame.Classes.TableField.IsWBField">
+            <summary>
+            五笔码字段
+            </summary>
+        </member>
+        <member name="F:TrasenFrame.Classes.TableField.IsNameField">
+            <summary>
+            需要生成五笔拼音的字段
+            </summary>
+        </member>
+        <member name="F:TrasenFrame.Classes.TableField.UnAllowRepeat">
+            <summary>
+            是否不允许重复
+            </summary>	
+        </member>
+        <member name="F:TrasenFrame.Classes.TableField.SpeciType">
+            <summary>
+            字段特殊类型
+            </summary>
+        </member>
+        <member name="T:TrasenFrame.Classes.MenuTag">
+            <summary>
+            自定义菜单的附加值结构
+            </summary>
+        </member>
+        <member name="F:TrasenFrame.Classes.MenuTag.DllName">
+            <summary>
+            对应的dll名称
+            </summary>
+        </member>
+        <member name="F:TrasenFrame.Classes.MenuTag.Function_Name">
+            <summary>
+            引出函数名称
+            </summary>
+        </member>
+        <member name="F:TrasenFrame.Classes.MenuTag.FunctionTag">
+            <summary>
+            引出函数附加值
+            </summary>
+        </member>
+        <member name="F:TrasenFrame.Classes.MenuTag.ModuleId">
+            <summary>
+            所属模块编号
+            </summary>
+        </member>
+        <member name="F:TrasenFrame.Classes.MenuTag.MenuName">
+            <summary>
+            菜单中文名
+            </summary>
+        </member>
+        <member name="F:TrasenFrame.Classes.MenuTag.System">
+            <summary>
+            系统菜单编号
+            </summary>
+        </member>
+        <member name="T:TrasenFrame.Classes.TEXTBOXTAG">
+            <summary>
+            TextBoxTag
+            </summary>
+        </member>
+        <member name="F:TrasenFrame.Classes.TEXTBOXTAG.FieldProperty">
+            <summary>
+            字段属性
+            </summary>
+        </member>
+        <member name="F:TrasenFrame.Classes.TEXTBOXTAG.Value">
+            <summary>
+            字段当前值
+            </summary>
+        </member>
+        <member name="T:TrasenFrame.Classes.SystemInfo">
+            <summary>
+            SystemInfo 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Classes.SystemInfo.#ctor">
+            <summary>
+            系统信息
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Classes.SystemInfo.#ctor(System.Int32,TrasenClasses.DatabaseAccess.RelationalDatabase)">
+            <summary>
+            系统信息
+            </summary>
+            <param name="systemId">系统编号</param>
+            <param name="database">database</param>
+        </member>
+        <member name="P:TrasenFrame.Classes.SystemInfo.SystemId">
+            <summary>
+            系统编号
+            </summary>
+        </member>
+        <member name="P:TrasenFrame.Classes.SystemInfo.SystemName">
+            <summary>
+            系统名称
+            </summary>
+        </member>
+        <member name="T:TrasenFrame.Classes.User">
+            <summary>
+            操作员类
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Classes.User.#ctor">
+            <summary>
+            构造一空员工对象
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Classes.User.#ctor(System.Int32,TrasenClasses.DatabaseAccess.RelationalDatabase)">
+            <summary>
+            构造一操作员对象
+            </summary>
+            <param name="userID">操作员ID</param>
+            <param name="database">数据库访问对象</param>
+        </member>
+        <member name="M:TrasenFrame.Classes.User.#ctor(System.String,TrasenClasses.DatabaseAccess.RelationalDatabase)">
+            <summary>
+            构造一操作员对象
+            </summary>
+            <param name="loginCode">操作员登录名</param>
+            <param name="database">数据库访问对象</param>
+        </member>
+        <member name="M:TrasenFrame.Classes.User.GetUserInfo(System.Int64)">
+            <summary>
+            获得操作员信息
+            </summary>
+            <param name="userID">操作员ID</param>
+        </member>
+        <member name="M:TrasenFrame.Classes.User.CheckPassword(System.String)">
+            <summary>
+            核对密码是否相符合
+            </summary>
+            <param name="pwd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenFrame.Classes.User.ChangePassword(System.String,System.String)">
+            <summary>
+            密码修改
+            </summary>
+            <param name="oldPWD">原来密码</param>
+            <param name="newPWD">新密码</param>
+        </member>
+        <member name="M:TrasenFrame.Classes.User.GetSystemInfo">
+            <summary>
+            获取用户可以使用的系统
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenFrame.Classes.User.GetModuleInfo">
+            <summary>
+            获取用户可以使用的模块
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenFrame.Classes.User.GetUserRight">
+            <summary>
+            获取用户的菜单使用权限
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenFrame.Classes.User.GetEmpRoleDept">
+            <summary>
+            取得该操作员的角色科室
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenFrame.Classes.User.Save">
+            <summary>
+            保存对象
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenFrame.Classes.User.Retrieve">
+            <summary>
+            刷新信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenFrame.Classes.User.Delete">
+            <summary>
+            删除信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:TrasenFrame.Classes.User.UserID">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="P:TrasenFrame.Classes.User.LoginCode">
+            <summary>
+            用户的登录代码
+            </summary>
+        </member>
+        <member name="P:TrasenFrame.Classes.User.Password">
+            <summary>
+            返回密码的属性（得到密码的明文）
+            </summary>
+        </member>
+        <member name="P:TrasenFrame.Classes.User.Locked">
+            <summary>
+            表示该用户是否被锁定
+            </summary>
+        </member>
+        <member name="P:TrasenFrame.Classes.User.IsAdministrator">
+            <summary>
+            是否为超级用户
+            </summary>
+        </member>
+        <member name="T:TrasenFrame.Classes.WorkStaticFun">
+            <summary>
+            WorkStaticFun 的摘要说明
+            常用与业务有关的静态方法
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Classes.WorkStaticFun.InstanceForm(System.String,System.String,System.String,TrasenFrame.Classes.User,TrasenFrame.Classes.Department,TrasenFrame.Classes.MenuTag,System.Int64,System.Windows.Forms.Form,TrasenClasses.DatabaseAccess.RelationalDatabase)">
+            <summary>
+            通过动态链接库名称与引出函数名称访问窗体
+            </summary>
+            <param name="dllName">动态链接库名称</param>
+            <param name="functionName">函数名称</param>
+            <param name="chineseName">窗体中文名称</param>
+            <param name="currentUser">当前操作员ID</param>
+            <param name="currentDept">当前操作员所在科室ID</param>
+            <param name="menuId">菜单ID</param>
+            <param name="mdiParent">MDI父窗体</param>
+            <param name="database">数据库访问类</param>
+            <param name="tag">附属值</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenFrame.Classes.WorkStaticFun.InstanceFormEx(System.String,System.String,System.String,TrasenFrame.Classes.User,TrasenFrame.Classes.Department,TrasenFrame.Classes.MenuTag,System.Int64,System.Windows.Forms.Form,TrasenClasses.DatabaseAccess.RelationalDatabase,System.Object[]@)">
+            <summary>
+            通过动态链接库名称与引出函数名称访问窗体(允许不同DLL中FORM通信)
+            </summary>
+            <param name="dllName">动态链接库名称</param>
+            <param name="functionName">函数名称</param>
+            <param name="chineseName">窗体中文名称</param>
+            <param name="currentUser">当前操作员ID</param>
+            <param name="currentDept">当前操作员所在科室ID</param>
+            <param name="menuId">菜单ID</param>
+            <param name="mdiParent">MDI父窗体</param>
+            <param name="database">数据库访问类</param>
+            <param name="communicateValue">内部通信值</param>
+            <param name="tag">附属值</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenFrame.Classes.WorkStaticFun.InstanceForm(System.String,System.String,System.String,TrasenFrame.Classes.User,TrasenFrame.Classes.Department,TrasenFrame.Classes.MenuTag,System.Int64,System.Windows.Forms.Form,TrasenClasses.DatabaseAccess.RelationalDatabase,System.Object[]@)">
+            <summary>
+            通过动态链接库名称与引出函数名称获得一个窗体（建议只在Dll内部调用）
+            </summary>
+            <param name="dllName">动态链接库名称</param>
+            <param name="functionName">函数名称</param>
+            <param name="chineseName">窗体中文名称</param>
+            <param name="currentUser">当前操作员ID</param>
+            <param name="currentDept">当前操作员所在科室ID</param>
+            <param name="menuId">菜单ID</param>
+            <param name="mdiParent">MDI父窗体</param>
+            <param name="database">数据库访问类</param>
+            <param name="communicateValue">内部通信值</param>
+            <param name="tag">附属值</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenFrame.Classes.WorkStaticFun.GetMenuId(System.String,System.String,TrasenClasses.DatabaseAccess.RelationalDatabase)">
+            <summary>
+            根据动态链接库名称、引出函数名称取得菜单ID
+            </summary>
+            <param name="dllName">动态链接库名称</param>
+            <param name="functionName">引出函数名称</param>
+            <param name="database">数据库访问类</param>
+            <returns>菜单ID</returns>
+        </member>
+        <member name="M:TrasenFrame.Classes.WorkStaticFun.GetCardData(System.Object,System.Int32,System.Int32,System.Windows.Forms.DataGrid,System.Int32,System.Data.DataSet,System.String,TrasenFrame.Classes.FilterType,TrasenFrame.Classes.SearchType,System.Boolean@,System.String,System.Boolean)">
+            <summary>
+            通过键盘值获得数据行（要求查询表中有如下字段名：ROWNO、PY_CODE、WB_CODE）
+            </summary>
+            <param name="occurObject">触发网格弹出的对象</param>
+            <param name="keyInt">键盘值</param>
+            <param name="currColumn">当前列索引(只对网格实用)</param>
+            <param name="cardGrid">选项网格</param>
+            <param name="tableStyleIndex">网格格式索引</param>
+            <param name="dataSet">数据集</param>
+            <param name="tableName">查询表名称</param>
+            <param name="filterType">过滤类型（拼音、五笔。。。）</param>
+            <param name="searchType">查询类型（前导相似。。。）</param>
+            <param name="respondKey">是否响应键值</param>
+            <param name="otherFilter">其他过滤条件</param>
+            <param name="useDataView">使用DataView过滤，不显示行号</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenFrame.Classes.WorkStaticFun.GetCardData(System.Object,System.Int32,System.Int32,System.Windows.Forms.DataGrid,System.Int32,System.Data.DataSet,System.String,TrasenFrame.Classes.FilterType,TrasenFrame.Classes.SearchType,System.Boolean@,System.String,System.String)">
+            <summary>
+            通过键盘值获得数据行（要求查询表中有如下字段名：ROWNO、PY_CODE、WB_CODE）
+            </summary>
+            <param name="occurObject">触发网格弹出的对象</param>
+            <param name="keyInt">键盘值</param>
+            <param name="currColumn">当前列索引(只对网格实用)</param>
+            <param name="cardGrid">选项网格</param>
+            <param name="tableStyleIndex">网格格式索引</param>
+            <param name="dataSet">数据集</param>
+            <param name="tableName">查询表名称</param>
+            <param name="filterType">过滤类型（拼音、五笔。。。）</param>
+            <param name="searchType">查询类型（前导相似。。。）</param>
+            <param name="respondKey">是否响应键值</param>
+            <param name="otherFilter">其他过滤条件</param>
+            <param name="sortString">排序条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenFrame.Classes.WorkStaticFun.ShowCard(System.Windows.Forms.DataGrid,System.Int32,System.Data.DataSet,System.String,System.String,TrasenFrame.Classes.FilterType,TrasenFrame.Classes.SearchType,System.String,System.Boolean)">
+            <summary>
+            显示辅助输入卡片
+            </summary>
+            <param name="dtGrid">表格对象</param>
+            <param name="tableStyleIndex">网格格式索引</param>
+            <param name="dataSet">数据集合</param>
+            <param name="tableName">数据集中表名称</param>
+            <param name="filter">筛选条件</param>
+            <param name="filterType">过滤字段</param>
+            <param name="finishFlag">过滤方式</param>
+            <param name="otherFilter">其他过滤条件</param>
+            <param name="useDataView">使用DataView过滤，不显示行号</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenFrame.Classes.WorkStaticFun.ShowCard(System.Windows.Forms.DataGrid,System.Int32,System.Data.DataSet,System.String,System.String,TrasenFrame.Classes.FilterType,TrasenFrame.Classes.SearchType,System.String,System.String)">
+            <summary>
+            显示辅助输入卡片
+            </summary>
+            <param name="dtGrid">表格对象</param>
+            <param name="tableStyleIndex">网格格式索引</param>
+            <param name="dataSet">数据集合</param>
+            <param name="tableName">数据集中表名称</param>
+            <param name="filter">筛选条件</param>
+            <param name="filterType">过滤字段</param>
+            <param name="finishFlag">过滤方式</param>
+            <param name="otherFilter">其他过滤条件</param>
+            <param name="sortString">排序条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenFrame.Classes.WorkStaticFun.GetConnnectionString(TrasenFrame.Classes.ConnectionType,System.String)">
+            <summary>
+            获取连接字符串
+            </summary>
+            <param name="type">类型0、SQL SERVER 1、IBM DB2</param>
+            <param name="DatabaseName">INI文件中段(SECTION)名称(当前服务器名)</param>
+        </member>
+        <member name="M:TrasenFrame.Classes.WorkStaticFun.GetConfigValueByCode(System.Int32,TrasenClasses.DatabaseAccess.RelationalDatabase)">
+            <summary>
+            根据参数编码获取参数值
+            </summary>
+            <param name="code">参数编码</param>
+            <param name="database">数据库访问对象</param>
+            <returns></returns>
+        </member>
+        <member name="T:TrasenFrame.Forms.DlgInputBox">
+            <summary>
+            自定义的InputBox对话框
+            </summary>
+        </member>
+        <member name="F:TrasenFrame.Forms.DlgInputBox.DlgResult">
+            <summary>
+            对话框结果
+            </summary>
+        </member>
+        <member name="F:TrasenFrame.Forms.DlgInputBox.DlgValue">
+            <summary>
+            对话框返回值
+            </summary>
+        </member>
+        <member name="F:TrasenFrame.Forms.DlgInputBox.NumCtrl">
+            <summary>
+            数字控制
+            </summary>
+        </member>
+        <member name="F:TrasenFrame.Forms.DlgInputBox.HideChar">
+            <summary>
+            是否使用PasswordChar属性
+            </summary>
+        </member>
+        <member name="F:TrasenFrame.Forms.DlgInputBox.PasswordChar">
+            <summary>
+            密码字符
+            </summary>
+        </member>
+        <member name="F:TrasenFrame.Forms.DlgInputBox.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.DlgInputBox.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.DlgInputBox.#ctor(System.String,System.String,System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="DefaultValue">默认值</param>
+            <param name="strText">说明文字</param>
+            <param name="strCaption">标题文字</param>
+        </member>
+        <member name="M:TrasenFrame.Forms.DlgInputBox.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.DlgInputBox.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要使用代码编辑器修改
+            此方法的内容。
+            </summary>
+        </member>
+        <member name="T:TrasenFrame.Forms.DlgInputBoxStatic">
+            <summary>
+            InputBox静态调用
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.DlgInputBoxStatic.InputBox(System.String,System.String,System.String)">
+            <summary>
+            静态调用InputBox对话框
+            </summary>
+            <param name="prompt">说明文字</param>
+            <param name="title">标题文字</param>
+            <param name="defaultValue">默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenFrame.Forms.DlgInputBoxStatic.InputBox(System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            静态调用InputBox对话框
+            </summary>
+            <param name="prompt">说明文字</param>
+            <param name="title">标题文字</param>
+            <param name="defaultValue">默认值</param>
+            <param name="numCtrl">是否只允许输入数字</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenFrame.Forms.DlgInputBoxStatic.InputBox(System.String,System.String,System.String,System.Boolean,System.Boolean)">
+            <summary>
+            静态调用InputBox对话框
+            </summary>
+            <param name="prompt">说明文字</param>
+            <param name="title">标题文字</param>
+            <param name="defaultValue">默认值</param>
+            <param name="numCtrl">是否只允许输入数字</param>
+            <param name="hideChar">是否隐藏输入值</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenFrame.Forms.DlgInputBoxStatic.InputBox(System.String,System.String,System.String,System.Boolean,System.Boolean,System.Char)">
+            <summary>
+            静态调用InputBox对话框
+            </summary>
+            <param name="prompt">说明文字</param>
+            <param name="title">标题文字</param>
+            <param name="defaultValue">默认值</param>
+            <param name="numCtrl">是否只允许输入数字</param>
+            <param name="hideChar">是否隐藏输入值</param>
+            <param name="passwordChar">密码字符</param>
+            <returns></returns>
+        </member>
+        <member name="T:TrasenFrame.Forms.DlgLogin">
+            <summary>
+            登陆对话框
+            </summary>
+        </member>
+        <member name="F:TrasenFrame.Forms.DlgLogin.LoginSuccess">
+            <summary>登录是否成功</summary>
+        </member>
+        <member name="F:TrasenFrame.Forms.DlgLogin.CurrentUser">
+            <summary>当前操作员</summary>
+        </member>
+        <member name="F:TrasenFrame.Forms.DlgLogin.CurrentSystem">
+            <summary>
+            当前系统
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.DlgLogin.#ctor">
+            <summary>
+            登录窗口构造函数
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.DlgLogin.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.DlgLogin.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要使用代码编辑器修改
+            此方法的内容。
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.DlgLogin.LoadUserSystem">
+            <summary>
+            获取当前用户所拥有的系统
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.DlgLogin.FilterSystem(System.String,System.Boolean)">
+            <summary>
+            显示过滤后的系统
+            </summary>
+            <param name="Filter">过滤条件</param>
+            <param name="booFinish">是否输入完毕</param>
+        </member>
+        <member name="M:TrasenFrame.Forms.DlgLogin.ControlVisible">
+            <summary>
+            控制登录信息的显示
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.DlgLogin.CheckUserDeptAndRight">
+            <summary>
+            检查用户科室和权限
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:TrasenFrame.Forms.DlgPasswd">
+             <summary>
+            密码修改对话框。
+             </summary>
+        </member>
+        <member name="F:TrasenFrame.Forms.DlgPasswd.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.DlgPasswd.#ctor">
+            <summary>
+            密码修改框构造函数
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.DlgPasswd.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.DlgPasswd.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要使用代码编辑器修改
+            此方法的内容。
+            </summary>
+        </member>
+        <member name="T:TrasenFrame.Forms.DlgRegister">
+            <summary>
+            系统注册对话框
+            </summary>
+        </member>
+        <member name="F:TrasenFrame.Forms.DlgRegister.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.DlgRegister.#ctor">
+            <summary>
+            系统注册构造函数
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.DlgRegister.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.DlgRegister.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要使用代码编辑器修改
+            此方法的内容。
+            </summary>
+        </member>
+        <member name="T:TrasenFrame.Forms.FrmAbout">
+            <summary>
+            关于对话框
+            </summary>
+        </member>
+        <member name="F:TrasenFrame.Forms.FrmAbout.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmAbout.#ctor(System.String,System.String)">
+            <summary>
+            关于窗口构造函数
+            </summary>
+            <param name="caption"></param>
+            <param name="maintProgramName"></param>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmAbout.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmAbout.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要使用代码编辑器修改
+            此方法的内容。
+            </summary>
+        </member>
+        <member name="T:TrasenFrame.Forms.FrmAddUser">
+            <summary>
+            添加用户对话框
+            </summary>
+        </member>
+        <member name="F:TrasenFrame.Forms.FrmAddUser.NewUserCode">
+            <summary>
+            新增加的用户名
+            </summary>
+        </member>
+        <member name="F:TrasenFrame.Forms.FrmAddUser.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmAddUser.#ctor(System.Int32)">
+            <summary>
+            输入用户名类
+            </summary>
+            <param name="employeeId"></param>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmAddUser.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmAddUser.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要使用代码编辑器修改
+            此方法的内容。
+            </summary>
+        </member>
+        <member name="T:TrasenFrame.Forms.FrmFileUpLoad">
+             <summary>
+            系统升级文件上传对话框
+             </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmFileUpLoad.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmFileUpLoad.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmFileUpLoad.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要使用代码编辑器修改
+            此方法的内容。
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmFileUpLoad.CreateGridStyle">
+            <summary>
+            创建网格格式
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmFileUpLoad.LoadAllUpdatedFiles">
+            <summary>
+            加载所有已上传文件及版本信息
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmFileUpLoad.LoadAllFiles">
+            <summary>
+            加载所有文件
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmFileUpLoad.UploadFiles">
+            <summary>
+            上传文件（将文件以字节方式保存在数据库）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:TrasenFrame.Forms.FrmGroupAccess">
+            <summary>
+            组成员访问系统权限对话框
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmGroupAccess.#ctor">
+            <summary>
+            用户组设置
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmGroupAccess.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmGroupAccess.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要使用代码编辑器修改
+            此方法的内容。
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmGroupAccess.CreateGridStyle">
+            <summary>
+            创建网格格式
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmGroupAccess.LoadAllGroup">
+            <summary>
+            加载所有用户组
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmGroupAccess.LoadAllUser">
+            <summary>
+            加载所有用户
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmGroupAccess.ViewGroupMember(System.Int32)">
+            <summary>
+            根据组ID显示其成员
+            </summary>
+            <param name="groupID"></param>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmGroupAccess.LoadAllSystemMenuStruct">
+            <summary>
+            加载所有系统的菜单结构
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmGroupAccess.AddSubMenu(System.Data.DataTable,System.Windows.Forms.TreeNode,System.Int32)">
+            <summary>
+            添加子菜单
+            </summary>
+            <param name="tableMenu"></param>
+            <param name="parentMenu"></param>
+            <param name="parentMenuId"></param>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmGroupAccess.DisplayGroupAccessMenu(System.Int32)">
+            <summary>
+            显示组可访问的菜单
+            </summary>
+            <param name="groupId"></param>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmGroupAccess.CheckSubNode(System.Windows.Forms.TreeNode,System.Data.DataTable)">
+            <summary>
+            检查子节点菜单是否有权限
+            </summary>
+            <param name="topNode"></param>
+            <param name="tableGroupMenu"></param>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmGroupAccess.SetNodeCheckStatus(System.Windows.Forms.TreeNode,System.Boolean)">
+            <summary>
+            设置节点及其子节点的选中状态
+            </summary>
+            <param name="node"></param>
+            <param name="Checked"></param>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmGroupAccess.SetParentNodeStatus(System.Windows.Forms.TreeNode)">
+            <summary>
+            设置节点的父级节点的选中状态
+            </summary>
+            <param name="node">选定节点</param>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmGroupAccess.SaveGroupAccess">
+            <summary>
+            保存组权限
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmGroupAccess.RecursionSave(System.Windows.Forms.TreeNodeCollection,System.Int32)">
+            <summary>
+            用递归的方法遍历权限树保存组权限
+            </summary>
+            <param name="nodes"></param>
+            <param name="groupID"></param>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmGroupAccess.AddGroup(System.Int32)">
+            <summary>
+            添加新组
+            </summary>
+            <param name="AdminFlag">管理员组标志:1-管理员，0-普通组</param>
+        </member>
+        <member name="T:TrasenFrame.Forms.FrmMdiMain">
+            <summary>
+            系统主窗体
+            </summary>
+        </member>
+        <member name="F:TrasenFrame.Forms.FrmMdiMain.CurrentSystem">
+            <summary>
+            当前操作的系统
+            </summary>
+        </member>
+        <member name="F:TrasenFrame.Forms.FrmMdiMain.Database">
+            <summary>数据库访问器</summary>
+        </member>
+        <member name="F:TrasenFrame.Forms.FrmMdiMain.CurrentUser">
+            <summary>当前用户</summary>
+        </member>
+        <member name="F:TrasenFrame.Forms.FrmMdiMain.CurrentDept">
+            <summary>当前科室</summary>
+        </member>
+        <member name="F:TrasenFrame.Forms.FrmMdiMain.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmMdiMain.#ctor(System.String,System.String,System.Boolean)">
+            <summary>
+            主界面构造函数
+            </summary>
+            <param name="caption">标题</param>
+            <param name="maintProgramName">主程序名称</param>
+            <param name="checkRegister">是否检查软件注册情况</param>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmMdiMain.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmMdiMain.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要使用代码编辑器修改
+            此方法的内容。
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmMdiMain.StartupMain(System.String,TrasenFrame.Classes.ConnectionType,System.String,System.String,System.Boolean)">
+            <summary>
+            系统启动
+            </summary>
+            <param name="caption">标题</param>
+            <param name="connectionType">连接类别</param>
+            <param name="connectionString">连接字符串</param>
+            <param name="maintProgramName">主程序名称</param>
+            <param name="checkRegister">是否检查软件注册情况</param>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmMdiMain.MdiChildFormIsExist(System.Windows.Forms.Form,System.String)">
+            <summary>
+            判断Mdi子窗体是否已经打开
+            </summary>
+            <param name="mdiForm">MDI父窗体</param>
+            <param name="formText">MDI子窗体名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmMdiMain.MdiChildFormIsExist(System.Windows.Forms.Form,System.String,System.Windows.Forms.Form@)">
+            <summary>
+            判断Mdi子窗体是否已经打开
+            </summary>
+            <param name="mdiForm">MDI父窗体</param>
+            <param name="formText">MDI子窗体名称</param>
+            <param name="childForm">子窗体对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmMdiMain.CloseMdiChildForm(System.Windows.Forms.Form,System.String)">
+            <summary>
+            关闭指定MDI子窗体
+            </summary>
+            <param name="mdiForm">MDI父窗体</param>
+            <param name="formText">MDI子窗体名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmMdiMain.UpdateFile">
+            <summary>
+            更新升级程序文件
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmMdiMain.CheckRegister">
+            <summary>
+            检查软件注册情况
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmMdiMain.LoadSystemList">
+            <summary>
+            获取系统列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmMdiMain.LoadSystemMenuList(System.Int32)">
+            <summary>
+            获取每个系统的菜单
+            </summary>
+            <param name="SystemId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmMdiMain.InstanceCurrentDept">
+            <summary>
+            根据当前用户和系统实例化科室
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmMdiMain.LoadUserSystemMenu(System.Int32)">
+            <summary>
+            加载系统菜单
+            </summary>
+            <param name="SystemId"></param>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmMdiMain.AddSubMenu(System.Data.DataTable,TrasenFrame.Classes.MenuItemEx,System.Int32)">
+            <summary>
+            添加子菜单
+            </summary>
+            <param name="tableMenu"></param>
+            <param name="parentMenu"></param>
+            <param name="parentMenuId"></param>
+        </member>
+        <member name="T:TrasenFrame.Forms.FrmMenuProperty">
+            <summary>
+            菜单属性编辑对话框
+            </summary>
+        </member>
+        <member name="F:TrasenFrame.Forms.FrmMenuProperty.m_currentMenuId">
+            <summary>
+            当前菜单编号
+            </summary>
+        </member>
+        <member name="F:TrasenFrame.Forms.FrmMenuProperty.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmMenuProperty.#ctor(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="MenuId"></param>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmMenuProperty.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmMenuProperty.GetMenuInfo(System.Int32)">
+            <summary>
+            获取菜单信息
+            </summary>
+            <param name="MenuId"></param>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmMenuProperty.UpdateMenuInfo">
+            <summary>
+            更新菜单信息
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmMenuProperty.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要使用代码编辑器修改
+            此方法的内容。
+            </summary>
+        </member>
+        <member name="T:TrasenFrame.Forms.FrmMsgBox">
+            <summary>
+            消息框 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmMsgBox.#ctor(System.String,System.Drawing.Font,System.Drawing.Color,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxIcon,System.Windows.Forms.MessageBoxDefaultButton)">
+            <summary>
+            在指定对象前面显示具有指定文本的消息框
+            </summary>
+            <param name="text">消息框中要显示的文本</param>
+            <param name="font">要显示的文本的字体</param>
+            <param name="color">要显示的文本的颜色</param>
+            <param name="caption">要在消息框的标题栏显示的文本</param>
+            <param name="button">System.Windows.Forms.MessageBoxButtons之一，在消息框中显示哪些按钮</param>
+            <param name="icon">System.Windows.Forms.MessageBoxIcon之一，在消息框中显示什么符号</param>
+            <param name="defaultButton">定义默认按钮</param>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmMsgBox.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmMsgBox.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要使用代码编辑器修改
+            此方法的内容。
+            </summary>
+        </member>
+        <member name="T:TrasenFrame.Forms.FrmMessageBox">
+            <summary>
+            消息框（显示可包含文本、按钮和符号的消息框）
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmMessageBox.Show(System.String)">
+            <summary>
+             在指定对象前面显示具有指定文本的消息框
+            </summary>
+            <param name="text">要显示的文本</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmMessageBox.Show(System.String,System.String)">
+            <summary>
+            在指定对象前面显示具有指定文本的消息框
+            </summary>
+            <param name="text">要显示的文本</param>
+            <param name="caption">要在消息框的标题栏显示的文本</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmMessageBox.Show(System.String,System.String,System.Windows.Forms.MessageBoxButtons)">
+            <summary>
+            在指定对象前面显示具有指定文本的消息框
+            </summary>
+            <param name="text">要显示的文本</param>
+            <param name="caption">要在消息框的标题栏显示的文本</param>
+            <param name="button">System.Windows.Forms.MessageBoxButtons之一，在消息框中显示哪些按钮</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmMessageBox.Show(System.String,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxIcon)">
+            <summary>
+            在指定对象前面显示具有指定文本的消息框
+            </summary>
+            <param name="text">要显示的文本</param>
+            <param name="caption">要在消息框的标题栏显示的文本</param>
+            <param name="button">System.Windows.Forms.MessageBoxButtons之一，在消息框中显示哪些按钮</param>
+            <param name="icon">System.Windows.Forms.MessageBoxIcon之一，在消息框中显示什么符号</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmMessageBox.Show(System.String,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxIcon,System.Windows.Forms.MessageBoxDefaultButton)">
+            <summary>
+            在指定对象前面显示具有指定文本的消息框
+            </summary>
+            <param name="text">要显示的文本</param>
+            <param name="caption">要在消息框的标题栏显示的文本</param>
+            <param name="button">System.Windows.Forms.MessageBoxButtons之一，在消息框中显示哪些按钮</param>
+            <param name="icon">System.Windows.Forms.MessageBoxIcon之一，在消息框中显示什么符号</param>
+            <param name="defaultButton">定义默认按钮</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmMessageBox.Show(System.String,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxDefaultButton)">
+            <summary>
+            在指定对象前面显示具有指定文本的消息框
+            </summary>
+            <param name="text">要显示的文本</param>
+            <param name="caption">要在消息框的标题栏显示的文本</param>
+            <param name="button">System.Windows.Forms.MessageBoxButtons之一，在消息框中显示哪些按钮</param>
+            <param name="defaultButton">定义默认按钮</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmMessageBox.Show(System.String,System.Drawing.Font,System.Drawing.Color,System.String)">
+            <summary>
+            在指定对象前面显示具有指定文本的消息框
+            </summary>
+            <param name="text">消息框中要显示的文本</param>
+            <param name="font">要显示的文本的字体</param>
+            <param name="color">要显示的文本的颜色</param>
+            <param name="caption">要在消息框的标题栏显示的文本</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmMessageBox.Show(System.String,System.Drawing.Font,System.Drawing.Color,System.String,System.Windows.Forms.MessageBoxButtons)">
+            <summary>
+            在指定对象前面显示具有指定文本的消息框
+            </summary>
+            <param name="text">消息框中要显示的文本</param>
+            <param name="font">要显示的文本的字体</param>
+            <param name="color">要显示的文本的颜色</param>
+            <param name="caption">要在消息框的标题栏显示的文本</param>
+            <param name="button">System.Windows.Forms.MessageBoxButtons之一，在消息框中显示哪些按钮</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmMessageBox.Show(System.String,System.Drawing.Font,System.Drawing.Color,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxIcon)">
+            <summary>
+            在指定对象前面显示具有指定文本的消息框
+            </summary>
+            <param name="text">消息框中要显示的文本</param>
+            <param name="font">要显示的文本的字体</param>
+            <param name="color">要显示的文本的颜色</param>
+            <param name="caption">要在消息框的标题栏显示的文本</param>
+            <param name="button">System.Windows.Forms.MessageBoxButtons之一，在消息框中显示哪些按钮</param>
+            <param name="icon">System.Windows.Forms.MessageBoxIcon之一，在消息框中显示什么符号</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmMessageBox.Show(System.String,System.Drawing.Font,System.Drawing.Color,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxDefaultButton)">
+            <summary>
+            在指定对象前面显示具有指定文本的消息框
+            </summary>
+            <param name="text">消息框中要显示的文本</param>
+            <param name="font">要显示的文本的字体</param>
+            <param name="color">要显示的文本的颜色</param>
+            <param name="caption">要在消息框的标题栏显示的文本</param>
+            <param name="button">System.Windows.Forms.MessageBoxButtons之一，在消息框中显示哪些按钮</param>
+            <param name="defaultButton">定义默认按钮</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmMessageBox.Show(System.String,System.Drawing.Font,System.Drawing.Color,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxIcon,System.Windows.Forms.MessageBoxDefaultButton)">
+            <summary>
+            在指定对象前面显示具有指定文本的消息框
+            </summary>
+            <param name="text">消息框中要显示的文本</param>
+            <param name="font">要显示的文本的字体</param>
+            <param name="color">要显示的文本的颜色</param>
+            <param name="caption">要在消息框的标题栏显示的文本</param>
+            <param name="button">System.Windows.Forms.MessageBoxButtons之一，在消息框中显示哪些按钮</param>
+            <param name="icon">System.Windows.Forms.MessageBoxIcon之一，在消息框中显示什么符号</param>
+            <param name="defaultButton">定义默认按钮</param>
+            <returns></returns>
+        </member>
+        <member name="T:TrasenFrame.Forms.FrmParaSetting">
+            <summary>
+            参数设置对话框
+            </summary>
+        </member>
+        <member name="F:TrasenFrame.Forms.FrmParaSetting.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmParaSetting.#ctor">
+            <summary>
+            参数设置窗口构造函数
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmParaSetting.#ctor(System.String)">
+            <summary>
+            参数设置窗口构造函数
+            </summary>
+            <param name="chineseName">标题</param>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmParaSetting.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmParaSetting.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要使用代码编辑器修改
+            此方法的内容。
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmParaSetting.LoadImeMode">
+            <summary>
+            输入法
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmParaSetting.LoadSearchType">
+            <summary>
+            过滤方式
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmParaSetting.LoadFilterType">
+            <summary>
+            过滤字段
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmParaSetting.LoadBackGround">
+            <summary>
+            背景图片路径
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmParaSetting.LoadDefaultCom">
+            <summary>
+             COM口
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmParaSetting.LoadModuleMenu">
+            <summary>
+            该登录模块所有菜单
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmParaSetting.LoadDefaultPrinter">
+            <summary>
+            发票打印机\报表打印机
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmParaSetting.GetSelectIndex(System.Windows.Forms.ComboBox,System.Object)">
+            <summary>
+            寻找选择项
+            </summary>
+            <param name="cmb"></param>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="T:TrasenFrame.Forms.FrmReportView">
+            <summary>
+            报表打印预揽对话框
+            </summary>
+        </member>
+        <member name="F:TrasenFrame.Forms.FrmReportView.CryRepViw">
+            <summary>
+            CrystalReportViewer
+            </summary>
+        </member>
+        <member name="F:TrasenFrame.Forms.FrmReportView.LoadReportSuccess">
+            <summary>
+            报表是否加载成功
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmReportView.#ctor">
+            <summary>
+            报表打印类构造函数
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmReportView.#ctor(System.Object,System.String,TrasenClasses.GeneralClasses.ParameterEx[])">
+            <summary>
+            根据报表文件的路径及数据源显示报表
+            </summary>
+            <param name="reportDataSource">报表数据源</param>
+            <param name="reportFilePath">报表文件路径</param>
+            <param name="parameters">报表参数</param>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmReportView.#ctor(System.Object,System.String,TrasenClasses.GeneralClasses.ParameterEx[],System.Boolean)">
+            <summary>
+            根据报表文件的路径及数据源显示报表
+            </summary>
+            <param name="reportDataSource">报表数据源</param>
+            <param name="reportFilePath">报表文件路径</param>
+            <param name="parameters">报表参数</param>
+            <param name="toPrinter">是否直接打印</param>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmReportView.#ctor(System.Object,System.String,TrasenClasses.GeneralClasses.ParameterEx[],System.Boolean,System.String)">
+            <summary>
+            根据报表文件的路径及数据源显示报表
+            </summary>
+            <param name="reportDataSource">报表数据源</param>
+            <param name="reportFilePath">报表文件路径</param>
+            <param name="parameters">报表参数</param>
+            <param name="toPrinter">是否直接打印</param>
+            <param name="printName">打印机名称</param>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmReportView.#ctor(System.Object,System.String,TrasenClasses.GeneralClasses.ParameterEx[],System.Boolean,System.Boolean)">
+            <summary>
+            根据报表文件的路径及数据源显示报表
+            </summary>
+            <param name="reportDataSource">报表数据源</param>
+            <param name="reportFilePath">报表文件路径</param>
+            <param name="parameters">报表参数</param>
+            <param name="toPrinter">是否直接打印</param>
+            <param name="localLogin">是否本机数据库报表打印</param>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmReportView.#ctor(System.Object,System.String,TrasenClasses.GeneralClasses.ParameterEx[],System.Boolean,System.Boolean,System.String)">
+            <summary>
+            根据报表文件的路径及数据源显示报表
+            </summary>
+            <param name="reportDataSource">报表数据源</param>
+            <param name="reportFilePath">报表文件路径</param>
+            <param name="parameters">报表参数</param>
+            <param name="toPrinter">是否直接打印</param>
+            <param name="localLogin">是否本机数据库报表打印</param>
+            <param name="printName">打印机名称</param>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmReportView.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmReportView.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要使用代码编辑器修改
+            此方法的内容。
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmReportView.GetCustomReportPath(System.String,System.Boolean)">
+            <summary>
+            取得用户自定义报表文件路径，如果不存在则从path拷贝只自定义路径下
+            </summary>
+            <param name="path">当前报表路径</param>
+            <param name="localLogin">是否为本机登录</param>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmReportView.DirectPrint(System.Object,System.String,TrasenClasses.GeneralClasses.ParameterEx[],System.Boolean,System.String,System.Boolean)">
+            <summary>
+            直接打印
+            </summary>
+            <param name="reportDataSource">报表数据源</param>
+            <param name="reportFilePath">报表文件路径</param>
+            <param name="parameters">参数集合</param>
+            <param name="localLogin">是否本机登录</param>
+            <param name="printName">打印机名称</param>
+            <param name="actualReportFilePath">报表文件路径是否为实际路径</param>
+            <returns>打印是否成功</returns>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmReportView.LoadReport">
+            <summary>
+            加载报表文件
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmReportView.GetCustomReportPath(System.String)">
+            <summary>
+            将运行环境下报表路径转换成自定义路径
+            </summary>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="P:TrasenFrame.Forms.FrmReportView.IsPrinted">
+            <summary>
+            判断用户是否点击了打印按钮
+            </summary>
+        </member>
+        <member name="T:TrasenFrame.Forms.FrmSelectDept">
+            <summary>
+            登录科室选择对话框
+            </summary>
+        </member>
+        <member name="F:TrasenFrame.Forms.FrmSelectDept.SelectedDeptId">
+            <summary>
+            选择的科室编号
+            </summary>
+        </member>
+        <member name="F:TrasenFrame.Forms.FrmSelectDept.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmSelectDept.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmSelectDept.#ctor(System.Int32)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="EmployeeId">人员编号</param>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmSelectDept.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmSelectDept.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要使用代码编辑器修改
+            此方法的内容。
+            </summary>
+        </member>
+        <member name="T:TrasenFrame.Forms.FrmSelectSys">
+            <summary>
+            登录系统选择对话框
+            </summary>
+        </member>
+        <member name="F:TrasenFrame.Forms.FrmSelectSys.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmSelectSys.#ctor">
+            <summary>
+            选择系统对话框
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmSelectSys.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmSelectSys.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要使用代码编辑器修改
+            此方法的内容。
+            </summary>
+        </member>
+        <member name="T:TrasenFrame.Forms.FrmShowCard">
+            <summary>
+            Fshowcard 的摘要说明。
+            </summary>
+        </member>
+        <member name="F:TrasenFrame.Forms.FrmShowCard.dataRow">
+            <summary>
+            返回的行
+            </summary>
+        </member>
+        <member name="F:TrasenFrame.Forms.FrmShowCard.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmShowCard.#ctor(System.String[],System.Int32[],System.String[],TrasenFrame.Classes.FilterType,System.String,System.String)">
+            <summary>
+            FrmShowCard
+            </summary>
+            <param name="GrdMappingName">行标头数组</param>
+            <param name="GrdWidth">行宽度数组</param>
+            <param name="sfield">要查找的字段数组，长度5位,根据权举的值依次放在数组的不同位置</param>
+            <param name="dmType">查找方式权举</param>
+            <param name="dmText">查询的字符串</param>
+            <param name="ssql">查询的基本SQL语句。最少带一个WHERE条件</param>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmShowCard.SelectRow(System.Data.DataRow)">
+            <summary>
+            选择记录
+            </summary>
+            <param name="row"></param>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmShowCard.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmShowCard.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要使用代码编辑器修改
+            此方法的内容。
+            </summary>
+        </member>
+        <member name="T:TrasenFrame.Forms.FrmSystemSet">
+            <summary>
+            系统定义，系统菜单设置对话框
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmSystemSet.#ctor">
+            <summary>
+            系统设置
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmSystemSet.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmSystemSet.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要使用代码编辑器修改
+            此方法的内容。
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmSystemSet.CreateGridColumnStyle">
+            <summary>
+            创建表头式样
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmSystemSet.LoadDll">
+            <summary>
+            加载本地dll信息
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmSystemSet.LoadMenu">
+            <summary>
+            加载已经保存的菜单列表
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmSystemSet.LoadSystem">
+            <summary>
+            加载已经定义的系统列表
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmSystemSet.DisplaySystemMenuStruct(System.Int32)">
+            <summary>
+            显示选中的系统的菜单结构
+            </summary>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmSystemSet.AddSubMenu(System.Data.DataTable,System.Windows.Forms.TreeNode,System.Int32)">
+            <summary>
+            添加子菜单
+            </summary>
+            <param name="tableMenu"></param>
+            <param name="parentMenu"></param>
+            <param name="parentMenuId"></param>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmSystemSet.EditSystem(System.Boolean,System.Int32,System.String,System.Int32,System.Int32)">
+            <summary>
+            编辑系统信息
+            </summary>
+            <param name="IsEdit"></param>
+            <param name="sysId"></param>
+            <param name="sysName"></param>
+            <param name="sortId"></param>
+            <param name="deleteBit"></param>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmSystemSet.AddSystemMenu(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            添加系统菜单,,返回0则表示没有添加成功
+            </summary>
+            <param name="systemId">系统编号</param>
+            <param name="menuId">菜单编号</param>
+            <param name="parentMenuId">父级菜单编号</param>
+            <returns>新增加的菜单编号,返回0则表示没有添加成功</returns>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmSystemSet.AddSystemTopMenu(System.Int32,System.Int32,System.String,System.Boolean)">
+            <summary>
+            添加系统顶级菜单,,返回0则表示没有添加成功
+            </summary>
+            <param name="systemId">系统编号</param>
+            <param name="menuName">顶级菜单名称</param>
+            <param name="Invalid"></param>
+            <param name="menuId"></param>
+            <returns>新增加的菜单编号,返回0则表示没有添加成功</returns>
+        </member>
+        <member name="M:TrasenFrame.Forms.FrmSystemSet.RemmoveSystemMenu(System.Int32)">
+            <summary>
+            移除系统菜单中的某个菜单
+            </summary>
+            <param name="SystemMenuId"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,344 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1C403DA4-C970-40E4-9BBB-D9556BD898FA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ts_Clinicalpathway_Factory</RootNamespace>
+    <AssemblyName>Ts_Clinicalpathway_Factory</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data3, Version=3.2.1.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Output\DevExpress.Data3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils3, Version=3.2.1.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Output\DevExpress.Utils3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors3, Version=3.2.1.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Output\DevExpress.XtraEditors3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid3, Version=3.2.1.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Output\DevExpress.XtraGrid3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar3, Version=2.7.1.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Output\DevExpress.XtraNavBar3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting3, Version=1.12.1.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Output\DevExpress.XtraPrinting3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList3, Version=1.11.1.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Output\DevExpress.XtraTreeList3.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetMagic2005, Version=5.2.2.0, Culture=neutral, PublicKeyToken=1e278c7e71fd1bc6, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Output\DotNetMagic2005.dll</HintPath>
+    </Reference>
+    <Reference Include="Excel, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Output\Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Inscription.Manadal.EmrPlugIn, Version=1.0.4987.30237, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DLL引用\Inscription.Manadal.EmrPlugIn.dll</HintPath>
+    </Reference>
+    <Reference Include="MyFlowWay, Version=1.0.4577.16673, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Output\MyFlowWay.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TrasenClasses, Version=5.1.5008.25552, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Output\TrasenClasses.dll</HintPath>
+    </Reference>
+    <Reference Include="TrasenFrame, Version=5.1.5008.25537, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Output\TrasenFrame.dll</HintPath>
+    </Reference>
+    <Reference Include="Ts_Ba_tj, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Output\Ts_Ba_tj.dll</HintPath>
+    </Reference>
+    <Reference Include="Ts_ClinicalPath_Statistics, Version=1.0.0.26375, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Output\Ts_ClinicalPath_Statistics.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="DevExtend.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FrmBy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBy.Designer.cs">
+      <DependentUpon>FrmBy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPsTs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPsTs.Designer.cs">
+      <DependentUpon>FrmPsTs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReasonSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReasonSet.Designer.cs">
+      <DependentUpon>FrmReasonSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstanceForm.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCpTj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCpTj.Designer.cs">
+      <DependentUpon>FrmCpTj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIntoPathway.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIntoPathway.Designer.cs">
+      <DependentUpon>FrmIntoPathway.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmQiutPath.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmQiutPath.Designer.cs">
+      <DependentUpon>FrmQiutPath.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSerch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSerch.Designer.cs">
+      <DependentUpon>FrmSerch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStepselect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStepselect.Designer.cs">
+      <DependentUpon>FrmStepselect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStopOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStopOrder.Designer.cs">
+      <DependentUpon>FrmStopOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTsCpInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTsCpInfo.Designer.cs">
+      <DependentUpon>FrmTsCpInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="PublicFunction.cs" />
+    <Compile Include="Ts_Cp_factory.cs" />
+    <Compile Include="ts_cp_interface.cs" />
+    <Compile Include="Ts_Manadal_path.cs" />
+    <Compile Include="Ts_ts_pathway.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DevExtend.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DevExtend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBy.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmBy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCpTj.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmCpTj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIntoPathway.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmIntoPathway.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPsTs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmPsTs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmQiutPath.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmQiutPath.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReasonSet.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmReasonSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSerch.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmSerch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStepselect.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmStepselect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStopOrder.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmStopOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTsCpInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmTsCpInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\226.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HDD.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\112.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bj.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\138.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\147.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Resources\224.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Toolbar _ Movies _ alternative.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder open.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HAND2.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HAND.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HOUSE.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TICK.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NEEDLE.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PERSON2.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PERSON.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\177.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Download Drive 2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Application _ iCal.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Application _ iMovie.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Application _ Mail.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Application _ Sherlock.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnbj.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\132.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\216.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

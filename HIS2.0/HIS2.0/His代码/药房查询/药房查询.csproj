@@ -1,0 +1,469 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FE2E1C98-3D44-4A76-823A-990BA30B536B}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>App.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>ts_yf_cx</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ts_yf_cx</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\..\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Excel, Version=1.3.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="myDataGrid, Version=1.0.1373.27523, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Debug\myDataGrid.DLL</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="Trasen.Controls, Version=1.0.0.57, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="TrasenClasses, Version=11.2.15.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Debug\TrasenClasses.dll</HintPath>
+    </Reference>
+    <Reference Include="TrasenFrame, Version=11.2.15.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Debug\TrasenFrame.dll</HintPath>
+    </Reference>
+    <Reference Include="TszyHIS, Version=1.0.3799.20369, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ts_jc_log, Version=12.3.4717.18354, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ts_mz_brxx, Version=1.0.3992.27620, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Debug\ts_mz_brxx.dll</HintPath>
+    </Reference>
+    <Reference Include="ts_mz_class, Version=10.12.18.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Debug\ts_mz_class.dll</HintPath>
+    </Reference>
+    <Reference Include="ts_Yk_ReportView, Version=1.0.4075.20807, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ts_YpClass, Version=1.0.4003.29881, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Debug\ts_YpClass.dll</HintPath>
+    </Reference>
+    <Reference Include="Ts_zyys_public, Version=1.0.4203.19880, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App.ico" />
+    <Content Include="obj\药房查询.csproj.FileListAbsolute.txt" />
+    <Content Include="ts_yf_cx.csproj" />
+    <Content Include="药房查询\App.ico" />
+    <Content Include="药房查询\bin\Debug\MagicLibrary.dll" />
+    <Content Include="药房查询\bin\Debug\myDataGrid.DLL" />
+    <Content Include="药房查询\bin\Debug\PrintClass.pdb" />
+    <Content Include="药房查询\bin\Debug\TrasenClasses.pdb" />
+    <Content Include="药房查询\bin\Debug\TrasenClasses.xml" />
+    <Content Include="药房查询\bin\Debug\TrasenFrame.pdb" />
+    <Content Include="药房查询\bin\Debug\TrasenMessage.dll" />
+    <Content Include="药房查询\bin\Debug\TrasenMessage.pdb" />
+    <Content Include="药房查询\bin\Debug\ts_HospData_Share.dll" />
+    <Content Include="药房查询\bin\Debug\ts_HospData_Share.pdb" />
+    <Content Include="药房查询\bin\Debug\ts_mz_brxx.dll" />
+    <Content Include="药房查询\bin\Debug\ts_mz_brxx.pdb" />
+    <Content Include="药房查询\bin\Debug\ts_mz_class.dll" />
+    <Content Include="药房查询\bin\Debug\ts_mz_class.pdb" />
+    <Content Include="药房查询\bin\Debug\ts_yf_cx.dll" />
+    <Content Include="药房查询\bin\Debug\ts_yf_cx.pdb" />
+    <Content Include="药房查询\bin\Debug\ts_Yk_ReportView.dll" />
+    <Content Include="药房查询\bin\Debug\ts_Yk_ReportView.pdb" />
+    <Content Include="药房查询\bin\Debug\ts_YpClass.pdb" />
+    <Content Include="药房查询\obj\Debug\Refactor\ts_yf_cx.dll" />
+    <Content Include="药房查询\obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
+    <Content Include="药房查询\obj\Debug\ts_yf_cx.dll" />
+    <Content Include="药房查询\obj\Debug\ts_yf_cx.pdb" />
+    <Content Include="药房查询\obj\ts_yf_cx.csproj.FileListAbsolute.txt" />
+    <Content Include="药房查询\obj\药房查询.csproj.FileList.txt" />
+    <Content Include="药房查询\obj\药房查询.csproj.FileListAbsolute.txt" />
+    <Content Include="药房查询\ts_yf_cx.csproj" />
+    <Content Include="药房查询\药房查询.csproj" />
+    <Content Include="药房查询\药房查询.csproj.user" />
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Frmcfcx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmdjcx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmgqyptj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmgqyptj.Designer.cs">
+      <DependentUpon>Frmgqyptj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmjmypcx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmjmypcx.Designer.cs">
+      <DependentUpon>Frmjmypcx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmjytmdy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmkccx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmkjywzbtj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmkjywzbtj.Designer.cs">
+      <DependentUpon>Frmkjywzbtj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmkssdddtj_zy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmkssdddtj_zy.designer.cs">
+      <DependentUpon>Frmkssdddtj_zy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMzcfcx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmqykccx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmtjmx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmtyqktj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmypmxz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InstanceForm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Frmzycfcx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Frmjyfdy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmjyfdy.Designer.cs">
+      <DependentUpon>Frmjyfdy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmdjhz_fkbl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PubClass.cs" />
+    <Compile Include="药房查询\AssemblyInfo.cs" />
+    <Compile Include="药房查询\Frmcfcx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="药房查询\Frmgqyptj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="药房查询\Frmgqyptj.Designer.cs">
+      <DependentUpon>Frmgqyptj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="药房查询\Frmkccx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="药房查询\Frmkjywzbtj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="药房查询\Frmkjywzbtj.Designer.cs">
+      <DependentUpon>Frmkjywzbtj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="药房查询\Frmkssdddtj_zy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="药房查询\Frmkssdddtj_zy.designer.cs">
+      <DependentUpon>Frmkssdddtj_zy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="药房查询\FrmMzcfcx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="药房查询\Frmqykccx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="药房查询\Frmtjmx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="药房查询\Frmtyqktj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="药房查询\Frmypmxz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="药房查询\Frmzycfcx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="药房查询\InstanceForm.cs" />
+    <Compile Include="药房查询\Properties\AssemblyInfo.cs" />
+    <Compile Include="药房查询\Properties\Resources.Designer.cs" />
+    <EmbeddedResource Include="Frmcfcx.resx">
+      <DependentUpon>Frmcfcx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmdjcx.resx">
+      <DependentUpon>Frmdjcx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmgqyptj.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frmgqyptj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmjmypcx.resx">
+      <DependentUpon>Frmjmypcx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmjytmdy.resx">
+      <DependentUpon>Frmjytmdy.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmkccx.resx">
+      <DependentUpon>Frmkccx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmkjywzbtj.resx">
+      <DependentUpon>Frmkjywzbtj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmkssdddtj_zy.resx">
+      <DependentUpon>Frmkssdddtj_zy.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMzcfcx.resx">
+      <DependentUpon>FrmMzcfcx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmqykccx.resx">
+      <DependentUpon>Frmqykccx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmtjmx.resx">
+      <DependentUpon>Frmtjmx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmtyqktj.resx">
+      <DependentUpon>Frmtyqktj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmypmxz.resx">
+      <DependentUpon>Frmypmxz.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmzycfcx.resx">
+      <DependentUpon>Frmzycfcx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\ts_yf_cx.Frmdjcx.resources" />
+    <EmbeddedResource Include="obj\Debug\ts_yf_cx.Frmdjhz_fkbl.resources" />
+    <EmbeddedResource Include="obj\Debug\ts_yf_cx.Frmgqyptj.resources" />
+    <EmbeddedResource Include="obj\Debug\ts_yf_cx.Frmjyfdy.resources" />
+    <EmbeddedResource Include="obj\Debug\ts_yf_cx.Frmkccx.resources" />
+    <EmbeddedResource Include="obj\Debug\ts_yf_cx.Frmkjywzbtj.resources" />
+    <EmbeddedResource Include="obj\Debug\ts_yf_cx.Frmkssdddtj_zy.resources" />
+    <EmbeddedResource Include="obj\Debug\ts_yf_cx.FrmMzcfcx.resources" />
+    <EmbeddedResource Include="obj\Debug\ts_yf_cx.Frmqykccx.resources" />
+    <EmbeddedResource Include="obj\Debug\ts_yf_cx.Frmtjmx.resources" />
+    <EmbeddedResource Include="obj\Debug\ts_yf_cx.Frmtyqktj.resources" />
+    <EmbeddedResource Include="obj\Debug\ts_yf_cx.Frmypmxz.resources" />
+    <EmbeddedResource Include="obj\Debug\ts_yf_cx.Frmzycfcx.resources" />
+    <EmbeddedResource Include="obj\Debug\ts_yf_cx.Properties.Resources.resources" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmjyfdy.resx">
+      <DependentUpon>Frmjyfdy.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmdjhz_fkbl.resx">
+      <DependentUpon>Frmdjhz_fkbl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="药房查询\Frmcfcx.resx">
+      <DependentUpon>Frmcfcx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="药房查询\Frmgqyptj.resx">
+      <DependentUpon>Frmgqyptj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="药房查询\Frmkccx.resx">
+      <DependentUpon>Frmkccx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="药房查询\Frmkjywzbtj.resx">
+      <DependentUpon>Frmkjywzbtj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="药房查询\Frmkssdddtj_zy.resx">
+      <DependentUpon>Frmkssdddtj_zy.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="药房查询\FrmMzcfcx.resx">
+      <DependentUpon>FrmMzcfcx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="药房查询\Frmqykccx.resx">
+      <DependentUpon>Frmqykccx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="药房查询\Frmtjmx.resx">
+      <DependentUpon>Frmtjmx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="药房查询\Frmtyqktj.resx">
+      <DependentUpon>Frmtyqktj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="药房查询\Frmypmxz.resx">
+      <DependentUpon>Frmypmxz.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="药房查询\Frmzycfcx.resx">
+      <DependentUpon>Frmzycfcx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="药房查询\obj\Debug\ts_yf_cx.Frmgqyptj.resources" />
+    <EmbeddedResource Include="药房查询\obj\Debug\ts_yf_cx.Frmkccx.resources" />
+    <EmbeddedResource Include="药房查询\obj\Debug\ts_yf_cx.Frmkjywzbtj.resources" />
+    <EmbeddedResource Include="药房查询\obj\Debug\ts_yf_cx.Frmkssdddtj_zy.resources" />
+    <EmbeddedResource Include="药房查询\obj\Debug\ts_yf_cx.FrmMzcfcx.resources" />
+    <EmbeddedResource Include="药房查询\obj\Debug\ts_yf_cx.Frmqykccx.resources" />
+    <EmbeddedResource Include="药房查询\obj\Debug\ts_yf_cx.Frmtjmx.resources" />
+    <EmbeddedResource Include="药房查询\obj\Debug\ts_yf_cx.Frmtyqktj.resources" />
+    <EmbeddedResource Include="药房查询\obj\Debug\ts_yf_cx.Frmypmxz.resources" />
+    <EmbeddedResource Include="药房查询\obj\Debug\ts_yf_cx.Frmzycfcx.resources" />
+    <EmbeddedResource Include="药房查询\obj\Debug\ts_yf_cx.Properties.Resources.resources" />
+    <EmbeddedResource Include="药房查询\Properties\Resources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Desktop_1.ini" />
+    <None Include="mssccprj.scc" />
+    <None Include="obj\Debug\药房查询.csproj.GenerateResource.Cache" />
+    <None Include="vssver2.scc" />
+    <None Include="明细.xlsx" />
+    <None Include="汇总.xlsx" />
+    <None Include="药品汇总.xlsx" />
+    <None Include="药房查询.csproj.pdsync" />
+    <None Include="药房查询.csproj.pdsyncu" />
+    <None Include="药房查询\bin\Debug\Desktop_1.ini" />
+    <None Include="药房查询\bin\Debug\vssver2.scc" />
+    <None Include="药房查询\bin\Desktop_1.ini" />
+    <None Include="药房查询\Desktop_1.ini" />
+    <None Include="药房查询\mssccprj.scc" />
+    <None Include="药房查询\obj\Debug\Desktop_1.ini" />
+    <None Include="药房查询\obj\Debug\Refactor\Desktop_1.ini" />
+    <None Include="药房查询\obj\Debug\Refactor\vssver2.scc" />
+    <None Include="药房查询\obj\Debug\TempPE\Desktop_1.ini" />
+    <None Include="药房查询\obj\Debug\temp\Desktop_1.ini" />
+    <None Include="药房查询\obj\Debug\ts_yf_cx.csproj.GenerateResource.Cache" />
+    <None Include="药房查询\obj\Debug\vssver2.scc" />
+    <None Include="药房查询\obj\Debug\药房查询.csproj.GenerateResource.Cache" />
+    <None Include="药房查询\obj\Desktop_1.ini" />
+    <None Include="药房查询\obj\vssver2.scc" />
+    <None Include="药房查询\Properties\Desktop_1.ini" />
+    <None Include="药房查询\vssver2.scc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

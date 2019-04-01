@@ -1,0 +1,10 @@
+E:\HIS2.0\His代码\Ts_zyys_jysq\obj\Debug\Ts_zyys_jysq.csprojResolveAssemblyReference.cache
+E:\HIS2.0\His代码\Ts_zyys_jysq\obj\Debug\Ts_zyys_jysq.Control_jysq.resources
+E:\HIS2.0\His代码\Ts_zyys_jysq\obj\Debug\Ts_zyys_jysq.Form1.resources
+E:\HIS2.0\His代码\Ts_zyys_jysq\obj\Debug\Ts_zyys_jysq.FrmJyBb_fjsm.resources
+E:\HIS2.0\His代码\Ts_zyys_jysq\obj\Debug\Ts_zyys_jysq.FrmJYSQ.resources
+E:\HIS2.0\His代码\Ts_zyys_jysq\obj\Debug\Ts_zyys_jysq.FrmJyxmBm.resources
+E:\HIS2.0\His代码\Ts_zyys_jysq\obj\Debug\Ts_zyys_jysq.FrmSample.resources
+E:\HIS2.0\His代码\Ts_zyys_jysq\obj\Debug\Ts_zyys_jysq.Properties.Resources.resources
+E:\HIS2.0\His代码\Ts_zyys_jysq\obj\Debug\Ts_zyys_jysq.csproj.GenerateResource.cache
+E:\HIS2.0\His代码\Ts_zyys_jysq\obj\Debug\Ts_zyys_jysq.csproj.CoreCompileInputs.cache

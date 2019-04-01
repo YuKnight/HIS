@@ -1,0 +1,151 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ts_zyhs_classes</name>
+    </assembly>
+    <members>
+        <member name="T:ts_zyhs_classes.BaseFunc">
+            <summary>
+            护士站的基本函数
+            </summary>
+        </member>
+        <member name="M:ts_zyhs_classes.BaseFunc.InitGrd(System.String[],System.String[],System.Int32[],System.Windows.Forms.DataGrid)">
+            <summary>
+            初始化datagird
+            </summary>
+            <param name="GrdMappingName"></param> MappingName数组
+            <param name="GrdHeaderText"></param>  GrdHeaderText数组
+            <param name="GrdWidth"></param> Width数组
+            <param name="myTb"></param> 
+            <param name="dataGrid1"></param>
+        </member>
+        <member name="M:ts_zyhs_classes.BaseFunc.InitmyGrd(System.String[],System.String[],System.Int32[],System.Boolean[],TrasenClasses.GeneralControls.DataGridEx)">
+            <summary>
+            初始化mydatagird
+            </summary>
+            <param name="GrdMappingName"></param> MappingName数组
+            <param name="GrdHeaderText"></param>  GrdHeaderText数组
+            <param name="GrdWidth"></param>       Width数组
+            <param name="GrdReadOnly"></param>    ReadOnly数组
+            <param name="mydataGrid"></param>
+        </member>
+        <member name="M:ts_zyhs_classes.BaseFunc.GetBinOrdrs(System.String,System.Int64,System.Int64,System.Int32,System.Int32,System.Int64,System.DateTime,System.String)">
+            <summary>
+            病人医嘱查询
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ts_zyhs_classes.BaseFunc.GetBinOrdrsSSMZ(System.String,System.Int64,System.Int64,System.Int32,System.Int32,System.Int64,System.DateTime,System.String)">
+            <summary>
+            病人医嘱查询-手术麻醉
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ts_zyhs_classes.BaseFunc.GetYPTLD(System.Int64,System.String,System.Int32)">
+            <summary>
+            药品统领单
+            </summary>
+            <param name="_applyId"></param>
+            <param name="_wardId"></param>
+            <param name="_tlfs"></param>统领方式（0=普通1=缺药）
+            <returns></returns>
+        </member>
+        <member name="M:ts_zyhs_classes.BaseFunc.GetJSYTLD(System.String,System.String)">
+            <summary>
+            基数药统领单（按单种药品统计）
+            </summary>
+            <param name="wardid">病区ID</param>
+            <param name="shh">药品货号</param>
+            <returns></returns>
+        </member>
+        <member name="M:ts_zyhs_classes.BaseFunc.ExecOrdersWithData(TrasenClasses.GeneralControls.DataGridEx,System.Int32,System.Int32,System.Windows.Forms.ProgressBar,System.Int64,System.Int64,System.DateTime,System.DateTime,System.Boolean)">
+            <summary>
+            发送医嘱
+            </summary>
+            <param name="myDataGrid"></param>指定发送网格内选定数据
+            <param name="MNGType"></param>医嘱类型 0长期医嘱 1临时医嘱 2长期账单 4临时账单 9所有医嘱和账单
+            <param name="Kind"></param>0所有 1选择 2不发送 3仅药品
+            <param name="progressBar1"></param>滚动条
+            <param name="BinID"></param>病人inpatient_id
+            <param name="BabyID"></param>baby_id
+            <param name="BookDate"></param>操作时间
+            <param name="ExecDate"></param>执行时间
+            <param name="_isExecCurDeptOrder"></param>是否只执行执行科室为本科室医嘱
+            <returns></returns>
+        </member>
+        <member name="M:ts_zyhs_classes.BaseFunc.ExecOrdersWithData(System.Int64,System.String,System.Int64,System.Int64,System.Int64,System.DateTime)">
+            <summary>
+            发送医嘱（手术麻醉用），执行直接发送药品
+            </summary>
+            <param name="DeptId"></param>科室ID
+            <param name="WardId"></param>病区ID
+            <param name="EmpId"></param>employee_id
+            <param name="BinID"></param>病人inpatient_id
+            <param name="BabyID"></param>baby_id
+            <param name="ExecDate"></param>执行时间
+            <returns></returns>
+        </member>
+        <member name="M:ts_zyhs_classes.BaseFunc.SendYPFY(System.Int32,System.Int32,System.String,System.Int64,System.DateTime,System.Int64)">
+            <summary>
+            药品统领
+            </summary>
+            <param name="TLFS"></param>统领方式（0=普通[1=缺药 该种状态仅供查询]2=重新发送）
+            <param name="MsgType"></param>消息类型（0=普通1=退药）
+            <param name="WardID"></param>病区
+            <param name="NurseID"></param>执行护士
+            <param name="SendDate"></param>日期
+            <param name="ExecDept_Id"></param>执行药房
+            <returns></returns>
+        </member>
+        <member name="M:ts_zyhs_classes.BaseFunc.GetMinExecYE(System.Int64)">
+            <summary>
+            得到该科室医嘱执行的最小余额
+            </summary>
+        </member>
+        <member name="M:ts_zyhs_classes.BaseFunc.GetMinExecYE(System.Int64,TrasenClasses.DatabaseAccess.RelationalDatabase)">
+            <summary>
+            得到该科室医嘱执行的最小余额
+            </summary>
+        </member>
+        <member name="M:ts_zyhs_classes.BaseFunc.IsHSZ(System.Int32)">
+            <summary>
+            是否护士长
+            </summary>
+            <param name="emp_id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ts_zyhs_classes.BaseFunc.IsZZHS(System.Int32)">
+            <summary>
+            是否组长护士
+            </summary>
+            <param name="emp_id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ts_zyhs_classes.ClassStatic">
+            <summary>
+            ClassStatic 的摘要说明。
+            </summary>
+        </member>
+        <member name="T:ts_zyhs_classes.frmInPassword">
+            <summary>
+            Form1 的摘要说明。
+            </summary>
+        </member>
+        <member name="F:ts_zyhs_classes.frmInPassword.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:ts_zyhs_classes.frmInPassword.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+        </member>
+        <member name="M:ts_zyhs_classes.frmInPassword.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要使用代码编辑器修改
+            此方法的内容。
+            </summary>
+        </member>
+    </members>
+</doc>

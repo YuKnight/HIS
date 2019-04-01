@@ -1,0 +1,5 @@
+E:\HIS2.0\His代码\药库采购计划\obj\Debug\ResolveAssemblyReference.cache
+E:\HIS2.0\His代码\药库采购计划\obj\Debug\ts_yk_cgjh.obj.Debug.ts_yk_cgjh.FrmCGMX.resources
+E:\HIS2.0\His代码\药库采购计划\obj\Debug\ts_yk_cgjh.obj.Debug.ts_yk_cgjh.Frmks.resources
+E:\HIS2.0\His代码\药库采购计划\obj\Debug\ts_yk_cgjh.obj.Debug.ts_yk_cgjh.Frmsel.resources
+E:\HIS2.0\His代码\药库采购计划\obj\Debug\ts_yk_cgjh.obj.Debug.ts_yk_cgjh.Frmtitle.resources

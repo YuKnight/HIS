@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Dstcydy" targetNamespace="http://tempuri.org/Dstcydy.xsd" xmlns:mstns="http://tempuri.org/Dstcydy.xsd" xmlns="http://tempuri.org/Dstcydy.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Dstcydy" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="Dstcydy" msprop:Generator_DataSetName="Dstcydy">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dscydy" msprop:Generator_UserTableName="dscydy" msprop:Generator_RowDeletedName="dscydyRowDeleted" msprop:Generator_RowChangedName="dscydyRowChanged" msprop:Generator_RowClassName="dscydyRow" msprop:Generator_RowChangingName="dscydyRowChanging" msprop:Generator_RowEvArgName="dscydyRowChangeEvent" msprop:Generator_RowEvHandlerName="dscydyRowChangeEventHandler" msprop:Generator_TableClassName="dscydyDataTable" msprop:Generator_TableVarName="tabledscydy" msprop:Generator_RowDeletingName="dscydyRowDeleting" msprop:Generator_TablePropName="dscydy">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="床位" msprop:Generator_UserColumnName="床位" msprop:Generator_ColumnPropNameInRow="床位" msprop:Generator_ColumnVarNameInTable="column床位" msprop:Generator_ColumnPropNameInTable="床位Column" type="xs:string" minOccurs="0" />
+              <xs:element name="日期" msprop:Generator_UserColumnName="日期" msprop:Generator_ColumnPropNameInRow="日期" msprop:Generator_ColumnVarNameInTable="column日期" msprop:Generator_ColumnPropNameInTable="日期Column" type="xs:string" minOccurs="0" />
+              <xs:element name="序号" msprop:Generator_UserColumnName="序号" msprop:Generator_ColumnPropNameInRow="序号" msprop:Generator_ColumnVarNameInTable="column序号" msprop:Generator_ColumnPropNameInTable="序号Column" type="xs:string" minOccurs="0" />
+              <xs:element name="药名" msprop:Generator_UserColumnName="药名" msprop:Generator_ColumnPropNameInRow="药名" msprop:Generator_ColumnVarNameInTable="column药名" msprop:Generator_ColumnPropNameInTable="药名Column" type="xs:string" minOccurs="0" />
+              <xs:element name="剂量" msprop:Generator_UserColumnName="剂量" msprop:Generator_ColumnPropNameInRow="剂量" msprop:Generator_ColumnVarNameInTable="column剂量" msprop:Generator_ColumnPropNameInTable="剂量Column" type="xs:string" minOccurs="0" />
+              <xs:element name="用法" msprop:Generator_UserColumnName="用法" msprop:Generator_ColumnPropNameInRow="用法" msprop:Generator_ColumnVarNameInTable="column用法" msprop:Generator_ColumnPropNameInTable="用法Column" type="xs:string" minOccurs="0" />
+              <xs:element name="频率" msprop:Generator_UserColumnName="频率" msprop:Generator_ColumnPropNameInRow="频率" msprop:Generator_ColumnVarNameInTable="column频率" msprop:Generator_ColumnPropNameInTable="频率Column" type="xs:string" minOccurs="0" />
+              <xs:element name="备注" msprop:Generator_UserColumnName="备注" msprop:Generator_ColumnPropNameInRow="备注" msprop:Generator_ColumnVarNameInTable="column备注" msprop:Generator_ColumnPropNameInTable="备注Column" type="xs:string" minOccurs="0" />
+              <xs:element name="首次" msprop:Generator_UserColumnName="首次" msprop:Generator_ColumnPropNameInRow="首次" msprop:Generator_ColumnVarNameInTable="column首次" msprop:Generator_ColumnPropNameInTable="首次Column" type="xs:string" minOccurs="0" />
+              <xs:element name="住院号" msprop:Generator_UserColumnName="住院号" msprop:Generator_ColumnPropNameInRow="住院号" msprop:Generator_ColumnVarNameInTable="column住院号" msprop:Generator_ColumnPropNameInTable="住院号Column" type="xs:string" minOccurs="0" />
+              <xs:element name="转抄护士" msprop:Generator_UserColumnName="转抄护士" msprop:Generator_ColumnPropNameInRow="转抄护士" msprop:Generator_ColumnVarNameInTable="column转抄护士" msprop:Generator_ColumnPropNameInTable="转抄护士Column" type="xs:string" minOccurs="0" />
+              <xs:element name="核对护士" msprop:Generator_UserColumnName="核对护士" msprop:Generator_ColumnPropNameInRow="核对护士" msprop:Generator_ColumnVarNameInTable="column核对护士" msprop:Generator_ColumnPropNameInTable="核对护士Column" type="xs:string" minOccurs="0" />
+              <xs:element name="审核护士" msprop:Generator_UserColumnName="审核护士" msprop:Generator_ColumnPropNameInRow="审核护士" msprop:Generator_ColumnVarNameInTable="column审核护士" msprop:Generator_ColumnPropNameInTable="审核护士Column" type="xs:string" minOccurs="0" />
+              <xs:element name="医保类型" msprop:Generator_UserColumnName="医保类型" msprop:Generator_ColumnPropNameInRow="医保类型" msprop:Generator_ColumnVarNameInTable="column医保类型" msprop:Generator_ColumnPropNameInTable="医保类型Column" type="xs:string" minOccurs="0" />
+              <xs:element name="姓名" msprop:Generator_UserColumnName="姓名" msprop:Generator_ColumnVarNameInTable="column姓名" msprop:Generator_ColumnPropNameInRow="姓名" msprop:Generator_ColumnPropNameInTable="姓名Column" type="xs:string" minOccurs="0" />
+              <xs:element name="性别" msprop:Generator_UserColumnName="性别" msprop:Generator_ColumnVarNameInTable="column性别" msprop:Generator_ColumnPropNameInRow="性别" msprop:Generator_ColumnPropNameInTable="性别Column" type="xs:string" minOccurs="0" />
+              <xs:element name="年龄" msprop:Generator_UserColumnName="年龄" msprop:Generator_ColumnVarNameInTable="column年龄" msprop:Generator_ColumnPropNameInRow="年龄" msprop:Generator_ColumnPropNameInTable="年龄Column" type="xs:string" minOccurs="0" />
+              <xs:element name="col" msprop:Generator_UserColumnName="col" msprop:Generator_ColumnPropNameInRow="col" msprop:Generator_ColumnVarNameInTable="columncol" msprop:Generator_ColumnPropNameInTable="colColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

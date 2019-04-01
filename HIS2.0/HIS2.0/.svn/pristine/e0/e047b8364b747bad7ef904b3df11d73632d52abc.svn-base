@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:ns1="http://service.resolveXml.hrwms.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="WillachService" targetNamespace="http://service.resolveXml.hrwms.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema xmlns:tns="http://service.resolveXml.hrwms.org/" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://service.resolveXml.hrwms.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="TransHisData" type="tns:TransHisData" />
+      <xs:element name="TransHisDataResponse" type="tns:TransHisDataResponse" />
+      <xs:element name="TransPrescSignData" type="tns:TransPrescSignData" />
+      <xs:element name="TransPrescSignDataResponse" type="tns:TransPrescSignDataResponse" />
+      <xs:element name="drugStorage" type="tns:drugStorage" />
+      <xs:element name="drugStorageResponse" type="tns:drugStorageResponse" />
+      <xs:element name="endSendMedToWillach" type="tns:endSendMedToWillach" />
+      <xs:element name="endSendMedToWillachResponse" type="tns:endSendMedToWillachResponse" />
+      <xs:element name="geStockQueryToWillach" type="tns:geStockQueryToWillach" />
+      <xs:element name="geStockQueryToWillachResponse" type="tns:geStockQueryToWillachResponse" />
+      <xs:element name="getHisInfoToWillach" type="tns:getHisInfoToWillach" />
+      <xs:element name="getHisInfoToWillachResponse" type="tns:getHisInfoToWillachResponse" />
+      <xs:element name="hisPrescPrint" type="tns:hisPrescPrint" />
+      <xs:element name="hisPrescPrintResponse" type="tns:hisPrescPrintResponse" />
+      <xs:element name="sendDrguInfoWillachMachine" type="tns:sendDrguInfoWillachMachine" />
+      <xs:element name="sendDrguInfoWillachMachineResponse" type="tns:sendDrguInfoWillachMachineResponse" />
+      <xs:element name="sendMedToWillach" type="tns:sendMedToWillach" />
+      <xs:element name="sendMedToWillachResponse" type="tns:sendMedToWillachResponse" />
+      <xs:complexType name="TransPrescSignData">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="TransPrescSignDataResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="sendDrguInfoWillachMachine">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="sendDrguInfoWillachMachineResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="geStockQueryToWillach">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="geStockQueryToWillachResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="hisPrescPrint">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="xs:string" />
+          <xs:element minOccurs="0" name="arg1" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="hisPrescPrintResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="drugStorage">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="drugStorageResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getHisInfoToWillach">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getHisInfoToWillachResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="TransHisData">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="TransHisDataResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="endSendMedToWillach">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="endSendMedToWillachResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="sendMedToWillach">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="sendMedToWillachResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="Exception" type="tns:Exception" />
+      <xs:complexType name="Exception">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="message" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="TransHisData">
+    <wsdl:part name="parameters" element="ns1:TransHisData" />
+  </wsdl:message>
+  <wsdl:message name="hisPrescPrintResponse">
+    <wsdl:part name="parameters" element="ns1:hisPrescPrintResponse" />
+  </wsdl:message>
+  <wsdl:message name="sendMedToWillachResponse">
+    <wsdl:part name="parameters" element="ns1:sendMedToWillachResponse" />
+  </wsdl:message>
+  <wsdl:message name="getHisInfoToWillachResponse">
+    <wsdl:part name="parameters" element="ns1:getHisInfoToWillachResponse" />
+  </wsdl:message>
+  <wsdl:message name="sendMedToWillach">
+    <wsdl:part name="parameters" element="ns1:sendMedToWillach" />
+  </wsdl:message>
+  <wsdl:message name="hisPrescPrint">
+    <wsdl:part name="parameters" element="ns1:hisPrescPrint" />
+  </wsdl:message>
+  <wsdl:message name="geStockQueryToWillach">
+    <wsdl:part name="parameters" element="ns1:geStockQueryToWillach" />
+  </wsdl:message>
+  <wsdl:message name="endSendMedToWillach">
+    <wsdl:part name="parameters" element="ns1:endSendMedToWillach" />
+  </wsdl:message>
+  <wsdl:message name="TransHisDataResponse">
+    <wsdl:part name="parameters" element="ns1:TransHisDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="Exception">
+    <wsdl:part name="Exception" element="ns1:Exception" />
+  </wsdl:message>
+  <wsdl:message name="geStockQueryToWillachResponse">
+    <wsdl:part name="parameters" element="ns1:geStockQueryToWillachResponse" />
+  </wsdl:message>
+  <wsdl:message name="TransPrescSignData">
+    <wsdl:part name="parameters" element="ns1:TransPrescSignData" />
+  </wsdl:message>
+  <wsdl:message name="sendDrguInfoWillachMachineResponse">
+    <wsdl:part name="parameters" element="ns1:sendDrguInfoWillachMachineResponse" />
+  </wsdl:message>
+  <wsdl:message name="drugStorageResponse">
+    <wsdl:part name="parameters" element="ns1:drugStorageResponse" />
+  </wsdl:message>
+  <wsdl:message name="drugStorage">
+    <wsdl:part name="parameters" element="ns1:drugStorage" />
+  </wsdl:message>
+  <wsdl:message name="TransPrescSignDataResponse">
+    <wsdl:part name="parameters" element="ns1:TransPrescSignDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="getHisInfoToWillach">
+    <wsdl:part name="parameters" element="ns1:getHisInfoToWillach" />
+  </wsdl:message>
+  <wsdl:message name="endSendMedToWillachResponse">
+    <wsdl:part name="parameters" element="ns1:endSendMedToWillachResponse" />
+  </wsdl:message>
+  <wsdl:message name="sendDrguInfoWillachMachine">
+    <wsdl:part name="parameters" element="ns1:sendDrguInfoWillachMachine" />
+  </wsdl:message>
+  <wsdl:portType name="WillachService">
+    <wsdl:operation name="TransPrescSignData">
+      <wsdl:input name="TransPrescSignData" message="ns1:TransPrescSignData" />
+      <wsdl:output name="TransPrescSignDataResponse" message="ns1:TransPrescSignDataResponse" />
+      <wsdl:fault name="Exception" message="ns1:Exception" />
+    </wsdl:operation>
+    <wsdl:operation name="sendDrguInfoWillachMachine">
+      <wsdl:input name="sendDrguInfoWillachMachine" message="ns1:sendDrguInfoWillachMachine" />
+      <wsdl:output name="sendDrguInfoWillachMachineResponse" message="ns1:sendDrguInfoWillachMachineResponse" />
+      <wsdl:fault name="Exception" message="ns1:Exception" />
+    </wsdl:operation>
+    <wsdl:operation name="geStockQueryToWillach">
+      <wsdl:input name="geStockQueryToWillach" message="ns1:geStockQueryToWillach" />
+      <wsdl:output name="geStockQueryToWillachResponse" message="ns1:geStockQueryToWillachResponse" />
+      <wsdl:fault name="Exception" message="ns1:Exception" />
+    </wsdl:operation>
+    <wsdl:operation name="hisPrescPrint">
+      <wsdl:input name="hisPrescPrint" message="ns1:hisPrescPrint" />
+      <wsdl:output name="hisPrescPrintResponse" message="ns1:hisPrescPrintResponse" />
+      <wsdl:fault name="Exception" message="ns1:Exception" />
+    </wsdl:operation>
+    <wsdl:operation name="drugStorage">
+      <wsdl:input name="drugStorage" message="ns1:drugStorage" />
+      <wsdl:output name="drugStorageResponse" message="ns1:drugStorageResponse" />
+      <wsdl:fault name="Exception" message="ns1:Exception" />
+    </wsdl:operation>
+    <wsdl:operation name="getHisInfoToWillach">
+      <wsdl:input name="getHisInfoToWillach" message="ns1:getHisInfoToWillach" />
+      <wsdl:output name="getHisInfoToWillachResponse" message="ns1:getHisInfoToWillachResponse" />
+      <wsdl:fault name="Exception" message="ns1:Exception" />
+    </wsdl:operation>
+    <wsdl:operation name="TransHisData">
+      <wsdl:input name="TransHisData" message="ns1:TransHisData" />
+      <wsdl:output name="TransHisDataResponse" message="ns1:TransHisDataResponse" />
+      <wsdl:fault name="Exception" message="ns1:Exception" />
+    </wsdl:operation>
+    <wsdl:operation name="endSendMedToWillach">
+      <wsdl:input name="endSendMedToWillach" message="ns1:endSendMedToWillach" />
+      <wsdl:output name="endSendMedToWillachResponse" message="ns1:endSendMedToWillachResponse" />
+      <wsdl:fault name="Exception" message="ns1:Exception" />
+    </wsdl:operation>
+    <wsdl:operation name="sendMedToWillach">
+      <wsdl:input name="sendMedToWillach" message="ns1:sendMedToWillach" />
+      <wsdl:output name="sendMedToWillachResponse" message="ns1:sendMedToWillachResponse" />
+      <wsdl:fault name="Exception" message="ns1:Exception" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

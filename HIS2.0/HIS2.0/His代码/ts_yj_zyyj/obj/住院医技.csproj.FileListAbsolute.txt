@@ -1,0 +1,10 @@
+E:\工作目录\HIS\His代码\ts_yj_zyyj\obj\Debug\ResolveAssemblyReference.cache
+E:\工作目录\HIS\His代码\ts_yj_zyyj\obj\Debug\ts_yj_zyyj.FrmMessage.resources
+E:\工作目录\HIS\His代码\ts_yj_zyyj\obj\Debug\ts_yj_zyyj.FrmMessageInput.resources
+E:\工作目录\HIS\His代码\ts_yj_zyyj\obj\Debug\ts_yj_zyyj.Frmyjsq.resources
+E:\工作目录\HIS\His代码\ts_yj_zyyj\obj\Debug\ts_yj_zyyj.Frmyjsq_cx.resources
+E:\工作目录\HIS\His代码\ts_yj_zyyj\obj\Debug\住院医技.csproj.GenerateResource.Cache
+E:\工作目录\HIS\Debug\ts_yj_zyyj.dll
+E:\工作目录\HIS\Debug\ts_yj_zyyj.pdb
+E:\工作目录\HIS\His代码\ts_yj_zyyj\obj\Debug\ts_yj_zyyj.dll
+E:\工作目录\HIS\His代码\ts_yj_zyyj\obj\Debug\ts_yj_zyyj.pdb

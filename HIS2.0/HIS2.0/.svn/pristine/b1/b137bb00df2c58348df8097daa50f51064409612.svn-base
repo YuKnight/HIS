@@ -1,0 +1,1237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6F478B16-5B05-4321-8CBC-264B2C6D275F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ts_mz_tjbb</RootNamespace>
+    <AssemblyName>ts_mz_tjbb</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Output\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\Debug\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.grdesLib, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\Output\AxInterop.grdesLib.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="AxInterop.grproLib, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\Output\AxInterop.grproLib.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar2, Version=8.2.0.2, Culture=neutral, PublicKeyToken=5fd520d36328f741, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Output\DevExpress\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="Excel, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\Output\Excel.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Interop.grdesLib, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Interop.grproLib, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Trasen.Controls, Version=1.0.0.26, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Output\Trasen.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="TrasenClasses, Version=2011.6.7.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Output\TrasenClasses.dll</HintPath>
+    </Reference>
+    <Reference Include="TrasenFrame, Version=2011.12.26.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Output\TrasenFrame.dll</HintPath>
+    </Reference>
+    <Reference Include="ts_jc_log, Version=12.3.4604.31721, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Output\ts_jc_log.dll</HintPath>
+    </Reference>
+    <Reference Include="ts_Local_Charge, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Debug\ts_Local_Charge.dll</HintPath>
+    </Reference>
+    <Reference Include="ts_mzsf_grjkb, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\OutPut\ts_mzsf_grjkb.dll</HintPath>
+    </Reference>
+    <Reference Include="ts_mz_class, Version=10.12.18.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Output\ts_mz_class.dll</HintPath>
+    </Reference>
+    <Reference Include="ts_mz_cx, Version=12.2.15.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Output\ts_mz_cx.dll</HintPath>
+    </Reference>
+    <Reference Include="ts_mz_fpbdcx, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\OutPut\ts_mz_fpbdcx.dll</HintPath>
+    </Reference>
+    <Reference Include="ts_mz_kgl, Version=10.12.18.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Output\ts_mz_kgl.dll</HintPath>
+    </Reference>
+    <Reference Include="ts_mz_report, Version=10.12.18.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\OutPut\ts_mz_report.dll</HintPath>
+    </Reference>
+    <Reference Include="ts_Read_hospitalCard, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Output\ts_Read_hospitalCard.dll</HintPath>
+    </Reference>
+    <Reference Include="Ts_zyys_public, Version=1.0.4460.30932, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Output\Ts_zyys_public.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="ClsParams.cs" />
+    <Compile Include="DataSet1.cs">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetjk.cs">
+      <DependentUpon>DataSetjk.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSetjk.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetjk.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ExcelDataExport.cs" />
+    <Compile Include="FrmBaseDateGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBaseDateGrid.Designer.cs">
+      <DependentUpon>FrmBaseDateGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBaseReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBaseReport.Designer.cs">
+      <DependentUpon>FrmBaseReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBaseReportHtdw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBaseReportHtdw.Designer.cs">
+      <DependentUpon>FrmBaseReportHtdw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBaseReportLsh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBaseReportLsh.Designer.cs">
+      <DependentUpon>FrmBaseReportLsh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBaseReport_detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBaseReport_detail.Designer.cs">
+      <DependentUpon>FrmBaseReport_detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBussinessReportOfItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBussinessReportOfItem.Designer.cs">
+      <DependentUpon>FrmBussinessReportOfItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBussinessReportOfOperation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBussinessReportOfOperation.Designer.cs">
+      <DependentUpon>FrmBussinessReportOfOperation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDepartments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDepartments.Designer.cs">
+      <DependentUpon>FrmDepartments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGrJkfpCx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGrJkfpCx.designer.cs">
+      <DependentUpon>FrmGrJkfpCx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_BussinessReportChinese.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_BussinessReportChinese.Designer.cs">
+      <DependentUpon>Frm_BussinessReportChinese.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_BussinessReportOfDoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_BussinessReportOfDoc.Designer.cs">
+      <DependentUpon>Frm_BussinessReportOfDoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ItemGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ItemGroup.Designer.cs">
+      <DependentUpon>Frm_ItemGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_MZ_BusinessReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_MZ_BusinessReport.Designer.cs">
+      <DependentUpon>Frm_MZ_BusinessReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_MZ_BussinessOfZXKS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_MZ_BussinessOfZXKS.Designer.cs">
+      <DependentUpon>Frm_MZ_BussinessOfZXKS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_MZ_HighAmountQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_MZ_HighAmountQuery.Designer.cs">
+      <DependentUpon>Frm_MZ_HighAmountQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_MZ_QueryBRCount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_MZ_QueryBRCount.Designer.cs">
+      <DependentUpon>Frm_MZ_QueryBRCount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_MZ_QueryBussinessOfOperation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_MZ_QueryBussinessOfOperation.Designer.cs">
+      <DependentUpon>Frm_MZ_QueryBussinessOfOperation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_MZ_QueryMZQK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_MZ_QueryMZQK.Designer.cs">
+      <DependentUpon>Frm_MZ_QueryMZQK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_MZ_RecipelofDrugsQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_MZ_RecipelofDrugsQuery.Designer.cs">
+      <DependentUpon>Frm_MZ_RecipelofDrugsQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_QueryBillJZToZy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_QueryBillJZToZy.designer.cs">
+      <DependentUpon>Frm_QueryBillJZToZy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_QueryBuessinessOfOperation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_QueryBuessinessOfOperation.Designer.cs">
+      <DependentUpon>Frm_QueryBuessinessOfOperation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_QueryBuessinessOfSingleDrugItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_QueryBuessinessOfSingleDrugItem.Designer.cs">
+      <DependentUpon>Frm_QueryBuessinessOfSingleDrugItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_QueryBuessinessOfSingleItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_QueryBuessinessOfSingleItem.Designer.cs">
+      <DependentUpon>Frm_QueryBuessinessOfSingleItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_QueryBuessinessOfTransfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_QueryBuessinessOfTransfer.Designer.cs">
+      <DependentUpon>Frm_QueryBuessinessOfTransfer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_QueryBussinessOfdoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_QueryBussinessOfdoc.Designer.cs">
+      <DependentUpon>Frm_QueryBussinessOfdoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_QuerySomeYJItemCount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_QuerySomeYJItemCount.Designer.cs">
+      <DependentUpon>Frm_QuerySomeYJItemCount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ReportBuessinessQuerybyDept.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ReportBuessinessQuerybyDept.Designer.cs">
+      <DependentUpon>Frm_ReportBuessinessQuerybyDept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ReportBuessinessQuerybyDoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ReportBuessinessQuerybyDoc.Designer.cs">
+      <DependentUpon>Frm_ReportBuessinessQuerybyDoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_WorkLogOfWard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_WorkLogOfWard.Designer.cs">
+      <DependentUpon>Frm_WorkLogOfWard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_zkbrsrtj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_zkbrsrtj.Designer.cs">
+      <DependentUpon>Frm_zkbrsrtj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ZY_BusinessReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ZY_BusinessReport.Designer.cs">
+      <DependentUpon>Frm_ZY_BusinessReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Zy_LackDisChargeReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Zy_LackDisChargeReport.Designer.cs">
+      <DependentUpon>Frm_Zy_LackDisChargeReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ZY_YBQF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ZY_YBQF.Designer.cs">
+      <DependentUpon>Frm_ZY_YBQF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Zy_ZXSRTJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Zy_ZXSRTJ.Designer.cs">
+      <DependentUpon>Frm_Zy_ZXSRTJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Zy_ZXSRTJEx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Zy_ZXSRTJEx.Designer.cs">
+      <DependentUpon>Frm_Zy_ZXSRTJEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="业务收入情况分析报表.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="业务收入情况分析报表.designer.cs">
+      <DependentUpon>业务收入情况分析报表.cs</DependentUpon>
+    </Compile>
+    <Compile Include="交款票据统计1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>交款票据统计.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="交款票据统计.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="交款票据统计.designer.cs">
+      <DependentUpon>交款票据统计.cs</DependentUpon>
+    </Compile>
+    <Compile Include="医技科室工作量统计.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="医技科室工作量统计.Designer.cs">
+      <DependentUpon>医技科室工作量统计.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_AddDateWhere.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_AddDateWhere.Designer.cs">
+      <DependentUpon>Frm_AddDateWhere.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs" />
+    <Compile Include="TjMeans.cs" />
+    <Compile Include="儿童保健子科室收入统计.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="儿童保健子科室收入统计.designer.cs">
+      <DependentUpon>儿童保健子科室收入统计.cs</DependentUpon>
+    </Compile>
+    <Compile Include="儿童保健子科室收入统计明细.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="儿童保健子科室收入统计明细.designer.cs">
+      <DependentUpon>儿童保健子科室收入统计明细.cs</DependentUpon>
+    </Compile>
+    <Compile Include="医保收入统计.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="医保收入统计.designer.cs">
+      <DependentUpon>医保收入统计.cs</DependentUpon>
+    </Compile>
+    <Compile Include="合同单位到账.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="合同单位到账.Designer.cs">
+      <DependentUpon>合同单位到账.cs</DependentUpon>
+    </Compile>
+    <Compile Include="合同单位到账输入金额.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="合同单位到账输入金额.designer.cs">
+      <DependentUpon>合同单位到账输入金额.cs</DependentUpon>
+    </Compile>
+    <Compile Include="建设银行自助机对账明细统计.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="建设银行自助机对账明细统计.designer.cs">
+      <DependentUpon>建设银行自助机对账明细统计.cs</DependentUpon>
+    </Compile>
+    <Compile Include="建设银行自助机对账统计.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="建设银行自助机对账统计.designer.cs">
+      <DependentUpon>建设银行自助机对账统计.cs</DependentUpon>
+    </Compile>
+    <Compile Include="银联自助机对账统计.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="银联自助机对账统计.Designer.cs">
+      <DependentUpon>银联自助机对账统计.cs</DependentUpon>
+    </Compile>
+    <Compile Include="门诊医生接诊量统计ByDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="门诊医生接诊量统计ByDate.designer.cs">
+      <DependentUpon>门诊医生接诊量统计ByDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="门诊医生收入统计ByDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="门诊医生收入统计ByDate.designer.cs">
+      <DependentUpon>门诊医生收入统计ByDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="门诊执行科室收入统计ByDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="门诊执行科室收入统计ByDate.designer.cs">
+      <DependentUpon>门诊执行科室收入统计ByDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="门诊执行科室收入统计明细ByDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="门诊执行科室收入统计明细ByDate.designer.cs">
+      <DependentUpon>门诊执行科室收入统计明细ByDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="门诊科室收入统计ByDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="门诊科室收入统计ByDate.Designer.cs">
+      <DependentUpon>门诊科室收入统计ByDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmcardcount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmcardcount.Designer.cs">
+      <DependentUpon>Frmcardcount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmExportFlash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmExportFlash.Designer.cs">
+      <DependentUpon>FrmExportFlash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="multhead.cs" />
+    <Compile Include="treeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="诊疗卡收入统计.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="诊疗卡收入统计.Designer.cs">
+      <DependentUpon>诊疗卡收入统计.cs</DependentUpon>
+    </Compile>
+    <Compile Include="门诊科室收入统计药品分类.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="门诊科室收入统计药品分类.Designer.cs">
+      <DependentUpon>门诊科室收入统计药品分类.cs</DependentUpon>
+    </Compile>
+    <Compile Include="诊疗卡办卡统计.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="诊疗卡办卡统计.Designer.cs">
+      <DependentUpon>诊疗卡办卡统计.cs</DependentUpon>
+    </Compile>
+    <Compile Include="工商银行自助机对账明细统计.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="工商银行自助机对账明细统计.designer.cs">
+      <DependentUpon>工商银行自助机对账明细统计.cs</DependentUpon>
+    </Compile>
+    <Compile Include="工商银行自助机对账统计.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="工商银行自助机对账统计.designer.cs">
+      <DependentUpon>工商银行自助机对账统计.cs</DependentUpon>
+    </Compile>
+    <Compile Include="银医办卡数统计明细.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="银医办卡数统计明细.designer.cs">
+      <DependentUpon>银医办卡数统计明细.cs</DependentUpon>
+    </Compile>
+    <Compile Include="银医诊疗卡办卡数统计.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="银医诊疗卡办卡数统计.designer.cs">
+      <DependentUpon>银医诊疗卡办卡数统计.cs</DependentUpon>
+    </Compile>
+    <Compile Include="银医诊疗卡支付方式统计.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="银医诊疗卡支付方式统计.designer.cs">
+      <DependentUpon>银医诊疗卡支付方式统计.cs</DependentUpon>
+    </Compile>
+    <Compile Include="银医退卡退预交金统计.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="银医退卡退预交金统计.designer.cs">
+      <DependentUpon>银医退卡退预交金统计.cs</DependentUpon>
+    </Compile>
+    <Compile Include="门诊医生收入药品比例.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="门诊医生收入药品比例.Designer.cs">
+      <DependentUpon>门诊医生收入药品比例.cs</DependentUpon>
+    </Compile>
+    <Compile Include="门诊挂号统计.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="门诊挂号统计.Designer.cs">
+      <DependentUpon>门诊挂号统计.cs</DependentUpon>
+    </Compile>
+    <Compile Include="门诊科室收入日报表.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="门诊科室收入日报表.Designer.cs">
+      <DependentUpon>门诊科室收入日报表.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMzyj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMzyj.designer.cs">
+      <DependentUpon>FrmMzyj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMzzffp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMzzffp.designer.cs">
+      <DependentUpon>FrmMzzffp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="门诊收入日报表.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="门诊收入日报表.Designer.cs">
+      <DependentUpon>门诊收入日报表.cs</DependentUpon>
+    </Compile>
+    <Compile Include="医保汇总和明细统计.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="医保汇总和明细统计.Designer.cs">
+      <DependentUpon>医保汇总和明细统计.cs</DependentUpon>
+    </Compile>
+    <Compile Include="门诊未缴款%28支付方式%29分类统计.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="门诊未缴款%28支付方式%29分类统计.Designer.cs">
+      <DependentUpon>门诊未缴款%28支付方式%29分类统计.cs</DependentUpon>
+    </Compile>
+    <Compile Include="门诊医生收入情况统计.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="门诊医生收入情况统计.Designer.cs">
+      <DependentUpon>门诊医生收入情况统计.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RowMergeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RowMergeView.designer.cs">
+      <DependentUpon>RowMergeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="门诊执行科室收入统计.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="门诊执行科室收入统计.Designer.cs">
+      <DependentUpon>门诊执行科室收入统计.cs</DependentUpon>
+    </Compile>
+    <Compile Include="病人就诊历史查询.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="病人就诊历史查询.Designer.cs">
+      <DependentUpon>病人就诊历史查询.cs</DependentUpon>
+    </Compile>
+    <Compile Include="门诊医生接诊量统计.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="门诊医生接诊量统计.Designer.cs">
+      <DependentUpon>门诊医生接诊量统计.cs</DependentUpon>
+    </Compile>
+    <Compile Include="门诊或住院执行科室收入明细.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="门诊或住院执行科室收入明细.Designer.cs">
+      <DependentUpon>门诊或住院执行科室收入明细.cs</DependentUpon>
+    </Compile>
+    <Compile Include="门诊挂号病历本及卡统计.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="门诊挂号病历本及卡统计.Designer.cs">
+      <DependentUpon>门诊挂号病历本及卡统计.cs</DependentUpon>
+    </Compile>
+    <Compile Include="门诊收费人员工作量统计.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="门诊收费人员工作量统计.Designer.cs">
+      <DependentUpon>门诊收费人员工作量统计.cs</DependentUpon>
+    </Compile>
+    <Compile Include="门诊执行科室收入统计明细.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="门诊执行科室收入统计明细.designer.cs">
+      <DependentUpon>门诊执行科室收入统计明细.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstanceForm.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="门诊医保日统计.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="门诊医保日统计.Designer.cs">
+      <DependentUpon>门诊医保日统计.cs</DependentUpon>
+    </Compile>
+    <Compile Include="合同单位费用统计.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="合同单位费用统计.Designer.cs">
+      <DependentUpon>合同单位费用统计.cs</DependentUpon>
+    </Compile>
+    <Compile Include="门诊pos收费情况统计.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="门诊pos收费情况统计.Designer.cs">
+      <DependentUpon>门诊pos收费情况统计.cs</DependentUpon>
+    </Compile>
+    <Compile Include="挂号人次统计.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="挂号人次统计.Designer.cs">
+      <DependentUpon>挂号人次统计.cs</DependentUpon>
+    </Compile>
+    <Compile Include="门诊医生收入统计.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="门诊医生收入统计.Designer.cs">
+      <DependentUpon>门诊医生收入统计.cs</DependentUpon>
+    </Compile>
+    <Compile Include="门诊收费项目收入统计.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="门诊收费项目收入统计.Designer.cs">
+      <DependentUpon>门诊收费项目收入统计.cs</DependentUpon>
+    </Compile>
+    <Compile Include="门诊收款%28支付方式%29分类统计.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="门诊收款%28支付方式%29分类统计.Designer.cs">
+      <DependentUpon>门诊收款%28支付方式%29分类统计.cs</DependentUpon>
+    </Compile>
+    <Compile Include="门诊科室收入统计.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="门诊科室收入统计.Designer.cs">
+      <DependentUpon>门诊科室收入统计.cs</DependentUpon>
+    </Compile>
+    <Compile Include="门诊科室收入统计明细.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="门诊科室收入统计明细.designer.cs">
+      <DependentUpon>门诊科室收入统计明细.cs</DependentUpon>
+    </Compile>
+    <Compile Include="门诊预交金收支情况表.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>门诊预交金收支情况表.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="门诊预才交金收支情况统计.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="门诊预才交金收支情况统计.Designer.cs">
+      <DependentUpon>门诊预才交金收支情况统计.cs</DependentUpon>
+    </Compile>
+    <Compile Include="预交款余额情况表.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="预交款余额情况表.designer.cs">
+      <DependentUpon>预交款余额情况表.cs</DependentUpon>
+    </Compile>
+    <Compile Include="预交款对帐.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="预交款对帐.Designer.cs">
+      <DependentUpon>预交款对帐.cs</DependentUpon>
+    </Compile>
+    <Compile Include="预交款明细查询.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="预交款明细查询.Designer.cs">
+      <DependentUpon>预交款明细查询.cs</DependentUpon>
+    </Compile>
+    <Compile Include="预交款结余情况表.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="预交款结余情况表.Designer.cs">
+      <DependentUpon>预交款结余情况表.cs</DependentUpon>
+    </Compile>
+    <Compile Include="预交款缴款.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="预交款缴款.Designer.cs">
+      <DependentUpon>预交款缴款.cs</DependentUpon>
+    </Compile>
+    <Compile Include="预交金消费对账.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="预交金消费对账.designer.cs">
+      <DependentUpon>预交金消费对账.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DataSet1.resx">
+      <DependentUpon>DataSet1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBaseDateGrid.resx">
+      <DependentUpon>FrmBaseDateGrid.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBaseReport.resx">
+      <DependentUpon>FrmBaseReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBaseReportHtdw.resx">
+      <DependentUpon>FrmBaseReportHtdw.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBaseReportLsh.resx">
+      <DependentUpon>FrmBaseReportLsh.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBaseReport_detail.resx">
+      <DependentUpon>FrmBaseReport_detail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBussinessReportOfItem.resx">
+      <DependentUpon>FrmBussinessReportOfItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBussinessReportOfOperation.resx">
+      <DependentUpon>FrmBussinessReportOfOperation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDepartments.resx">
+      <DependentUpon>FrmDepartments.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGrJkfpCx.resx">
+      <DependentUpon>FrmGrJkfpCx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_BussinessReportChinese.resx">
+      <DependentUpon>Frm_BussinessReportChinese.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_BussinessReportOfDoc.resx">
+      <DependentUpon>Frm_BussinessReportOfDoc.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ItemGroup.resx">
+      <DependentUpon>Frm_ItemGroup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_MZ_BusinessReport.resx">
+      <DependentUpon>Frm_MZ_BusinessReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_MZ_BussinessOfZXKS.resx">
+      <DependentUpon>Frm_MZ_BussinessOfZXKS.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_MZ_HighAmountQuery.resx">
+      <DependentUpon>Frm_MZ_HighAmountQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_MZ_QueryBRCount.resx">
+      <DependentUpon>Frm_MZ_QueryBRCount.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_MZ_QueryBussinessOfOperation.resx">
+      <DependentUpon>Frm_MZ_QueryBussinessOfOperation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_MZ_QueryMZQK.resx">
+      <DependentUpon>Frm_MZ_QueryMZQK.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_MZ_RecipelofDrugsQuery.resx">
+      <DependentUpon>Frm_MZ_RecipelofDrugsQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_QueryBillJZToZy.resx">
+      <DependentUpon>Frm_QueryBillJZToZy.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_QueryBuessinessOfOperation.resx">
+      <DependentUpon>Frm_QueryBuessinessOfOperation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_QueryBuessinessOfSingleDrugItem.resx">
+      <DependentUpon>Frm_QueryBuessinessOfSingleDrugItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_QueryBuessinessOfSingleItem.resx">
+      <DependentUpon>Frm_QueryBuessinessOfSingleItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_QueryBuessinessOfTransfer.resx">
+      <DependentUpon>Frm_QueryBuessinessOfTransfer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_QueryBussinessOfdoc.resx">
+      <DependentUpon>Frm_QueryBussinessOfdoc.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_QuerySomeYJItemCount.resx">
+      <DependentUpon>Frm_QuerySomeYJItemCount.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ReportBuessinessQuerybyDept.resx">
+      <DependentUpon>Frm_ReportBuessinessQuerybyDept.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ReportBuessinessQuerybyDoc.resx">
+      <DependentUpon>Frm_ReportBuessinessQuerybyDoc.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_WorkLogOfWard.resx">
+      <DependentUpon>Frm_WorkLogOfWard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_zkbrsrtj.resx">
+      <DependentUpon>Frm_zkbrsrtj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ZY_BusinessReport.resx">
+      <DependentUpon>Frm_ZY_BusinessReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Zy_LackDisChargeReport.resx">
+      <DependentUpon>Frm_Zy_LackDisChargeReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ZY_YBQF.resx">
+      <DependentUpon>Frm_ZY_YBQF.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Zy_ZXSRTJ.resx">
+      <DependentUpon>Frm_Zy_ZXSRTJ.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Zy_ZXSRTJEx.resx">
+      <DependentUpon>Frm_Zy_ZXSRTJEx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="业务收入情况分析报表.resx">
+      <DependentUpon>业务收入情况分析报表.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="交款票据统计.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>交款票据统计1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="交款票据统计.resx">
+      <DependentUpon>交款票据统计.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="医技科室工作量统计.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>医技科室工作量统计.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_AddDateWhere.resx">
+      <DependentUpon>Frm_AddDateWhere.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="儿童保健子科室收入统计.resx">
+      <DependentUpon>儿童保健子科室收入统计.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="儿童保健子科室收入统计明细.resx">
+      <DependentUpon>儿童保健子科室收入统计明细.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="医保收入统计.resx">
+      <DependentUpon>医保收入统计.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="合同单位到账.resx">
+      <DependentUpon>合同单位到账.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="合同单位到账输入金额.resx">
+      <DependentUpon>合同单位到账输入金额.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="建设银行自助机对账明细统计.resx">
+      <DependentUpon>建设银行自助机对账明细统计.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="建设银行自助机对账统计.resx">
+      <DependentUpon>建设银行自助机对账统计.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="银联自助机对账统计.resx">
+      <DependentUpon>银联自助机对账统计.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="门诊医生接诊量统计ByDate.resx">
+      <DependentUpon>门诊医生接诊量统计ByDate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="门诊医生收入统计ByDate.resx">
+      <DependentUpon>门诊医生收入统计ByDate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="门诊执行科室收入统计ByDate.resx">
+      <DependentUpon>门诊执行科室收入统计ByDate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="门诊执行科室收入统计明细ByDate.resx">
+      <DependentUpon>门诊执行科室收入统计明细ByDate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="门诊科室收入统计ByDate.resx">
+      <DependentUpon>门诊科室收入统计ByDate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmExportFlash.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmExportFlash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="诊疗卡收入统计.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>诊疗卡收入统计.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="门诊科室收入统计药品分类.resx">
+      <DependentUpon>门诊科室收入统计药品分类.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMzyj.resx">
+      <DependentUpon>FrmMzyj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMzzffp.resx">
+      <DependentUpon>FrmMzzffp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="工商银行自助机对账明细统计.resx">
+      <DependentUpon>工商银行自助机对账明细统计.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="工商银行自助机对账统计.resx">
+      <DependentUpon>工商银行自助机对账统计.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="诊疗卡办卡统计.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>诊疗卡办卡统计.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="银医办卡数统计明细.resx">
+      <DependentUpon>银医办卡数统计明细.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="银医诊疗卡办卡数统计.resx">
+      <DependentUpon>银医诊疗卡办卡数统计.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="银医诊疗卡支付方式统计.resx">
+      <DependentUpon>银医诊疗卡支付方式统计.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="银医退卡退预交金统计.resx">
+      <DependentUpon>银医退卡退预交金统计.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="门诊医生收入药品比例.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>门诊医生收入药品比例.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="门诊挂号统计.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>门诊挂号统计.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="门诊收入日报表.resx">
+      <DependentUpon>门诊收入日报表.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="医保汇总和明细统计.resx">
+      <DependentUpon>医保汇总和明细统计.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="门诊未缴款%28支付方式%29分类统计.resx">
+      <DependentUpon>门诊未缴款%28支付方式%29分类统计.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="门诊医生收入情况统计.resx">
+      <DependentUpon>门诊医生收入情况统计.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RowMergeView.resx">
+      <DependentUpon>RowMergeView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="门诊执行科室收入统计.resx">
+      <DependentUpon>门诊执行科室收入统计.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="病人就诊历史查询.resx">
+      <DependentUpon>病人就诊历史查询.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="门诊医生接诊量统计.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>门诊医生接诊量统计.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="门诊或住院执行科室收入明细.resx">
+      <DependentUpon>门诊或住院执行科室收入明细.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="门诊挂号病历本及卡统计.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>门诊挂号病历本及卡统计.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="门诊收费人员工作量统计.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>门诊收费人员工作量统计.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="门诊执行科室收入统计明细.resx">
+      <DependentUpon>门诊执行科室收入统计明细.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="门诊医保日统计.resx">
+      <DependentUpon>门诊医保日统计.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="合同单位费用统计.resx">
+      <DependentUpon>合同单位费用统计.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="门诊pos收费情况统计.resx">
+      <DependentUpon>门诊pos收费情况统计.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="挂号人次统计.resx">
+      <DependentUpon>挂号人次统计.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="门诊医生收入统计.resx">
+      <DependentUpon>门诊医生收入统计.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="门诊收费项目收入统计.resx">
+      <DependentUpon>门诊收费项目收入统计.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="门诊收款%28支付方式%29分类统计.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>门诊收款%28支付方式%29分类统计.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="门诊科室收入日报表.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>门诊科室收入日报表.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="门诊科室收入统计.resx">
+      <DependentUpon>门诊科室收入统计.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="门诊科室收入统计明细.resx">
+      <DependentUpon>门诊科室收入统计明细.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="门诊预交金收支情况表.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>门诊预交金收支情况表.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="门诊预才交金收支情况统计.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>门诊预才交金收支情况统计.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="预交款余额情况表.resx">
+      <DependentUpon>预交款余额情况表.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="预交款对帐.resx">
+      <DependentUpon>预交款对帐.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="预交款明细查询.resx">
+      <DependentUpon>预交款明细查询.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="预交款结余情况表.resx">
+      <DependentUpon>预交款结余情况表.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="预交款缴款.resx">
+      <DependentUpon>预交款缴款.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="预交金消费对账.resx">
+      <DependentUpon>预交金消费对账.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsx">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetjk.xsc">
+      <DependentUpon>DataSetjk.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetjk.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetjk.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetjk.xss">
+      <DependentUpon>DataSetjk.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetjk.xsx">
+      <DependentUpon>DataSetjk.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Excel.ico" />
+    <Content Include="Resources\Find.ico" />
+    <Content Include="Resources\Preview.ico" />
+    <Content Include="Resources\Print.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

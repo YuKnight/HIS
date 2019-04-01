@@ -1,0 +1,7 @@
+D:\TrasenHIS\代码\output\Ts_Hlyy_Interface.dll
+D:\TrasenHIS\代码\output\Ts_Hlyy_Interface.pdb
+D:\TrasenHIS\代码\公共类库\Ts_Hlyy_Interface\obj\Debug\ResolveAssemblyReference.cache
+D:\TrasenHIS\代码\公共类库\Ts_Hlyy_Interface\obj\Debug\Ts_Hlyy_Interface.dll
+D:\TrasenHIS\代码\公共类库\Ts_Hlyy_Interface\obj\Debug\Ts_Hlyy_Interface.pdb
+D:\TrasenHIS\DLL引用\Ts_Hlyy_Interface.dll
+D:\TrasenHIS\DLL引用\Ts_Hlyy_Interface.pdb

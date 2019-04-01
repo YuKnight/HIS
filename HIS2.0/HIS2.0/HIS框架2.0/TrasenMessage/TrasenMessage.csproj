@@ -1,0 +1,147 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{40E6F7C0-4288-4F7D-88DC-5912B94B61BC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TrasenMessage</RootNamespace>
+    <AssemblyName>TrasenMessage</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\output\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\output\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmMsgManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMsgManager.Designer.cs">
+      <DependentUpon>FrmMsgManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IMessageProcessor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DlgImmediatelyMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DlgImmediatelyMessage.Designer.cs">
+      <DependentUpon>DlgImmediatelyMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageCall.cs" />
+    <Compile Include="UCMessageTip.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCMessageTip.Designer.cs">
+      <DependentUpon>UCMessageTip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="通知和公告板\FrmMsgBorad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="通知和公告板\FrmMsgBorad.Designer.cs">
+      <DependentUpon>FrmMsgBorad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="通知和公告板\FrmMsgBrower.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="通知和公告板\FrmMsgBrower.Designer.cs">
+      <DependentUpon>FrmMsgBrower.cs</DependentUpon>
+    </Compile>
+    <Compile Include="通知和公告板\FrmMsgRelease.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="通知和公告板\FrmMsgRelease.Designer.cs">
+      <DependentUpon>FrmMsgRelease.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageCommunication.cs" />
+    <Compile Include="MessageController.cs" />
+    <Compile Include="Delegate.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmMsgManager.resx">
+      <DependentUpon>FrmMsgManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCMessageTip.resx">
+      <DependentUpon>UCMessageTip.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="通知和公告板\FrmMsgBorad.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmMsgBorad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="通知和公告板\FrmMsgBrower.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmMsgBrower.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="通知和公告板\FrmMsgRelease.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmMsgRelease.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DlgImmediatelyMessage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DlgImmediatelyMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TraSenClsLib\TrasenClasses.csproj">
+      <Project>{F3708EC3-1FB2-4123-A6BB-F36ADBC8A153}</Project>
+      <Name>TrasenClasses</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TraSenFrame\TrasenFrame.csproj">
+      <Project>{4626829C-A865-4BFD-85A7-8E952203813C}</Project>
+      <Name>TrasenFrame</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

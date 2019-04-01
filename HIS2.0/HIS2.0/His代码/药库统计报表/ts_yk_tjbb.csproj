@@ -1,0 +1,236 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{78193C2F-BC90-4BD7-8B7F-C1BE7F890416}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ts_yk_tjbb</RootNamespace>
+    <AssemblyName>ts_yk_tjbb</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Excel, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll引用\Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="myDataGrid, Version=1.0.1374.16240, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll引用\myDataGrid.DLL</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TrasenClasses, Version=2011.6.7.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll引用\TrasenClasses.dll</HintPath>
+    </Reference>
+    <Reference Include="TrasenFrame, Version=5.1.4814.16836, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll引用\TrasenFrame.dll</HintPath>
+    </Reference>
+    <Reference Include="ts_Yk_ReportView, Version=1.0.4542.23184, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll引用\ts_Yk_ReportView.dll</HintPath>
+    </Reference>
+    <Reference Include="ts_YpClass, Version=1.0.4882.20338, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll引用\ts_YpClass.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCG_RCQK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmdjqktj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmgzyptj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmjhpm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmjxcqkb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmkcgdcbj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmxqbj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmxspm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmyktkd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmylfltj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InstanceForm.cs" />
+    <Compile Include="YP_test.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>YP_test.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="单据汇总统计\Frmbsbyhztj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="单据汇总统计\Frmckhztj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="单据汇总统计\Frmpdhztj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="单据汇总统计\Frmrkhztj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="单据汇总统计\Frmrkhztj_jy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="单据汇总统计\Frmrkhztj_jy.Designer.cs">
+      <DependentUpon>Frmrkhztj_jy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="单据汇总统计\Frmtjmx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App.ico" />
+    <Content Include="药库统计报表.csproj" />
+    <Content Include="药库统计报表.csproj.user" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="mssccprj.scc" />
+    <None Include="单据汇总统计\vssver2.scc" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmCG_RCQK.resx">
+      <DependentUpon>FrmCG_RCQK.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmdjqktj.resx">
+      <DependentUpon>Frmdjqktj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmgzyptj.resx">
+      <DependentUpon>Frmgzyptj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmjhpm.resx">
+      <DependentUpon>Frmjhpm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmjxcqkb.resx">
+      <DependentUpon>Frmjxcqkb.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmkcgdcbj.resx">
+      <DependentUpon>Frmkcgdcbj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmxqbj.resx">
+      <DependentUpon>Frmxqbj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmxspm.resx">
+      <DependentUpon>Frmxspm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmyktkd.resx">
+      <DependentUpon>Frmyktkd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmylfltj.resx">
+      <DependentUpon>Frmylfltj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YP_test.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>YP_test.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="单据汇总统计\Frmbsbyhztj.resx">
+      <DependentUpon>Frmbsbyhztj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="单据汇总统计\Frmckhztj.resx">
+      <DependentUpon>Frmckhztj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="单据汇总统计\Frmpdhztj.resx">
+      <DependentUpon>Frmpdhztj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="单据汇总统计\Frmrkhztj.resx">
+      <DependentUpon>Frmrkhztj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="单据汇总统计\Frmrkhztj_jy.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frmrkhztj_jy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="单据汇总统计\Frmtjmx.resx">
+      <DependentUpon>Frmtjmx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

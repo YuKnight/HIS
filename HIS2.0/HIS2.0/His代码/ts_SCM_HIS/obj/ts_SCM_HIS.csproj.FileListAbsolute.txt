@@ -1,0 +1,8 @@
+D:\项目管理\工程文件\工作目录\HIS\His代码\ts_SCM_HIS\obj\Debug\ResolveAssemblyReference.cache
+D:\项目管理\工程文件\工作目录\HIS\His代码\ts_SCM_HIS\obj\Debug\ts_SCM_HIS.Properties.Resources.resources
+D:\项目管理\工程文件\工作目录\HIS\His代码\ts_SCM_HIS\obj\Debug\ts_SCM_HIS.csproj.GenerateResource.Cache
+D:\项目管理\工程文件\工作目录\HIS\Debug\ts_SCM_HIS.dll.config
+D:\项目管理\工程文件\工作目录\HIS\Debug\ts_SCM_HIS.dll
+D:\项目管理\工程文件\工作目录\HIS\Debug\ts_SCM_HIS.pdb
+D:\项目管理\工程文件\工作目录\HIS\His代码\ts_SCM_HIS\obj\Debug\ts_SCM_HIS.dll
+D:\项目管理\工程文件\工作目录\HIS\His代码\ts_SCM_HIS\obj\Debug\ts_SCM_HIS.pdb

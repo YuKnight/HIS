@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <configSections>
+        <sectionGroup name="applicationSettings" type="System.Configuration.ApplicationSettingsGroup, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" >
+            <section name="ClsWsMzTy.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" requirePermission="false" />
+        </sectionGroup>
+    </configSections>
+    <applicationSettings>
+        <ClsWsMzTy.Properties.Settings>
+            <setting name="ClsWsMzTy_NewHisWs_TrasenWS" serializeAs="String">
+                <value>http://192.168.0.90:89/TrasenWS.asmx</value>
+            </setting>
+        </ClsWsMzTy.Properties.Settings>
+    </applicationSettings>
+</configuration>

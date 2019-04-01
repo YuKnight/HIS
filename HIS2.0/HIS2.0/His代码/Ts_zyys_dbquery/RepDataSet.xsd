@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="RepDataSet" targetNamespace="http://tempuri.org/RepDataSet.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/RepDataSet.xsd" xmlns:mstns="http://tempuri.org/RepDataSet.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="RepDataSet" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="rptDocIncome">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="DOCTOR" type="xs:string" minOccurs="0" />
+							<xs:element name="ITEMNAME" type="xs:string" minOccurs="0" />
+							<xs:element name="MZ_NUM" type="xs:int" minOccurs="0" />
+							<xs:element name="MZ_VALUES" type="xs:double" minOccurs="0" />
+							<xs:element name="ZY_NUM" type="xs:int" minOccurs="0" />
+							<xs:element name="ZY_VALUES" type="xs:double" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="rptYYJC">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="yyDate" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="binName" type="xs:string" minOccurs="0" />
+							<xs:element name="sex" type="xs:string" minOccurs="0" />
+							<xs:element name="age" type="xs:int" minOccurs="0" />
+							<xs:element name="yyDoc" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="rptApp">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="binname" type="xs:string" minOccurs="0" />
+							<xs:element name="sex" type="xs:string" minOccurs="0" />
+							<xs:element name="age" type="xs:int" minOccurs="0" />
+							<xs:element name="yqDoc" type="xs:string" minOccurs="0" />
+							<xs:element name="yqDate" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="deptName" type="xs:string" minOccurs="0" />
+							<xs:element name="wardName" type="xs:string" minOccurs="0" />
+							<xs:element name="bedID" type="xs:int" minOccurs="0" />
+							<xs:element name="address" type="xs:string" minOccurs="0" />
+							<xs:element name="tele" type="xs:string" minOccurs="0" />
+							<xs:element name="symptom" type="xs:string" minOccurs="0" />
+							<xs:element name="diagnosis" type="xs:string" minOccurs="0" />
+							<xs:element name="place" type="xs:string" minOccurs="0" />
+							<xs:element name="itemName" type="xs:string" minOccurs="0" />
+							<xs:element name="inpatientID" type="xs:string" minOccurs="0" />
+							<xs:element name="price" type="xs:string" minOccurs="0" />
+							<xs:element name="jc_no" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="rptBinStat">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="病人" type="xs:string" minOccurs="0" />
+							<xs:element name="药费比例" type="xs:decimal" minOccurs="0" />
+							<xs:element name="住院天数" type="xs:int" minOccurs="0" />
+							<xs:element name="NAME" type="xs:string" minOccurs="0" />
+							<xs:element name="BIN" type="xs:decimal" minOccurs="0" />
+							<xs:element name="YS_ID" type="xs:decimal" minOccurs="0" />
+							<xs:element name="床位费" type="xs:decimal" minOccurs="0" />
+							<xs:element name="中草药" type="xs:decimal" minOccurs="0" />
+							<xs:element name="中成药" type="xs:decimal" minOccurs="0" />
+							<xs:element name="西药" type="xs:decimal" minOccurs="0" />
+							<xs:element name="化验费" type="xs:decimal" minOccurs="0" />
+							<xs:element name="治疗费" type="xs:decimal" minOccurs="0" />
+							<xs:element name="放射费" type="xs:decimal" minOccurs="0" />
+							<xs:element name="输血费" type="xs:decimal" minOccurs="0" />
+							<xs:element name="检查费" type="xs:decimal" minOccurs="0" />
+							<xs:element name="手术费" type="xs:decimal" minOccurs="0" />
+							<xs:element name="其他费" type="xs:decimal" minOccurs="0" />
+							<xs:element name="总计" type="xs:decimal" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="rptDeptStat">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="病人" type="xs:string" minOccurs="0" />
+							<xs:element name="药费比例" type="xs:decimal" minOccurs="0" />
+							<xs:element name="姓名" type="xs:string" minOccurs="0" />
+							<xs:element name="inpatient_id" type="xs:decimal" minOccurs="0" />
+							<xs:element name="ID" type="xs:decimal" minOccurs="0" />
+							<xs:element name="床位费" type="xs:decimal" minOccurs="0" />
+							<xs:element name="药品费" type="xs:decimal" minOccurs="0" />
+							<xs:element name="化验费" type="xs:decimal" minOccurs="0" />
+							<xs:element name="治疗费" type="xs:decimal" minOccurs="0" />
+							<xs:element name="放射费" type="xs:decimal" minOccurs="0" />
+							<xs:element name="输血费" type="xs:decimal" minOccurs="0" />
+							<xs:element name="检查费" type="xs:decimal" minOccurs="0" />
+							<xs:element name="手术费" type="xs:decimal" minOccurs="0" />
+							<xs:element name="其他费" type="xs:decimal" minOccurs="0" />
+							<xs:element name="总计" type="xs:decimal" minOccurs="0" />
+							<xs:element name="西药" type="xs:decimal" minOccurs="0" />
+							<xs:element name="中成药" type="xs:decimal" minOccurs="0" />
+							<xs:element name="中草药" type="xs:decimal" minOccurs="0" />
+							<xs:element name="自制药" type="xs:decimal" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="rptShift">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="姓名" type="xs:string" minOccurs="0" />
+							<xs:element name="星期一" type="xs:string" minOccurs="0" />
+							<xs:element name="星期二" type="xs:string" minOccurs="0" />
+							<xs:element name="星期三" type="xs:string" minOccurs="0" />
+							<xs:element name="星期四" type="xs:string" minOccurs="0" />
+							<xs:element name="星期五" type="xs:string" minOccurs="0" />
+							<xs:element name="星期六" type="xs:string" minOccurs="0" />
+							<xs:element name="星期日" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="HoitemStat">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" type="xs:string" minOccurs="0" />
+							<xs:element name="NAME" type="xs:string" minOccurs="0" />
+							<xs:element name="PRICE" type="xs:string" minOccurs="0" />
+							<xs:element name="CS" type="xs:string" minOccurs="0" />
+							<xs:element name="ORDER_DOC" type="xs:string" minOccurs="0" />
+							<xs:element name="DOC_NAME" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="_x0031_11">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="a" type="xs:string" minOccurs="0" />
+							<xs:element name="b" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

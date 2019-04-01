@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CECECEE2-1753-4691-A06F-8632E6DCA08B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ts_OrderRegist</RootNamespace>
+    <AssemblyName>Ts_OrderRegist</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Output\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <Compile Include="Frm_OrderRegist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_OrderRegist.Designer.cs">
+      <DependentUpon>Frm_OrderRegist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_OrderRegist_Fsd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_OrderRegist_Fsd.Designer.cs">
+      <DependentUpon>Frm_OrderRegist_Fsd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_PbInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_PbInfo.Designer.cs">
+      <DependentUpon>Frm_PbInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_TJ_YYGH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_TJ_YYGH.Designer.cs">
+      <DependentUpon>Frm_TJ_YYGH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_YYPTSZ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_YYPTSZ.Designer.cs">
+      <DependentUpon>Frm_YYPTSZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstanceForm.cs" />
+    <Compile Include="Order_Parmanalyze.cs" />
+    <Compile Include="Order_Web.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs" />
+    <Compile Include="Web_OrderClient.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Frm_OrderRegist.resx">
+      <DependentUpon>Frm_OrderRegist.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_OrderRegist_Fsd.resx">
+      <DependentUpon>Frm_OrderRegist_Fsd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_PbInfo.resx">
+      <DependentUpon>Frm_PbInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_TJ_YYGH.resx">
+      <DependentUpon>Frm_TJ_YYGH.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_YYPTSZ.resx">
+      <DependentUpon>Frm_YYPTSZ.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\gh_hy_off.png" />
+    <Content Include="Resources\gh_hy_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+    <Reference Include="Trasen.Controls, Version=1.0.0.61, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="TrasenClasses, Version=5.1.5119.28719, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="TrasenFrame, Version=5.1.4961.32620, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ts_mz_class, Version=2014.9.12.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ts_mz_gh, Version=10.12.18.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ts_mz_kgl, Version=10.12.18.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Ts_Visit_Class, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+</Project>

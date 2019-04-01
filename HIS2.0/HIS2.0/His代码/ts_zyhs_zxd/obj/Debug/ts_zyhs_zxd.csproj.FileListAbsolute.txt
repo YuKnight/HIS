@@ -1,0 +1,7 @@
+E:\HIS2.0\His代码\ts_zyhs_zxd\obj\Debug\ts_zyhs_zxd.csprojResolveAssemblyReference.cache
+E:\HIS2.0\His代码\ts_zyhs_zxd\obj\Debug\ts_zyhs_zxd.Frmzxdprint.resources
+E:\HIS2.0\His代码\ts_zyhs_zxd\obj\Debug\ts_zyhs_zxd.frmZXD.resources
+E:\HIS2.0\His代码\ts_zyhs_zxd\obj\Debug\ts_zyhs_zxd.csproj.GenerateResource.cache
+E:\HIS2.0\His代码\ts_zyhs_zxd\obj\Debug\ts_zyhs_zxd.csproj.CoreCompileInputs.cache
+E:\HIS2.0\His代码\ts_zyhs_zxd\obj\Debug\ts_zyhs_zxd.dll
+E:\HIS2.0\His代码\ts_zyhs_zxd\obj\Debug\ts_zyhs_zxd.pdb

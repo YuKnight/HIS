@@ -1,0 +1,15 @@
+E:\HIS2.0\Debug\ts_yk_cx.dll
+E:\HIS2.0\Debug\ts_yk_cx.pdb
+E:\HIS2.0\His代码\药库查询\obj\Debug\ResolveAssemblyReference.cache
+E:\HIS2.0\His代码\药库查询\obj\Debug\药库查询.csproj.ResolveComReference.cache
+E:\HIS2.0\His代码\药库查询\obj\Debug\ts_yk_cx.Frmdjcx.resources
+E:\HIS2.0\His代码\药库查询\obj\Debug\ts_yk_cx.Frmdjcx_ztdj.resources
+E:\HIS2.0\His代码\药库查询\obj\Debug\ts_yk_cx.Frmkccx.resources
+E:\HIS2.0\His代码\药库查询\obj\Debug\ts_yk_cx.Frmkcjygl.resources
+E:\HIS2.0\His代码\药库查询\obj\Debug\ts_yk_cx.Frmpctz.resources
+E:\HIS2.0\His代码\药库查询\obj\Debug\ts_yk_cx.Frmqykccx.resources
+E:\HIS2.0\His代码\药库查询\obj\Debug\ts_yk_cx.Frmypmxz.resources
+E:\HIS2.0\His代码\药库查询\obj\Debug\ts_yk_cx.Frmdjhz_fkbl.resources
+E:\HIS2.0\His代码\药库查询\obj\Debug\药库查询.csproj.GenerateResource.Cache
+E:\HIS2.0\His代码\药库查询\obj\Debug\ts_yk_cx.dll
+E:\HIS2.0\His代码\药库查询\obj\Debug\ts_yk_cx.pdb

@@ -1,0 +1,213 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{576B026E-57A5-4E47-A1E0-0E63EB929469}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>ts_YpClass</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>YpClass</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\..\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="myDataGrid, Version=1.0.1373.27523, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Debug\myDataGrid.DLL</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="TrasenClasses, Version=11.2.15.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Debug\TrasenClasses.dll</HintPath>
+    </Reference>
+    <Reference Include="TrasenFrame, Version=11.2.15.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Debug\TrasenFrame.dll</HintPath>
+    </Reference>
+    <Reference Include="ts_HospData_Share, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Debug\ts_HospData_Share.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Enum.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FrmAddYpJg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddYpJg.Designer.cs">
+      <DependentUpon>FrmAddYpJg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmZcyTsFs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmZcyTsFs.Designer.cs">
+      <DependentUpon>FrmZcyTsFs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FunBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MZYF.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MZ_PCCF.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WBKS.cs" />
+    <Compile Include="YF_CG_CGMX.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="YF_DJ_DJMX.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="YF_GRJY.cs" />
+    <Compile Include="YF_PDCS_PDCSMX.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="YF_PD_PDMX.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="YF_RKSQ_RKSQMX.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="YF_TJ_TJMX.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="YF_XQBJ.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Yk_dj_djmx.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Yk_Ypgysfp.cs" />
+    <Compile Include="YK_ZJJG_Class.cs" />
+    <Compile Include="YK_ZJJG_JH.cs" />
+    <Compile Include="YK_ZJJG_JHMX.cs" />
+    <Compile Include="YK_ZJJG_YLMX.cs" />
+    <Compile Include="YMJC.cs" />
+    <Compile Include="Yp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="YpConfig.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Yppc.cs" />
+    <Compile Include="YP_PDMB.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="YP_TLFL.cs" />
+    <Compile Include="ZY_FY.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MZPY.cs" />
+    <Compile Include="YP_YPTJMB.cs" />
+    <Compile Include="ZY_PCCF.cs" />
+    <Compile Include="药品类\Ypbm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="药品类\Ypcj.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="药品类\Ypgg.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmAddYpJg.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmAddYpJg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmZcyTsFs.resx">
+      <DependentUpon>FrmZcyTsFs.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

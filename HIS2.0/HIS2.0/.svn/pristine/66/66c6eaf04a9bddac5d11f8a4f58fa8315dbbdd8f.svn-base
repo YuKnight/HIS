@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:intf="http://action.service.haitai.com" xmlns:impl="http://action.service.haitai.com" targetNamespace="http://action.service.haitai.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://action.service.haitai.com">
+      <xsd:element name="processInput">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="str" type="xsd:string" />
+            <xsd:element name="timeout" type="xsd:long" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="processInputResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="processInputReturn" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="processInputRequest">
+    <wsdl:part name="parameters" element="impl:processInput" />
+  </wsdl:message>
+  <wsdl:message name="processInputResponse">
+    <wsdl:part name="parameters" element="impl:processInputResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WebServiceActionOther">
+    <wsdl:operation name="processInput">
+      <wsdl:input name="processInputRequest" message="impl:processInputRequest" />
+      <wsdl:output name="processInputResponse" message="impl:processInputResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebServiceActionOtherSoapBinding" type="impl:WebServiceActionOther">
+    <wsdlsoap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="processInput">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="processInputRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="processInputResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebServiceActionOtherService">
+    <wsdl:port name="WebServiceActionOther" binding="impl:WebServiceActionOtherSoapBinding">
+      <wsdlsoap:address location="http://192.168.0.15:9081/WebService/services/WebServiceActionOther" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

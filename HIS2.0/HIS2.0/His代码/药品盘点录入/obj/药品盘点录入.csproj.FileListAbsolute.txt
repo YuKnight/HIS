@@ -1,0 +1,13 @@
+E:\HIS2.0\His代码\药品盘点录入\obj\Debug\ResolveAssemblyReference.cache
+E:\HIS2.0\His代码\药品盘点录入\obj\Debug\ts_yp_pdlr.Frmmbmx.resources
+E:\HIS2.0\His代码\药品盘点录入\obj\Debug\ts_yp_pdlr.FrmOptionData.resources
+E:\HIS2.0\His代码\药品盘点录入\obj\Debug\ts_yp_pdlr.Frmtitle.resources
+E:\HIS2.0\His代码\药品盘点录入\obj\Debug\ts_yp_pdlr.Frmxd.resources
+E:\HIS2.0\His代码\药品盘点录入\obj\Debug\ts_yp_pdlr.Frmxd2.resources
+E:\HIS2.0\His代码\药品盘点录入\obj\Debug\ts_yp_pdlr.Frmzylr.resources
+E:\HIS2.0\His代码\药品盘点录入\obj\Debug\ts_yp_pdlr.Frmzylr_kcmx.resources
+E:\HIS2.0\His代码\药品盘点录入\obj\Debug\药品盘点录入.csproj.GenerateResource.Cache
+E:\HIS2.0\Debug\ts_yp_pdlr.dll
+E:\HIS2.0\Debug\ts_yp_pdlr.pdb
+E:\HIS2.0\His代码\药品盘点录入\obj\Debug\ts_yp_pdlr.dll
+E:\HIS2.0\His代码\药品盘点录入\obj\Debug\ts_yp_pdlr.pdb

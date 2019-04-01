@@ -1,0 +1,11 @@
+E:\HIS2.0\Debug\ts_yf_ypck.dll
+E:\HIS2.0\Debug\ts_yf_ypck.pdb
+E:\HIS2.0\His代码\药房出库\obj\Debug\ResolveAssemblyReference.cache
+E:\HIS2.0\His代码\药房出库\obj\Debug\ts_yf_ypck.Frmgrjy.resources
+E:\HIS2.0\His代码\药房出库\obj\Debug\ts_yf_ypck.FrmJymx.resources
+E:\HIS2.0\His代码\药房出库\obj\Debug\ts_yf_ypck.Frmqr.resources
+E:\HIS2.0\His代码\药房出库\obj\Debug\ts_yf_ypck.Frmtitle.resources
+E:\HIS2.0\His代码\药房出库\obj\Debug\ts_yf_ypck.Frmypck.resources
+E:\HIS2.0\His代码\药房出库\obj\Debug\药房出库.csproj.GenerateResource.Cache
+E:\HIS2.0\His代码\药房出库\obj\Debug\ts_yf_ypck.dll
+E:\HIS2.0\His代码\药房出库\obj\Debug\ts_yf_ypck.pdb

@@ -1,0 +1,9 @@
+E:\HIS2.0\Debug\ts_yk_zjjgd.dll
+E:\HIS2.0\Debug\ts_yk_zjjgd.pdb
+E:\HIS2.0\His代码\制剂加工单\obj\Debug\ResolveAssemblyReference.cache
+E:\HIS2.0\His代码\制剂加工单\obj\Debug\ts_yk_zjjgd.Frmscjh.resources
+E:\HIS2.0\His代码\制剂加工单\obj\Debug\ts_yk_zjjgd.Frmypjg.resources
+E:\HIS2.0\His代码\制剂加工单\obj\Debug\ts_yk_zjjgd.Frmypzj.resources
+E:\HIS2.0\His代码\制剂加工单\obj\Debug\制剂加工单.csproj.GenerateResource.Cache
+E:\HIS2.0\His代码\制剂加工单\obj\Debug\ts_yk_zjjgd.dll
+E:\HIS2.0\His代码\制剂加工单\obj\Debug\ts_yk_zjjgd.pdb

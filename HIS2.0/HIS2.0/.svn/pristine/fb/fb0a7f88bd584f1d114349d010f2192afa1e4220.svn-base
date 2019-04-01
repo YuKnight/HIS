@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ts_yf_mzfy.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ts_yf_mzfy_TrasenWs_TrasenWS" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://192.168.0.90:88/TrasenWS.asmx</Value>
+    </Setting>
+    <Setting Name="ts_yf_mzfy_WebOldHisService_n_yygh" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://192.168.0.34/yygh/n_yygh.asmx</Value>
+    </Setting>
+    <Setting Name="ts_yf_mzfy_PjqService_WebPjq" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://192.168.0.37:8088/webmzyystatic/WebPjq.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

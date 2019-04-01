@@ -1,0 +1,8 @@
+..\..\..\Debug\ts_jc_tysjwh.dll
+..\..\..\Debug\ts_jc_tysjwh.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\ts_jc_tysjwh.FrmDataMaintenance.resources
+obj\Debug\ts_jc_tysjwh.FrmMaintenanceSetting.resources
+obj\Debug\ts_jc_tysjwh.csproj.GenerateResource.Cache
+obj\Debug\ts_jc_tysjwh.dll
+obj\Debug\ts_jc_tysjwh.pdb

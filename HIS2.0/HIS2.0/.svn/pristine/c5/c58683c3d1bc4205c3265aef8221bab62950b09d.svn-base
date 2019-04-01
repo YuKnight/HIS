@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<systems>
+  <system>
+    <name>医保管理系统</name>
+    <menu>Fun_ts_zy_zhcx_all</menu>
+  </system>
+  <system>
+    <name>住院管理系统</name>
+    <menu>Fun_ts_zy_zhcx_all</menu>
+  </system>
+</systems>
+<!--此xml文档是对系统中的菜单进行禁用CTRL+C/CTRL+V复制粘帖功能的配置文档，其中'name'的值表示系统名称
+    'menu'的值表示二级菜单名称-->
+<!--住院病人综合查询：Fun_ts_zy_zhcx，住院病人综合查询（全部病区）：Fun_ts_zy_zhcx_all-->

@@ -1,0 +1,55 @@
+/**用逗号隔开**/
+/**自动生成手术日期**/
+[Context]
+Context=手术,分娩
+
+/*转科是否连线 0=不连接，1=连接*/
+[zkislx]
+zkislx=1
+
+/**监控内容**/
+/*ts 自动生成手术的天数*/
+[JC_Context]
+JC_Context=手术,分娩
+ts=14
+
+/**内容**/
+[jcdx]
+jcdx=身  高(cm)
+[bz]
+bz=备注
+/**类型**/
+/**1=奇数 2=偶数**/
+[Type]
+Type=1
+/**三测单下面位置**/
+[Position]
+dbcs=0
+xbcs=1
+tz=2
+sg=3
+xy=4
+zrl=5
+zcl=6
+ywgm=7
+bz=8
+
+[Sc_Context]
+dbcs=大便(次/日)
+xbcs=小便
+tz=体重(kg)
+sg=身高(cm)
+xy=血压(mmHg)
+zrl=入量(mL)
+zcl=出量(mL)
+ywgm=药物过敏
+bz=备注
+
+/*三测单录入界面可以提前看到几天的数据*/
+[Tqts]
+Tqts=3
+
+/*背景图片 0=创星 1=东软 */
+[backimage]
+backimage=1
+

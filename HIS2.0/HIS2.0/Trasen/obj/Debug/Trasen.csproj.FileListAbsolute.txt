@@ -1,0 +1,9 @@
+E:\HIS2.0\Debug\Trasen.exe
+E:\HIS2.0\Debug\Trasen.pdb
+E:\HIS2.0\Trasen\obj\Debug\Trasen.csprojResolveAssemblyReference.cache
+E:\HIS2.0\Trasen\obj\Debug\Trasen.Properties.Resources.resources
+E:\HIS2.0\Trasen\obj\Debug\Trasen.csproj.GenerateResource.cache
+E:\HIS2.0\Trasen\obj\Debug\Trasen.csproj.CoreCompileInputs.cache
+E:\HIS2.0\Trasen\obj\Debug\Trasen.csproj.CopyComplete
+E:\HIS2.0\Trasen\obj\Debug\Trasen.exe
+E:\HIS2.0\Trasen\obj\Debug\Trasen.pdb

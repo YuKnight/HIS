@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <appSettings>
+    <add key="trasenurl" value="http://192.168.0.90:89/TrasenWS.asmx"/><!--?wsdl-->
+    <add key="SqlOdbcName_TSHIS_BUSINESS" value="packet size=4096;user id=kf_v30;password=1;data source=192.168.201.2;persist security info=True;initial catalog=TSHIS_BUSINESS"/>
+  </appSettings>
+    <configSections>
+        <sectionGroup name="applicationSettings" type="System.Configuration.ApplicationSettingsGroup, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" >
+            <section name="ts_ensemble_eventlog.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" requirePermission="false" />
+        </sectionGroup>
+    </configSections>
+    <applicationSettings>
+        <ts_ensemble_eventlog.Properties.Settings>
+            <setting name="ts_ensemble_eventlog_WebReference_WebServiceActionOtherService"
+                serializeAs="String">
+                <value>http://192.168.0.15:9081/WebService/services/WebServiceActionOther</value>
+            </setting>
+        </ts_ensemble_eventlog.Properties.Settings>
+    </applicationSettings>
+</configuration>

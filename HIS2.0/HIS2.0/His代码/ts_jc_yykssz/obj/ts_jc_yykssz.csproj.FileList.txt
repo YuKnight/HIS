@@ -1,0 +1,17 @@
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\ts_jc_yykssz.FrmDeptProperty.resources
+obj\Debug\ts_jc_yykssz.FrmEmployee.resources
+obj\Debug\ts_jc_yykssz.FrmInvalidData.resources
+obj\Debug\ts_jc_yykssz.FrmMain.resources
+obj\Debug\ts_jc_yykssz.csproj.GenerateResource.Cache
+obj\Debug\ts_jc_yykssz.dll
+bin\Debug\ts_jc_yykssz.dll
+bin\Debug\ts_jc_yykssz.pdb
+obj\Debug\ts_jc_yykssz.pdb
+obj\Debug\ts_jc_yykssz.FrmMain2.resources
+bin\Debug\ts_HospData_Share.dll
+bin\Debug\ts_HospData_Share.pdb
+bin\Debug\TrasenClasses.dll
+bin\Debug\TrasenFrame.dll
+..\..\..\Debug\ts_jc_yykssz.dll
+..\..\..\Debug\ts_jc_yykssz.pdb

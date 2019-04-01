@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:ns1="http://service.resolveXml.hrwms.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="TsDoctorAdviceService" targetNamespace="http://service.resolveXml.hrwms.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema xmlns:tns="http://service.resolveXml.hrwms.org/" elementFormDefault="unqualified" targetNamespace="http://service.resolveXml.hrwms.org/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="getTsDoctorAdvice" type="tns:getTsDoctorAdvice" />
+      <xs:element name="getTsDoctorAdviceResponse" type="tns:getTsDoctorAdviceResponse" />
+      <xs:complexType name="getTsDoctorAdvice">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getTsDoctorAdviceResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="getTsDoctorAdviceResponse">
+    <wsdl:part name="parameters" element="ns1:getTsDoctorAdviceResponse" />
+  </wsdl:message>
+  <wsdl:message name="getTsDoctorAdvice">
+    <wsdl:part name="parameters" element="ns1:getTsDoctorAdvice" />
+  </wsdl:message>
+  <wsdl:portType name="TsDoctorAdviceService">
+    <wsdl:operation name="getTsDoctorAdvice">
+      <wsdl:input name="getTsDoctorAdvice" message="ns1:getTsDoctorAdvice" />
+      <wsdl:output name="getTsDoctorAdviceResponse" message="ns1:getTsDoctorAdviceResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

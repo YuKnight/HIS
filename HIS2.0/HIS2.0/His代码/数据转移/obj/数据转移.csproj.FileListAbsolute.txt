@@ -1,0 +1,7 @@
+E:\HIS2.0\Debug\ts_data_move.dll
+E:\HIS2.0\Debug\ts_data_move.pdb
+E:\HIS2.0\His代码\数据转移\obj\Debug\ResolveAssemblyReference.cache
+E:\HIS2.0\His代码\数据转移\obj\Debug\ts_data_move.FrmDataMove.resources
+E:\HIS2.0\His代码\数据转移\obj\Debug\数据转移.csproj.GenerateResource.Cache
+E:\HIS2.0\His代码\数据转移\obj\Debug\ts_data_move.dll
+E:\HIS2.0\His代码\数据转移\obj\Debug\ts_data_move.pdb

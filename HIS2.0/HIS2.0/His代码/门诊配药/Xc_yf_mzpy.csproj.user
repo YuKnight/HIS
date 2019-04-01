@@ -1,0 +1,48 @@
+<VisualStudioProject>
+    <CSHARP LastOpenVersion = "7.10.3077" >
+        <Build>
+            <Settings ReferencePath = "c:\winnt\assembly\gac\crystaldecisions.reportsource\9.1.5000.0__692fbea5521e1304\;c:\winnt\assembly\gac\crystaldecisions.crystalreports.engine\9.1.5000.0__692fbea5521e1304\;c:\winnt\assembly\gac\crystaldecisions.shared\9.1.5000.0__692fbea5521e1304\;c:\winnt\assembly\gac\system.web.services\1.0.5000.0__b03f5f7f11d50a3a\;d:\开发\长沙市中医院\物资器械管理系统\物资器械管理\control\;D:\省人医\代码\药房系统\41003 门诊配药\Xc_yf_mzpy\bin\Debug\;D:\省人医\代码\药房系统\41001门诊配药\Xc_yf_mzpy\bin\Debug\" >
+                <Config
+                    Name = "Debug"
+                    EnableASPDebugging = "false"
+                    EnableASPXDebugging = "false"
+                    EnableUnmanagedDebugging = "false"
+                    EnableSQLServerDebugging = "false"
+                    RemoteDebugEnabled = "false"
+                    RemoteDebugMachine = ""
+                    StartAction = "Project"
+                    StartArguments = ""
+                    StartPage = ""
+                    StartProgram = ""
+                    StartURL = ""
+                    StartWorkingDirectory = ""
+                    StartWithIE = "true"
+                />
+                <Config
+                    Name = "Release"
+                    EnableASPDebugging = "false"
+                    EnableASPXDebugging = "false"
+                    EnableUnmanagedDebugging = "false"
+                    EnableSQLServerDebugging = "false"
+                    RemoteDebugEnabled = "false"
+                    RemoteDebugMachine = ""
+                    StartAction = "Project"
+                    StartArguments = ""
+                    StartPage = ""
+                    StartProgram = ""
+                    StartURL = ""
+                    StartWorkingDirectory = ""
+                    StartWithIE = "true"
+                />
+            </Settings>
+        </Build>
+        <OtherProjectSettings
+            CopyProjectDestinationFolder = ""
+            CopyProjectUncPath = ""
+            CopyProjectOption = "0"
+            ProjectView = "ProjectFiles"
+            ProjectTrust = "0"
+        />
+    </CSHARP>
+</VisualStudioProject>
+

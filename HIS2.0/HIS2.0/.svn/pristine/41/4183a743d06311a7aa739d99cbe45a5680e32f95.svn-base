@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:intf="http://business.emr.whzxyy.com" xmlns:impl="http://business.emr.whzxyy.com" targetNamespace="http://business.emr.whzxyy.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://business.emr.whzxyy.com">
+      <xsd:element name="netWorkTest">
+        <xsd:complexType />
+      </xsd:element>
+      <xsd:element name="netWorkTestResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="netWorkTestReturn" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="manageInAdvice">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="reqXml" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="manageInAdviceResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="manageInAdviceReturn" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="manageWS">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="reqType" type="xsd:string" />
+            <xsd:element name="reqXml" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="manageWSResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="manageWSReturn" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="resultSetEMRTransport">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="RequestInfo" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="resultSetEMRTransportResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="resultSetEMRTransportReturn" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="resultSetEMRTransportRequest">
+    <wsdl:part name="parameters" element="impl:resultSetEMRTransport" />
+  </wsdl:message>
+  <wsdl:message name="manageInAdviceResponse">
+    <wsdl:part name="parameters" element="impl:manageInAdviceResponse" />
+  </wsdl:message>
+  <wsdl:message name="resultSetEMRTransportResponse">
+    <wsdl:part name="parameters" element="impl:resultSetEMRTransportResponse" />
+  </wsdl:message>
+  <wsdl:message name="netWorkTestResponse">
+    <wsdl:part name="parameters" element="impl:netWorkTestResponse" />
+  </wsdl:message>
+  <wsdl:message name="netWorkTestRequest">
+    <wsdl:part name="parameters" element="impl:netWorkTest" />
+  </wsdl:message>
+  <wsdl:message name="manageInAdviceRequest">
+    <wsdl:part name="parameters" element="impl:manageInAdvice" />
+  </wsdl:message>
+  <wsdl:message name="manageWSRequest">
+    <wsdl:part name="parameters" element="impl:manageWS" />
+  </wsdl:message>
+  <wsdl:message name="manageWSResponse">
+    <wsdl:part name="parameters" element="impl:manageWSResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WebSAction">
+    <wsdl:operation name="netWorkTest">
+      <wsdl:input name="netWorkTestRequest" message="impl:netWorkTestRequest" />
+      <wsdl:output name="netWorkTestResponse" message="impl:netWorkTestResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="manageInAdvice">
+      <wsdl:input name="manageInAdviceRequest" message="impl:manageInAdviceRequest" />
+      <wsdl:output name="manageInAdviceResponse" message="impl:manageInAdviceResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="manageWS">
+      <wsdl:input name="manageWSRequest" message="impl:manageWSRequest" />
+      <wsdl:output name="manageWSResponse" message="impl:manageWSResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="resultSetEMRTransport">
+      <wsdl:input name="resultSetEMRTransportRequest" message="impl:resultSetEMRTransportRequest" />
+      <wsdl:output name="resultSetEMRTransportResponse" message="impl:resultSetEMRTransportResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebSActionSoapBinding" type="impl:WebSAction">
+    <wsdlsoap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="netWorkTest">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="netWorkTestRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="netWorkTestResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="manageInAdvice">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="manageInAdviceRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="manageInAdviceResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="manageWS">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="manageWSRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="manageWSResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="resultSetEMRTransport">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="resultSetEMRTransportRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="resultSetEMRTransportResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebSActionService">
+    <wsdl:port name="WebSAction" binding="impl:WebSActionSoapBinding">
+      <wsdlsoap:address location="http://192.168.0.26:8008/emrwebs/services/WebSAction" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

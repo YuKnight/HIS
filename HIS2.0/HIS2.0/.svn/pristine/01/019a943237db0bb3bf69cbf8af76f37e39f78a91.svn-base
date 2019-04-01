@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <appSettings> 
+    <add key="Port" value="4999"/>  
+    <add key ="WinNum" value ="5"/>
+  </appSettings>
+</configuration>

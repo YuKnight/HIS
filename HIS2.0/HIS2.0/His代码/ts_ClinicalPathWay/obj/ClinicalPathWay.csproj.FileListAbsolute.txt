@@ -1,0 +1,16 @@
+D:\code\创新\简清桂\Debug\ClinicalPathWay.exe
+D:\code\创新\简清桂\Debug\ClinicalPathWay.pdb
+D:\code\创新\简清桂\临床路径\代码\ClinicalPathWay\ClinicalPathWay\obj\Debug\ResolveAssemblyReference.cache
+D:\code\创新\简清桂\临床路径\代码\ClinicalPathWay\ClinicalPathWay\obj\Debug\ClinicalPathWay.Form1.resources
+D:\code\创新\简清桂\临床路径\代码\ClinicalPathWay\ClinicalPathWay\obj\Debug\ClinicalPathWay.Properties.Resources.resources
+D:\code\创新\简清桂\临床路径\代码\ClinicalPathWay\ClinicalPathWay\obj\Debug\ClinicalPathWay.csproj.GenerateResource.Cache
+D:\code\创新\简清桂\临床路径\代码\ClinicalPathWay\ClinicalPathWay\obj\Debug\ClinicalPathWay.exe
+D:\code\创新\简清桂\临床路径\代码\ClinicalPathWay\ClinicalPathWay\obj\Debug\ClinicalPathWay.pdb
+D:\code\创新\简清桂\临床路径\代码\ClinicalPathWay\obj\Debug\ResolveAssemblyReference.cache
+D:\code\创新\简清桂\临床路径\代码\ClinicalPathWay\obj\Debug\ClinicalPathWay.Form1.resources
+D:\code\创新\简清桂\临床路径\代码\ClinicalPathWay\obj\Debug\ClinicalPathWay.Properties.Resources.resources
+D:\code\创新\简清桂\临床路径\代码\ClinicalPathWay\obj\Debug\ClinicalPathWay.csproj.GenerateResource.Cache
+D:\code\创新\简清桂\临床路径\代码\ClinicalPathWay\obj\Debug\ClinicalPathWay.exe
+D:\code\创新\Debug\ClinicalPathWay.exe
+D:\code\创新\Debug\ClinicalPathWay.pdb
+D:\code\创新\简清桂\临床路径\代码\ClinicalPathWay\obj\Debug\ClinicalPathWay.pdb

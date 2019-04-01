@@ -1,0 +1,363 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+using TrasenFrame.Classes;
+using TrasenClasses.DatabaseAccess;
+using TrasenClasses.GeneralClasses;
+using TrasenFrame.Forms;
+using ts_mz_class;
+
+namespace ts_yp_ksstj
+{
+    public partial class Frmzydddtj_all : Form
+    {
+        private Form _mdiParent;
+        private MenuTag _menuTag;
+        private string _chineseName;
+        private DataTable Tbks;//挂号科室数据
+        private DataTable Tbys;//挂号医生数据
+        public Frmzydddtj_all(MenuTag menuTag, string chineseName, Form mdiParent)
+        {
+            InitializeComponent();
+            _menuTag = menuTag;
+            _chineseName = chineseName;
+            _mdiParent = mdiParent;
+
+            if (_menuTag.Function_Name == "Fun_ts_yp_ksstj_zyyp_all_ks")
+            {
+                txtks.Tag = InstanceForm.BCurrentDept.DeptId;
+                txtks.Text = InstanceForm.BCurrentDept.DeptName;
+                txtks.Enabled = false;
+            }
+
+            this.WindowState = FormWindowState.Maximized;
+        }
+
+        private void btnSelect_Click(object sender, EventArgs e)
+        {
+            this.Cursor = Cursors.WaitCursor;
+
+            try
+            {
+                this.Cursor = PubStaticFun.WaitCursor();
+                btnSelect.Enabled = false;
+
+                int tjlx = 0;
+                if (rdoks.Checked == true) tjlx = 1;
+                if (rdoys.Checked == true) tjlx = 2;
+                ParameterEx[] parameters = new ParameterEx[5];
+                parameters[0].Value = dtp1.Value.ToShortDateString() + "";
+                parameters[1].Value = dtp2.Value.ToShortDateString() + "";
+                parameters[2].Value = tjlx;
+                parameters[3].Value = Convertor.IsNull(txtks.Tag, "0");
+                parameters[4].Value = Convertor.IsNull(txtys.Tag, "0");
+                
+
+                parameters[0].Text = "@rq1";
+                parameters[1].Text = "@rq2";
+                parameters[2].Text = "@tjlx";
+                parameters[3].Text = "@ksdm";
+                parameters[4].Text = "@ysdm";
+               
+
+                DataSet dset = new DataSet();
+                InstanceForm.BDatabase.AdapterFillDataSet("SP_YP_KSSZB_ZYDDD_ALL", parameters, dset, "kss", 30);
+
+                dataGridView1.Columns.Clear();
+                dset.Tables[0].TableName = "Tb";
+                this.dataGridView1.DataSource = dset.Tables[0];
+
+                Fun.AddRowtNo(dset.Tables[0]);
+
+                DataRow rows=null;
+                if (rdoyp.Checked == true && dset.Tables[1].Rows.Count>0) rows = dset.Tables[1].Rows[0];
+                if (rdoks.Checked == true && dset.Tables[0].Rows.Count> 0) rows = dset.Tables[0].Rows[dset.Tables[0].Rows.Count-1];
+                if (rdoys.Checked == true && dset.Tables[0].Rows.Count > 0) rows = dset.Tables[0].Rows[dset.Tables[0].Rows.Count - 1];
+
+                txtDDD.Text =rows["累计DDD数"].ToString();
+                txtoutPatient.Text = rows["出院人数"].ToString();
+                txtAvgOutpatient.Text = rows["平均住院天数"].ToString();
+                txtpatientCount.Text = rows["同期收治患者人天数"].ToString();
+                txtqiangdu.Text = rows["抗菌药物使用强度"].ToString();
+                txtkjywrc.Text = rows["在床使用抗菌药物人数"].ToString();
+                txtksssyl.Text = rows["抗菌药物使用率"].ToString();
+                txtzcrs.Text = rows["在床人数"].ToString();
+                btnSelect.Enabled = true;
+
+
+            }
+            catch (System.Exception err)
+            {
+                btnSelect.Enabled = true;
+                MessageBox.Show(err.Message, "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            finally
+            {
+                this.Cursor = Cursors.Arrow;
+            }
+
+        }
+
+        private void txtys_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Control control = (Control)sender;
+
+            if ((int)e.KeyChar == 8 || (int)e.KeyChar == 46)
+            {
+                txtys.Tag = "";
+                txtys.Text = "";
+                e.Handled = true;
+                return;
+            }
+
+            if ((int)e.KeyChar != 13 && Convertor.IsNumeric(e.KeyChar.ToString()) == false)
+            {
+
+                if (_menuTag.Function_Name == "Fun_ts_yp_ksstj_zyyp_all_ks")
+                    Tbys = Fun.GetGhys(Convert.ToInt32(Convertor.IsNull(txtks.Tag, "0")),0, InstanceForm.BDatabase);
+
+                string[] headtext = new string[] { "医生姓名", "代码", "工号", "拼音码", "五笔码", "employee_id" };
+                string[] mappingname = new string[] { "name", "ys_code", "code", "py_code", "wb_code", "employee_id" };
+                string[] searchfields = new string[] { "ys_code", "py_code", "wb_code", "code" };//, "code" Modify By Tany 2008-12-19 不一定有工号
+                int[] colwidth = new int[] { 100, 75, 75, 75, 75, 0 };
+                TrasenFrame.Forms.FrmSelectCard f = new FrmSelectCard(searchfields, headtext, mappingname, colwidth);
+                f.sourceDataTable = Tbys;
+                f.WorkForm = this;
+                f.srcControl = txtys;
+                f.Font = txtys.Font;
+                f.Width = 400;
+                f.ReciveString = e.KeyChar.ToString();
+                e.Handled = true;
+                if (f.ShowDialog() == DialogResult.Cancel)
+                {
+                    txtys.Focus();
+                }
+                else
+                {
+                    txtys.Tag = Convert.ToInt32(f.SelectDataRow["employee_id"]);
+                    txtys.Text = f.SelectDataRow["name"].ToString().Trim();
+                    e.Handled = true;
+                }
+
+            }
+
+
+        }
+
+        private void txtks_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((int)e.KeyChar == 8 || (int)e.KeyChar == 46)
+            {
+                txtks.Text = "";
+                txtks.Tag = "";
+                return;
+            }
+
+            Control control = (Control)sender;
+            if ((int)e.KeyChar != 13)
+            {
+                string[] headtext = new string[] { "科室名称", "数字码", "拼音码", "dept_id" };
+                string[] mappingname = new string[] { "name", "d_code", "py_code", "dept_id" };
+                string[] searchfields = new string[] { "d_code", "py_code", "wb_code" };
+                int[] colwidth = new int[] { 150, 100, 100, 0 };
+                TrasenFrame.Forms.FrmSelectCard f = new FrmSelectCard(searchfields, headtext, mappingname, colwidth);
+                f.sourceDataTable = Tbks;
+                f.WorkForm = this;
+                f.srcControl = txtks;
+                f.Font = txtks.Font;
+                f.Width = 400;
+                f.ReciveString = e.KeyChar.ToString();
+                e.Handled = true;
+                if (f.ShowDialog() == DialogResult.Cancel)
+                {
+                    txtks.Focus();
+                    return;
+                }
+                else
+                {
+                    txtks.Tag = Convert.ToInt32(f.SelectDataRow["dept_id"]);
+                    txtks.Text = f.SelectDataRow["name"].ToString().Trim();
+                    e.Handled = true;
+                }
+            }
+
+        }
+
+        private void Frmzydddtj_Load(object sender, EventArgs e)
+        {
+            Tbks = Getks();
+            if (_menuTag.Function_Name != "Fun_ts_yp_ksstj_zyyp_all_ks")
+                Tbys = Fun.GetGhys(0, InstanceForm.BDatabase);
+            else
+                Tbys = Fun.GetGhys(InstanceForm.BCurrentDept.DeptId,0, InstanceForm.BDatabase);
+
+            this.WindowState = FormWindowState.Maximized;
+        }
+
+        public DataTable Getks()
+        {
+            string ssql = "select DEPT_ID, NAME ,D_CODE,PY_CODE,wb_code from jc_dept_property where layer=3 and  jgbm=" + TrasenFrame.Forms.FrmMdiMain.Jgbm + " and deleted=0 " +
+                          " and dept_id in (select dept_id from jc_dept_type_relation where type_code not in('001','002','003','009'))";
+            return InstanceForm.BDatabase.GetDataTable(ssql);
+        }
+
+        private void rdoyp_CheckedChanged(object sender, EventArgs e)
+        {
+            DataTable tb = (DataTable)dataGridView1.DataSource;
+            if (tb != null) tb.Rows.Clear();
+
+            txtDDD.Text = "";
+            txtoutPatient.Text = "";
+            txtAvgOutpatient.Text = "";
+            txtpatientCount.Text = "";
+            txtqiangdu.Text = "";
+            txtkjywrc.Text = "";
+            txtksssyl.Text = "";
+            txtzcrs.Text = "";
+
+        }
+
+        private void btnPrint_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                DataTable tb = (DataTable)this.dataGridView1.DataSource;
+
+                // 创建Excel对象                  
+                Excel.Application xlApp = new Excel.ApplicationClass();
+                if (xlApp == null)
+                {
+                    MessageBox.Show("Excel无法启动");
+                    return;
+                }
+                // 创建Excel工作薄
+                Excel.Workbook xlBook = xlApp.Workbooks.Add(true);
+                Excel.Worksheet xlSheet = (Excel.Worksheet)xlBook.Worksheets[1];
+
+                // 列索引，行索引，总列数，总行数
+                int colIndex = 0;
+                int RowIndex = 0;
+                int colCount = 0;
+                int RowCount = tb.Rows.Count;
+                for (int i = 0; i <= tb.Columns.Count - 1; i++)
+                {
+                    if (dataGridView1.Columns[tb.Columns[i].ColumnName].Width > 0)
+                        colCount = colCount + 1;
+                }
+
+                // 设置标题
+                Excel.Range range = xlSheet.get_Range(xlApp.Cells[1, 1], xlApp.Cells[1, colCount]);
+                range.MergeCells = true;
+                xlApp.ActiveCell.FormulaR1C1 = this.Text;
+                xlApp.ActiveCell.Font.Size = 20;
+                xlApp.ActiveCell.Font.Bold = true;
+                xlApp.ActiveCell.HorizontalAlignment = Excel.Constants.xlCenter;
+
+                //查询条件
+                string bz = "";
+                bz = "累计DDD数:" + txtDDD.Text + "  出院人数:" + txtoutPatient.Text + "  平均住院天数:" + txtAvgOutpatient.Text +
+                    "  同期收治患者人天数:" + txtpatientCount.Text  ;
+                string swhere = "抗菌药物使用强度:" + txtqiangdu.Text +
+                    "在床使用抗菌药物人数:" + txtkjywrc.Text + "  在床人数:"+txtzcrs.Text.Trim()+"  抗菌药物使用率:" + txtksssyl.Text;
+                // 设置条件
+                Excel.Range rangeT = xlSheet.get_Range(xlApp.Cells[2, 1], xlApp.Cells[2, colCount]);
+                rangeT.MergeCells = true;
+                object[,] objDataT = new object[1, 1];
+                range = xlSheet.get_Range(xlApp.Cells[2, 1], xlApp.Cells[RowCount + 2, colCount]);
+                objDataT[0, 0] = bz;
+                rangeT.Value2 = objDataT;
+
+                rangeT = xlSheet.get_Range(xlApp.Cells[3, 1], xlApp.Cells[3, colCount]);
+                rangeT.MergeCells = true;
+                object[,] objDataT2 = new object[1, 1];
+                objDataT2[0, 0] = swhere;
+                rangeT.Value2 = objDataT2;
+
+
+
+
+                // 创建缓存数据
+                object[,] objData = new object[RowCount + 1, colCount + 1];
+                // 获取列标题
+                for (int i = 0; i <= tb.Columns.Count - 1; i++)
+                {
+                    if (dataGridView1.Columns[tb.Columns[i].ColumnName].Width > 0)
+                        objData[0, colIndex++] = dataGridView1.Columns[tb.Columns[i].ColumnName].HeaderText;
+                }
+                // 获取数据
+
+                for (int i = 0; i <= tb.Rows.Count - 1; i++)
+                {
+                    colIndex = 0;
+                    for (int j = 0; j <= tb.Columns.Count - 1; j++)
+                    {
+                        if (dataGridView1.Columns[tb.Columns[j].ColumnName].Width > 0)
+                        {
+                            objData[i + 1, colIndex++] = "" + tb.Rows[i][j].ToString();
+                        }
+                    }
+                    Application.DoEvents();
+                }
+                // 写入Excel
+                range = xlSheet.get_Range(xlApp.Cells[4, 1], xlApp.Cells[RowCount + 4, colCount]);
+                range.Value2 = objData;
+
+                // 
+                xlApp.get_Range(xlApp.Cells[4, 1], xlApp.Cells[RowCount + 4, colCount]).Borders.LineStyle = 1;
+
+                //设置报表表格为最适应宽度
+                xlApp.get_Range(xlApp.Cells[4, 1], xlApp.Cells[RowCount + 4, colCount]).Select();
+                xlApp.get_Range(xlApp.Cells[4, 1], xlApp.Cells[RowCount + 4, colCount]).Columns.AutoFit();
+                xlApp.get_Range(xlApp.Cells[4, 1], xlApp.Cells[RowCount + 4, colCount]).Font.Size = 9;
+
+                xlApp.Visible = true;
+            }
+            catch (System.Exception err)
+            {
+                MessageBox.Show(err.Message, "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                this.Cursor = Cursors.Arrow;
+            }
+
+
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void txtys_TextChanged(object sender, EventArgs e)
+        {
+            if (txtys.Text.Trim() == "")
+            {
+                txtys.Tag = "";
+                txtys.Text = "";
+
+            }
+        }
+
+        private void txtks_TextChanged(object sender, EventArgs e)
+        {
+            if (txtks.Text.Trim() == "")
+            {
+                txtks.Tag = "";
+                txtks.Text = "";
+
+            }
+        }
+
+
+
+    }
+
+
+
+}

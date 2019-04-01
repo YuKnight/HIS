@@ -1,0 +1,6 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ReferencePath>C:\Program Files\Common Files\Business Objects\2.7\Managed\</ReferencePath>
+    <ProjectView>ProjectFiles</ProjectView>
+  </PropertyGroup>
+</Project>

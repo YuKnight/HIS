@@ -1,0 +1,9 @@
+E:\工作目录\HIS\Debug\ts_yj_class.dll
+E:\工作目录\HIS\Debug\ts_yj_class.pdb
+E:\工作目录\HIS\His代码\ts_yj_class\obj\Debug\ResolveAssemblyReference.cache
+E:\工作目录\HIS\His代码\ts_yj_class\obj\Debug\ts_yj_class.FrmPasswordCheck.resources
+E:\工作目录\HIS\His代码\ts_yj_class\obj\Debug\ts_yj_class.frmqr.resources
+E:\工作目录\HIS\His代码\ts_yj_class\obj\Debug\ts_yj_class.frmfy.resources
+E:\工作目录\HIS\His代码\ts_yj_class\obj\Debug\ts_yj_class.csproj.GenerateResource.Cache
+E:\工作目录\HIS\His代码\ts_yj_class\obj\Debug\ts_yj_class.dll
+E:\工作目录\HIS\His代码\ts_yj_class\obj\Debug\ts_yj_class.pdb

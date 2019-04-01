@@ -1,0 +1,342 @@
+﻿Object Report
+	Version='5.8.0.5'
+	Title='你的报表标题'
+	Object Font
+		Name='宋体'
+		Size=105000,0
+		Weight=400
+		Charset=134
+	End
+	Object Printer
+		Oriention=Landscape
+	End
+	Object DetailGrid
+		IsCrossTab=T
+		Object Recordset
+			ConnectionString='Provider=SQLNCLI.1;Password=sasa\r\n;Persist Security Info=True;User ID=sa;Initial Catalog=kf_his;Data Source=ADMIN-PC\\SQL2008;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=ADMIN-PC;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False'
+			QuerySQL='select  isnull(type,2) typeID ,\r\n j.mc  支出名称 ,\r\ndbo.fun_wz_wldw(a.ywlx,wldw) 往来单位,wzfl ,e.hhbm+f.hhbm+dbo.fun_wz_flmc(wzfl) 物资类型,-1*sum(DBO.FUN_WZ_DRT(A.YWLX,jhje))  金额           \r\nfrom wz_dj a inner join wz_djmx b on a.id=b.djid                          \r\nleft join  (SELECT DISTINCT deptid,[type],dept_zx FROM wz_dept WHERE  bscbz=0  AND bghdw=0) c on a.wldw=c.deptid                                          \r\ninner join vi_wz_cd d on b.wzid=d.wzid inner join wz_wzlx e on d.wzlx=e.id inner join wz_wzzlx f on d.wzfl=f.id  left join wz_type j on c.type=j.ID \r\nwhere j.mc   is not null\r\ngroup  by type,wldw,wzfl,e.hhbm,f.hhbm,a.YWLX ,j.mc order by  typeID'
+			SkipQuery=T
+			SortFields='typeID;往来单位'
+			Items Field
+				Item
+					Name='typeID'
+					Type=Integer
+				End
+				Item
+					Name='支出名称'
+				End
+				Item
+					Name='往来单位'
+				End
+				Item
+					Name='wzfl'
+					Type=Integer
+				End
+				Item
+					Name='物资类型'
+				End
+				Item
+					Name='金额'
+					Type=Float
+					Format='0.00'
+				End
+			End
+		End
+		Items Column
+			Item
+				Name='Column1'
+				Width=3.88938
+			End
+			Item
+				Name='Column2'
+				Width=2.61938
+			End
+			Item
+				Name='Column3'
+				Width=2.40771
+			End
+			Item
+				Name='Column4'
+				Width=1.69333
+			End
+			Item
+				Name='Column5'
+				Width=1.37583
+			End
+		End
+		Object ColumnContent
+			Height=0.608542
+			Items ColumnContentCell
+				Item
+					Column='Column1'
+					TextAlign=MiddleCenter
+					DataField='往来单位'
+				End
+				Item
+					Column='Column2'
+					FreeCell=T
+					Items Control
+						Item
+							Type=FieldBox
+							Name='FieldBox2'
+							Left=0.0264583
+							Width=2.38125
+							Height=0.608542
+							TextAlign=MiddleRight
+							DataField='金额'
+						End
+					End
+				End
+				Item
+					Column='Column3'
+					FreeCell=T
+					Items Control
+						Item
+							Type=FieldBox
+							Name='FieldBox3'
+							Left=0.211667
+							Width=2.01083
+							Height=0.608542
+							TextAlign=MiddleRight
+							DataField='金额'
+						End
+					End
+				End
+				Item
+					Column='Column4'
+					TextAlign=MiddleCenter
+					DataField='支出名称'
+				End
+				Item
+					Column='Column5'
+					FreeCell=T
+					Items Control
+						Item
+							Type=MemoBox
+							Name='MemoBox10'
+							Width=1.19063
+							Height=0.608542
+							TextAlign=MiddleCenter
+							Text='[#SystemVar(RowNo)#]'
+						End
+					End
+				End
+			End
+		End
+		Object ColumnTitle
+			Height=1
+			Items ColumnTitleCell
+				Item
+					GroupTitle=F
+					Column='Column5'
+					Text='序号'
+				End
+				Item
+					GroupTitle=F
+					Column='Column4'
+					Text='支出方式'
+				End
+				Item
+					GroupTitle=F
+					Column='Column1'
+					TextAlign=MiddleCenter
+					Text='科室名称'
+				End
+				Item
+					GroupTitle=F
+					Column='Column2'
+					FreeCell=T
+					Items Control
+						Item
+							Type=FieldBox
+							Name='FieldBox1'
+							Left=0.0264583
+							Width=2.56646
+							Height=1.00542
+							WordWrap=T
+							TextAlign=MiddleCenter
+							DataField='物资类型'
+						End
+					End
+				End
+				Item
+					GroupTitle=F
+					Column='Column3'
+					TextAlign=MiddleCenter
+					Text='合计(金额)'
+				End
+			End
+		End
+		Items Group
+			Item
+				Name='Group1'
+				Object GroupHeader
+					Height=0
+				End
+				Object GroupFooter
+					Height=0.396875
+					Object Font
+						Name='宋体'
+						Size=105000,0
+						Bold=T
+						Charset=134
+					End
+					Items Control
+						Item
+							Type=MemoBox
+							Name='MemoBox2'
+							AlignColumn='Column4'
+							Left=1.37583
+							Width=1.71979
+							Height=0.396875
+							Text='合计:'
+						End
+					End
+				End
+			End
+			Item
+				Name='Group2'
+				ByFields='typeID'
+				Object GroupHeader
+					Height=0
+					OccupyColumn=T
+					OccupiedColumns='Column4'
+					VAlign=Middle
+				End
+				Object GroupFooter
+					Height=0.608542
+					Object Font
+						Name='宋体'
+						Size=105000,0
+						Bold=T
+						Charset=134
+					End
+					Items Control
+						Item
+							Type=MemoBox
+							Name='MemoBox1'
+							AlignColumn='Column4'
+							Left=1.37583
+							Width=1.71979
+							Height=0.608542
+							Text='[#支出名称#] 小计：'
+						End
+					End
+				End
+			End
+		End
+		Object CrossTab
+			PercentFormat='0.##%'
+			HCrossFields='物资类型'
+			VCrossFields='typeID;往来单位'
+			ListCols=3
+			TotalCols=1
+		End
+	End
+	Items Parameter
+		Item
+			Name='bt'
+		End
+		Item
+			Name='dysj'
+		End
+		Item
+			Name='dyr'
+		End
+		Item
+			Name='yymc'
+		End
+		Item
+			Name='cxqj'
+		End
+		Item
+			Name='cxfw'
+		End
+		Item
+			Name='dyks'
+		End
+	End
+	Items Section
+		Item
+			Type=PageHeader
+			Height=2.80458
+			Items Control
+				Item
+					Type=MemoBox
+					Name='MemoBox6'
+					Width=24.6063
+					Height=1.00542
+					Object Font
+						Name='宋体'
+						Size=150000,0
+						Bold=T
+						Charset=134
+					End
+					TextAlign=MiddleCenter
+					Text='[#yymc#]'
+				End
+				Item
+					Type=MemoBox
+					Name='MemoBox11'
+					AlignColumnSide=Right
+					AlignColumn='Column3'
+					Left=8.01688
+					Top=1.79917
+					Width=4
+					Height=0.396875
+					Text='第 [#SystemVar(Group2PageNumber)#] 页，共 [#SystemVar(Group2PageCount)#] 页\r\n'
+				End
+				Item
+					Type=MemoBox
+					Name='MemoBox3'
+					Top=1.16417
+					Width=24.6063
+					Height=0.423333
+					TextAlign=TopCenter
+					Text='[#bt#]'
+				End
+				Item
+					Type=MemoBox
+					Name='MemoBox12'
+					Top=1.79917
+					Width=24.6063
+					Height=0.396875
+					TextAlign=MiddleCenter
+					Text='[#cxfw#]'
+				End
+			End
+		End
+		Item
+			Type=PageFooter
+			Height=1.2
+			Items Control
+				Item
+					Type=MemoBox
+					Name='MemoBox4'
+					AlignColumnSide=Left
+					AlignColumn='Column5'
+					Top=-0.0529167
+					Width=4.20688
+					Height=0.61
+					TextAlign=BottomLeft
+					Text='打印时间：[#dysj#]'
+				End
+				Item
+					Type=MemoBox
+					Name='MemoBox5'
+					AlignColumnSide=Right
+					AlignColumn='Column3'
+					Left=8.38729
+					Width=3.62479
+					Height=0.608542
+					Text='制表人：[#dyr#]'
+				End
+			End
+		End
+		Item
+			Type=ReportHeader
+			Name='ReportHeader1'
+			Height=0
+		End
+	End
+End

@@ -1,0 +1,881 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0D0199CC-D224-47DD-B5E0-6A3D1382EC8D}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>App.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>ts_zyhs_report</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ts_zyhs_report</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\..\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Web, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App.ico" />
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Report\ZYHS_myReportExec.cs">
+      <DependentUpon>ZYHS_myReportExec.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Report\ZYHS_rptMaterialStat.cs">
+      <DependentUpon>ZYHS_rptMaterialStat.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Report\ZYHS_一般患者护理记录.cs">
+      <DependentUpon>ZYHS_一般患者护理记录.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Report\ZYHS_交班记录.cs">
+      <DependentUpon>ZYHS_交班记录.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Report\ZYHS_交病人药品查询.cs">
+      <DependentUpon>ZYHS_交病人药品查询.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Report\ZYHS_住院记帐凭证.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZYHS_住院记帐凭证.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ZYHS_催款单.cs">
+      <DependentUpon>ZYHS_催款单.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Report\ZYHS_入院患者护理评估.cs">
+      <DependentUpon>ZYHS_入院患者护理评估.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Report\ZYHS_出院通知单.cs">
+      <DependentUpon>ZYHS_出院通知单.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Report\ZYHS_危重病人护理记录.cs">
+      <DependentUpon>ZYHS_危重病人护理记录.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Report\ZYHS_四测记录.cs">
+      <DependentUpon>ZYHS_四测记录.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Report\ZYHS_执行单临时卡.cs">
+      <DependentUpon>ZYHS_执行单临时卡.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Report\ZYHS_执行单多日卡.cs">
+      <DependentUpon>ZYHS_执行单多日卡.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Report\ZYHS_执行单服药卡.cs">
+      <DependentUpon>ZYHS_执行单服药卡.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Report\ZYHS_执行单服药卡_OLD.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZYHS_执行单服药卡_OLD.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ZYHS_执行单滴眼单.cs">
+      <DependentUpon>ZYHS_执行单滴眼单.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Report\ZYHS_执行单输液卡.cs">
+      <DependentUpon>ZYHS_执行单输液卡.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Report\ZYHS_护士排班.cs">
+      <DependentUpon>ZYHS_护士排班.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Report\ZYHS_排班工作量统计.cs">
+      <DependentUpon>ZYHS_排班工作量统计.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Report\ZYHS_检验单据打印.cs">
+      <DependentUpon>ZYHS_检验单据打印.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Report\ZYHS_检验申请单.cs">
+      <DependentUpon>ZYHS_检验申请单.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Report\ZYHS_检验申请单条码.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZYHS_检验申请单条码.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ZYHS_病区工作日志.cs">
+      <DependentUpon>ZYHS_病区工作日志.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Report\ZYHS_病区科室收入.cs">
+      <DependentUpon>ZYHS_病区科室收入.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Report\ZYHS_科室收入报表.cs">
+      <DependentUpon>ZYHS_科室收入报表.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Report\ZYHS_科室病人费用.cs">
+      <DependentUpon>ZYHS_科室病人费用.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Report\ZYHS_空白临时医嘱.cs">
+      <DependentUpon>ZYHS_空白临时医嘱.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Report\ZYHS_空白入院患者护理评估.cs">
+      <DependentUpon>ZYHS_空白入院患者护理评估.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Report\ZYHS_空白长期医嘱.cs">
+      <DependentUpon>ZYHS_空白长期医嘱.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Report\ZYHS_药品明细单.cs">
+      <DependentUpon>ZYHS_药品明细单.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Report\ZYHS_药品统领单.cs">
+      <DependentUpon>ZYHS_药品统领单.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Report\ZYHS_费用分类汇总.cs">
+      <DependentUpon>ZYHS_费用分类汇总.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Report\ZYHS_费用单明细不分类.cs">
+      <DependentUpon>ZYHS_费用单明细不分类.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Report\ZYHS_费用单明细分类.cs">
+      <DependentUpon>ZYHS_费用单明细分类.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Report\ZYHS_费用单汇总不分类.cs">
+      <DependentUpon>ZYHS_费用单汇总不分类.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Report\ZYHS_费用单汇总分类.cs">
+      <DependentUpon>ZYHS_费用单汇总分类.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Report\ZY_床位使用率.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZY_床位使用率.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ZY_报表_结算病人费用统计.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZY_报表_结算病人费用统计.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TheReportDateSet.cs">
+      <DependentUpon>TheReportDateSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TheReportDateSet.Designer.cs">
+      <DependentUpon>TheReportDateSet.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="ZYHS_交病人药品查询.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZYHS_交病人药品查询.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ZYHS_催款单汇总.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZYHS_催款单汇总.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ZYHS_治疗单.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZYHS_治疗单.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="冷水江\ZYHS_费用分类汇总.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZYHS_费用分类汇总.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="冷水江\ZYHS_费用单汇总分类.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZYHS_费用单汇总分类.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="常德津市人民医院\ZYHS_费用分类汇总.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZYHS_费用分类汇总.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="常德津市人民医院\ZYHS_费用单明细不分类.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZYHS_费用单明细不分类.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="常德津市人民医院\ZYHS_费用单明细分类.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZYHS_费用单明细分类.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="常德津市人民医院\ZYHS_费用单汇总不分类.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZYHS_费用单汇总不分类.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="常德津市人民医院\ZYHS_费用单汇总分类.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZYHS_费用单汇总分类.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="株洲中医院\ZYHS_输液卡.cs">
+      <DependentUpon>ZYHS_输液卡.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="武汉中心医院\ZD_临时账单.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZD_临时账单.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="武汉中心医院\ZD_长期账单.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZD_长期账单.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="武汉中心医院\ZYHS_出院通知单.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZYHS_出院通知单.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="武汉中心医院\ZYHS_服药单.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZYHS_服药单.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="武汉中心医院\ZYHS_治疗单.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZYHS_治疗单.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="武汉中心医院\ZYHS_注射卡.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZYHS_注射卡.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="武汉中心医院\ZYHS_输液卡.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZYHS_输液卡.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="武汉中心医院\ZYHS_输液卡（瓶签）.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZYHS_输液卡（瓶签）.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="浏阳中医院\HS_术前执行单.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HS_术前执行单.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="浏阳中医院\ZYHS_费用单明细分类.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZYHS_费用单明细分类.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="浏阳中医院\ZYHS_费用单汇总分类.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZYHS_费用单汇总分类.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="浏阳骨伤科医院\ZYHS_输液卡.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZYHS_输液卡.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="费用清单\ZYHS_费用分类汇总.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZYHS_费用分类汇总.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="费用清单\ZYHS_费用单汇总分类.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZYHS_费用单汇总分类.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="邵阳人民医院\ZYHS_费用分类汇总.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZYHS_费用分类汇总.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="邵阳人民医院\ZYHS_费用单明细不分类.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZYHS_费用单明细不分类.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="邵阳人民医院\ZYHS_费用单明细分类.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZYHS_费用单明细分类.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="邵阳人民医院\ZYHS_费用单汇总不分类.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZYHS_费用单汇总不分类.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="邵阳人民医院\ZYHS_费用单汇总分类.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZYHS_费用单汇总分类.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="长沙市八医院\ZYHS_费用单明细不分类.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZYHS_费用单明细不分类.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="长沙市八医院\ZYHS_费用单明细分类.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZYHS_费用单明细分类.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="长沙市八医院\ZYHS_费用单汇总不分类.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZYHS_费用单汇总不分类.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="长沙市八医院\ZYHS_费用单汇总分类.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZYHS_费用单汇总分类.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="长沙市八医院\ZYHS_输液卡.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZYHS_输液卡.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <None Include="Report\YK_进销存情况表%28外加报表%29.rpt" />
+    <None Include="Report\ZY_医保病人药费.rpt" />
+    <None Include="Report\ZY_报表_结算病人收入%28科室%29.rpt" />
+    <None Include="Report\ZY_报表_结算病人收入.rpt" />
+    <None Include="TheReportDateSet.xsc">
+      <DependentUpon>TheReportDateSet.xsd</DependentUpon>
+    </None>
+    <None Include="TheReportDateSet.xss">
+      <DependentUpon>TheReportDateSet.xsd</DependentUpon>
+    </None>
+    <None Include="TheReportDateSet.xsx">
+      <DependentUpon>TheReportDateSet.xsd</DependentUpon>
+    </None>
+    <Content Include="TheReportDateSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TheReportDateSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <EmbeddedResource Include="Report\ZYHS_myReportExec.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_myReportExec.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ZYHS_rptMaterialStat.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_rptMaterialStat.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ZYHS_一般患者护理记录.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_一般患者护理记录.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ZYHS_交班记录.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_交班记录.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ZYHS_交病人药品查询.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_交病人药品查询.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ZYHS_住院记帐凭证.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_住院记帐凭证.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ZYHS_催款单.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_催款单.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ZYHS_入院患者护理评估.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_入院患者护理评估.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ZYHS_出院通知单.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_出院通知单.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ZYHS_危重病人护理记录.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_危重病人护理记录.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ZYHS_四测记录.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_四测记录.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ZYHS_执行单临时卡.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_执行单临时卡.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ZYHS_执行单多日卡.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_执行单多日卡.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ZYHS_执行单服药卡.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_执行单服药卡.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ZYHS_执行单服药卡_OLD.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_执行单服药卡_OLD.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ZYHS_执行单滴眼单.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_执行单滴眼单.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ZYHS_执行单输液卡.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_执行单输液卡.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ZYHS_护士排班.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_护士排班.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ZYHS_排班工作量统计.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_排班工作量统计.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ZYHS_检验单据打印.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_检验单据打印.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ZYHS_检验申请单.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_检验申请单.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ZYHS_检验申请单条码.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_检验申请单条码.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ZYHS_病区工作日志.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_病区工作日志.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ZYHS_病区科室收入.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_病区科室收入.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ZYHS_科室收入报表.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_科室收入报表.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ZYHS_科室病人费用.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_科室病人费用.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ZYHS_空白临时医嘱.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_空白临时医嘱.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ZYHS_空白入院患者护理评估.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_空白入院患者护理评估.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ZYHS_空白长期医嘱.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_空白长期医嘱.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ZYHS_药品明细单.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_药品明细单.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ZYHS_药品统领单.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_药品统领单.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ZYHS_费用分类汇总.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_费用分类汇总.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ZYHS_费用单明细不分类.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_费用单明细不分类.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ZYHS_费用单明细分类.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_费用单明细分类.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ZYHS_费用单汇总不分类.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_费用单汇总不分类.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ZYHS_费用单汇总分类.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_费用单汇总分类.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ZY_床位使用率.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZY_床位使用率.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ZY_报表_结算病人费用统计.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZY_报表_结算病人费用统计.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZYHS_交病人药品查询.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_交病人药品查询.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZYHS_催款单汇总.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_催款单汇总.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZYHS_治疗单.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_治疗单.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="冷水江\ZYHS_费用分类汇总.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_费用分类汇总.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="冷水江\ZYHS_费用单汇总分类.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_费用单汇总分类.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="常德津市人民医院\ZYHS_费用分类汇总.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_费用分类汇总.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="常德津市人民医院\ZYHS_费用单明细不分类.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_费用单明细不分类.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="常德津市人民医院\ZYHS_费用单明细分类.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_费用单明细分类.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="常德津市人民医院\ZYHS_费用单汇总不分类.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_费用单汇总不分类.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="常德津市人民医院\ZYHS_费用单汇总分类.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_费用单汇总分类.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="株洲中医院\ZYHS_输液卡.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_输液卡.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="武汉中心医院\ZD_临时账单.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZD_临时账单.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="武汉中心医院\ZD_长期账单.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZD_长期账单.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="武汉中心医院\ZYHS_出院通知单.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_出院通知单.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="武汉中心医院\ZYHS_服药单.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_服药单.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="武汉中心医院\ZYHS_治疗单.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_治疗单.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="武汉中心医院\ZYHS_注射卡.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_注射卡.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="武汉中心医院\ZYHS_输液卡.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_输液卡.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="武汉中心医院\ZYHS_输液卡（瓶签）.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_输液卡（瓶签）.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="浏阳中医院\HS_术前执行单.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>HS_术前执行单.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="浏阳中医院\ZYHS_费用单明细分类.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_费用单明细分类.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="浏阳中医院\ZYHS_费用单汇总分类.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_费用单汇总分类.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="浏阳骨伤科医院\ZYHS_输液卡.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_输液卡.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="费用清单\ZYHS_费用分类汇总.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_费用分类汇总.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="费用清单\ZYHS_费用单汇总分类.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_费用单汇总分类.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="邵阳人民医院\ZYHS_费用分类汇总.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_费用分类汇总.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="邵阳人民医院\ZYHS_费用单明细不分类.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_费用单明细不分类.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="邵阳人民医院\ZYHS_费用单明细分类.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_费用单明细分类.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="邵阳人民医院\ZYHS_费用单汇总不分类.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_费用单汇总不分类.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="邵阳人民医院\ZYHS_费用单汇总分类.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_费用单汇总分类.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="长沙市八医院\ZYHS_费用单明细不分类.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_费用单明细不分类.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="长沙市八医院\ZYHS_费用单明细分类.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_费用单明细分类.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="长沙市八医院\ZYHS_费用单汇总不分类.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_费用单汇总不分类.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="长沙市八医院\ZYHS_费用单汇总分类.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_费用单汇总分类.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="长沙市八医院\ZYHS_输液卡.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ZYHS_输液卡.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+    <Service Include="{CF845C55-C321-4742-B673-E6212D061ED9}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

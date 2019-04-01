@@ -1,0 +1,6 @@
+E:\HIS2.0\His代码\Ts_zyys_dbquery\obj\Debug\Ts_zyys_public.csprojResolveAssemblyReference.cache
+E:\HIS2.0\His代码\Ts_zyys_dbquery\obj\Debug\Ts_zyys_public.FrmMessageShow.resources
+E:\HIS2.0\His代码\Ts_zyys_dbquery\obj\Debug\Ts_zyys_public.FrmPW.resources
+E:\HIS2.0\His代码\Ts_zyys_dbquery\obj\Debug\Ts_zyys_public.PatientBar.resources
+E:\HIS2.0\His代码\Ts_zyys_dbquery\obj\Debug\Ts_zyys_public.csproj.GenerateResource.cache
+E:\HIS2.0\His代码\Ts_zyys_dbquery\obj\Debug\Ts_zyys_public.csproj.CoreCompileInputs.cache

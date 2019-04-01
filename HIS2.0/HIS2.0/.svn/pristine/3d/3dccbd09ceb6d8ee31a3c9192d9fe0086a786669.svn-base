@@ -1,0 +1,340 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B5192FFD-8513-44AF-9DD2-05717636BA52}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ts_mz_sf</RootNamespace>
+    <AssemblyName>ts_mz_sf</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Output\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\Debug\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Web, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="PrintClass, Version=1.0.4993.42240, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLL引用\PrintClass.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Trasen.Controls, Version=1.0.0.71, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="TrasenClasses, Version=5.1.5284.28595, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="TrasenFrame, Version=5.1.5350.28119, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ts_call, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLL引用\ts_call.dll</HintPath>
+    </Reference>
+    <Reference Include="ts_Local_Charge, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ts_mzys_blcflr, Version=10.12.18.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ts_mzys_class, Version=10.12.18.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ts_mzys_yjsqd, Version=10.12.18.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ts_mz_class, Version=10.12.18.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ts_mz_cx, Version=2014.8.29.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ts_mz_kgl, Version=10.12.18.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ts_pjq, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ts_Read_hospitalCard, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ts_yb_interface, Version=1.0.0.17508, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Debug\ts_yb_interface.dll</HintPath>
+    </Reference>
+    <Reference Include="ts_yb_mzgl, Version=10.10.21.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ts_Yk_ReportView, Version=1.0.4542.23184, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ts_YpClass, Version=1.0.4468.19576, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Debug\ts_YpClass.dll</HintPath>
+    </Reference>
+    <Reference Include="Ts_zyys_jcsq, Version=1.0.5030.28020, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLL引用\Ts_zyys_jcsq.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ds_fp.cs">
+      <DependentUpon>Ds_fp.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ds_fp.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_fp.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSelectSFJL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSelectSFJL.Designer.cs">
+      <DependentUpon>FrmSelectSFJL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_SelectTfAllpy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_SelectTfAllpy.Designer.cs">
+      <DependentUpon>Frm_SelectTfAllpy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_SFMb_Select.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_SFMb_Select.Designer.cs">
+      <DependentUpon>Frm_SFMb_Select.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstanceForm.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UCInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCInfo.Designer.cs">
+      <DependentUpon>UCInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="划价收费.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="划价收费.Designer.cs">
+      <DependentUpon>划价收费.cs</DependentUpon>
+    </Compile>
+    <Compile Include="仅收费.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="仅收费.Designer.cs">
+      <DependentUpon>仅收费.cs</DependentUpon>
+    </Compile>
+    <Compile Include="门诊退费.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="门诊退费.Designer.cs">
+      <DependentUpon>门诊退费.cs</DependentUpon>
+    </Compile>
+    <Compile Include="门诊退费三级审核.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="门诊退费三级审核.designer.cs">
+      <DependentUpon>门诊退费三级审核.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmSelectSFJL.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmSelectSFJL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_SelectTfAllpy.resx">
+      <DependentUpon>Frm_SelectTfAllpy.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_SFMb_Select.resx">
+      <DependentUpon>Frm_SFMb_Select.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MZSF_正式发票.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MZSF_正式发票.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UCInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="划价收费.resx">
+      <DependentUpon>划价收费.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="仅收费.resx">
+      <DependentUpon>仅收费.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="门诊退费.resx">
+      <DependentUpon>门诊退费.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="门诊退费三级审核.resx">
+      <DependentUpon>门诊退费三级审核.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FLOPPY2.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BMPVIEW2.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VIEWER1.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BOOK06.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exclamation mark-7.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fax1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FILESYS.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FINDER.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FINDER2.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FLOPPY1.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MISC1054.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MISC1059.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MIXE~306.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MO3_G.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NOTE10B.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NOTE11.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NOTE16.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NOTE17.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NOTEPAD.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Online.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pen1 020.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pen1 033.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pospe.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\post.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PRINTER.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recyclerfull.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\THE dynamo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ds_fp.xsc">
+      <DependentUpon>Ds_fp.xsd</DependentUpon>
+    </None>
+    <None Include="Ds_fp.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_fp.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Ds_fp.xss">
+      <DependentUpon>Ds_fp.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\tongs.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3924545A-F8E2-475A-B1A4-05175BC41E50}" />
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="GB2312" standalone="no"?>
+<Grids>
+  <Grid name="FrmRelease.dgvReport.dgvReport">
+    <Column name="Column1" width="38" visible="True" displayindex="0" />
+    <Column name="Column2" width="69" visible="True" displayindex="1" />
+    <Column name="Column3" width="82" visible="True" displayindex="2" />
+    <Column name="Column4" width="91" visible="True" displayindex="3" />
+    <Column name="Column5" width="49" visible="True" displayindex="4" />
+    <Column name="Column6" width="56" visible="True" displayindex="5" />
+    <Column name="Column7" width="100" visible="True" displayindex="6" />
+    <Column name="Column8" width="100" visible="True" displayindex="7" />
+    <Column name="Column9" width="100" visible="True" displayindex="8" />
+    <Column name="Column13" width="301" visible="True" displayindex="9" />
+    <Column name="Column10" width="100" visible="True" displayindex="10" />
+    <Column name="Column11" width="100" visible="True" displayindex="11" />
+    <Column name="Column12" width="100" visible="True" displayindex="12" />
+  </Grid>
+</Grids>

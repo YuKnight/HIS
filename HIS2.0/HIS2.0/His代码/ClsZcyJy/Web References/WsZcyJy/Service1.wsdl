@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="His_UserRecipe">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="hospitalID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="hospitalName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sex" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="age" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Useradd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="phone" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ep_no" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="areanum" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="roomnum" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="bednum" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="tieshu" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fushu" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="takingmethod" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="bm_method" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="packvolume" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="weight" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="workdate" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="Doctorname" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="checktime" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="buyunit" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sellmethod" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="money" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="getmoneytime" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="helpmoney" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RemarksStatus" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="His_UserRecipeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="His_UserRecipeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="His_DrugInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ep_no" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="hospitalID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="hospitalName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="drugID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="drugName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="drugguige" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="drugAdd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="drugSum" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="onecalculate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="wholesum" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="getvalue" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="getmoney" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="unit" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RemarksStatus" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="His_DrugInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="His_DrugInfoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="His_UserRecipeSoapIn">
+    <wsdl:part name="parameters" element="tns:His_UserRecipe" />
+  </wsdl:message>
+  <wsdl:message name="His_UserRecipeSoapOut">
+    <wsdl:part name="parameters" element="tns:His_UserRecipeResponse" />
+  </wsdl:message>
+  <wsdl:message name="His_DrugInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:His_DrugInfo" />
+  </wsdl:message>
+  <wsdl:message name="His_DrugInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:His_DrugInfoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="Service1Soap">
+    <wsdl:operation name="His_UserRecipe">
+      <wsdl:input message="tns:His_UserRecipeSoapIn" />
+      <wsdl:output message="tns:His_UserRecipeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="His_DrugInfo">
+      <wsdl:input message="tns:His_DrugInfoSoapIn" />
+      <wsdl:output message="tns:His_DrugInfoSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Service1Soap" type="tns:Service1Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="His_UserRecipe">
+      <soap:operation soapAction="http://tempuri.org/His_UserRecipe" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="His_DrugInfo">
+      <soap:operation soapAction="http://tempuri.org/His_DrugInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Service1Soap12" type="tns:Service1Soap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="His_UserRecipe">
+      <soap12:operation soapAction="http://tempuri.org/His_UserRecipe" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="His_DrugInfo">
+      <soap12:operation soapAction="http://tempuri.org/His_DrugInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="Service1Soap" binding="tns:Service1Soap">
+      <soap:address location="http://192.168.32.58:8080/Service1.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Service1Soap12" binding="tns:Service1Soap12">
+      <soap12:address location="http://192.168.32.58:8080/Service1.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

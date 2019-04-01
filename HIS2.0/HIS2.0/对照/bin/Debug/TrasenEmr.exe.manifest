@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns="urn:schemas-microsoft-com:asm.v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <assemblyIdentity name="TrasenEmr.exe" version="1.0.0.0" type="win32" />
+  <dependency>
+    <dependentAssembly asmv2:dependencyType="install" asmv2:codebase="Native.EmrArchiveQC.manifest" asmv2:size="2390">
+      <assemblyIdentity name="Native.EmrArchiveQC" version="1.0.0.0" type="win32" />
+      <hash xmlns="urn:schemas-microsoft-com:asm.v2">
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>rg2nUYMN02GXhfLdn+nzQIbG/1U=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly asmv2:dependencyType="install" asmv2:codebase="Native.EmrConsulationWs.manifest" asmv2:size="1765">
+      <assemblyIdentity name="Native.EmrConsulationWs" version="1.0.0.2" type="win32" />
+      <hash xmlns="urn:schemas-microsoft-com:asm.v2">
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>K315pdAv9hqqOU4Fs6cRTP9zsvQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly asmv2:dependencyType="install" asmv2:codebase="Native.EmrDeptQc.manifest" asmv2:size="2387">
+      <assemblyIdentity name="Native.EmrDeptQc" version="1.0.0.0" type="win32" />
+      <hash xmlns="urn:schemas-microsoft-com:asm.v2">
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>OcB+YCtV4YV3qc0avuIyVAGlcrM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly asmv2:dependencyType="install" asmv2:codebase="Native.EmrDoctorWs.manifest" asmv2:size="2389">
+      <assemblyIdentity name="Native.EmrDoctorWs" version="1.0.0.0" type="win32" />
+      <hash xmlns="urn:schemas-microsoft-com:asm.v2">
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>sDZmFAFtLrpHhOzqyssIFKq+cx8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly asmv2:dependencyType="install" asmv2:codebase="Native.EmrEditor.manifest" asmv2:size="1300">
+      <assemblyIdentity name="Native.EmrEditor" version="1.0.0.0" type="win32" />
+      <hash xmlns="urn:schemas-microsoft-com:asm.v2">
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>NZ4/FofIT5KvcnvHYmEF8nCZR6k=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly asmv2:dependencyType="install" asmv2:codebase="Native.EmrEditPublicInterface.manifest" asmv2:size="2400">
+      <assemblyIdentity name="Native.EmrEditPublicInterface" version="1.0.0.0" type="win32" />
+      <hash xmlns="urn:schemas-microsoft-com:asm.v2">
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>3IkwViGxW0keNk/rSrYlAScGooU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly asmv2:dependencyType="install" asmv2:codebase="Native.EmrEditPublicWs.manifest" asmv2:size="1119">
+      <assemblyIdentity name="Native.EmrEditPublicWs" version="1.0.0.0" type="win32" />
+      <hash xmlns="urn:schemas-microsoft-com:asm.v2">
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>PD0L1kpO6Mtl50c8Cd2TcAFWkXU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly asmv2:dependencyType="install" asmv2:codebase="Native.EmrMrBrowseWs.manifest" asmv2:size="1762">
+      <assemblyIdentity name="Native.EmrMrBrowseWs" version="1.0.0.0" type="win32" />
+      <hash xmlns="urn:schemas-microsoft-com:asm.v2">
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>4KPwW4qyIlgJx75vRsa580hexeA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly asmv2:dependencyType="install" asmv2:codebase="Native.EmrNurseInterface.manifest" asmv2:size="2401">
+      <assemblyIdentity name="Native.EmrNurseInterface" version="1.0.0.0" type="win32" />
+      <hash xmlns="urn:schemas-microsoft-com:asm.v2">
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>QmCwEmUMLo06Wp04Q22lFBKo8jE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly asmv2:dependencyType="install" asmv2:codebase="Native.EmrNurseWs.manifest" asmv2:size="1759">
+      <assemblyIdentity name="Native.EmrNurseWs" version="1.0.0.0" type="win32" />
+      <hash xmlns="urn:schemas-microsoft-com:asm.v2">
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>xIaq0bSngUNxW0fz4lZ4+xtQnQA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly asmv2:dependencyType="install" asmv2:codebase="Native.EmrQCWs.manifest" asmv2:size="1756">
+      <assemblyIdentity name="Native.EmrQCWs" version="1.0.0.0" type="win32" />
+      <hash xmlns="urn:schemas-microsoft-com:asm.v2">
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>aQPRjxCf8y4GeS+L22S1sv2FLc8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly asmv2:dependencyType="install" asmv2:codebase="Native.EmrTemplate.manifest" asmv2:size="1115">
+      <assemblyIdentity name="Native.EmrTemplate" version="1.0.0.0" type="win32" />
+      <hash xmlns="urn:schemas-microsoft-com:asm.v2">
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>iGhIXIhkRDUkVh5ewWFunMih2oA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+</assembly>
